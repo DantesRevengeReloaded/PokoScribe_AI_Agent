@@ -15,7 +15,7 @@ with open('instructions.txt', 'r') as file:
     content = file.read()
 
 # Split the content by the delimiter to get the instructions
-instructions = content.split('###')
+instructions = content.split('--')
 
 # Loop over the instructions
 for instruction in instructions:

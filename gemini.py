@@ -28,7 +28,7 @@ class GenAIPokoDataCall:
     response_text = to_markdown(response.text)
     responsedate = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     # Create filename using responsedate
-    filename = f"answers/response_{responsedate}.txt"
+    filename = f"sources/response_{responsedate}.txt"
 
     # Save prompt, blank line, and response.text to a txt file
     with open(filename, 'w') as file:

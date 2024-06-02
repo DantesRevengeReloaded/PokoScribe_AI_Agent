@@ -1,7 +1,10 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
+import os
 
-model_id = "meta-llama/Meta-Llama-3-8B-Instruct"
+model_id = "Meta-Llama-3-8B"
+os.environ['HF_TOKEN'] ='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'
+
 
 tokenizer = AutoTokenizer.from_pretrained(model_id)
 model = AutoModelForCausalLM.from_pretrained(
