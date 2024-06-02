@@ -1,9 +1,14 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import torch
 import os
+from dotenv import load_dotenv
 
-model_id = "Meta-Llama-3-8B"
-os.environ['HF_TOKEN'] ='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'
+# Specify the path to the model directory
+model_id = "/mnt/cf36a2d7-ecf4-46c7-a76a-5defe1ad7659/my_ai/Meta-Llama-3-8B"
+
+load_dotenv('.env')
+token = os.getenv('LLAMAKEY')
+os.environ['HF_TOKEN'] =token
 
 
 tokenizer = AutoTokenizer.from_pretrained(model_id)
