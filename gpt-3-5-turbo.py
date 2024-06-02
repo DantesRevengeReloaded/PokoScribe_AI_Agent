@@ -31,7 +31,7 @@ for instruction in instructions:
     user_prompt = input("Enter your prompt: ")
 
     # Append the specific message to the user's input
-    prompt = user_prompt + ' Consider that the answer will append the following text to : ' + novel_content
+    prompt = 'Create a section of the novel using the following: ' + user_prompt + ' Consider that the answer will append the following text to : ' + novel_content
 
     chat_completion = client.chat.completions.create(
         messages=[
