@@ -1,10 +1,14 @@
 from openai import OpenAI
 import openai
 import os
+from dotenv import load_dotenv
 
+
+# Load environment variables from .env file
+load_dotenv()
 
 client = OpenAI(
-    api_key='sk-proj-fukOzHPXqpbA5UMcRbnLT3BlbkFJPY9Zae3yLm7l0PUuRUyK',
+    api_key=os.getenv('OPENAI_API_KEY'),
 )
 
 # Get the prompt from the user
@@ -25,7 +29,8 @@ chat_completion = client.chat.completions.create(
 )
 
 # Extract the assistant's reply from the response
-assistant_reply = chat_completion['choices'][0]['message']['content']
+assistant_reply = chat_completion.choices[0].message.content
+
 
 # Print the assistant's reply
 print(assistant_reply)
