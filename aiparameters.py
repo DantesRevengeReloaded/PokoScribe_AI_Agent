@@ -9,7 +9,7 @@ class AIParameters:
         self.content=''
     
     def openainovel(self):
-        with open('content_par.txt', 'r') as file:
+        with open('sources/testing/cont2.txt', 'r') as file:
             content = file.read()
         self.content = content
         return self.content
