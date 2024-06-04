@@ -31,7 +31,7 @@ for instruction in instructions:
     user_prompt = prompt1 #input("Enter your prompt: ")
 
     # Append the specific message to the user's input
-    prompt = 'Create a section of the novel making a chapter using the following sources as basic source for creating the story part: ' + user_prompt + ' Consider that the answer will append the following: ' + novel_content
+    prompt = 'Create a section of the novel making a chapter using the following sources as basic elements of the chapter for creating the story part, create more events if necessary, use dialogues in parts of the story to make it more interesting: ' + user_prompt + ' Consider that the answer will append the following: ' + novel_content
 
     chat_completion = client.chat.completions.create(
         messages=[
@@ -44,8 +44,8 @@ for instruction in instructions:
                 "content": prompt,
             }
         ],
-        model="gpt-4o",
-        max_tokens= 2000,
+        model="gpt-4o", # Replace to use the GPT-4 model or any other model
+        max_tokens= 2500,
         temperature=0.7,
     )
 
