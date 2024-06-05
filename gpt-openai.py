@@ -2,6 +2,7 @@ from openai import OpenAI
 import os
 from dotenv import load_dotenv
 from aiparameters import AIParameters
+import time
 
 # Load environment variables from .env file
 load_dotenv()
@@ -10,20 +11,21 @@ client = OpenAI(
     api_key=os.getenv('OPENAI_API_KEY'),
 )
 # Read the content of the file
-with open('sources/testing/novelinstructs.txt', 'r') as file:
+with open('/mnt/cf36a2d7-ecf4-46c7-a76a-5defe1ad7659/my_ai/sources/projectacademus/instructions_guide.txt', 'r') as file:
     content = file.read()
 
 # Split the content by the delimiter to get the instructions
 instructions = content.split('--')
-
+num=0
 # Loop over the instructions
 for instruction in instructions:
+    print (f"Step {num} started")
     # Get the prompt from the instruction
     prompt1 = instruction.strip()
 
 
     # Read the existing content of the novel
-    with open('sources/testing/novel.txt', 'r') as file:
+    with open('/mnt/cf36a2d7-ecf4-46c7-a76a-5defe1ad7659/my_ai/sources/projectacademus/novel.txt', 'r') as file:
         novel_content = file.read()
 
     novel_content = novel_content[-1000:] # Use only the last 1000 characters so the model can process it and dont be expensive
@@ -54,5 +56,10 @@ for instruction in instructions:
 
 
     # Append the assistant's reply to the novel
-    with open('sources/testing/novel.txt', 'a') as file:
+    with open('/mnt/cf36a2d7-ecf4-46c7-a76a-5defe1ad7659/my_ai/sources/projectacademus/novel.txt', 'a') as file:
         file.write(assistant_reply + '\n')
+    print (f"Step {num} completed")
+    num+=1
+    time.sleep(45)
+    
+
