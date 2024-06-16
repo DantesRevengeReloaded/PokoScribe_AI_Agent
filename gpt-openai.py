@@ -51,7 +51,7 @@ for instruction in instructions:
         temperature=0.7,
     )
 
-    # Extract the assistant's reply from the response
+    # Extract the assistant's reply from the responsez
     assistant_reply = chat_completion.choices[0].message.content
 
 
