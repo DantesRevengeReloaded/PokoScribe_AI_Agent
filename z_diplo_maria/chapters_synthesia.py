@@ -3,10 +3,10 @@ from dotenv import load_dotenv
 import os
 
 bot_model = "o1-preview"
-role_of_bot = "you are an academic student who wants to write a chapter for a paper about e learning in businesses, you have already summerized the articles and based on that you will synthesize using them as sources and refer to them using harvard reference inside the text"
-prompt_draft = "create from the following text a chapter about case studies and real examples of e learning in businesses and separate them in case studies, you can use the following text as a reference and synthesize it to create a chapter about case studies and real examples of e learning in businesses, you can refer to the text using harvard reference inside the text"
+role_of_bot = "you are an academic student who wants to write a chapter for a paper about the risks in e-learning in businesses, you have already summerized the articles and based on that you will synthesize using them as sources and refer to them using harvard reference inside the text"
+prompt_draft = "synthesize from the following text all the information and create a chapter about the case studies, group all these studies so it will cover the cost-benefit analysis in mid sized enterprise, lessons learned from industry leaders, and succseful and unsuccessful implementations in global corporations, feel free to add one more case study based on the text if you find a pattern that can group the following properly analyze thses case studies extensively use harvard references inside text"
 
-with open('z_diplo_maria/summary_v1_part_2.txt', 'r') as file:
+with open('z_diplo_maria/chapter_risks_tot.txt', 'r') as file:
     notes_file = file.read()
 
 class OpenAIChapterMaker:
@@ -28,7 +28,7 @@ class OpenAIChapterMaker:
                     {"role": "user", "content": prompt}
                 ],
                 model=self.bot_model,
-                max_completion_tokens=6500,
+                max_completion_tokens=8500,
                 temperature=1,
             )
 
@@ -43,6 +43,6 @@ if __name__ == "__main__":
     api_key = os.getenv('OPENAI_API_KEY')
     chapter_maker = OpenAIChapterMaker(api_key)
     chapter = chapter_maker.create_chapter()
-    with open('z_diplo_maria/chapter_v4.txt', 'w') as file:
+    with open('z_diplo_maria/chapter_risks.txt', 'w') as file:
         file.write(chapter)
-        print("Chapter created and saved to chapter_v4.txt")
+        print("Chapter created and saved to chapter_risks.txt")
