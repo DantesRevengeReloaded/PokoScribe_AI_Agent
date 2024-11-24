@@ -2,11 +2,11 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 
-bot_model = "o1-preview"
+bot_model = "gpt-4o-mini"
 role_of_bot = "you are an academic student who wants to write a chapter for a paper about e learning in businesses, you have already summerized the articles and based on that you will synthesize using them as sources and refer to them using harvard reference inside the text"
-prompt_draft = "create from the following text a chapter about case studies and real examples of e learning in businesses and separate them in case studies, you can use the following text as a reference and synthesize it to create a chapter about case studies and real examples of e learning in businesses, you can refer to the text using harvard reference inside the text"
+prompt_draft = "from all these sources create an academic chapter about the Challenges of the Management of Digital Transformation Projects use harvard citation inside the text"
 
-with open('z_diplo_maria/summary_v1_part_2.txt', 'r') as file:
+with open('z_diplo_maria/summary_v2.txt', 'r') as file:
     notes_file = file.read()
 
 class OpenAIChapterMaker:

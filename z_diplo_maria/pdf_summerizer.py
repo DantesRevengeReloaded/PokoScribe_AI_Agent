@@ -38,7 +38,7 @@ class OpenAISummarizer:
                 {"role": "user", "content": prompt}
             ],
             model="gpt-4o-mini",
-            max_tokens=3500,
+            max_tokens=4500,
             temperature=0.7,
         )
 
