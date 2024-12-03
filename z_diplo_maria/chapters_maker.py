@@ -4,9 +4,8 @@ import os
 
 bot_model = "gpt-4o-mini"
 role_of_bot = "you are an academic student who wants to write a chapter for a paper about e learning in businesses, you have already summerized the articles and based on that you will synthesize using them as sources and refer to them using harvard reference inside the text"
-prompt_draft = "from all these sources create an academic chapter about the Challenges of the Management of Digital Transformation Projects use harvard citation inside the text"
-
-with open('z_diplo_maria/summary_v2.txt', 'r') as file:
+prompt_draft = "from all these sources create an academic chapter about the ways that risks and challenges of e learning and digital transfomration generally can be countered create to seperate chapters, one for e learning and other for digital transformation use harvard citations from the following sources use full tokens available"
+with open('/mnt/cf36a2d7-ecf4-46c7-a76a-5defe1ad7659/my_ai/big_summary.txt', 'r') as file:
     notes_file = file.read()
 
 class OpenAIChapterMaker:
@@ -43,6 +42,6 @@ if __name__ == "__main__":
     api_key = os.getenv('OPENAI_API_KEY')
     chapter_maker = OpenAIChapterMaker(api_key)
     chapter = chapter_maker.create_chapter()
-    with open('z_diplo_maria/chapter_v4.txt', 'w') as file:
+    with open('z_diplo_maria/chapter_v5.txt', 'w') as file:
         file.write(chapter)
-        print("Chapter created and saved to chapter_v4.txt")
+        print("Chapter created and saved to chapter_v5.txt")
