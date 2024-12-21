@@ -2,7 +2,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 
-bot_model = "o1-preview"
+bot_model = "gpt-4o"
 role_of_bot = "you are an academic student who wants to write a chapter for a paper about the risks in e-learning in businesses, you have already summerized the articles and based on that you will synthesize using them as sources and refer to them using harvard reference inside the text"
 prompt_draft = "synthesize from the following text all the information and create a chapter about the case studies, group all these studies so it will cover the cost-benefit analysis in mid sized enterprise, lessons learned from industry leaders, and succseful and unsuccessful implementations in global corporations, feel free to add one more case study based on the text if you find a pattern that can group the following properly analyze thses case studies extensively use harvard references inside text"
 
