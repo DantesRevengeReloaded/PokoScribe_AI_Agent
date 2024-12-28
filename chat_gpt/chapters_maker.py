@@ -18,7 +18,6 @@ class OpenAIChapterMaker:
         self.bot_model = gptpppars.model
         self.text = notes_file
     
-      
 
     def create_chapter(self):
         prompt = f"{self.prompt_draft}:\n\n{self.text}"

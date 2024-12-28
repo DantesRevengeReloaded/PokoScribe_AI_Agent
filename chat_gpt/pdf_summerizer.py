@@ -1,9 +1,7 @@
-import os
-import shutil
-import PyPDF2
+import os, shutil, PyPDF2, time, tiktoken
 from openai import OpenAI
 from dotenv import load_dotenv
-import time
+from typing import List
 import chat_gpt.gptpars as gptpars
 from gptpars import *
 
@@ -55,6 +53,7 @@ class PDFSummarizer:
         self.summarizer = OpenAISummarizer(api_key)
         self.completed_folder = completed_folder
         self.to_be_completed_folder = to_be_completed_folder
+        self.limittokens = gtppars.tokenslimit
 
         # Create directories if they do not exist
         os.makedirs(self.completed_folder, exist_ok=True)
@@ -67,7 +66,22 @@ class PDFSummarizer:
                 print(f"Processing {pdf_file}...")
                 reader = PDFReader(pdf_file)
                 pdf_text = reader.read()
-                summary = self.summarizer.summarize(pdf_text)
+                encoding = tiktoken.get_encoding("cl100k_base")
+                tokencount = len(encoding.encode(pdf_text))
+                if tokencount < self.limittokens: # adjust the limit of tokens per document in parameters of ai
+                    summary = self.summarizer.summarize(pdf_text)
+                else:
+                    tokens = encoding.encode(pdf_text)
+                    chunks = []
+                    chunk_summaries = []
+                    chunksize = self.limittokens
+                    for i in range(0, len(tokens), chunksize):
+                        chunk = encoding.decode(tokens[i:i + chunksize])
+                        chunks.append(chunk)
+                        for chunk in chunks:
+                            chunksummary = self.summarizer.summarize(chunk)
+                            chunk_summaries.append(chunksummary)
+                    summary = ' '.join(chunk_summaries)
 
                 with open(self.output_file, 'a') as file:
                     file.write(f"Summary of {pdf_file}:\n")

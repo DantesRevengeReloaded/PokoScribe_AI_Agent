@@ -26,10 +26,11 @@ $12.00 / 1M output** tokens
 class ChatGPTPars:
     def __init__(self):
         self.model="gpt-4o-mini"
-        self.max_tokens=4500
+        self.max_tokens=4500 # max output tokens
         self.temperature=0.7
         self.role_system = "system"
         self.role_user = "user"
+        self.tokenslimit = 27000 # limit of tokens per document
 
 
 class PdfSummerizerPars:
