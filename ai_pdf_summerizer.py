@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 from typing import List
 from chat_gpt.gptpars import *
 from ai_z_logsconfig import *
+import google.generativeai as genai
+from gemini.geminipars import *
 
 # Initialize logging
 config = get_log_config()
@@ -31,7 +33,7 @@ class PDFReader:
             logger.error(f"Error reading {self.file_path}: {e}")
             return None
 
-class OpenAISummarizer:
+class AISummarizer:
     def __init__(self, api_key):
         try:
             self.client = OpenAI(api_key=api_key)
@@ -42,7 +44,7 @@ class OpenAISummarizer:
             with open(summparameters.role_of_bot_summarization, 'r') as file:
                 self.role_draft = file.read()
         except Exception as e:
-            logger.error(f"Error initializing OpenAISummarizer: {e}")
+            logger.error(f"Error initializing AISummarizer: {e}")
       
 
     def summarize(self, text):
@@ -68,8 +70,29 @@ class OpenAISummarizer:
             )
             summary = response.choices[0].message.content.strip()
             return summary
-        else:
-            pass
+        
+        elif worked_model == 'gemini':
+            generation_config = {
+            "temperature": aiparameters.temperature,
+            "top_p": aiparameters.top_p,
+            "top_k": aiparameters.top_k,
+            "max_output_tokens": aiparameters.max_tokens,
+            "response_mime_type": aiparameters.response_mime_type
+            }
+
+            model = genai.GenerativeModel(
+            model_name=aiparameters.model,
+            generation_config=generation_config,
+            )
+
+            chat_session = model.start_chat(
+            history=[
+            ]
+            )
+            prompt = f"{self.prompt_draft}:\n\n{text}"
+
+            summary = chat_session.send_message(prompt)
+            return summary
 
 class PDFSummarizer:
     def __init__(self, input_folder, output_file, api_key, completed_folder, to_be_completed_folder):
@@ -77,13 +100,15 @@ class PDFSummarizer:
             logger.info("Initializing PDFSummarizer...")
             self.input_folder = input_folder
             self.output_file = output_file
-            self.summarizer = OpenAISummarizer(api_key)
+            self.summarizer = AISummarizer(api_key)
             self.completed_folder = completed_folder
             self.to_be_completed_folder = to_be_completed_folder
             self.limittokens = aiparameters.tokenslimit
             # Create directories if they do not exist
             os.makedirs(self.completed_folder, exist_ok=True)
             os.makedirs(self.to_be_completed_folder, exist_ok=True)
+            self.totalfilesprocessed = 0
+            self.completedfiles = 0
             logger.info("PDFSummarizer initialized without errors.")
 
         except Exception as e:
@@ -98,6 +123,7 @@ class PDFSummarizer:
             logger.error(f"Error finding PDF files in {self.input_folder}: {e}")
             return
         for pdf_file in pdf_files:
+            self.totalfilesprocessed += 1
             try:
                 logger.info(f"Processing {pdf_file}...")
                 reader = PDFReader(pdf_file)
@@ -134,12 +160,13 @@ class PDFSummarizer:
                         file.write(summary + '\n\n')
                         file.write('--------\n\n')
                         logger.info(f"Summary of {pdf_file} saved to {self.output_file}")
+                        self.completedfiles += 1
                     except Exception as e:
                         logger.error(f"Error saving summary of {pdf_file} to {self.output_file}: {e}")
 
                 # Move the file to the completed folder
                 shutil.move(pdf_file, os.path.join(self.completed_folder, os.path.basename(pdf_file)))
-                logger.info(f"{pdf_file} moved to {self.completed_folder} waiting 5 seconds...")
+                logger.info(f"{pdf_file} moved to {self.completed_folder} waiting 3 seconds for next file...")
                 time.sleep(5)
 
             except Exception as e:
@@ -150,7 +177,9 @@ class PDFSummarizer:
 
 if __name__ == "__main__":
     try:
+        start_time = time.time()
         logger.info("Starting PDFSummarizer...")
+
         if worked_model == 'openai':
             logger.info("Using OpenAI model...")
             aiparameters = ChatGPTPars()
@@ -160,7 +189,19 @@ if __name__ == "__main__":
             summarizer = PDFSummarizer(summparameters.input_folder, summparameters.big_text_file, api_key, 
                                     summparameters.completed_folder, summparameters.to_be_completed_folder)
             summarizer.process_pdfs()
-        else:
-            pass
+
+        elif worked_model == 'gemini':
+            logger.info("Using Gemini model...")
+            aiparameters = GeminiPars()
+            summparameters = GeminiSummerizerPars()
+            load_dotenv('.env')
+            api_key = os.getenv('GEMINI_API_KEY')
+            summarizer = PDFSummarizer(summparameters.input_folder, summparameters.big_text_file, api_key, 
+                                    summparameters.completed_folder, summparameters.to_be_completed_folder)
+            summarizer.process_pdfs()
+        end_time = time.time()
+        logger.info(f"PDFSummarizer completed in {end_time - start_time} seconds.")
+        logger.info(f"Total files processed: {summarizer.totalfilesprocessed}")
+        logger.info(f"Completed files: {summarizer.completedfiles}")
     except Exception as e:
         logger.error(f"Error in PDFSummarizer: {e}")
