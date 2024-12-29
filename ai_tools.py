@@ -59,6 +59,5 @@ class AIBotSummarizer:
             logger.error(f"Error in PDFSummarizer: {e}")
 
 
-if __name__ == "__main__":
-    aibot = AIBotSummarizer()
-    aibot.deepseeksummerize()
+class AIBotChapterMaker:
+    pass

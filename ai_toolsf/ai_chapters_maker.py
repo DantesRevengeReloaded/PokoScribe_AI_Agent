@@ -9,7 +9,7 @@ chaptermaker_ai_parameters = ChatGPTChapterMakerPars()
 with open(chaptermaker_ai_parameters.paper_file, 'r') as file:
     notes_file = file.read()
 
-class OpenAIChapterMaker:
+class AIChapterMaker:
     def __init__(self, api_key):
         self.client = OpenAI(api_key=api_key)
         self.role_of_bot = chaptermaker_ai_parameters.role_of_bot_chapter
@@ -40,7 +40,7 @@ class OpenAIChapterMaker:
 if __name__ == "__main__":
     load_dotenv('.env')
     api_key = os.getenv('OPENAI_API_KEY')
-    chapter_maker = OpenAIChapterMaker(api_key)
+    chapter_maker = AIChapterMaker(api_key)
     chapter = chapter_maker.create_chapter()
     with open(chaptermaker_ai_parameters.chapters_historicity, 'a') as file:
         file.write(chapter_maker.prompt_draft)
