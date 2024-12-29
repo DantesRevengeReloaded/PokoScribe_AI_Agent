@@ -45,12 +45,11 @@ class AIBotSummarizer:
         try:
             start_time = time.time()
             logger.info("Using DeepSeek model...")
-            aiparameters = DeepSeekPars()
             summparameters = DeepSeekSummerizerPars()
             load_dotenv('.env')
             api_key = os.getenv('DEEPSEEK_API_KEY')
             summarizer = PDFSummarizer(summparameters.input_folder, summparameters.big_text_file, api_key, 
-                                    summparameters.completed_folder, summparameters.to_be_completed_folder)
+                                    summparameters.completed_folder, summparameters.to_be_completed_folder, 'deepseek')
             summarizer.process_pdfs('deepseek')
             end_time = time.time()
             logger.info(f"PDFSummarizer completed in {end_time - start_time} seconds.")
@@ -59,8 +58,7 @@ class AIBotSummarizer:
         except Exception as e:
             logger.error(f"Error in PDFSummarizer: {e}")
 
-"""
+
 if __name__ == "__main__":
     aibot = AIBotSummarizer()
-    aibot.chatgptsummerize()
-"""
+    aibot.deepseeksummerize()

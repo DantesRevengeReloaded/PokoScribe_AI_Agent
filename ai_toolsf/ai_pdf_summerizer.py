@@ -144,18 +144,31 @@ class AISummarizer:
                 return None
         
         elif worked_model == 'deepseek':
-            self.client = OpenAI(api_key=self.api_key, base_url="https://api.deepseek.com")
-            response = self.client.chat.completions.create(
-                messages=[
-                    {"role": f"{aiparameters.role_system}", "content": f"{self.role_draft}"},
-                    {"role": f"{aiparameters.role_user}", "content": prompt}
-                ],
-                model=aiparameters.model,
-                max_tokens=aiparameters.max_tokens,
-                temperature=aiparameters.temperature,
-            )
-            summary = response.choices[0].message.content.strip()
-            return summary
+            try:
+                prompt = f"{self.prompt_draft}: {text}"
+            except Exception as e:
+                logger.error(f"Error creating prompt: {str(e)}")
+                return None
+            try:
+                self.client = OpenAI(api_key=self.api_key, base_url="https://api.deepseek.com")
+                response = self.client.chat.completions.create(
+                    messages=[
+                        {"role": f"{aiparameters.role_system}", "content": f"{self.role_draft}"},
+                        {"role": f"{aiparameters.role_user}", "content": prompt}
+                    ],
+                    model=aiparameters.model,
+                    max_tokens=aiparameters.max_tokens,
+                    temperature=aiparameters.temperature,
+                )
+            except Exception as e:
+                logger.error(f"Error in DeepSeek workflow: {str(e)}")
+                return None
+            try:
+                summary = response.choices[0].message.content.strip()
+                return summary
+            except Exception as e:
+                logger.error(f"Error in DeepSeek response: {str(e)}")
+                return None
         
         elif worked_model == 'gemini':
           
