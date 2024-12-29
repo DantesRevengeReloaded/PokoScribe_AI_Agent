@@ -17,8 +17,24 @@ logger = logging.getLogger('PDFSummarizer')
 
 model_lists = ['openai', 'gemini', 'deepseek']
 
-aiparameters = None
-summparameters = None
+def initialize_parameters(model_type: str):
+    global aiparameters, summparameters
+    
+    if model_type not in model_lists:
+        raise ValueError(f"Invalid model type. Must be one of {model_lists}")
+    
+    if model_type == 'openai':
+        aiparameters = ChatGPTPars()
+        summparameters = ChatGPTPdfSummerizerPars()
+    elif model_type == 'gemini':
+        aiparameters = GeminiPars()
+        summparameters = GeminiSummerizerPars()
+    elif model_type == 'deepseek':
+        aiparameters = DeepSeekPars()
+        summparameters = DeepSeekSummerizerPars()
+    
+    if not aiparameters or not summparameters:
+        raise RuntimeError("Failed to initialize AI parameters")
 
 class PDFReader:
     def __init__(self, file_path):
@@ -40,19 +56,54 @@ class PDFReader:
 class AISummarizer:
     def __init__(self, api_key):
         try:
-            self.client = OpenAI(api_key=api_key)
+            self.api_key = api_key
+            
+            # Convert to absolute paths
+            prompt_path = os.path.abspath(summparameters.prompts_summarization)
+            role_path = os.path.abspath(summparameters.role_of_bot_summarization)
+            
+            logger.info(f"Absolute prompt path: {prompt_path}")
+            logger.info(f"Absolute role path: {role_path}")
 
-            with open(summparameters.prompts_summarization, 'r') as file:
-                self.prompt_draft = file.read()
+            # Validate files exist and are not empty
+            if not os.path.exists(prompt_path):
+                raise FileNotFoundError(f"Prompt file not found: {prompt_path}")
+            if not os.path.getsize(prompt_path):
+                raise ValueError(f"Prompt file is empty: {prompt_path}")
+                
+            if not os.path.exists(role_path):
+                raise FileNotFoundError(f"Role file not found: {role_path}")
+            if not os.path.getsize(role_path):
+                raise ValueError(f"Role file is empty: {role_path}")
 
-            with open(summparameters.role_of_bot_summarization, 'r') as file:
-                self.role_draft = file.read()
+            # Load prompts with UTF-8 encoding and error handling
+            try:
+                with open(prompt_path, 'r', encoding='utf-8-sig') as file1:
+                    self.prompt_draft = file1.read().strip()
+                    if not self.prompt_draft:
+                        raise ValueError("Prompt file read but content is empty")
+                logger.info(f"Prompt loaded successfully, content preview: {self.prompt_draft[:50]}...")
+            except Exception as e:
+                logger.error(f"Error reading prompt file: {e}")
+                raise
+
+            try:
+                with open(role_path, 'r', encoding='utf-8-sig') as file2:
+                    self.role_draft = file2.read().strip()
+                    if not self.role_draft:
+                        raise ValueError("Role file read but content is empty")
+                logger.info(f"Role loaded successfully, content preview: {self.role_draft[:50]}...")
+            except Exception as e:
+                logger.error(f"Error reading role file: {e}")
+                raise
+
         except Exception as e:
-            logger.error(f"Error initializing AISummarizer: {e}")
+            logger.error(f"Error in AISummarizer initialization: {e}")
+            raise
       
 
     def summarize(self, text, worked_model):
-        prompt = f"{self.prompt_draft}:\n\n{text}"
+        
         logger.info("SESSION INFO:")
         logger.info(f"using source model: {worked_model}")
         logger.info(f"using model: {aiparameters.model}")
@@ -63,7 +114,37 @@ class AISummarizer:
         logger.info(f"prompt: {self.prompt_draft}")
 
         # change the schema depending on the model
-        if worked_model == 'openai' or worked_model == 'deepseek':
+        if worked_model == 'openai':
+            try:
+                prompt = f"{self.prompt_draft}: {text}"
+            except Exception as e:
+                logger.error(f"Error creating prompt: {str(e)}")
+                return None
+            try:
+                self.client = OpenAI(api_key=self.api_key)
+                response = self.client.chat.completions.create(
+                    messages=[
+                        {"role": f"{aiparameters.role_system}", "content": f"{self.role_draft}"},
+                        {"role": f"{aiparameters.role_user}", "content": prompt}
+                    ],
+                    model=aiparameters.model,
+                    max_tokens=aiparameters.max_tokens,
+                    temperature=aiparameters.temperature,
+                )
+            except Exception as e:
+                logger.error(f"Error in OpenAI workflow: {str(e)}")
+                return None
+            
+            try:
+                summary = response.choices[0].message.content.strip()
+                return summary
+                
+            except Exception as e:
+                logger.error(f"Error in OpenAI response: {str(e)}")
+                return None
+        
+        elif worked_model == 'deepseek':
+            self.client = OpenAI(api_key=self.api_key, base_url="https://api.deepseek.com")
             response = self.client.chat.completions.create(
                 messages=[
                     {"role": f"{aiparameters.role_system}", "content": f"{self.role_draft}"},
@@ -77,41 +158,81 @@ class AISummarizer:
             return summary
         
         elif worked_model == 'gemini':
-            generation_config = {
-            "temperature": aiparameters.temperature,
-            "top_p": aiparameters.top_p,
-            "top_k": aiparameters.top_k,
-            "max_output_tokens": aiparameters.max_tokens,
-            "response_mime_type": aiparameters.response_mime_type
-            }
+          
+            if isinstance(aiparameters.temperature, tuple):
+                ttemperature = float(aiparameters.temperature[0])
+            else:
+                ttemperature = float(aiparameters.temperature)
+            
+            try:
+                top_p = float(aiparameters.top_p[0]) if isinstance(aiparameters.top_p, tuple) else float(aiparameters.top_p)
+                top_k = int(aiparameters.top_k[0]) if isinstance(aiparameters.top_k, tuple) else int(aiparameters.top_k)
+            except Exception as e:
+                logger.error(f"Invalid top_p or top_k: {aiparameters.top_p}, {aiparameters.top_k}. Error: {e}")
+                return "Error: Invalid top_p or top_k values."
+            
+            try:
+                genai.configure(api_key=self.api_key)
+                generation_config = {
+                    "temperature": ttemperature,
+                    "top_p": top_p,
+                    "top_k": top_k,
+                    "max_output_tokens": aiparameters.max_tokens,
+                    "response_mime_type": aiparameters.response_mime_type,
+                }
+                mod = genai.GenerativeModel(
+                    model_name=str(aiparameters.model),
+                    generation_config=generation_config,
+                )
+                prompt = f"{self.prompt_draft}: {text}"
+                chat_session = mod.start_chat(history=[])
+                
+                try:
+                    response = chat_session.send_message(prompt)
+                except Exception as e:
+                    logger.error(f"Error during send_message: {str(e)}")
+                    raise
+                
+                if not response or not hasattr(response, 'text'):
+                    logger.error("No valid text in Gemini response.")
+                    return "Error: No valid response text."
+                
+                summary = response.text.strip()
+                if not summary:
+                    logger.error("Empty summary generated.")
+                    return "Error: Empty summary."
+                
+                logger.info("Summary generated successfully in Gemini.")
+                return summary
 
-            model = genai.GenerativeModel(
-            model_name=aiparameters.model,
-            generation_config=generation_config,
-            )
-
-            chat_session = model.start_chat(
-            history=[
-            ]
-            )
-            prompt = f"{self.prompt_draft}:\n\n{text}"
-
-            summary = chat_session.send_message(prompt)
-            return summary
-        else:
-            logger.error(f"Model {worked_model} not found in the list of available models: {model_lists}")
-            return None
+            except Exception as e:
+                logger.error(f"Error in Gemini workflow: {str(e)}")
+                return None
 
 class PDFSummarizer:
-    def __init__(self, input_folder, output_file, api_key, completed_folder, to_be_completed_folder):
+    def __init__(self, input_folder, output_file, api_key, completed_folder, 
+                 to_be_completed_folder, model_type):
+        """
+        Initialize PDFSummarizer with parameters.
+        Args:
+            input_folder (str): Folder containing PDFs to process
+            output_file (str): Output file for summaries
+            api_key (str): API key for AI service
+            completed_folder (str): Folder for processed PDFs
+            to_be_completed_folder (str): Folder for failed PDFs
+            model_type (str): AI model type to use check the model_lists
+        """
         try:
             logger.info("Initializing PDFSummarizer...")
+            # Initialize parameters based on model type passed in main
+            initialize_parameters(model_type)
             self.input_folder = input_folder
             self.output_file = output_file
             self.summarizer = AISummarizer(api_key)
             self.completed_folder = completed_folder
             self.to_be_completed_folder = to_be_completed_folder
             self.limittokens = aiparameters.tokenslimit
+            self.model_type = model_type
             # Create directories if they do not exist
             os.makedirs(self.completed_folder, exist_ok=True)
             os.makedirs(self.to_be_completed_folder, exist_ok=True)
@@ -121,6 +242,7 @@ class PDFSummarizer:
 
         except Exception as e:
             logger.error(f"Error initializing PDFSummarizer: {e}")
+            raise
 
 
     def process_pdfs(self, worked_model):
@@ -138,6 +260,7 @@ class PDFSummarizer:
                 pdf_text = reader.read()
                 encoding = tiktoken.get_encoding("cl100k_base")
                 tokencount = len(encoding.encode(pdf_text))
+                logger.info(f"Token count of {pdf_file}: {tokencount}")
                 if tokencount < self.limittokens: # adjust the limit of tokens per document in parameters of ai
                    logger.info(f"Summarizing {pdf_file} (less than 27k tokens)...")
                    summary = self.summarizer.summarize(pdf_text, worked_model)

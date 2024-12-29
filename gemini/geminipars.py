@@ -8,12 +8,12 @@ Available models:
 class GeminiPars:
     def __init__(self):
         self.model="gemini-1.5-pro"
-        self.max_tokens=8092 # max output tokens
-        self.temperature = 1
+        self.max_tokens=15000 # max output tokens
+        self.temperature = 0.8
         self.role_system = "system"
         self.role_user = "user"
         self.tokenslimit = 27000 # limit of tokens per document
-        self.top_p = 0.95,
+        self.top_p = 0.95, 
         self.top_k = 40,
         self.response_mime_type = "text/plain"
 
@@ -22,8 +22,8 @@ class GeminiSummerizerPars(FolderPars):
     def __init__(self):
         super().__init__()
         
-        self.prompts_summarization = 'gemini/prompts-roles/summarization_prompt.txt'
-        self.role_of_bot_summarization = 'gemini/prompts-roles/summarization_role.txt'
+        self.prompts_summarization = 'gemini\prompts-roles\summarization_prompt.txt'
+        self.role_of_bot_summarization = 'gemini\prompts-roles\summarization_role.txt'
         
         # filed where summerizes are saved, if the file becomes source for chapters
         # be sure there are no other summeries and get wrong results

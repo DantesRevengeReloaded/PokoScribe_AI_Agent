@@ -1,0 +1,2 @@
+2024-12-29 21:21:23 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:130] - Error in OpenAI workflow: cannot access local variable 'prompt' where it is not associated with a value
+2024-12-29 21:21:23 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:291] - Error saving summary of C:\Users\ionka\Desktop\tests\tobesummed\What_we_know_about_leadership.pdf to chat_gpt/history/big_summary.txt: unsupported operand type(s) for +: 'NoneType' and 'str'
