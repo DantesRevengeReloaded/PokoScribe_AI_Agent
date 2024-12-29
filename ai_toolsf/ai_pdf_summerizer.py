@@ -3,9 +3,10 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from typing import List
 from chat_gpt.gptpars import *
-from ai_z_logsconfig import *
+from logs.ai_z_logsconfig import *
 import google.generativeai as genai
 from gemini.geminipars import *
+from deepseek.deepseekpars import *
 
 # Initialize logging
 config = get_log_config()
@@ -14,7 +15,10 @@ setup_logging(config)
 # Get logger
 logger = logging.getLogger('PDFSummarizer')
 
-worked_model = 'openai'
+model_lists = ['openai', 'gemini', 'deepseek']
+
+aiparameters = None
+summparameters = None
 
 class PDFReader:
     def __init__(self, file_path):
@@ -47,9 +51,10 @@ class AISummarizer:
             logger.error(f"Error initializing AISummarizer: {e}")
       
 
-    def summarize(self, text):
+    def summarize(self, text, worked_model):
         prompt = f"{self.prompt_draft}:\n\n{text}"
         logger.info("SESSION INFO:")
+        logger.info(f"using source model: {worked_model}")
         logger.info(f"using model: {aiparameters.model}")
         logger.info(f"max tokens: {aiparameters.max_tokens}")
         logger.info(f"temperature: {aiparameters.temperature}")
@@ -58,7 +63,7 @@ class AISummarizer:
         logger.info(f"prompt: {self.prompt_draft}")
 
         # change the schema depending on the model
-        if worked_model == 'openai':
+        if worked_model == 'openai' or worked_model == 'deepseek':
             response = self.client.chat.completions.create(
                 messages=[
                     {"role": f"{aiparameters.role_system}", "content": f"{self.role_draft}"},
@@ -93,6 +98,9 @@ class AISummarizer:
 
             summary = chat_session.send_message(prompt)
             return summary
+        else:
+            logger.error(f"Model {worked_model} not found in the list of available models: {model_lists}")
+            return None
 
 class PDFSummarizer:
     def __init__(self, input_folder, output_file, api_key, completed_folder, to_be_completed_folder):
@@ -115,7 +123,7 @@ class PDFSummarizer:
             logger.error(f"Error initializing PDFSummarizer: {e}")
 
 
-    def process_pdfs(self):
+    def process_pdfs(self, worked_model):
         try:
             pdf_files = [os.path.join(self.input_folder, f) for f in os.listdir(self.input_folder) if f.endswith('.pdf')]
             logger.info(f"Found {len(pdf_files)} PDF files in {self.input_folder}...")
@@ -132,7 +140,7 @@ class PDFSummarizer:
                 tokencount = len(encoding.encode(pdf_text))
                 if tokencount < self.limittokens: # adjust the limit of tokens per document in parameters of ai
                    logger.info(f"Summarizing {pdf_file} (less than 27k tokens)...")
-                   summary = self.summarizer.summarize(pdf_text)
+                   summary = self.summarizer.summarize(pdf_text, worked_model)
                 else:
                     logger.info(f"Summarizing {pdf_file} (more than 27k tokens, chunking method initiated)...")
                     tokens = encoding.encode(pdf_text)
@@ -145,7 +153,7 @@ class PDFSummarizer:
                             chunks.append(chunk)
                             chunknums = 0
                             for chunk in chunks:
-                                chunksummary = self.summarizer.summarize(chunk)
+                                chunksummary = self.summarizer.summarize(chunk, worked_model)
                                 chunk_summaries.append(chunksummary)
                                 chunknums += 1
                         except Exception as e:
@@ -175,33 +183,5 @@ class PDFSummarizer:
                 shutil.move(pdf_file, os.path.join(self.to_be_completed_folder, os.path.basename(pdf_file)))
                 logger.info(f"{pdf_file} moved to {self.to_be_completed_folder}")
 
-if __name__ == "__main__":
-    try:
-        start_time = time.time()
-        logger.info("Starting PDFSummarizer...")
 
-        if worked_model == 'openai':
-            logger.info("Using OpenAI model...")
-            aiparameters = ChatGPTPars()
-            summparameters = ChatGPTPdfSummerizerPars()
-            load_dotenv('.env')
-            api_key = os.getenv('OPENAI_API_KEY')
-            summarizer = PDFSummarizer(summparameters.input_folder, summparameters.big_text_file, api_key, 
-                                    summparameters.completed_folder, summparameters.to_be_completed_folder)
-            summarizer.process_pdfs()
 
-        elif worked_model == 'gemini':
-            logger.info("Using Gemini model...")
-            aiparameters = GeminiPars()
-            summparameters = GeminiSummerizerPars()
-            load_dotenv('.env')
-            api_key = os.getenv('GEMINI_API_KEY')
-            summarizer = PDFSummarizer(summparameters.input_folder, summparameters.big_text_file, api_key, 
-                                    summparameters.completed_folder, summparameters.to_be_completed_folder)
-            summarizer.process_pdfs()
-        end_time = time.time()
-        logger.info(f"PDFSummarizer completed in {end_time - start_time} seconds.")
-        logger.info(f"Total files processed: {summarizer.totalfilesprocessed}")
-        logger.info(f"Completed files: {summarizer.completedfiles}")
-    except Exception as e:
-        logger.error(f"Error in PDFSummarizer: {e}")

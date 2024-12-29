@@ -1,4 +1,4 @@
-from ai_z_folder_pars import *
+from ai_toolsf.ai_z_folder_pars import *
 '''
 Available models:
 
