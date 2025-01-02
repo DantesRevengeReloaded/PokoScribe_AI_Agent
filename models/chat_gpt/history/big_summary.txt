@@ -14,3 +14,14 @@ Additionally, the article discusses the prevalence of managerial incompetence, a
 --------
 
 Summary of C:\Users\ionka\Desktop\tests\tobesummed\What_we_know_about_leadership.pdf:
+Summary of C:\Users\ionka\Desktop\tests\tobesummed\What_we_know_about_leadership.pdf:
+In "What We Know About Leadership," Robert Hogan and Robert B. Kaiser review the empirical literature on leadership, personality, and organizational effectiveness, presenting three main arguments. Firstly, they assert that leadership is a critical phenomenon with significant consequences for organizational success and individual well-being. Effective leadership enhances team performance and overall quality of life, while poor leadership can lead to widespread suffering, exemplified by the historical case of Sierra Leone's dictator, Foday Sankoh.
+
+Secondly, the authors emphasize that leadership involves the ability to organize collective efforts for the common good, a skill rooted in our evolutionary history as social beings. They argue that effective leadership requires building and maintaining high-performing teams and that personality plays a vital role in determining leadership style.
+
+Lastly, Hogan and Kaiser contend that personality traits can predict leadership effectiveness, suggesting that understanding these traits can enhance leader selection and development. They differentiate between "bright side" traits, which reflect positive social impressions, and "dark side" traits, which can lead to managerial incompetence over time. 
+
+The article concludes that effective leadership is essential for organizational effectiveness, highlighting the importance of selecting leaders based on personality assessments and competencies that foster team performance and morale.
+
+--------
+

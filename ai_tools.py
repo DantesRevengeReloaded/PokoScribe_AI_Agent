@@ -58,8 +58,5 @@ class AIBotSummarizer:
         except Exception as e:
             logger.error(f"Error in PDFSummarizer: {e}")
 
-
-runer = AIBotSummarizer()
-runer.chatgptsummerize()
 class AIBotChapterMaker:
     pass

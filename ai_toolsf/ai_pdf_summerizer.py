@@ -1,4 +1,8 @@
-import os, shutil, PyPDF2, time, tiktoken, logging
+import os, shutil, PyPDF2, time, tiktoken, logging, sys
+
+# Add the parent directory to the sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from openai import OpenAI
 from dotenv import load_dotenv
 from typing import List
