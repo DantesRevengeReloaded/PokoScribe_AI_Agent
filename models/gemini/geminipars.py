@@ -22,20 +22,20 @@ class GeminiSummerizerPars(FolderPars):
     def __init__(self):
         super().__init__()
         
-        self.prompts_summarization = 'gemini\prompts-roles\summarization_prompt.txt'
-        self.role_of_bot_summarization = 'gemini\prompts-roles\summarization_role.txt'
+        self.prompts_summarization = 'models/gemini\prompts-roles\summarization_prompt.txt'
+        self.role_of_bot_summarization = 'models/gemini\prompts-roles\summarization_role.txt'
         
         # filed where summerizes are saved, if the file becomes source for chapters
         # be sure there are no other summeries and get wrong results
-        self.big_text_file = 'gemini/history/big_summary.txt'
+        self.big_text_file = 'models/gemini/history/big_summary.txt'
 
 class GeminiChapterMakerPars:
     def __init__(self):
-        self.prompts_chapter = 'gemini/prompts-roles/chapter__maker_prompt.txt'
-        self.role_of_bot_chapter = 'gemini/prompts-roles/chapter_maker_role.txt'
+        self.prompts_chapter = 'models/gemini/prompts-roles/chapter__maker_prompt.txt'
+        self.role_of_bot_chapter = 'models/gemini/prompts-roles/chapter_maker_role.txt'
 
         # file with the text to be used as a source, propably produced by the summarizer
-        self.paper_file = 'gemini\paper.txt' 
+        self.paper_file = 'models/gemini\paper.txt' 
         
         # file with the chapters produced by the chatbot appended ech time
-        self.chapters_historicity = 'gemini/history/chapters.txt'
+        self.chapters_historicity = 'models/gemini/history/chapters.txt'

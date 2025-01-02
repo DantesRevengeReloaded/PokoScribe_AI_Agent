@@ -37,20 +37,20 @@ class ChatGPTPdfSummerizerPars(FolderPars):
     def __init__(self):
         super().__init__()
         
-        self.prompts_summarization = 'chat_gpt/prompts-roles/summarization_prompt.txt'
-        self.role_of_bot_summarization = 'chat_gpt/prompts-roles/summarization_role.txt'
+        self.prompts_summarization = 'models/chat_gpt/prompts-roles/summarization_prompt.txt'
+        self.role_of_bot_summarization = 'models/chat_gpt/prompts-roles/summarization_role.txt'
         
         # filed where summerizes are saved, if the file becomes source for chapters
         # be sure there are no other summeries and get wrong results
-        self.big_text_file = 'chat_gpt/history/big_summary.txt'
+        self.big_text_file = 'models/chat_gpt/history/big_summary.txt'
 
 class ChatGPTChapterMakerPars:
     def __init__(self):
-        self.prompts_chapter = 'chat_gpt/prompts-roles/chapter__maker_prompt.txt'
-        self.role_of_bot_chapter = 'chat_gpt/prompts-roles/chapter_maker_role.txt'
+        self.prompts_chapter = 'models/chat_gpt/prompts-roles/chapter__maker_prompt.txt'
+        self.role_of_bot_chapter = 'models/chat_gpt/prompts-roles/chapter_maker_role.txt'
 
         # file with the text to be used as a source, propably produced by the summarizer
-        self.paper_file = 'chat_gpt\paper.txt' 
+        self.paper_file = 'models/chat_gpt/paper.txt' 
         
         # file with the chapters produced by the chatbot appended ech time
-        self.chapters_historicity = 'chat_gpt/history/chapters.txt'
+        self.chapters_historicity = 'models/chat_gpt/history/chapters.txt'

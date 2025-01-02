@@ -17,20 +17,20 @@ class DeepSeekSummerizerPars(FolderPars):
     def __init__(self):
         super().__init__()
         
-        self.prompts_summarization = 'deepseek/prompts-roles/summarization_prompt.txt'
-        self.role_of_bot_summarization = 'deepseek/prompts-roles/summarization_role.txt'
+        self.prompts_summarization = 'models/deepseek/prompts-roles/summarization_prompt.txt'
+        self.role_of_bot_summarization = 'models/deepseek/prompts-roles/summarization_role.txt'
         
         # filed where summerizes are saved, if the file becomes source for chapters
         # be sure there are no other summeries and get wrong results
-        self.big_text_file = 'deepseek/history/big_summary.txt'
+        self.big_text_file = 'models/deepseek/history/big_summary.txt'
 
 class DeepSeekChapterMakerPars:
     def __init__(self):
-        self.prompts_chapter = 'deepseek/prompts-roles/chapter__maker_prompt.txt'
-        self.role_of_bot_chapter = 'deepseek/prompts-roles/chapter_maker_role.txt'
+        self.prompts_chapter = 'models/deepseek/prompts-roles/chapter__maker_prompt.txt'
+        self.role_of_bot_chapter = 'models/deepseek/prompts-roles/chapter_maker_role.txt'
 
         # file with the text to be used as a source, propably produced by the summarizer
-        self.paper_file = 'deepseek\paper.txt' 
+        self.paper_file = 'models/deepseek\paper.txt' 
         
         # file with the chapters produced by the chatbot appended ech time
-        self.chapters_historicity = 'deepseek/history/chapters.txt'
+        self.chapters_historicity = 'models/deepseek/history/chapters.txt'

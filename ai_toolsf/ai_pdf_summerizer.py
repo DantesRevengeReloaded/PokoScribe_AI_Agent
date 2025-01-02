@@ -2,11 +2,12 @@ import os, shutil, PyPDF2, time, tiktoken, logging
 from openai import OpenAI
 from dotenv import load_dotenv
 from typing import List
-from chat_gpt.gptpars import *
+import models.chat_gpt.gptpars
+from models.chat_gpt.gptpars import *
 from logs.ai_z_logsconfig import *
 import google.generativeai as genai
-from gemini.geminipars import *
-from deepseek.deepseekpars import *
+from models.gemini.geminipars import *
+from models.deepseek.deepseekpars import *
 
 # Initialize logging
 config = get_log_config()
