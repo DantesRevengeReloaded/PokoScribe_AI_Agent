@@ -1,7 +1,7 @@
 
-from ai_toolsf.ai_z_folder_pars import *
-from ai_toolsf.ai_chapters_maker import *
-from ai_toolsf.ai_pdf_summerizer import *
+from src.config.config import *
+from src.agents.ai_chapters_maker import *
+from src.agents.ai_pdf_summerizer import *
 
 class AIBotSummarizer:
     def __init__(self):
