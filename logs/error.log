@@ -9,3 +9,7 @@
 2025-01-04 17:20:13 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:295] - Error initializing PDFSummarizer: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'data\\summary_agent\x0cailed'
 2025-01-04 17:20:13 - PDFSummarizer - ERROR - [AI-Agent-Summarizer.py:32] - Error in PDFSummarizer: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'data\\summary_agent\x0cailed'
 2025-01-04 17:26:08 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:393] - Error processing data\summary_agent\input\What_we_know_about_leadership.pdf: [Errno 22] Invalid argument: 'prompts-roles\\history\x08ig_summary.txt'
+2025-01-04 22:48:27 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:120] - Error reading citation file: 'AISummarizer' object has no attribute 'citation'
+2025-01-04 22:48:27 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:136] - Error in AISummarizer initialization: 'AISummarizer' object has no attribute 'citation'
+2025-01-04 22:48:27 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:311] - Error initializing PDFSummarizer: 'AISummarizer' object has no attribute 'citation'
+2025-01-04 22:48:27 - PDFSummarizer - ERROR - [AI-Agent-Summarizer.py:32] - Error in PDFSummarizer: 'AISummarizer' object has no attribute 'citation'

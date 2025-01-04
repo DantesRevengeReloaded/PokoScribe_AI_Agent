@@ -14,5 +14,6 @@ CREATE TABLE IF NOT EXISTS ai_schema.summaries_history (
     timestamp TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     model VARCHAR(50) NOT NULL,
     modeldetails VARCHAR(255) NOT NULL,
-    type_of_prompt VARCHAR(50) NOT NULL
+    type_of_prompt VARCHAR(50) NOT NULL,
+    citation VARCHAR(255)
 );

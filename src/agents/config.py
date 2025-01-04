@@ -11,10 +11,11 @@ class SystemPars:
         self.to_be_completed_folder = 'data\summary_agent\incompleted'
         self.prompts_summarization = 'prompts-roles\prompts-roles\summarization_prompt.txt'
         self.role_of_bot_summarization = 'prompts-roles\prompts-roles\summarization_role.txt'
+        self.citation_sum = 'prompts-roles\prompts-roles\summarization_citation.txt'
         
         # filed where summerizes are saved, if the file becomes source for chapters
         # be sure there are no other summeries and get wrong results
-        self.big_text_file = 'prompts-roles\history\big_summary.txt'
+        self.big_text_file = 'prompts-roles\history\summary_total.txt'
         self.prompts_chapter = 'prompts-roles\prompts-roles\chapter_maker_prompt.txt'
         self.role_of_bot_chapter = 'prompts-roles\prompts-roles\chapter_maker_role.txt'
 

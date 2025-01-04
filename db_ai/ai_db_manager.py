@@ -24,16 +24,18 @@ class AIDbManager:
     def insert_row(self, 
                         projectname, sessionid, prompt, 
                         fileeditedname, tokencountprompt, answer, 
-                        tokencountanswer, model, modeldetails, type_of_prompt):
+                        tokencountanswer, model, modeldetails, type_of_prompt, citation):
         
         try:
             with self.conn.cursor() as cursor:
                 insert_query = sql.SQL("""
                     INSERT INTO ai_schema.summaries_history (
-                        projectname, sessionid, prompt, fileeditedname, tokencountprompt, answer, tokencountanswer, model, modeldetails, type_of_prompt
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                        projectname, sessionid, prompt, fileeditedname, tokencountprompt, answer, tokencountanswer, model, modeldetails, type_of_prompt, citation
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                 """)
-                cursor.execute(insert_query, (projectname, sessionid, prompt, fileeditedname, tokencountprompt, answer, tokencountanswer, model, modeldetails, type_of_prompt))
+                cursor.execute(insert_query, (projectname, sessionid, prompt, fileeditedname, 
+                                              tokencountprompt, answer, tokencountanswer, 
+                                              model, modeldetails, type_of_prompt, citation))
                 print("Row inserted successfully.")
         except Exception as e:
             print(f"Error inserting row: {e}")

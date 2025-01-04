@@ -1,4 +1,4 @@
-import os, shutil, PyPDF2, time, tiktoken, logging, sys
+import os, shutil, PyPDF2, time, tiktoken, logging, sys, re
 
 # Add the parent directory to the sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -10,6 +10,7 @@ from src.agents.config import *
 from logs.ai_z_logsconfig import *
 import google.generativeai as genai
 from db_ai.ai_db_manager import *
+import re
 
 # Initialize logging
 configlog = get_log_config()
@@ -29,7 +30,8 @@ todbdic = {
     "tokencountanswer": "",
     "model": "",
     "modeldetails": "",
-    "type_of_prompt": ""
+    "type_of_prompt": "",
+    "citation": ""
 }
 
 def initialize_parameters(model_type: str):
@@ -78,6 +80,7 @@ class AISummarizer:
             # Convert to absolute paths
             prompt_path = os.path.abspath(summparameters.prompts_summarization)
             role_path = os.path.abspath(summparameters.role_of_bot_summarization)
+            citation_path = os.path.abspath(summparameters.citation_sum)
             
             logger.info(f"Absolute prompt path: {prompt_path}")
             logger.info(f"Absolute role path: {role_path}")
@@ -96,6 +99,13 @@ class AISummarizer:
             if not os.path.getsize(role_path):
                 logger.error(f"Role file is empty: {role_path}")
                 raise ValueError(f"Role file is empty: {role_path}")
+            
+            if not os.path.exists(citation_path):
+                logger.error(f"Citation file not found: {citation_path}")
+                raise FileNotFoundError(f"Citation file not found: {citation_path}")
+            if not os.path.getsize(citation_path):
+                logger.error(f"Citation file is empty: {citation_path}")
+                raise ValueError(f"Citation file is empty: {citation_path}")
 
             # Load prompts with UTF-8 encoding and error handling
             try:
@@ -106,6 +116,16 @@ class AISummarizer:
                 logger.info(f"Prompt loaded successfully, content preview: {self.prompt_draft[:50]}...")
             except Exception as e:
                 logger.error(f"Error reading prompt file: {e}")
+                raise
+
+            try:
+                with open(citation_path, 'r', encoding='utf-8-sig') as file3:
+                    self.citation_sum = file3.read().strip()
+                    if not self.citation_sum:
+                        raise ValueError("Citation file read but content is empty")
+                logger.info(f"Citation loaded successfully, content preview: {self.citation_sum[:50]}...")
+            except Exception as e:
+                logger.error(f"Error reading citation file: {e}")
                 raise
 
             try:
@@ -141,6 +161,8 @@ class AISummarizer:
         f"System role: {aiparameters.role_system} | "
         f"User role: {aiparameters.role_user}"
         )
+        
+        self.prompt_draft = f"{self.prompt_draft} , {self.citation_sum}"
 
         todbdic["projectname"] = summparameters.project_name
         todbdic["prompt"] = self.prompt_draft
@@ -354,11 +376,19 @@ class PDFSummarizer:
                     encoding2 = tiktoken.get_encoding("cl100k_base")
                     tokenoutputcount = len(encoding2.encode(summary))
 
-                    todbdic["fileeditedname"] = pdf_file
-                    todbdic["tokencountprompt"] = tokeninputcount
-                    todbdic["answer"] = summary
-                    todbdic["tokencountanswer"] = tokenoutputcount
-                    todbdic["sessionid"] = 1
+                # Extract text between special markers with regex
+                markers = re.search(r'-?!(.*?)-?!', summary)
+                if markers:
+                    citation_to_db = markers.group(1)
+                    
+                    logger.info(f"Citation extracted from summary: {citation_to_db}")
+
+                todbdic["fileeditedname"] = pdf_file
+                todbdic["tokencountprompt"] = tokeninputcount
+                todbdic["answer"] = summary
+                todbdic["tokencountanswer"] = tokenoutputcount
+                todbdic["sessionid"] = 1
+                todbdic["citation"] = citation_to_db
                 
                 todatabase = AIDbManager()
                 todatabase.insert_row(todbdic["projectname"], 
@@ -370,7 +400,9 @@ class PDFSummarizer:
                                       todbdic["tokencountanswer"], 
                                       todbdic["model"], 
                                       todbdic["modeldetails"], 
-                                      todbdic["type_of_prompt"])
+                                      todbdic["type_of_prompt"],
+                                      todbdic["citation"]
+                                      )
                 todatabase.close()
 
                 with open(self.output_file, 'a') as file:
