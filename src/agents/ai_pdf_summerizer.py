@@ -6,17 +6,13 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from openai import OpenAI
 from dotenv import load_dotenv
 from typing import List
-import models.chat_gpt.gptpars
-from models.chat_gpt.gptpars import *
+from src.agents.config import *
 from logs.ai_z_logsconfig import *
 import google.generativeai as genai
-from models.gemini.geminipars import *
-from models.deepseek.deepseekpars import *
 
 # Initialize logging
-config = get_log_config()
-setup_logging(config)
-
+configlog = get_log_config()
+setup_logging(configlog)
 # Get logger
 logger = logging.getLogger('PDFSummarizer')
 
@@ -39,7 +35,9 @@ def initialize_parameters(model_type: str):
         summparameters = DeepSeekSummerizerPars()
     
     if not aiparameters or not summparameters:
+        logger.error("Failed to initialize AI parameters")
         raise RuntimeError("Failed to initialize AI parameters")
+        
 
 class PDFReader:
     def __init__(self, file_path):
@@ -72,13 +70,17 @@ class AISummarizer:
 
             # Validate files exist and are not empty
             if not os.path.exists(prompt_path):
+                logger.error(f"Prompt file not found: {prompt_path}")
                 raise FileNotFoundError(f"Prompt file not found: {prompt_path}")
             if not os.path.getsize(prompt_path):
+                logger.error(f"Prompt file is empty: {prompt_path}")
                 raise ValueError(f"Prompt file is empty: {prompt_path}")
                 
             if not os.path.exists(role_path):
+                logger.error(f"Role file not found: {role_path}")
                 raise FileNotFoundError(f"Role file not found: {role_path}")
             if not os.path.getsize(role_path):
+                logger.error(f"Role file is empty: {role_path}")
                 raise ValueError(f"Role file is empty: {role_path}")
 
             # Load prompts with UTF-8 encoding and error handling
@@ -276,21 +278,31 @@ class PDFSummarizer:
                 logger.info(f"Processing {pdf_file}...")
                 reader = PDFReader(pdf_file)
                 pdf_text = reader.read()
-                encoding = tiktoken.get_encoding("cl100k_base")
-                tokencount = len(encoding.encode(pdf_text))
-                logger.info(f"Token count of {pdf_file}: {tokencount}")
-                if tokencount < self.limittokens: # adjust the limit of tokens per document in parameters of ai
-                   logger.info(f"Summarizing {pdf_file} (less than 27k tokens)...")
+
+                # count tokens in the pdf file to determine if it needs to be chunked
+                encoding1 = tiktoken.get_encoding("cl100k_base")
+                tokeninputcount = len(encoding1.encode(pdf_text))
+                logger.info(f"Token count of {pdf_file}: {tokeninputcount}")
+                if tokeninputcount < self.limittokens: # adjust the limit of tokens per document in parameters of ai
+                   logger.info(f"Summarizing {pdf_file} (less than {self.limittokens} tokens)...")
+
+                    # Summarize the text using the AI model
                    summary = self.summarizer.summarize(pdf_text, worked_model)
+                   
+                   #check for output token count
+                   encoding2 = tiktoken.get_encoding("cl100k_base")
+                   tokenoutputcount = len(encoding2.encode(summary))
+                   logger.info(f"Token count of summary of {pdf_file}: {tokenoutputcount}")
+
                 else:
-                    logger.info(f"Summarizing {pdf_file} (more than 27k tokens, chunking method initiated)...")
-                    tokens = encoding.encode(pdf_text)
+                    logger.info(f"Summarizing {pdf_file} (more than {self.limittokens} tokens, chunking method initiated)...")
+                    tokens = encoding1.encode(pdf_text)
                     chunks = []
                     chunk_summaries = []
                     chunksize = self.limittokens
                     for i in range(0, len(tokens), chunksize):
                         try:
-                            chunk = encoding.decode(tokens[i:i + chunksize])
+                            chunk = encoding1.decode(tokens[i:i + chunksize])
                             chunks.append(chunk)
                             chunknums = 0
                             for chunk in chunks:
@@ -302,6 +314,8 @@ class PDFSummarizer:
                     logger.info(f"Chunk of{chunknums} parts of initial file summarized in total.")
                     summary = ' '.join(chunk_summaries)
                     logger.info(f"Summary of {pdf_file}:\n{summary}")
+                    encoding2 = tiktoken.get_encoding("cl100k_base")
+                    tokenoutputcount = len(encoding2.encode(summary))
 
                 with open(self.output_file, 'a') as file:
                     try:

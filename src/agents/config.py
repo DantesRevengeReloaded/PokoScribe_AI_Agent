@@ -1,5 +1,5 @@
 
-class FolderPars:
+class SystemPars:
     def __init__(self):
         # folder with total folders to be summarized, 
         # folder with completed files and folder with files failed to be summarized
@@ -21,6 +21,8 @@ class FolderPars:
         # file with the chapters produced by the chatbot appended ech time
         self.chapters_historicity = 'models/chat_gpt/history/chapters.txt'
 
+        self.project_name = 'TESTS'
+
         
 class ChatGPTPars:
     def __init__(self):
@@ -32,12 +34,12 @@ class ChatGPTPars:
         self.tokenslimit = 27000 # limit of tokens per document
 
 
-class ChatGPTPdfSummerizerPars(FolderPars):
+class ChatGPTPdfSummerizerPars(SystemPars):
     def __init__(self):
         super().__init__()
         
 
-class ChatGPTChapterMakerPars(FolderPars):
+class ChatGPTChapterMakerPars(SystemPars):
     def __init__(self):
         super().__init__()
 
@@ -52,27 +54,13 @@ class DeepSeekPars:
         self.tokenslimit = 27000 # limit of tokens per document
 
 
-class DeepSeekSummerizerPars(FolderPars):
+class DeepSeekSummerizerPars(SystemPars):
     def __init__(self):
         super().__init__()
-        
-        self.prompts_summarization = 'models/deepseek/prompts-roles/summarization_prompt.txt'
-        self.role_of_bot_summarization = 'models/deepseek/prompts-roles/summarization_role.txt'
-        
-        # filed where summerizes are saved, if the file becomes source for chapters
-        # be sure there are no other summeries and get wrong results
-        self.big_text_file = 'models/deepseek/history/big_summary.txt'
 
 class DeepSeekChapterMakerPars:
     def __init__(self):
-        self.prompts_chapter = 'models/deepseek/prompts-roles/chapter__maker_prompt.txt'
-        self.role_of_bot_chapter = 'models/deepseek/prompts-roles/chapter_maker_role.txt'
-
-        # file with the text to be used as a source, propably produced by the summarizer
-        self.paper_file = 'models/deepseek\paper.txt' 
-        
-        # file with the chapters produced by the chatbot appended ech time
-        self.chapters_historicity = 'models/deepseek/history/chapters.txt'
+        super().__init__()
 
 class GeminiPars:
     def __init__(self):
@@ -87,24 +75,11 @@ class GeminiPars:
         self.response_mime_type = "text/plain"
 
 
-class GeminiSummerizerPars(FolderPars):
+class GeminiSummerizerPars(SystemPars):
     def __init__(self):
         super().__init__()
         
-        self.prompts_summarization = 'models/gemini\prompts-roles\summarization_prompt.txt'
-        self.role_of_bot_summarization = 'models/gemini\prompts-roles\summarization_role.txt'
-        
-        # filed where summerizes are saved, if the file becomes source for chapters
-        # be sure there are no other summeries and get wrong results
-        self.big_text_file = 'models/gemini/history/big_summary.txt'
 
-class GeminiChapterMakerPars:
+class GeminiChapterMakerPars(SystemPars):
     def __init__(self):
-        self.prompts_chapter = 'models/gemini/prompts-roles/chapter__maker_prompt.txt'
-        self.role_of_bot_chapter = 'models/gemini/prompts-roles/chapter_maker_role.txt'
-
-        # file with the text to be used as a source, propably produced by the summarizer
-        self.paper_file = 'models/gemini\paper.txt' 
-        
-        # file with the chapters produced by the chatbot appended ech time
-        self.chapters_historicity = 'models/gemini/history/chapters.txt'
+        super().__init__()

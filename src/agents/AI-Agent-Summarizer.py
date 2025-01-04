@@ -1,5 +1,5 @@
 
-from src.config.config import *
+from src.agents.config import *
 from src.agents.ai_chapters_maker import *
 from src.agents.ai_pdf_summerizer import *
 

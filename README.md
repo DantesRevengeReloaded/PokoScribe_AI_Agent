@@ -8,3 +8,5 @@ AI agent that summarizes academic papers and articles and cites them, prompts an
 AI agent that creates an outline for the paper, article, or essay based on the total summaries and citations of the specific project. Its purpose is to suggest the structure of the paper, article, or essay after it reads the summaries and citations of the papers related to the project.
 
 AI agent that generates chapters of the paper based on the outline. It reads the outline and generates chapters for the paper, article, or essay.
+
+![alt text](images/logo.webp)

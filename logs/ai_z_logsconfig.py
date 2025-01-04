@@ -51,6 +51,6 @@ def get_log_config(
         }
     }
 
-def setup_logging(config: Dict[str, Any]) -> None:
-    os.makedirs(config['handlers']['file']['filename'].rsplit('\\', 1)[0], exist_ok=True)
-    logging.config.dictConfig(config)
+def setup_logging(configlog: Dict[str, Any]) -> None:
+    os.makedirs(configlog['handlers']['file']['filename'].rsplit('\\', 1)[0], exist_ok=True)
+    logging.config.dictConfig(configlog)
