@@ -1,25 +1,28 @@
+import os, sys
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 class SystemPars:
     def __init__(self):
         # folder with total folders to be summarized, 
         # folder with completed files and folder with files failed to be summarized
-        self.input_folder = 'C:\\Users\\ionka\\Desktop\\tests\\tobesummed'
-        self.completed_folder = 'C:\\Users\\ionka\\Desktop\\tests\\completed'
-        self.to_be_completed_folder = 'C:\\Users\\ionka\\Desktop\\tests\\problems'
-        self.prompts_summarization = 'models/chat_gpt/prompts-roles/summarization_prompt.txt'
-        self.role_of_bot_summarization = 'models/chat_gpt/prompts-roles/summarization_role.txt'
+        self.input_folder = 'data\summary_agent\input'
+        self.completed_folder = 'data\summary_agent\completed'
+        self.to_be_completed_folder = 'data\summary_agent\incompleted'
+        self.prompts_summarization = 'prompts-roles\prompts-roles\summarization_prompt.txt'
+        self.role_of_bot_summarization = 'prompts-roles\prompts-roles\summarization_role.txt'
         
         # filed where summerizes are saved, if the file becomes source for chapters
         # be sure there are no other summeries and get wrong results
-        self.big_text_file = 'models/chat_gpt/history/big_summary.txt'
-        self.prompts_chapter = 'models/chat_gpt/prompts-roles/chapter__maker_prompt.txt'
-        self.role_of_bot_chapter = 'models/chat_gpt/prompts-roles/chapter_maker_role.txt'
+        self.big_text_file = 'prompts-roles\history\big_summary.txt'
+        self.prompts_chapter = 'prompts-roles\prompts-roles\chapter_maker_prompt.txt'
+        self.role_of_bot_chapter = 'prompts-roles\prompts-roles\chapter_maker_role.txt'
 
         # file with the text to be used as a source, propably produced by the summarizer
-        self.paper_file = 'models/chat_gpt/paper.txt' 
+        self.paper_file = 'prompts-roles\prompts-roles\paper.txt' 
         
         # file with the chapters produced by the chatbot appended ech time
-        self.chapters_historicity = 'models/chat_gpt/history/chapters.txt'
+        self.chapters_historicity = 'prompts-roles\history\chapters.txt'
 
         self.project_name = 'TESTS'
 

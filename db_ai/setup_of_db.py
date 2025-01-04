@@ -22,7 +22,7 @@ def run_sql_script(script_path, dbname, user, password, host, port):
 
 
 # Connect to the new database and run the setup_of_db.sql script
-run_sql_script("ai_db/setup_of_db.sql",
+run_sql_script("db_ai/setup_of_db.sql",
                dbname=os.getenv('postgresdb'),
                user=os.getenv('postgresusername'),
                password=os.getenv('postgrespassword'), 

@@ -1,3 +1,10 @@
+import sys
+import os
+from pathlib import Path
+
+# Get the project root directory
+project_root = Path(__file__).parent.parent.parent
+sys.path.append(str(project_root))
 
 from src.agents.config import *
 from src.agents.ai_chapters_maker import *
@@ -60,3 +67,7 @@ class AIBotSummarizer:
 
 class AIBotChapterMaker:
     pass
+
+
+botd= AIBotSummarizer()
+botd.chatgptsummerize()
