@@ -1,4 +1,8 @@
-PokoScribe
+<h1 align="center" style="font-size: 3em;">PokoScribe</h1>
+
+<p align="center">
+  <img src="images/logo.webp" alt="PokoScribe Logo" width="200">
+</p>
 
 PokoScribe is a multi-agent system that combines summarization, citation, paper outlining, and chapter creation for automation of academic writing. PokoScribe is designed to help researchers, students, and writers to write academic papers, articles, and essays faster and more efficiently.
 
@@ -9,4 +13,3 @@ AI agent that creates an outline for the paper, article, or essay based on the t
 
 AI agent that generates chapters of the paper based on the outline. It reads the outline and generates chapters for the paper, article, or essay.
 
-![alt text](images/logo.webp)

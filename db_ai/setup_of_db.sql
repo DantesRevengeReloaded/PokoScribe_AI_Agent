@@ -2,7 +2,7 @@
 CREATE SCHEMA IF NOT EXISTS ai_schema;
 
 -- Create table in the schema
-CREATE TABLE IF NOT EXISTS ai_schema.ai_db_history (
+CREATE TABLE IF NOT EXISTS ai_schema.summaries_history (
     id SERIAL PRIMARY KEY,
     projectname VARCHAR(50) NOT NULL,
     sessionid INT NOT NULL,

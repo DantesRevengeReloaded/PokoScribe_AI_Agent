@@ -9,6 +9,7 @@ from typing import List
 from src.agents.config import *
 from logs.ai_z_logsconfig import *
 import google.generativeai as genai
+from db_ai.ai_db_manager import *
 
 # Initialize logging
 configlog = get_log_config()
@@ -17,6 +18,19 @@ setup_logging(configlog)
 logger = logging.getLogger('PDFSummarizer')
 
 model_lists = ['openai', 'gemini', 'deepseek']
+
+todbdic = {
+    "projectname": "", 
+    "sessionid": "",
+    "prompt": "",
+    "fileeditedname": "",
+    "tokencountprompt": "",
+    "answer": "",
+    "tokencountanswer": "",
+    "model": "",
+    "modeldetails": "",
+    "type_of_prompt": ""
+}
 
 def initialize_parameters(model_type: str):
     global aiparameters, summparameters
@@ -119,6 +133,20 @@ class AISummarizer:
         logger.info(f"role system: {aiparameters.role_system}")
         logger.info(f"role user: {aiparameters.role_user}")
         logger.info(f"prompt: {self.prompt_draft}")
+
+        model_details = (
+        f"Model: {aiparameters.model} | "
+        f"Max tokens: {aiparameters.max_tokens} | "
+        f"Temperature: {aiparameters.temperature} | "
+        f"System role: {aiparameters.role_system} | "
+        f"User role: {aiparameters.role_user}"
+        )
+
+        todbdic["projectname"] = summparameters.project_name
+        todbdic["prompt"] = self.prompt_draft
+        todbdic["type_of_prompt"] = 'summarization'
+        todbdic["model"] = worked_model
+        todbdic["modeldetails"] = model_details
 
         # change the schema depending on the model
         if worked_model == 'openai':
@@ -228,6 +256,9 @@ class AISummarizer:
             except Exception as e:
                 logger.error(f"Error in Gemini workflow: {str(e)}")
                 return None
+            
+
+        
 
 class PDFSummarizer:
     def __init__(self, input_folder, output_file, api_key, completed_folder, 
@@ -293,6 +324,12 @@ class PDFSummarizer:
                    encoding2 = tiktoken.get_encoding("cl100k_base")
                    tokenoutputcount = len(encoding2.encode(summary))
                    logger.info(f"Token count of summary of {pdf_file}: {tokenoutputcount}")
+                   
+                   todbdic["fileeditedname"] = pdf_file
+                   todbdic["tokencountprompt"] = tokeninputcount
+                   todbdic["answer"] = summary
+                   todbdic["tokencountanswer"] = tokenoutputcount
+                   todbdic["sessionid"] = 1
 
                 else:
                     logger.info(f"Summarizing {pdf_file} (more than {self.limittokens} tokens, chunking method initiated)...")
@@ -317,6 +354,25 @@ class PDFSummarizer:
                     encoding2 = tiktoken.get_encoding("cl100k_base")
                     tokenoutputcount = len(encoding2.encode(summary))
 
+                    todbdic["fileeditedname"] = pdf_file
+                    todbdic["tokencountprompt"] = tokeninputcount
+                    todbdic["answer"] = summary
+                    todbdic["tokencountanswer"] = tokenoutputcount
+                    todbdic["sessionid"] = 1
+                
+                todatabase = AIDbManager()
+                todatabase.insert_row(todbdic["projectname"], 
+                                      todbdic["sessionid"], 
+                                      todbdic["prompt"], 
+                                      todbdic["fileeditedname"], 
+                                      todbdic["tokencountprompt"], 
+                                      todbdic["answer"], 
+                                      todbdic["tokencountanswer"], 
+                                      todbdic["model"], 
+                                      todbdic["modeldetails"], 
+                                      todbdic["type_of_prompt"])
+                todatabase.close()
+
                 with open(self.output_file, 'a') as file:
                     try:
                         file.write(f"Summary of {pdf_file}:\n")
@@ -326,6 +382,7 @@ class PDFSummarizer:
                         self.completedfiles += 1
                     except Exception as e:
                         logger.error(f"Error saving summary of {pdf_file} to {self.output_file}: {e}")
+                
 
                 # Move the file to the completed folder
                 shutil.move(pdf_file, os.path.join(self.completed_folder, os.path.basename(pdf_file)))
