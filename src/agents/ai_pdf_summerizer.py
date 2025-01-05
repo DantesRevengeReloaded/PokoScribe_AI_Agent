@@ -1,4 +1,4 @@
-import os, shutil, PyPDF2, time, tiktoken, logging, sys, re
+import os, shutil, PyPDF2, time, tiktoken, sys, re
 
 # Add the parent directory to the sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -11,11 +11,9 @@ from logs.ai_z_logsconfig import *
 import google.generativeai as genai
 from db_ai.ai_db_manager import *
 
-# Initialize logging
-configlog = get_log_config()
-setup_logging(configlog)
-# Get logger
-logger = logging.getLogger('PDFSummarizer')
+from logs.pokolog import PokoLogger, ScriptIdentifier
+
+logger = PokoLogger()
 
 model_lists = ['openai', 'gemini', 'deepseek']
 
@@ -35,24 +33,29 @@ todbdic = {
 }
 
 def initialize_parameters(model_type: str):
-    global aiparameters, summparameters
-    
-    if model_type not in model_lists:
-        raise ValueError(f"Invalid model type. Must be one of {model_lists}")
-    
-    if model_type == 'openai':
-        aiparameters = ChatGPTPars()
-        summparameters = ChatGPTPdfSummerizerPars()
-    elif model_type == 'gemini':
-        aiparameters = GeminiPars()
-        summparameters = GeminiSummerizerPars()
-    elif model_type == 'deepseek':
-        aiparameters = DeepSeekPars()
-        summparameters = DeepSeekSummerizerPars()
-    
-    if not aiparameters or not summparameters:
-        logger.error("Failed to initialize AI parameters")
-        raise RuntimeError("Failed to initialize AI parameters")
+    try:
+        global aiparameters, summparameters
+        
+        if model_type not in model_lists:
+            raise ValueError(f"Invalid model type. Must be one of {model_lists}")
+        
+        if model_type == 'openai':
+            aiparameters = ChatGPTPars()
+            summparameters = ChatGPTPdfSummerizerPars()
+        elif model_type == 'gemini':
+            aiparameters = GeminiPars()
+            summparameters = GeminiSummerizerPars()
+        elif model_type == 'deepseek':
+            aiparameters = DeepSeekPars()
+            summparameters = DeepSeekSummerizerPars()
+        
+        if not aiparameters or not summparameters:
+            logger.error(ScriptIdentifier.SUMMARIZER, "Failed to initialize AI parameters")
+            raise RuntimeError("Failed to initialize AI parameters")
+        logger.info(ScriptIdentifier.SUMMARIZER, "AI parameters initialized successfully.")
+    except Exception as e:
+        logger.error(ScriptIdentifier.SUMMARIZER, f"Error initializing parameters: {e}")
+        raise
         
 
 class PDFReader:
@@ -67,10 +70,10 @@ class PDFReader:
                 text = ''
                 for page in reader.pages:
                     text += page.extract_text()
-            logger.info(f"Text extracted from {self.file_path}")
+            logger.info(ScriptIdentifier.SUMMARIZER, f"Text extracted from {self.file_path}")
             return text
         except Exception as e:
-            logger.error(f"Error reading {self.file_path}: {e}")
+            logger.error(ScriptIdentifier.SUMMARIZER, f"Error reading {self.file_path}: {e}")
             return None
 
 class AISummarizer:
@@ -83,29 +86,30 @@ class AISummarizer:
             role_path = os.path.abspath(summparameters.role_of_bot_summarization)
             citation_path = os.path.abspath(summparameters.citation_sum)
             
-            logger.info(f"Absolute prompt path: {prompt_path}")
-            logger.info(f"Absolute role path: {role_path}")
+            logger.debug(script_id=ScriptIdentifier.SUMMARIZER, message=f"Prompt file path: {prompt_path}")
+            logger.debug(script_id=ScriptIdentifier.SUMMARIZER, message=f"Role file path: {role_path}")
+            logger.debug(script_id=ScriptIdentifier.SUMMARIZER, message=f"Citation file path: {citation_path}")
 
             # Validate files exist and are not empty
             if not os.path.exists(prompt_path):
-                logger.error(f"Prompt file not found: {prompt_path}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Prompt file not found: {prompt_path}")
                 raise FileNotFoundError(f"Prompt file not found: {prompt_path}")
             if not os.path.getsize(prompt_path):
-                logger.error(f"Prompt file is empty: {prompt_path}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Prompt file is empty: {prompt_path}")
                 raise ValueError(f"Prompt file is empty: {prompt_path}")
                 
             if not os.path.exists(role_path):
-                logger.error(f"Role file not found: {role_path}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Role file not found: {role_path}")
                 raise FileNotFoundError(f"Role file not found: {role_path}")
             if not os.path.getsize(role_path):
-                logger.error(f"Role file is empty: {role_path}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Role file is empty: {role_path}")
                 raise ValueError(f"Role file is empty: {role_path}")
             
             if not os.path.exists(citation_path):
-                logger.error(f"Citation file not found: {citation_path}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Citation file not found: {citation_path}")
                 raise FileNotFoundError(f"Citation file not found: {citation_path}")
             if not os.path.getsize(citation_path):
-                logger.error(f"Citation file is empty: {citation_path}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Citation file is empty: {citation_path}")
                 raise ValueError(f"Citation file is empty: {citation_path}")
 
             # Load prompts with UTF-8 encoding and error handling
@@ -114,9 +118,9 @@ class AISummarizer:
                     self.prompt_draft = file1.read().strip()
                     if not self.prompt_draft:
                         raise ValueError("Prompt file read but content is empty")
-                logger.info(f"Prompt loaded successfully, content preview: {self.prompt_draft[:50]}...")
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Prompt loaded successfully, content preview: {self.prompt_draft[:50]}...")
             except Exception as e:
-                logger.error(f"Error reading prompt file: {e}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error reading prompt file: {e}")
                 raise
 
             try:
@@ -124,9 +128,9 @@ class AISummarizer:
                     self.citation_sum = file3.read().strip()
                     if not self.citation_sum:
                         raise ValueError("Citation file read but content is empty")
-                logger.info(f"Citation loaded successfully, content preview: {self.citation_sum[:50]}...")
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Citation loaded successfully, content preview: {self.citation_sum[:50]}...")
             except Exception as e:
-                logger.error(f"Error reading citation file: {e}")
+                logger.warning(ScriptIdentifier.SUMMARIZER, f"Error reading citation file or missing citation: {e}")
                 raise
 
             try:
@@ -134,26 +138,26 @@ class AISummarizer:
                     self.role_draft = file2.read().strip()
                     if not self.role_draft:
                         raise ValueError("Role file read but content is empty")
-                logger.info(f"Role loaded successfully, content preview: {self.role_draft[:50]}...")
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Role loaded successfully, content preview: {self.role_draft[:50]}...")
             except Exception as e:
-                logger.error(f"Error reading role file: {e}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error reading role file: {e}")
                 raise
 
         except Exception as e:
-            logger.error(f"Error in AISummarizer initialization: {e}")
+            logger.debug(ScriptIdentifier.SUMMARIZER, f"Error initializing AISummarizer: {e}")
             raise
       
 
     def summarize(self, text, worked_model):
         
-        logger.info("SESSION INFO:")
-        logger.info(f"using source model: {worked_model}")
-        logger.info(f"using model: {aiparameters.model}")
-        logger.info(f"max tokens: {aiparameters.max_tokens}")
-        logger.info(f"temperature: {aiparameters.temperature}")
-        logger.info(f"role system: {aiparameters.role_system}")
-        logger.info(f"role user: {aiparameters.role_user}")
-        logger.info(f"prompt: {self.prompt_draft}")
+        logger.info(ScriptIdentifier.SUMMARIZER, "SESSION INFO:")
+        logger.info(ScriptIdentifier.SUMMARIZER, f"using source model: {worked_model}")
+        logger.info(ScriptIdentifier.SUMMARIZER, f"using model: {aiparameters.model}")
+        logger.info(ScriptIdentifier.SUMMARIZER, f"max tokens: {aiparameters.max_tokens}")
+        logger.info(ScriptIdentifier.SUMMARIZER, "temperature: {aiparameters.temperature}")
+        logger.info(ScriptIdentifier.SUMMARIZER, f"role system: {aiparameters.role_system}")
+        logger.info(ScriptIdentifier.SUMMARIZER, f"role user: {aiparameters.role_user}")
+        logger.info(ScriptIdentifier.SUMMARIZER, f"prompt: {self.prompt_draft}")
 
         model_details = (
         f"Model: {aiparameters.model} | "
@@ -175,8 +179,9 @@ class AISummarizer:
         if worked_model == 'openai':
             try:
                 prompt = f"{self.prompt_draft}: {text}"
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Prompt created for OpenAI")
             except Exception as e:
-                logger.error(f"Error creating prompt: {str(e)}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error creating prompt: {str(e)}")
                 return None
             try:
                 self.client = OpenAI(api_key=self.api_key)
@@ -189,8 +194,9 @@ class AISummarizer:
                     max_tokens=aiparameters.max_tokens,
                     temperature=aiparameters.temperature,
                 )
+                logger.info(ScriptIdentifier.SUMMARIZER, f"OpenAI response received without problems")
             except Exception as e:
-                logger.error(f"Error in OpenAI workflow: {str(e)}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error in OpenAI workflow: {str(e)}")
                 return None
             
             try:
@@ -198,14 +204,15 @@ class AISummarizer:
                 return summary
                 
             except Exception as e:
-                logger.error(f"Error in OpenAI response: {str(e)}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error in OpenAI response: {str(e)}")
                 return None
         
         elif worked_model == 'deepseek':
             try:
                 prompt = f"{self.prompt_draft}: {text}"
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Prompt created for DeepSeek")
             except Exception as e:
-                logger.error(f"Error creating prompt: {str(e)}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error creating prompt: {str(e)}")
                 return None
             try:
                 self.client = OpenAI(api_key=self.api_key, base_url="https://api.deepseek.com")
@@ -218,14 +225,15 @@ class AISummarizer:
                     max_tokens=aiparameters.max_tokens,
                     temperature=aiparameters.temperature,
                 )
+                logger.info(ScriptIdentifier.SUMMARIZER, f"DeepSeek response received without problems")
             except Exception as e:
-                logger.error(f"Error in DeepSeek workflow: {str(e)}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error in DeepSeek workflow: {str(e)}")
                 return None
             try:
                 summary = response.choices[0].message.content.strip()
                 return summary
             except Exception as e:
-                logger.error(f"Error in DeepSeek response: {str(e)}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error in DeepSeek response: {str(e)}")
                 return None
         
         elif worked_model == 'gemini':
@@ -238,8 +246,9 @@ class AISummarizer:
             try:
                 top_p = float(aiparameters.top_p[0]) if isinstance(aiparameters.top_p, tuple) else float(aiparameters.top_p)
                 top_k = int(aiparameters.top_k[0]) if isinstance(aiparameters.top_k, tuple) else int(aiparameters.top_k)
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Top_p: {top_p}, Top_k: {top_k}")
             except Exception as e:
-                logger.error(f"Invalid top_p or top_k: {aiparameters.top_p}, {aiparameters.top_k}. Error: {e}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error in top_p or top_k values: {str(e)}")
                 return "Error: Invalid top_p or top_k values."
             
             try:
@@ -257,31 +266,30 @@ class AISummarizer:
                 )
                 prompt = f"{self.prompt_draft}: {text}"
                 chat_session = mod.start_chat(history=[])
-                
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Prompt created for Gemini")
                 try:
                     response = chat_session.send_message(prompt)
+                    logger.info(ScriptIdentifier.SUMMARIZER, f"Message sent to Gemini")
                 except Exception as e:
                     logger.error(f"Error during send_message: {str(e)}")
                     raise
                 
                 if not response or not hasattr(response, 'text'):
-                    logger.error("No valid text in Gemini response.")
-                    return "Error: No valid response text."
+                    logger.error(ScriptIdentifier.SUMMARIZER, "No valid response text.")
+                    raise ValueError("No valid response text.")
                 
                 summary = response.text.strip()
                 if not summary:
-                    logger.error("Empty summary generated.")
-                    return "Error: Empty summary."
+                    logger.error(ScriptIdentifier.SUMMARIZER, "Empty summary.")
+                    raise ValueError("Empty summary.")
                 
-                logger.info("Summary generated successfully in Gemini.")
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Summary received from Gemini: {summary}")
                 return summary
 
             except Exception as e:
-                logger.error(f"Error in Gemini workflow: {str(e)}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error in Gemini workflow: {str(e)}")
                 return None
             
-
-        
 
 class PDFSummarizer:
     def __init__(self, input_folder, output_file, api_key, completed_folder, 
@@ -297,7 +305,7 @@ class PDFSummarizer:
             model_type (str): AI model type to use check the model_lists
         """
         try:
-            logger.info("Initializing PDFSummarizer...")
+            logger.info(ScriptIdentifier.SUMMARIZER, "Initializing PDFSummarizer...")
             # Initialize parameters based on model type passed in main
             initialize_parameters(model_type)
             self.input_folder = input_folder
@@ -312,39 +320,44 @@ class PDFSummarizer:
             os.makedirs(self.to_be_completed_folder, exist_ok=True)
             self.totalfilesprocessed = 0
             self.completedfiles = 0
-            logger.info("PDFSummarizer initialized without errors.")
+            logger.info(ScriptIdentifier.SUMMARIZER, "PDFSummarizer initialized successfully.")
 
         except Exception as e:
-            logger.error(f"Error initializing PDFSummarizer: {e}")
+            logger.warning(ScriptIdentifier.SUMMARIZER, f"Error initializing PDFSummarizer: {e}")
             raise
 
 
     def process_pdfs(self, worked_model):
         try:
             pdf_files = [os.path.join(self.input_folder, f) for f in os.listdir(self.input_folder) if f.endswith('.pdf')]
-            logger.info(f"Found {len(pdf_files)} PDF files in {self.input_folder}...")
+            logger.info(ScriptIdentifier.SUMMARIZER, f"Found {len(pdf_files)} PDF files in {self.input_folder}...")
         except Exception as e:
-            logger.error(f"Error finding PDF files in {self.input_folder}: {e}")
+            logger.error(ScriptIdentifier.SUMMARIZER, f"Error listing PDF files: {e}")
             return
         
-        sess = AIDbManager()
-        sessionid = sess.get_last_session() + 1
-        sess.close()
-        todbdic["sessionid"] = sessionid
+        try:
+            sess = AIDbManager()
+            sessionid = sess.get_last_session() + 1
+            sess.close()
+            todbdic["sessionid"] = sessionid
+            logger.info(ScriptIdentifier.SUMMARIZER, f"Session ID recieved: {sessionid}")
+        except Exception as e:
+            logger.error(ScriptIdentifier.SUMMARIZER, f"Error getting session ID: {e}")
+            return
 
         for pdf_file in pdf_files:
             self.totalfilesprocessed += 1
             try:
-                logger.info(f"Processing {pdf_file}...")
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Processing {pdf_file}...")
                 reader = PDFReader(pdf_file)
                 pdf_text = reader.read()
 
                 # count tokens in the pdf file to determine if it needs to be chunked
                 encoding1 = tiktoken.get_encoding("cl100k_base")
                 tokeninputcount = len(encoding1.encode(pdf_text))
-                logger.info(f"Token count of {pdf_file}: {tokeninputcount}")
+                logger.info(ScriptIdentifier.SUMMARIZER, f"Token count of {pdf_file}: {tokeninputcount}")
                 if tokeninputcount < self.limittokens: # adjust the limit of tokens per document in parameters of ai
-                   logger.info(f"Summarizing {pdf_file} (less than {self.limittokens} tokens)...")
+                   logger.info(ScriptIdentifier.SUMMARIZER, f"Summarizing {pdf_file} (less than {self.limittokens} tokens)...")
 
                     # Summarize the text using the AI model
                    summary = self.summarizer.summarize(pdf_text, worked_model)
@@ -352,7 +365,7 @@ class PDFSummarizer:
                    #check for output token count
                    encoding2 = tiktoken.get_encoding("cl100k_base")
                    tokenoutputcount = len(encoding2.encode(summary))
-                   logger.info(f"Token count of summary of {pdf_file}: {tokenoutputcount}")
+                   logger.info(ScriptIdentifier.SUMMARIZER, f"Token count of summary of {pdf_file}: {tokenoutputcount}")
                    
                    todbdic["fileeditedname"] = pdf_file
                    todbdic["tokencountprompt"] = tokeninputcount
@@ -360,7 +373,7 @@ class PDFSummarizer:
                    todbdic["tokencountanswer"] = tokenoutputcount
 
                 else:
-                    logger.info(f"Summarizing {pdf_file} (more than {self.limittokens} tokens, chunking method initiated)...")
+                    logger.info(ScriptIdentifier.SUMMARIZER, f"Summarizing {pdf_file} (more than {self.limittokens} tokens, chunking method initiated)...")
                     tokens = encoding1.encode(pdf_text)
                     chunks = []
                     chunk_summaries = []
@@ -375,19 +388,24 @@ class PDFSummarizer:
                                 chunk_summaries.append(chunksummary)
                                 chunknums += 1
                         except Exception as e:
-                            logger.error(f"Error summarizing using chunk in {chunknums} chunk: {e}")
-                    logger.info(f"Chunk of{chunknums} parts of initial file summarized in total.")
+                            logger.error(ScriptIdentifier.SUMMARIZER, f"Error summarizing using chunk in {chunknums} chunk: {e}")
+                    logger.info(ScriptIdentifier.SUMMARIZER, f"Chunk of{chunknums} parts of initial file summarized in total.")
                     summary = ' '.join(chunk_summaries)
-                    logger.info(f"Summary of {pdf_file}:\n{summary}")
+                    logger.info(ScriptIdentifier.SUMMARIZER, f"Summary of {pdf_file}:\n{summary}")
                     encoding2 = tiktoken.get_encoding("cl100k_base")
                     tokenoutputcount = len(encoding2.encode(summary))
 
                 # Extract text between special markers with regex
-                markers = re.search(r'-?!(.*?)-?!', summary)
-                if markers:
-                    citation_to_db = markers.group(1)
-                    
-                    logger.info(f"Citation extracted from summary: {citation_to_db}")
+                try:
+                    markers = re.search(r'-?!(.*?)-?!', summary)
+                    if markers:
+                        citation_to_db = markers.group(1)
+                        
+                        logger.info(ScriptIdentifier.SUMMARIZER, f"Citation extracted from summary: {citation_to_db}")
+                except Exception as e:
+                    logger.warning(ScriptIdentifier.SUMMARIZER, f"Error extracting citation from summary: {e}")
+                    citation_to_db = None
+
 
                 todbdic["fileeditedname"] = pdf_file
                 todbdic["tokencountprompt"] = tokeninputcount
@@ -415,22 +433,22 @@ class PDFSummarizer:
                         file.write(f"Summary of {pdf_file}:\n")
                         file.write(summary + '\n\n')
                         file.write('--------\n\n')
-                        logger.info(f"Summary of {pdf_file} saved to {self.output_file}")
+                        logger.info(ScriptIdentifier.SUMMARIZER, f"Summary of {pdf_file} saved to {self.output_file}")
                         self.completedfiles += 1
                     except Exception as e:
-                        logger.error(f"Error saving summary of {pdf_file} to {self.output_file}: {e}")
+                        logger.error(ScriptIdentifier.SUMMARIZER, f"Error saving summary of {pdf_file} to {self.output_file}: {e}")
                 
 
                 # Move the file to the completed folder
                 shutil.move(pdf_file, os.path.join(self.completed_folder, os.path.basename(pdf_file)))
-                logger.info(f"{pdf_file} moved to {self.completed_folder} waiting 3 seconds for next file...")
+                logger.info(ScriptIdentifier.SUMMARIZER, f"{pdf_file} moved to {self.completed_folder} waiting 3 seconds for next file...")
                 time.sleep(5)
 
             except Exception as e:
-                logger.error(f"Error processing {pdf_file}: {e}")
+                logger.error(ScriptIdentifier.SUMMARIZER, f"Error processing {pdf_file}: {e}")
                 # Move the file to the to be completed folder
                 shutil.move(pdf_file, os.path.join(self.to_be_completed_folder, os.path.basename(pdf_file)))
-                logger.info(f"{pdf_file} moved to {self.to_be_completed_folder}")
+                logger.warning(ScriptIdentifier.SUMMARIZER, f"{pdf_file} moved to {self.to_be_completed_folder}")
 
 
 

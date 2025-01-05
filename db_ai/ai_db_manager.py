@@ -2,9 +2,11 @@ import psycopg2
 from psycopg2 import sql
 from dotenv import load_dotenv
 import os
+from logs.pokolog import PokoLogger, ScriptIdentifier
 
 load_dotenv('.env')
 
+logger = PokoLogger()
 class AIDbManager:
     def __init__(self):
         self.conn = None
@@ -17,8 +19,10 @@ class AIDbManager:
                 port=os.getenv('postgresport')
             )
             self.conn.autocommit = True
+            logger.info(ScriptIdentifier.DATABASE, "Connected to the database.")
+            
         except Exception as e:
-            print(f"Error connecting to the database: {e}")
+            logger.error(ScriptIdentifier.DATABASE, f"Error connecting to the database: {e}")
 
     def insert_row(self, 
                         projectname, sessionid, prompt, 
@@ -35,8 +39,9 @@ class AIDbManager:
                 cursor.execute(insert_query, (projectname, sessionid, prompt, fileeditedname, 
                                               tokencountprompt, answer, tokencountanswer, 
                                               model, modeldetails, type_of_prompt, citation))
+                logger.info(ScriptIdentifier.DATABASE, f"Row for {fileeditedname} file inserted successfully.")
         except Exception as e:
-            print(f"Error inserting row: {e}")
+            logger.error(ScriptIdentifier.DATABASE, f"Error inserting row {fileeditedname}: {e}")
 
     def close(self):
         if self.conn:
@@ -49,5 +54,5 @@ class AIDbManager:
                 last_session = cursor.fetchone()
                 return last_session[0]
         except Exception as e:
-            print(f"Error getting last session: {e}")
+            logger.error(ScriptIdentifier.DATABASE, f"Error getting last session: {e}")
             return None

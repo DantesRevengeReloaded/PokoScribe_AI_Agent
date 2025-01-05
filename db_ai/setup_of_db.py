@@ -1,8 +1,10 @@
 import os
 import psycopg2
 from dotenv import load_dotenv
+from logs.pokolog import PokoLogger, ScriptIdentifier
 
 load_dotenv('.env')
+logger = PokoLogger()
 
 def run_sql_script(script_path, dbname, user, password, host, port):
     try:
@@ -13,9 +15,9 @@ def run_sql_script(script_path, dbname, user, password, host, port):
             with open(script_path, 'r') as file:
                 sql_commands = file.read()
                 cursor.execute(sql_commands)
-        print("SQL script executed successfully.")
+        logger.info(ScriptIdentifier.DATABASE, f"SQL script {script_path} executed successfully.")
     except Exception as e:
-        print(f"Error executing SQL script: {e}")
+        logger.error(ScriptIdentifier.DATABASE, f"Error executing SQL script {script_path}: {e}")
     finally:
         if conn:
             conn.close()
