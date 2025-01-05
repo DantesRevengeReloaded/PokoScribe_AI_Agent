@@ -22,6 +22,7 @@ Disclaimer: PokoScribe is not a replacement for human writers and under no cirum
 - [Agents](#agents)
   - [AI Agent Summarizer](#ai-agent-summarizer)
   - [AI Agent Outliner](#ai-agent-outliner)
+- [Best Practices](#best-practices)
 
 
 ## Agents
@@ -32,13 +33,29 @@ PokoScribe has the following agents that work together to automate the academic 
 
 Agent that summarizes academic papers, articles or even books with proper citation according to the user preferances. prompts and answers are stored in db with the citation of the paper, and the project that the paper is related to.
 
-For more details please refer to the [AI-Agent-Summarizer documentation](docs/AI-Agent-Summarizer.md)
+sources: [AI-Agent-Summarizer](docs/AI-Agent-Summarizer.md) documentation.
 
 ### AI Agent Outliner
 
-AI agent that creates an outline for the paper, article, or essay based on the total summaries and citations of the specific project. Its purpose is to suggest the structure of the paper, article, or essay after it reads the summaries and citations of the papers related to the project.
+AI agent that creates an outline for the paper, article, or essay based on the total summaries and citations of the specific project. Its purpose is to suggest the structure of the text after it reads the summaries and citations of the papers related to the project.
+
+sources: [AI-Agent-Outliner](docs/AI-Agent-Outliner.md) documentation.
+
+### AI Agent Chapter Creator
 
 AI agent that generates chapters of the paper based on the outline. It reads the outline and generates chapters for the paper, article, or essay.
 
-For more information please refer to the 
+For more information please refer to the
+
+## Best Practices
+
+To ensure the system runs smoothly and efficiently, the following best practices should be followed:
+
+📄 Secure that the folders and databases are properly setup via config and db folder files <br>
+🔄 Regular database maintenance <br>
+📊 Monitor API usage and token count <br>
+📝 Check log files for errors <br>
+📋 Maintain prompt templates and modify them accordingly <br>
+💾 Regular backups of completed summaries <br>
+
 

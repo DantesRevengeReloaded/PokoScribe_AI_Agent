@@ -10,10 +10,10 @@
 - [Usage](#usage)
 - [Directory Structure](#directory-structure)
 - [Error Handling](#error-handling)
-- [Best Practices](#best-practices)
+
 
 ## Overview
-The AI Agent Summarizer is part of a Multi-Agent AI System and it is a Python-based tool that processes PDF documents using various AI models (OpenAI, Gemini, DeepSeek) to generate summaries and citations. 
+The AI Agent Summarizer is part of a Multi-Agent System and it is a Python-based tool that processes PDF documents using various AI models (OpenAI, Gemini, DeepSeek) to generate summaries and citations. 
 
 It includes database integration using postgres for storing results and supports chunking for large documents. The program is designed to handle multiple documents simultaneously, with comprehensive logging and error handling. 
 
@@ -193,11 +193,3 @@ project/
 ✓ Failed document management <br>
 ✓ Token limit handling <br>
 ✓ API error recovery<br>
-
-## Best Practices
-
-🔄 Regular database maintenance <br>
-📊 Monitor API usage <br>
-📝 Check log files for errors <br>
-📋 Maintain prompt templates <br>
-💾 Regular backups of completed summaries <br>

@@ -1,0 +1,11 @@
+openai
+google-generativeai
+tiktoken
+PyPDF2
+psycopg2
+python-dotenv
+requests
+tqdm
+typing-extensions
+pytest
+pytest-cov

@@ -56,3 +56,43 @@ class AIDbManager:
         except Exception as e:
             logger.error(ScriptIdentifier.DATABASE, f"Error getting last session: {e}")
             return None
+        
+    def get_paper_sources(self, project_name: str, session_ids: list[int]) -> list:
+        """
+        Get paper sources for a given project and session IDs
+        
+        Args:
+            project_name (str): Name of the project
+            session_ids (list[int]): List of session IDs"""
+        
+        try:
+            with self.conn.cursor() as cursor:
+                # Convert session_ids to tuple for SQL IN clause
+                session_ids_tuple = tuple(session_ids)
+                
+                # Adjust query based on number of session IDs
+                if len(session_ids) == 1:
+                    cursor.execute("""
+                        SELECT sh.answer FROM ai_schema.summaries_history sh
+                        WHERE projectname = %s 
+                        AND sessionid = %s
+                    """, (project_name, session_ids[0]))
+                else:
+                    cursor.execute("""
+                        SELECT sh.answer FROM ai_schema.summaries_history sh
+                        WHERE projectname = %s 
+                        AND sessionid IN %s
+                    """, (project_name, session_ids_tuple))
+                    
+                paper_sources = cursor.fetchall()
+                logger.info(ScriptIdentifier.DATABASE, 
+                        f"Retrieved {len(paper_sources)} records for project {project_name}")
+                cursor.close()
+                logger.info(ScriptIdentifier.DATABASE, f"Connection Closed.")
+                return paper_sources
+            
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, 
+                        f"Error getting paper sources for project {project_name}: {e}")
+            cursor.close()
+            logger.info(ScriptIdentifier.DATABASE, f"Connection Closed.")

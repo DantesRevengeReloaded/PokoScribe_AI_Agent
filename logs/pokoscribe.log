@@ -74,3 +74,10 @@
 2025-01-05 17:18:19 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Summarizer AI model with OpenAI completed in 26.78734850883484 seconds.
 2025-01-05 17:18:19 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Total files processed: 2
 2025-01-05 17:18:19 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Completed files: 2
+2025-01-05 20:07:28 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connected to the database.
+2025-01-05 20:07:28 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Retrieved 3 records for project TESTS
+2025-01-05 20:09:26 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connected to the database.
+2025-01-05 20:09:26 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Retrieved 3 records for project TESTS
+2025-01-05 20:14:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connected to the database.
+2025-01-05 20:14:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Retrieved 3 records for project TESTS
+2025-01-05 20:14:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connection Closed.

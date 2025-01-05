@@ -48,7 +48,7 @@ class PokoLogger:
 
             # Error log handler
             error_handler = RotatingFileHandler(
-                'logs/pocoscribe_errors.log',
+                'logs/pokoscribe_errors.log',
                 maxBytes=10000000,
                 backupCount=5
             )
