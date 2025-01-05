@@ -1,0 +1,76 @@
+2025-01-05 17:15:13 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Using OpenAI model...
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Initializing PDFSummarizer...
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - AI parameters initialized successfully.
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Prompt loaded successfully, content preview: create a summary of the following article for acad...
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Citation loaded successfully, content preview: in the end of the answer cite the source in HARVAR...
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Role loaded successfully, content preview: you are an academic...
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - PDFSummarizer initialized successfully.
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Found 2 PDF files in data\summary_agent\input...
+2025-01-05 17:15:13 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connected to the database.
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Session ID recieved: 3
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Processing data\summary_agent\input\What_we_know_about_leadership - Copy.pdf...
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error reading data\summary_agent\input\What_we_know_about_leadership - Copy.pdf: PokoLogger.info() missing 1 required positional argument: 'message'
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error processing data\summary_agent\input\What_we_know_about_leadership - Copy.pdf: expected string or buffer
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - WARNING - [pokolog.py:66] - data\summary_agent\input\What_we_know_about_leadership - Copy.pdf moved to data\summary_agent\incompleted
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Processing data\summary_agent\input\What_we_know_about_leadership.pdf...
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error reading data\summary_agent\input\What_we_know_about_leadership.pdf: PokoLogger.info() missing 1 required positional argument: 'message'
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error processing data\summary_agent\input\What_we_know_about_leadership.pdf: expected string or buffer
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - WARNING - [pokolog.py:66] - data\summary_agent\input\What_we_know_about_leadership.pdf moved to data\summary_agent\incompleted
+2025-01-05 17:15:14 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Summarizer AI model with OpenAI completed in 0.38177967071533203 seconds.
+2025-01-05 17:15:14 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Total files processed: 2
+2025-01-05 17:15:14 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Completed files: 0
+2025-01-05 17:17:52 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Using OpenAI model...
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Initializing PDFSummarizer...
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - AI parameters initialized successfully.
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Prompt loaded successfully, content preview: create a summary of the following article for acad...
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Citation loaded successfully, content preview: in the end of the answer cite the source in HARVAR...
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Role loaded successfully, content preview: you are an academic...
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - PDFSummarizer initialized successfully.
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Found 2 PDF files in data\summary_agent\input...
+2025-01-05 17:17:52 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connected to the database.
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Session ID recieved: 3
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Processing data\summary_agent\input\What_we_know_about_leadership - Copy.pdf...
+2025-01-05 17:17:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Reading data\summary_agent\input\What_we_know_about_leadership - Copy.pdf...
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Text extracted from data\summary_agent\input\What_we_know_about_leadership - Copy.pdf
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Token count of data\summary_agent\input\What_we_know_about_leadership - Copy.pdf: 11540
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Summarizing data\summary_agent\input\What_we_know_about_leadership - Copy.pdf (less than 27000 tokens)...
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - SESSION INFO:
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - using source model: openai
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - using model: gpt-4o-mini
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - max tokens: 4500
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - temperature: {aiparameters.temperature}
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - role system: system
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - role user: user
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - prompt: create a summary of the following article for academic purposes
+2025-01-05 17:17:53 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Prompt created for OpenAI
+2025-01-05 17:18:02 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - OpenAI response received without problems
+2025-01-05 17:18:02 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Token count of summary of data\summary_agent\input\What_we_know_about_leadership - Copy.pdf: 427
+2025-01-05 17:18:02 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Citation extracted from summary: Hogan, R. & Kaiser, R.B. (2005). What We Know About Leadership. Review of General Psychology, 9(2), 169-180.-?
+2025-01-05 17:18:02 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connected to the database.
+2025-01-05 17:18:02 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Row for data\summary_agent\input\What_we_know_about_leadership - Copy.pdf file inserted successfully.
+2025-01-05 17:18:02 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Summary of data\summary_agent\input\What_we_know_about_leadership - Copy.pdf saved to prompts-roles\history\summary_total.txt
+2025-01-05 17:18:02 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - data\summary_agent\input\What_we_know_about_leadership - Copy.pdf moved to data\summary_agent\completed waiting 3 seconds for next file...
+2025-01-05 17:18:07 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Processing data\summary_agent\input\What_we_know_about_leadership.pdf...
+2025-01-05 17:18:07 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Reading data\summary_agent\input\What_we_know_about_leadership.pdf...
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Text extracted from data\summary_agent\input\What_we_know_about_leadership.pdf
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Token count of data\summary_agent\input\What_we_know_about_leadership.pdf: 11540
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Summarizing data\summary_agent\input\What_we_know_about_leadership.pdf (less than 27000 tokens)...
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - SESSION INFO:
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - using source model: openai
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - using model: gpt-4o-mini
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - max tokens: 4500
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - temperature: {aiparameters.temperature}
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - role system: system
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - role user: user
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - prompt: create a summary of the following article for academic purposes , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?!
+2025-01-05 17:18:08 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Prompt created for OpenAI
+2025-01-05 17:18:14 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - OpenAI response received without problems
+2025-01-05 17:18:14 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Token count of summary of data\summary_agent\input\What_we_know_about_leadership.pdf: 239
+2025-01-05 17:18:14 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Citation extracted from summary: Hogan, R. & Kaiser, R.B. (2005) 'What We Know About Leadership', Review of General Psychology, 9(2), pp. 169-180. -?
+2025-01-05 17:18:14 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connected to the database.
+2025-01-05 17:18:14 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Row for data\summary_agent\input\What_we_know_about_leadership.pdf file inserted successfully.
+2025-01-05 17:18:14 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - Summary of data\summary_agent\input\What_we_know_about_leadership.pdf saved to prompts-roles\history\summary_total.txt
+2025-01-05 17:18:14 - [AI_SUMMARIZER] - INFO - [pokolog.py:66] - data\summary_agent\input\What_we_know_about_leadership.pdf moved to data\summary_agent\completed waiting 3 seconds for next file...
+2025-01-05 17:18:19 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Summarizer AI model with OpenAI completed in 26.78734850883484 seconds.
+2025-01-05 17:18:19 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Total files processed: 2
+2025-01-05 17:18:19 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:66] - Completed files: 2

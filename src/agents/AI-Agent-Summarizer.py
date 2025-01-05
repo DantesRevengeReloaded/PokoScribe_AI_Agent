@@ -9,6 +9,9 @@ sys.path.append(str(project_root))
 from src.agents.config import *
 from src.agents.ai_pdf_summerizer import *
 
+logger = PokoLogger()
+
+
 class AIBotSummarizer:
     def __init__(self):
         pass
@@ -64,3 +67,5 @@ class AIBotSummarizer:
         except Exception as e:
             logger.error(ScriptIdentifier.AGENTSUMMARIZER, f"Error in Summarizer AI model of Deepseek {e}")
 
+to = AIBotSummarizer()
+to.chatgptsummerize()

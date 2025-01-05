@@ -1,15 +1,6 @@
-2024-12-29 21:21:23 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:130] - Error in OpenAI workflow: cannot access local variable 'prompt' where it is not associated with a value
-2024-12-29 21:21:23 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:291] - Error saving summary of C:\Users\ionka\Desktop\tests\tobesummed\What_we_know_about_leadership.pdf to chat_gpt/history/big_summary.txt: unsupported operand type(s) for +: 'NoneType' and 'str'
-2024-12-29 21:43:57 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:164] - Error in DeepSeek workflow: Error code: 402 - {'error': {'message': 'Insufficient Balance', 'type': 'unknown_error', 'param': None, 'code': 'invalid_request_error'}}
-2024-12-29 21:43:57 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:309] - Error saving summary of C:\Users\ionka\Desktop\tests\tobesummed\What_we_know_about_leadership.pdf to deepseek/history/big_summary.txt: unsupported operand type(s) for +: 'NoneType' and 'str'
-2025-01-03 00:31:21 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:144] - Error in OpenAI response: 'Stream' object has no attribute 'choices'
-2025-01-03 00:31:21 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:310] - Error saving summary of C:\Users\ionka\Desktop\tests\tobesummed\What_we_know_about_leadership.pdf to models/chat_gpt/history/big_summary.txt: unsupported operand type(s) for +: 'NoneType' and 'str'
-2025-01-04 17:15:02 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:295] - Error initializing PDFSummarizer: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'data\\summary_agent\x0cailed'
-2025-01-04 17:15:02 - PDFSummarizer - ERROR - [AI-Agent-Summarizer.py:32] - Error in PDFSummarizer: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'data\\summary_agent\x0cailed'
-2025-01-04 17:20:13 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:295] - Error initializing PDFSummarizer: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'data\\summary_agent\x0cailed'
-2025-01-04 17:20:13 - PDFSummarizer - ERROR - [AI-Agent-Summarizer.py:32] - Error in PDFSummarizer: [WinError 123] The filename, directory name, or volume label syntax is incorrect: 'data\\summary_agent\x0cailed'
-2025-01-04 17:26:08 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:393] - Error processing data\summary_agent\input\What_we_know_about_leadership.pdf: [Errno 22] Invalid argument: 'prompts-roles\\history\x08ig_summary.txt'
-2025-01-04 22:48:27 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:120] - Error reading citation file: 'AISummarizer' object has no attribute 'citation'
-2025-01-04 22:48:27 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:136] - Error in AISummarizer initialization: 'AISummarizer' object has no attribute 'citation'
-2025-01-04 22:48:27 - PDFSummarizer - ERROR - [ai_pdf_summerizer.py:311] - Error initializing PDFSummarizer: 'AISummarizer' object has no attribute 'citation'
-2025-01-04 22:48:27 - PDFSummarizer - ERROR - [AI-Agent-Summarizer.py:32] - Error in PDFSummarizer: 'AISummarizer' object has no attribute 'citation'
+2025-01-05 17:15:13 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error reading data\summary_agent\input\What_we_know_about_leadership - Copy.pdf: PokoLogger.info() missing 1 required positional argument: 'message'
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error processing data\summary_agent\input\What_we_know_about_leadership - Copy.pdf: expected string or buffer
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - WARNING - [pokolog.py:66] - data\summary_agent\input\What_we_know_about_leadership - Copy.pdf moved to data\summary_agent\incompleted
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error reading data\summary_agent\input\What_we_know_about_leadership.pdf: PokoLogger.info() missing 1 required positional argument: 'message'
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error processing data\summary_agent\input\What_we_know_about_leadership.pdf: expected string or buffer
+2025-01-05 17:15:14 - [AI_SUMMARIZER] - WARNING - [pokolog.py:66] - data\summary_agent\input\What_we_know_about_leadership.pdf moved to data\summary_agent\incompleted

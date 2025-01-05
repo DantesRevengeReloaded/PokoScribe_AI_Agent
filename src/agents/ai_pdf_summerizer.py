@@ -7,7 +7,6 @@ from openai import OpenAI
 from dotenv import load_dotenv
 from typing import List
 from src.agents.config import *
-from logs.ai_z_logsconfig import *
 import google.generativeai as genai
 from db_ai.ai_db_manager import *
 
@@ -64,7 +63,7 @@ class PDFReader:
 
     def read(self):
         try:
-            logger.info(f"Reading {self.file_path}...")
+            logger.info(ScriptIdentifier.SUMMARIZER, f"Reading {self.file_path}...")
             with open(self.file_path, 'rb') as file:
                 reader = PyPDF2.PdfReader(file)
                 text = ''
