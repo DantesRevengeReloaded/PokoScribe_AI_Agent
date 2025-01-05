@@ -32,7 +32,7 @@ PokoScribe has the following agents that work together to automate the academic 
 
 Agent that summarizes academic papers, articles or even books with proper citation according to the user preferances. prompts and answers are stored in db with the citation of the paper, and the project that the paper is related to.
 
-For more information please refer to the [AI-Agent-Summarizer documentation](docs/AI-Agent-Summarizer.md)
+For more details please refer to the [AI-Agent-Summarizer documentation](docs/AI-Agent-Summarizer.md)
 
 ### AI Agent Outliner
 
