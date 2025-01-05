@@ -7,7 +7,6 @@ project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
 
 from src.agents.config import *
-from src.agents.ai_chapters_maker import *
 from src.agents.ai_pdf_summerizer import *
 
 class AIBotSummarizer:
@@ -65,9 +64,3 @@ class AIBotSummarizer:
         except Exception as e:
             logger.error(f"Error in PDFSummarizer: {e}")
 
-class AIBotChapterMaker:
-    pass
-
-
-botd= AIBotSummarizer()
-botd.chatgptsummerize()

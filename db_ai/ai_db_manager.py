@@ -17,7 +17,6 @@ class AIDbManager:
                 port=os.getenv('postgresport')
             )
             self.conn.autocommit = True
-            print("Database connection established.")
         except Exception as e:
             print(f"Error connecting to the database: {e}")
 
@@ -36,11 +35,19 @@ class AIDbManager:
                 cursor.execute(insert_query, (projectname, sessionid, prompt, fileeditedname, 
                                               tokencountprompt, answer, tokencountanswer, 
                                               model, modeldetails, type_of_prompt, citation))
-                print("Row inserted successfully.")
         except Exception as e:
             print(f"Error inserting row: {e}")
 
     def close(self):
         if self.conn:
             self.conn.close()
-            print("Database connection closed.")
+
+    def get_last_session(self):
+        try:
+            with self.conn.cursor() as cursor:
+                cursor.execute("SELECT MAX(sessionid) FROM ai_schema.summaries_history")
+                last_session = cursor.fetchone()
+                return last_session[0]
+        except Exception as e:
+            print(f"Error getting last session: {e}")
+            return None

@@ -10,7 +10,6 @@ from src.agents.config import *
 from logs.ai_z_logsconfig import *
 import google.generativeai as genai
 from db_ai.ai_db_manager import *
-import re
 
 # Initialize logging
 configlog = get_log_config()
@@ -20,6 +19,7 @@ logger = logging.getLogger('PDFSummarizer')
 
 model_lists = ['openai', 'gemini', 'deepseek']
 
+#empty dictionary to be used to insert in the database
 todbdic = {
     "projectname": "", 
     "sessionid": "",
@@ -67,6 +67,7 @@ class PDFReader:
                 text = ''
                 for page in reader.pages:
                     text += page.extract_text()
+            logger.info(f"Text extracted from {self.file_path}")
             return text
         except Exception as e:
             logger.error(f"Error reading {self.file_path}: {e}")
@@ -325,6 +326,12 @@ class PDFSummarizer:
         except Exception as e:
             logger.error(f"Error finding PDF files in {self.input_folder}: {e}")
             return
+        
+        sess = AIDbManager()
+        sessionid = sess.get_last_session() + 1
+        sess.close()
+        todbdic["sessionid"] = sessionid
+
         for pdf_file in pdf_files:
             self.totalfilesprocessed += 1
             try:
@@ -351,7 +358,6 @@ class PDFSummarizer:
                    todbdic["tokencountprompt"] = tokeninputcount
                    todbdic["answer"] = summary
                    todbdic["tokencountanswer"] = tokenoutputcount
-                   todbdic["sessionid"] = 1
 
                 else:
                     logger.info(f"Summarizing {pdf_file} (more than {self.limittokens} tokens, chunking method initiated)...")
@@ -387,7 +393,6 @@ class PDFSummarizer:
                 todbdic["tokencountprompt"] = tokeninputcount
                 todbdic["answer"] = summary
                 todbdic["tokencountanswer"] = tokenoutputcount
-                todbdic["sessionid"] = 1
                 todbdic["citation"] = citation_to_db
                 
                 todatabase = AIDbManager()
