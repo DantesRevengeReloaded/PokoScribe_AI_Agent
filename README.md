@@ -41,21 +41,40 @@ AI agent that creates an outline for the paper, article, or essay based on the t
 
 sources: [AI-Agent-Outliner](docs/AI-Agent-Outliner.md) documentation.
 
+**-- To be implemented. --**
+
 ### AI Agent Chapter Creator
 
-AI agent that generates chapters of the paper based on the outline. It reads the outline and generates chapters for the paper, article, or essay.
+AI agent that generates chapters of the paper based on the outline.
 
-For more information please refer to the
+To be implemented.
 
 ## Best Practices
 
 To ensure the system runs smoothly and efficiently, the following best practices should be followed:
 
+🔑 Keep API keys secure and do not share them <br>
 📄 Secure that the folders and databases are properly setup via config and db folder files <br>
 🔄 Regular database maintenance <br>
 📊 Monitor API usage and token count <br>
 📝 Check log files for errors <br>
 📋 Maintain prompt templates and modify them accordingly <br>
 💾 Regular backups of completed summaries <br>
+📁 Organize files in the data folder <br
+🔍 Check the database for any inconsistencies <br
+📈 Monitor the system performance <br
+🔒 Secure the system with proper authentication <br>
+📚 Keep the system up-to-date with the latest libraries and dependencies <br>
+📧 Regularly check the email for any notifications <br>
+📅 Schedule tasks for regular maintenance <br>
+📜 Keep the documentation up-to-date <br>
+📌 Follow the best practices for coding and documentation <br>
+📦 Keep the system modular and scalable <br>
+🔧 Regularly check the system for any bugs or issues <br>
+📡 Monitor the system for any security vulnerabilities <br>
+🔗 Regularly check the links in the system <br> 
+📑 Keep the system clean and organized <br>
+📤 Regularly check the system for any outdated or unused files <br>
+
 
 

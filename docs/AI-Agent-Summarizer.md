@@ -45,9 +45,9 @@ Environment variables required in `.env`:
 ```properties
 # AI Model API Keys 
 
-OPENAI_API_KEY=your_openai_key = 
-GEMINI_API_KEY=your_gemini_key = 
-DEEPSEEK_API_KEY=your_deepseek_key =
+OPENAI_API_KEY = 'your_openai_key'  
+GEMINI_API_KEY = 'your_gemini_key'  
+DEEPSEEK_API_KEY = 'your_deepseek_key'
 ```
 ### Database Configuration
 
@@ -114,7 +114,7 @@ Main class orchestrating the summarization process it is calld by the main file 
 ```python
 pdf_summarizer = PDFSummarizer(input_folder, output_file, api_key, completed_folder, 
                  to_be_completed_folder, model_type)
-pdf_summarizer.process_pdfs(workde_model)
+pdf_summarizer.process_pdfs(worked_model)
 ```
 
 ## Features
@@ -131,7 +131,7 @@ pdf_summarizer.process_pdfs(workde_model)
 The database schema in postgres for storing summary history, citations, and other details. Especially token count is stored for each prompt and answer to keep track of the summarization process and cost:
 
 ```sql
-CREATE TABLE ai_db_history (
+CREATE TABLE summary_history (
     id SERIAL PRIMARY KEY,
     projectname VARCHAR(50) NOT NULL,
     sessionid INT NOT NULL,
@@ -193,3 +193,4 @@ project/
 ✓ Failed document management <br>
 ✓ Token limit handling <br>
 ✓ API error recovery<br>
+
