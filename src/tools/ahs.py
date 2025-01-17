@@ -79,9 +79,9 @@ class CrossRefHandler:
             rows = 20  # CrossRef recommended page size
             
             query_parts = [
-                f'query.bibliographic="{quote_plus(keyword)}"',
-                'filter=has-full-text:true,is-open-access:true'
-            ]
+            f'query.bibliographic="{quote_plus(keyword)}"',
+            'select=DOI,title,abstract,author,published-print,type,URL,link,is-referenced-by-count'
+        ]
             
             if from_year:
                 query_parts.append(f'from-pub-date:{from_year}')
@@ -152,27 +152,3 @@ class CrossRefHandler:
         df.to_csv(output_file, index=False, encoding='utf-8')
         print(f"Results saved to {output_file}")
 
-def main():
-    handler = CrossRefHandler()
-    
-    # Define your search keywords
-    keywords = [
-        "job satisfaction",
-        "work performance",
-        "employee engagement",
-        "employee turnover"       
-    ]
-    
-    # Search for resources
-    results_df = handler.search_resources(
-        keywords=keywords,
-        results_per_keyword=50,
-        from_year=2020
-    )
-    
-    # Save results
-    handler.save_results(results_df)
-    
-
-if __name__ == "__main__":
-    main()

@@ -16,11 +16,11 @@ conn = psycopg2.connect(
         port=DB_PORT
 )
 
-# Search keywords
-keywords = [
+def get_keywords() -> list:
+    keywords = [
         "job satisfaction",
         "work performance",
-        "employee engagement"
+        "employee engagement",
         "employee turnover"
-]
-
+    ]
+    return keywords

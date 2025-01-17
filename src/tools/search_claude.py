@@ -35,6 +35,7 @@ class TargetedPaperDownloader:
             "productivity",
             "workplace psychology",
             "employee satisfaction",
+            "organizational performance"
         ]
         
         all_results = []
