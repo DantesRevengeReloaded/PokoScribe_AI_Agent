@@ -96,3 +96,13 @@ class AIDbManager:
                         f"Error getting paper sources for project {project_name}: {e}")
             cursor.close()
             logger.info(ScriptIdentifier.DATABASE, f"Connection Closed.")
+
+class SaveMetaData(AIDbManager):
+    def __init__(self):
+        super().__init__()
+
+    def save_metadata(self, projectname, sessionid, prompt, fileeditedname, tokencountprompt, answer, tokencountanswer, model, modeldetails, type_of_prompt, citation):
+        self.insert_row(projectname, sessionid, prompt, fileeditedname, tokencountprompt, answer, tokencountanswer, model, modeldetails, type_of_prompt, citation)
+
+    def close_connection(self):
+        self.close()

@@ -4,7 +4,7 @@ import ahs
 from ahs import *
 
 
-
+"""
 # Define your search keywords
 keywords = get_keywords()
 
@@ -17,5 +17,11 @@ results_df = handler.search_resources(
 )
 # Save results
 handler.save_results(results_df)
+"""
+
+queries_alex = get_keywords()
+# Run OpenALEX search
+alex_handler = OpenAlexHandler()
+alex_handler.search_openalex(queries_alex, results_per_query=35)
 
 
