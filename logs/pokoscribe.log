@@ -81,3 +81,4 @@
 2025-01-05 20:14:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connected to the database.
 2025-01-05 20:14:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Retrieved 3 records for project TESTS
 2025-01-05 20:14:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connection Closed.
+2025-01-18 23:23:08 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - Error loading keywords and search queries: name 'tools' is not defined

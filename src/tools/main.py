@@ -1,27 +1,24 @@
-import tools_config
-from tools_config import *
-import ahs
-from ahs import *
+import sys
+from pathlib import Path
 
+# Add project root to Python path
+project_root = Path(__file__).parent.parent.parent
+sys.path.append(str(project_root))
 
-"""
-# Define your search keywords
-keywords = get_keywords()
+from src.tools.ahss import CrossRefHandler, OpenAlexHandler, CoreAPIHandler
 
-# Run CrossRef search
-handler = CrossRefHandler()
-results_df = handler.search_resources(
-    keywords=keywords,
-    results_per_keyword=50,
-    from_year=2020
-)
-# Save results
-handler.save_results(results_df)
-"""
+def main():
+    # Run CrossRef search
+    handler = CrossRefHandler()
+    handler.search_resources()
 
-queries_alex = get_keywords()
-# Run OpenALEX search
-alex_handler = OpenAlexHandler()
-alex_handler.search_openalex(queries_alex, results_per_query=35)
+    # Run OpenAlex search
+    alex_handler = OpenAlexHandler()
+    alex_handler.search_resources()
 
+    # Run Core API search
+    coreapi = CoreAPIHandler()
+    coreapi.search_specific_papers()
 
+if __name__ == "__main__":
+    main()

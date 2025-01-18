@@ -4,3 +4,4 @@
 2025-01-05 17:15:14 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error reading data\summary_agent\input\What_we_know_about_leadership.pdf: PokoLogger.info() missing 1 required positional argument: 'message'
 2025-01-05 17:15:14 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error processing data\summary_agent\input\What_we_know_about_leadership.pdf: expected string or buffer
 2025-01-05 17:15:14 - [AI_SUMMARIZER] - WARNING - [pokolog.py:66] - data\summary_agent\input\What_we_know_about_leadership.pdf moved to data\summary_agent\incompleted
+2025-01-18 23:23:08 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - Error loading keywords and search queries: name 'tools' is not defined
