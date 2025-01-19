@@ -3,6 +3,7 @@ from psycopg2 import sql
 from dotenv import load_dotenv
 import os
 from logs.pokolog import PokoLogger, ScriptIdentifier
+import pandas as pd
 
 load_dotenv('.env')
 
@@ -100,9 +101,75 @@ class AIDbManager:
 class SaveMetaData(AIDbManager):
     def __init__(self):
         super().__init__()
+        self.create_table()
 
-    def save_metadata(self, projectname, sessionid, prompt, fileeditedname, tokencountprompt, answer, tokencountanswer, model, modeldetails, type_of_prompt, citation):
-        self.insert_row(projectname, sessionid, prompt, fileeditedname, tokencountprompt, answer, tokencountanswer, model, modeldetails, type_of_prompt, citation)
+    def create_table(self):
+        """Create metadata table if it doesn't exist"""
+        try:
+            with self.conn.cursor() as cursor:
+                cursor.execute("""
+                    CREATE TABLE IF NOT EXISTS ai_schema.papers_metadata (
+                        id SERIAL PRIMARY KEY,
+                        title TEXT NOT NULL,
+                        doi VARCHAR(255),
+                        year TEXT,
+                        authors TEXT,
+                        abstract TEXT,
+                        keywords TEXT,
+                        relevance_score FLOAT,
+                        pdf_url TEXT,
+                        publisher TEXT,
+                        journal TEXT,
+                        type VARCHAR(50),
+                        cited_by_count INTEGER,
+                        apicalled VARCHAR(50),
+                        insert_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    )
+                """)
+                self.conn.commit()
+                logger.info(ScriptIdentifier.DATABASE, "Created or Confirmed existance: papers_metadata table")
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error creating metadata_table: {e}")
+            self.conn.rollback()
 
-    def close_connection(self):
-        self.close()
+    def save_papers_metadata(self, df: pd.DataFrame, apicalled: str) -> None:
+        """Save papers metadata to database"""
+        try:
+            with self.conn.cursor() as cursor:
+                inserted = 0
+                for _, row in df.iterrows():
+                    cursor.execute("""
+                        INSERT INTO ai_schema.papers_metadata (
+                            title, doi, year, authors, abstract, 
+                            keywords, relevance_score, pdf_url,
+                            publisher, journal, type, cited_by_count,
+                            apicalled
+                        ) VALUES (
+                            %s, %s, %s, %s, %s, 
+                            %s, %s, %s, %s, %s, 
+                            %s, %s, %s
+                        )
+                    """, (
+                        row.get('title'),
+                        row.get('doi'),
+                        row.get('year'),
+                        row.get('authors'),
+                        row.get('abstract'),
+                        row.get('keywords'),
+                        row.get('relevance_score'),
+                        row.get('pdf_url'),
+                        row.get('publisher'),
+                        row.get('journal'),
+                        row.get('type'),
+                        row.get('cited_by_count'),
+                        apicalled
+                    ))
+                    inserted += 1
+                
+                self.conn.commit()
+                logger.info(ScriptIdentifier.DATABASE, f"Saved {inserted} records from {apicalled}")
+                
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error saving metadata: {e}")
+            self.conn.rollback()
+

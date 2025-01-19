@@ -4,6 +4,17 @@ import os
 import re
 from urllib.parse import urljoin, urlparse
 from time import sleep
+from dotenv import load_dotenv
+import sys
+from pathlib import Path
+
+# Add project root to Python path
+project_root = Path(__file__).parent.parent.parent
+sys.path.append(str(project_root))
+from logs.pokolog import *
+
+load_dotenv('.env')
+logger = PokoLogger()
 
 def download_paper(doi, scihub_url="https://sci-hub.se", download_dir="downloads"):
     """
@@ -34,7 +45,7 @@ def download_paper(doi, scihub_url="https://sci-hub.se", download_dir="downloads
     try:
         # First, get the search page
         search_url = f"{scihub_url}/{doi}"
-        print(f"Searching: {search_url}")
+        logger.info(ScriptIdentifier.SCIHUB, f"Searching: {search_url}")
         
         response = requests.get(search_url, headers=headers, timeout=30)
         response.raise_for_status()
@@ -52,7 +63,7 @@ def download_paper(doi, scihub_url="https://sci-hub.se", download_dir="downloads
         )
         
         if not download_button:
-            print("Could not find PDF download link")
+            logger.error(ScriptIdentifier.SCIHUB, "Could not find PDF download link")
             return False
             
         # Get the PDF URL
@@ -68,7 +79,7 @@ def download_paper(doi, scihub_url="https://sci-hub.se", download_dir="downloads
                 pdf_url = embed['src']
         
         if not pdf_url:
-            print("Could not extract PDF URL")
+            logger.error(ScriptIdentifier.SCIHUB, "Could not extract PDF URL")
             return False
             
         # Handle relative URLs
@@ -78,7 +89,7 @@ def download_paper(doi, scihub_url="https://sci-hub.se", download_dir="downloads
             else:
                 pdf_url = urljoin(scihub_url, pdf_url)
         
-        print(f"Found PDF URL: {pdf_url}")
+        logger.info(ScriptIdentifier.SCIHUB, f"Found PDF URL: {pdf_url}")
         
         # Download the PDF
         pdf_response = requests.get(pdf_url, headers=headers, timeout=30)
@@ -89,13 +100,13 @@ def download_paper(doi, scihub_url="https://sci-hub.se", download_dir="downloads
         with open(filename, 'wb') as f:
             f.write(pdf_response.content)
         
-        print(f"Successfully downloaded to: {filename}")
+        logger.info(ScriptIdentifier.SCIHUB, f"Downloaded: {filename}")
         return True
         
     except requests.exceptions.RequestException as e:
-        print(f"Network error: {str(e)}")
+        logger.error(ScriptIdentifier.SCIHUB, f"Request error: {str(e)}")
         return False
     except Exception as e:
-        print(f"Unexpected error: {str(e)}")
+        logger.error(ScriptIdentifier.SCIHUB, f" Unexpected error: {str(e)}")
         return False
 

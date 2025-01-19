@@ -82,3 +82,40 @@
 2025-01-05 20:14:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Retrieved 3 records for project TESTS
 2025-01-05 20:14:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:66] - Connection Closed.
 2025-01-18 23:23:08 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - Error loading keywords and search queries: name 'tools' is not defined
+2025-01-19 19:16:10 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Searching for academic resources using CrossRef API
+2025-01-19 19:16:13 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - Error searching CrossRef API: AHSS.calculate_relevance_score() takes 2 positional arguments but 3 were given
+2025-01-19 19:16:13 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - Error saving CrossRef results: 'relevance_score'
+2025-01-19 19:16:13 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Searching for academic resources using OpenALEX API
+2025-01-19 19:24:48 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Searching for academic resources using CrossRef API
+2025-01-19 19:27:47 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Saved CrossRef results to crossref_result.csv
+2025-01-19 19:27:47 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Searching for academic resources using OpenALEX API
+2025-01-19 19:36:29 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Saved OpenALEX results to openalex_result.csv
+2025-01-19 19:36:32 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: worker satisfaction business performance
+2025-01-19 19:36:35 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: employee psychology productivity
+2025-01-19 19:36:38 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: job satisfaction organizational performance
+2025-01-19 19:36:41 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: workplace psychology business metrics
+2025-01-19 19:36:43 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: employee wellbeing productivity
+2025-01-19 19:36:45 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: employee satisfaction
+2025-01-19 19:36:48 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: job satisfaction
+2025-01-19 19:36:48 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Total papers found: 0
+2025-01-19 19:36:48 - [SEARCH_TOOL] - WARNING - [pokolog.py:67] - No metadata collected from papers
+2025-01-19 19:58:01 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Initializing Core API Handler
+2025-01-19 19:58:01 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Core API Handler initialized
+2025-01-19 19:58:05 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Found 49 relevant papers for query: worker satisfaction business performance
+2025-01-19 19:58:09 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Found 48 relevant papers for query: employee psychology productivity
+2025-01-19 19:58:12 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Found 48 relevant papers for query: job satisfaction organizational performance
+2025-01-19 19:58:16 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Found 48 relevant papers for query: workplace psychology business metrics
+2025-01-19 19:58:20 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Found 50 relevant papers for query: employee wellbeing productivity
+2025-01-19 19:58:22 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Found 47 relevant papers for query: employee satisfaction
+2025-01-19 19:58:26 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Found 47 relevant papers for query: job satisfaction
+2025-01-19 19:58:27 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Total papers found: 337
+2025-01-19 19:58:27 - [SEARCH_TOOL] - INFO - [pokolog.py:67] - Saved 153 results to coreapi_result.csv
+2025-01-19 20:38:08 - [DATABASE_MANAGER] - INFO - [pokolog.py:67] - Connected to the database.
+2025-01-19 20:38:08 - [DATABASE_MANAGER] - INFO - [pokolog.py:67] - Created papers_metadata table
+2025-01-19 20:38:08 - [DATABASE_MANAGER] - ERROR - [pokolog.py:67] - Error saving metadata: connection already closed
+2025-01-19 20:46:08 - [DATABASE_MANAGER] - INFO - [pokolog.py:67] - Connected to the database.
+2025-01-19 20:46:08 - [DATABASE_MANAGER] - INFO - [pokolog.py:67] - Created papers_metadata table
+2025-01-19 20:46:08 - [DATABASE_MANAGER] - INFO - [pokolog.py:67] - Saved 499 records from crossref
+2025-01-19 20:48:14 - [DATABASE_MANAGER] - INFO - [pokolog.py:67] - Connected to the database.
+2025-01-19 20:48:14 - [DATABASE_MANAGER] - INFO - [pokolog.py:67] - Created papers_metadata table
+2025-01-19 20:48:14 - [DATABASE_MANAGER] - INFO - [pokolog.py:67] - Saved 500 records from openalex

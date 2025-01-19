@@ -5,7 +5,6 @@ from datetime import datetime
 from urllib.parse import quote_plus
 from tqdm import tqdm
 from abc import ABC, abstractmethod
-
 import sys
 from pathlib import Path
 
@@ -15,7 +14,6 @@ sys.path.append(str(project_root))
 from db_ai.ai_db_manager import *
 
 import requests, time, os, csv, json
-import src.tools.tools_config
 from src.tools.tools_config import *
 
 
@@ -23,10 +21,16 @@ from src.tools.tools_config import *
 
 """
 AHSS - Academic Hyper Search System
-This tool allows you to search for academic resources using the CrossRef API, CORE API, and other sources.
+This tool allows you to search for academic resources using the CrossRef API, CORE API, and OpenAlex API.
 You can search for resources based on keywords, authors, publication dates, and more.
-It combines results and stores them to database
+This tool stores data in database
 AI then process the data, and creates a list for trying to find the best resources for the user
+
+Classes:
+- AHSS: Abstract class for Academic Hyper Search System
+- CrossRefHandler: Class for searching academic resources using CrossRef API
+- OpenAlexHandler: Class for searching academic resources using OpenALEX API
+- CoreAPIHandler: Class for searching academic resources using Core API
 """
 
 load_dotenv('.env')
@@ -51,41 +55,60 @@ class AHSS(ABC):
         ]
         try:
         # Load keywords and search queries from config
-            self.keywords = tools_config.get_keywords()
-            self.search_queries = tools.tools_config.get_search_queries()
+            self.keywords = get_keywords()
+            self.search_queries = get_search_queries()
         except Exception as e:
             logger.error(ScriptIdentifier.AHSS, f"Error loading keywords and search queries: {e}")
         
 
     def calculate_relevance_score(self, work: Dict) -> float:
-        score = 0
-        title = work.get('title', [''])[0].lower() if isinstance(work.get('title'), list) else str(work.get('title', '')).lower()
-        abstract = str(work.get('abstract', '')).lower()
-        keywords = self.keywords
-
-        for keyword in keywords:
-            keyword = keyword.lower()
-            if keyword in title:
-                score += 3
-            if keyword in abstract:
-                score += 2
-                
-        pub_year = work.get('published-print', {}).get('date-parts', [[0]])[0][0] if 'published-print' in work else work.get('publication_year', 0)
-        if pub_year:
-            current_year = datetime.now().year
-            year_diff = current_year - int(pub_year)
-            recency_score = max(0, 2 - (year_diff * 0.2))
-            score += recency_score
+        try:
+            score = 0
+            # Standardize title handling
+            title = (work.get('title', [''])[0].lower() 
+                    if isinstance(work.get('title'), list) 
+                    else str(work.get('title', '')).lower())
             
-        citations = work.get('is-referenced-by-count', work.get('cited_by_count', 0))
-        citation_score = min(2, int(citations) / 100)
-        score += citation_score
+            # Standardize abstract handling
+            abstract = str(work.get('abstract', '')).lower()
             
-        return round(score, 2)
-
-    @abstractmethod
-    def search_resources(self, keywords: List[str], results_per_keyword: int) -> pd.DataFrame:
-        pass
+            # Get keywords from instance
+            keywords = self.keywords
+            
+            # Calculate keyword matches
+            for keyword in keywords:
+                keyword = keyword.lower()
+                if keyword in title:
+                    score += 3
+                if keyword in abstract:
+                    score += 2
+            
+            # Calculate year score
+            pub_year = (
+                work.get('published-print', {}).get('date-parts', [[0]])[0][0] 
+                if 'published-print' in work 
+                else work.get('publication_year', work.get('yearPublished', 0))
+            )
+            
+            if pub_year:
+                current_year = datetime.now().year
+                year_diff = current_year - int(pub_year)
+                recency_score = max(0, 2 - (year_diff * 0.2))
+                score += recency_score
+            
+            # Calculate citation score
+            citations = int(work.get('is-referenced-by-count', 
+                          work.get('cited_by_count', 
+                          work.get('citations', 0))))
+            citation_score = min(2, citations / 100)
+            score += citation_score
+            
+            return round(score, 2)
+            
+        except Exception as e:
+            logger.error(ScriptIdentifier.AHSS, 
+                        f"Error calculating relevance score: {e}")
+            return 0.0
 
 # CrossRef API Handler Class so we can search for academic resources in the CrossRef database
 class CrossRefHandler(AHSS):
@@ -158,7 +181,7 @@ class CrossRefHandler(AHSS):
                                                 for author in work.get('author', [])]),
                                 'abstract': work.get('abstract', ''),
                                 'keywords': keyword,
-                                'relevance_score': self.calculate_relevance_score(work, [keyword]),
+                                'relevance_score': self.calculate_relevance_score(work),
                                 'pdf_url': doi_url,
                                 'publisher': work.get('publisher', ''),
                                 'journal': work.get('container-title', [''])[0],
@@ -188,14 +211,15 @@ class CrossRefHandler(AHSS):
             df = df.drop_duplicates()
             df = df.sort_values('relevance_score', ascending=False)
 
-            # Save results to CSV
-            fh = "crossref_result.csv"
-            df.to_csv(fh, index=False, encoding='utf-8')
-            logger.info(ScriptIdentifier.AHSS, f"Saved CrossRef results to {fh}")
+            # save the results to database table metadata
+            to_db_crossref = SaveMetaData()
+            to_db_crossref.save_papers_metadata(df, 'crossref')
+            logger.info(ScriptIdentifier.AHSS, f"Saved {len(df)} results to database table metadata for CrossRef")
+
         except Exception as e:
             logger.error(ScriptIdentifier.AHSS, f"Error saving CrossRef results: {e}")
     
-
+# OpenALEX API Handler Class so we can search for academic resources in the OpenALEX database
 class OpenAlexHandler(AHSS):
     def __init__(self):
         super().__init__()
@@ -229,7 +253,7 @@ class OpenAlexHandler(AHSS):
                             'authors': self.get_author_names(work.get('authorships', [])),
                             'abstract': work.get('abstract', 'N/A'),
                             'keywords': keyword,
-                            'relevance_score': self.calculate_relevance_score(work, [keyword]),
+                            'relevance_score': self.calculate_relevance_score(work),
                             'pdf_url': work.get('pdf_url', 'N/A'),
                             'publisher': work.get('publisher', 'N/A'),
                             'journal': work.get('journal', 'N/A'),
@@ -248,47 +272,53 @@ class OpenAlexHandler(AHSS):
                 df = df.drop_duplicates()
                 df = df.sort_values('relevance_score', ascending=False)
 
-                fh = "openalex_result.csv"
-                df.to_csv(fh, index=False, encoding='utf-8')
-                logger.info(ScriptIdentifier.AHSS, f"Saved OpenALEX results to {fh}")
+                # save the results to database table metadata
+                to_db_openalex = SaveMetaData()
+                to_db_openalex.save_papers_metadata(df, 'openalex')
+                logger.info(ScriptIdentifier.AHSS, f"Saved {len(df)} results to database table metadata for OpenALEX")
+
             except Exception as e:
                 logger.error(ScriptIdentifier.AHSS, f"Error saving OpenALEX results: {e}")
 
-
+# Core API Handler Class so we can search for academic resources in the Core database
 class CoreAPIHandler(AHSS):
     def __init__(self):
         super().__init__()
-        self.api_key = os.getenv('CORE_API_KEY')
+        logger.info(ScriptIdentifier.AHSS, "Initializing Core API Handler")
+        try:
+            self.api_key = os.getenv('CORE_API_KEY')
 
-        self.headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
-        }
+            self.headers = {
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json"
+            }
+            logger.info(ScriptIdentifier.AHSS, "Core API Handler initialized")
+        except Exception as e:
+            logger.error(ScriptIdentifier.AHSS, f"Error initializing Core API Handler: {e}")
         
     def search_specific_papers(self) -> List[Dict]:
         search_queries = self.search_queries
         required_keywords = self.keywords
         papers = []
         
-        logger.debug(ScriptIdentifier.AHSS, f"Starting search with queries: {search_queries}")
-        logger.debug(ScriptIdentifier.AHSS, f"Required keywords: {required_keywords}")
-        
+        # Create enhanced query with required keywords
         for query in search_queries:
-            # Add required keywords to query
-            enhanced_query = f"{query} AND ({' OR '.join(required_keywords)})"
+            # Combine query with required keywords using OR
+            keyword_query = " OR ".join(f'"{keyword}"' for keyword in required_keywords)
+            enhanced_query = f'({query}) AND ({keyword_query})'
+            
             payload = {
                 "q": enhanced_query,
                 "limit": 50,
                 "filters": {
-                    "yearPublished": {"gte": 2015},
-                    "downloadAllowed": True,
-                    "hasFullText": True,
-                    "language": "en",
-                    "documentType": ["article", "journal article"]
+                    "year": {"gte": 2015},
+                    "types": ["journal-article"],
+                    "lang": "en"
                 }
             }
             
             try:
+                logger.debug(ScriptIdentifier.AHSS, f"Sending request with enhanced query: {enhanced_query}")
                 response = requests.post(
                     "https://api.core.ac.uk/v3/search/works",
                     headers=self.headers,
@@ -296,19 +326,32 @@ class CoreAPIHandler(AHSS):
                 )
                 response.raise_for_status()
                 
-                # Fix: Get data from response.json()
                 response_data = response.json()
-                if 'data' not in response_data:
-                    logger.error(ScriptIdentifier.AHSS, f"No data field in response for query: {query}")
-                    continue
+                
+                if 'results' in response_data:
+                    # Filter results that contain at least one required keyword
+                    filtered_results = []
+                    for result in response_data['results']:
+                        title = str(result.get('title', '')).lower()
+                        abstract = str(result.get('abstract', '')).lower()
+                        
+                        # Check if any required keyword is present
+                        if any(keyword.lower() in title or keyword.lower() in abstract 
+                            for keyword in required_keywords):
+                            filtered_results.append(result)
                     
-                papers.extend(response_data['data'])  # Fix: Use response_data instead of papers
-                logger.info(ScriptIdentifier.AHSS, f"Found {len(response_data['data'])} papers for query: {query}")
+                    papers.extend(filtered_results)
+                    logger.info(ScriptIdentifier.AHSS, 
+                            f"Found {len(filtered_results)} relevant papers for query: {query}")
+                else:
+                    logger.error(ScriptIdentifier.AHSS, f"Unexpected response structure for query: {query}")
+                
                 time.sleep(1)
                 
-            except requests.exceptions.RequestException as e:
+            except Exception as e:
                 logger.error(ScriptIdentifier.AHSS, f"Error searching Core API for query '{query}': {e}")
-                continue  # Changed break to continue to try other queries
+                continue
+
             
         logger.info(ScriptIdentifier.AHSS, f"Total papers found: {len(papers)}")
         metadata = []
@@ -347,11 +390,11 @@ class CoreAPIHandler(AHSS):
             df = pd.DataFrame(metadata)
             df = df.drop_duplicates()
             df = df.sort_values('relevance_score', ascending=False)
-            
-            fh = "coreapi_result.csv"
-            df.to_csv(fh, index=False, encoding='utf-8')
-            logger.info(ScriptIdentifier.AHSS, f"Saved {len(df)} results to {fh}")
-            return metadata
+
+            # save the results to database table metadata
+            to_db_coreapi = SaveMetaData()
+            to_db_coreapi.save_papers_metadata(df, 'coreapi')
+            logger.info(ScriptIdentifier.AHSS, f"Saved {len(df)} results to database table metadata for Core API")
             
         except Exception as e:
             logger.error(ScriptIdentifier.AHSS, f"Error saving Core API results: {e}")
@@ -359,76 +402,4 @@ class CoreAPIHandler(AHSS):
 
 
 
-    def download_papers(self, papers: List[Dict], 
-                       output_dir: str = "psychology_papers") -> None:
-        """Download selected papers and save metadata"""
-        os.makedirs(output_dir, exist_ok=True)
-        
-        # Save papers metadata first
-        metadata_path = os.path.join(output_dir, "papers_metadata.json")
-        self._save_metadata(papers, metadata_path)
-        
-        for paper in papers:
-            if not paper.get('downloadUrl'):
-                print(f"No download URL for paper: {paper.get('title', 'unknown')}")
-                continue
-                
-            try:
-                # Create filename from title
-                safe_title = "".join(
-                    x for x in paper['title'] 
-                    if x.isalnum() or x in [' ', '-', '_']
-                )
-                filename = f"{safe_title[:100]}.pdf"
-                filepath = os.path.join(output_dir, filename)
-                
-                # Get the download URL
-                download_url = paper['downloadUrl']
-                
-                # Make authenticated request to download
-                response = requests.get(
-                    download_url,
-                    headers=self.headers,  # Include API key in headers
-                    stream=True,
-                    allow_redirects=True  # Follow redirects if any
-                )
-                
-                # If we get a redirect, follow it with authentication
-                if response.history:
-                    final_url = response.url
-                    response = requests.get(
-                        final_url,
-                        headers=self.headers,
-                        stream=True
-                    )
-                
-                response.raise_for_status()
-                
-                # Check if we actually got a PDF
-                content_type = response.headers.get('content-type', '')
-                if 'application/pdf' not in content_type.lower():
-                    print(f"Warning: Downloaded content for {safe_title} may not be a PDF")
-                
-                with open(filepath, 'wb') as f:
-                    for chunk in response.iter_content(chunk_size=8192):
-                        if chunk:
-                            f.write(chunk)
-                            
-                print(f"Successfully downloaded: {filename}")
-                
-                # Add a small delay between downloads
-                time.sleep(2)
-                
-            except requests.exceptions.HTTPError as e:
-                if e.response.status_code == 403:
-                    print(f"Access denied for paper: {paper.get('title', 'unknown')}")
-                    print("This paper might require institutional access or subscription")
-                elif e.response.status_code == 429:
-                    print("Rate limit reached. Waiting before next download...")
-                    time.sleep(60)  # Wait for a minute before continuing
-                else:
-                    print(f"HTTP Error downloading {paper.get('title', 'unknown')}: {e}")
-            except Exception as e:
-                print(f"Error downloading {paper.get('title', 'unknown')}: {e}")
-                continue
 

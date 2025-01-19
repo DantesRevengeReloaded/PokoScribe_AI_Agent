@@ -5,3 +5,14 @@
 2025-01-05 17:15:14 - [AI_SUMMARIZER] - ERROR - [pokolog.py:66] - Error processing data\summary_agent\input\What_we_know_about_leadership.pdf: expected string or buffer
 2025-01-05 17:15:14 - [AI_SUMMARIZER] - WARNING - [pokolog.py:66] - data\summary_agent\input\What_we_know_about_leadership.pdf moved to data\summary_agent\incompleted
 2025-01-18 23:23:08 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - Error loading keywords and search queries: name 'tools' is not defined
+2025-01-19 19:16:13 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - Error searching CrossRef API: AHSS.calculate_relevance_score() takes 2 positional arguments but 3 were given
+2025-01-19 19:16:13 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - Error saving CrossRef results: 'relevance_score'
+2025-01-19 19:36:32 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: worker satisfaction business performance
+2025-01-19 19:36:35 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: employee psychology productivity
+2025-01-19 19:36:38 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: job satisfaction organizational performance
+2025-01-19 19:36:41 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: workplace psychology business metrics
+2025-01-19 19:36:43 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: employee wellbeing productivity
+2025-01-19 19:36:45 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: employee satisfaction
+2025-01-19 19:36:48 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: job satisfaction
+2025-01-19 19:36:48 - [SEARCH_TOOL] - WARNING - [pokolog.py:67] - No metadata collected from papers
+2025-01-19 20:38:08 - [DATABASE_MANAGER] - ERROR - [pokolog.py:67] - Error saving metadata: connection already closed

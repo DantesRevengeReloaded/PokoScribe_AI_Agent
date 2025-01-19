@@ -10,7 +10,8 @@ class ScriptIdentifier(Enum):
     CHAPTER = "AI_CHAPTER_MAKER"
     AGENTSUMMARIZER = "AI_AGENT_SUMMARIZER"
     MAIN = "POKOSCRIBE"
-    AHSS = "SEARCH_TOOL"
+    AHSS = "AHSS_SEARCH_TOOL"
+    SCIHUB = "SCIHUB_DOWNLOADER"
 
 class PokoLogger:
     _instance = None
