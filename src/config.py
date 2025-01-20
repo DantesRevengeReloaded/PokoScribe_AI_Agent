@@ -9,6 +9,8 @@ class SystemPars:
         self.input_folder = 'data\summary_agent\input'
         self.completed_folder = 'data\summary_agent\completed'
         self.to_be_completed_folder = 'data\summary_agent\incompleted'
+
+        #prompts and roles for the summarization tools
         self.prompts_summarization = 'prompts-roles\prompts-roles\summarization_prompt.txt'
         self.role_of_bot_summarization = 'prompts-roles\prompts-roles\summarization_role.txt'
         self.citation_sum = 'prompts-roles\prompts-roles\summarization_citation.txt'
@@ -25,8 +27,35 @@ class SystemPars:
         # file with the chapters produced by the chatbot appended ech time
         self.chapters_historicity = 'prompts-roles\history\chapters.txt'
 
-        self.project_name = 'TESTS'
+        self.project_name = 'Panos_Karydis'
 
+# Define the keywords and search queries to be used in the search of AHSS tool      
+def get_keywords() -> list:
+    keywords = [
+        "job satisfaction",
+        "work performance",
+        "employee engagement",
+        "employee turnover",
+        "employee performance",
+        "business outcome",
+        "productivity",
+        "workplace psychology",
+        "employee satisfaction",
+        "organizational performance"
+    ]
+    return keywords
+
+def get_search_queries() -> list:
+    search_queries = [
+            "worker satisfaction business performance",
+            "employee psychology productivity",
+            "job satisfaction organizational performance",
+            "workplace psychology business metrics",
+            "employee wellbeing productivity",
+            "employee satisfaction",
+            "job satisfaction"
+        ]
+    return search_queries
         
 class ChatGPTPars:
     def __init__(self):

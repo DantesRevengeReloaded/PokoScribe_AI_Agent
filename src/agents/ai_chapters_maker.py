@@ -1,7 +1,7 @@
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
-from src.agents.config import *
+from src.config import *
 
 aiparameters = ChatGPTPars()
 chaptermaker_ai_parameters = ChatGPTChapterMakerPars()

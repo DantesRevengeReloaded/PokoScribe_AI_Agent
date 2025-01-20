@@ -16,3 +16,52 @@
 2025-01-19 19:36:48 - [SEARCH_TOOL] - ERROR - [pokolog.py:67] - No data field in response for query: job satisfaction
 2025-01-19 19:36:48 - [SEARCH_TOOL] - WARNING - [pokolog.py:67] - No metadata collected from papers
 2025-01-19 20:38:08 - [DATABASE_MANAGER] - ERROR - [pokolog.py:67] - Error saving metadata: connection already closed
+2025-01-20 21:15:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement file: [Errno 22] Invalid argument: 'downloads\\Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement.pdf'
+2025-01-20 21:15:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:15:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:16:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:16:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement file: [Errno 22] Invalid argument: 'downloads\\Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement.pdf'
+2025-01-20 21:19:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:19:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:20:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:20:07 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:20:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:20:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Review: Information Technology and Organizational Performance: An Integrative Model of IT Business Value file: [Errno 22] Invalid argument: 'downloads\\Review: Information Technology and Organizational Performance: An Integrative Model of IT Business Value.pdf'
+2025-01-20 21:20:53 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:20:57 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:20:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:21:01 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:21:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Does the stock market fully value intangibles? Employee satisfaction and equity prices file: [Errno 22] Invalid argument: 'downloads\\Does the stock market fully value intangibles? Employee satisfaction and equity prices.pdf'
+2025-01-20 21:21:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:21:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Does Foreign Direct Investment Increase the Productivity of Domestic Firms? In Search of Spillovers Through Backward Linkages file: [Errno 22] Invalid argument: 'downloads\\Does Foreign Direct Investment Increase the Productivity of Domestic Firms? In Search of Spillovers Through Backward Linkages.pdf'
+2025-01-20 21:21:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:21:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 21:21:53 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for How can leaders achieve high employee engagement? file: [Errno 22] Invalid argument: 'downloads\\How can leaders achieve high employee engagement?.pdf'

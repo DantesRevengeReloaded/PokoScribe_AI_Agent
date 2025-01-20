@@ -12,11 +12,12 @@ from pathlib import Path
 project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
 from logs.pokolog import *
+from src.db_ai.ai_db_manager import *
 
 load_dotenv('.env')
 logger = PokoLogger()
 
-def download_paper(doi, scihub_url="https://sci-hub.se", download_dir="downloads"):
+def download_paper(doi, title, scihub_url="https://sci-hub.se", download_dir="downloads"):
     """
     Download a scientific paper from Sci-Hub using its DOI.
     First searches for the paper on Sci-Hub's interface, then downloads the PDF.
@@ -96,7 +97,7 @@ def download_paper(doi, scihub_url="https://sci-hub.se", download_dir="downloads
         pdf_response.raise_for_status()
         
         # Save the file
-        filename = os.path.join(download_dir, f"{doi.replace('/', '_')}.pdf")
+        filename = os.path.join(download_dir, f"{title}.pdf")
         with open(filename, 'wb') as f:
             f.write(pdf_response.content)
         
@@ -104,9 +105,28 @@ def download_paper(doi, scihub_url="https://sci-hub.se", download_dir="downloads
         return True
         
     except requests.exceptions.RequestException as e:
-        logger.error(ScriptIdentifier.SCIHUB, f"Request error: {str(e)}")
+        logger.error(ScriptIdentifier.SCIHUB, f"Request error: for {title} file: {str(e)}")
         return False
     except Exception as e:
-        logger.error(ScriptIdentifier.SCIHUB, f" Unexpected error: {str(e)}")
+        logger.error(ScriptIdentifier.SCIHUB, f" Unexpected error for {title} file: {str(e)}")
         return False
+
+
+# Connect to database and get papers to download
+conn = AIDbManager().conn
+
+query = """
+    SELECT title, doi 
+    FROM ai_schema.project_panos_karydis_for_dl 
+"""
+
+
+df = pd.read_sql(query, conn)
+logger.info(ScriptIdentifier.SCIHUB, f"Found {len(df)} papers to download")
+
+for index, row in df.iterrows():
+    download_paper(row['doi'], row['title'])
+
+    
+            
 

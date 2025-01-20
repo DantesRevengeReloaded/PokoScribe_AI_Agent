@@ -12,11 +12,9 @@ from pathlib import Path
 project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
 from db_ai.ai_db_manager import *
+from src.config import *
 
 import requests, time, os, csv, json
-from src.tools.tools_config import *
-
-
 
 
 """
@@ -57,8 +55,10 @@ class AHSS(ABC):
         # Load keywords and search queries from config
             self.keywords = get_keywords()
             self.search_queries = get_search_queries()
+            self.projname = SystemPars().project_name
         except Exception as e:
             logger.error(ScriptIdentifier.AHSS, f"Error loading keywords and search queries: {e}")
+
         
 
     def calculate_relevance_score(self, work: Dict) -> float:
@@ -213,7 +213,7 @@ class CrossRefHandler(AHSS):
 
             # save the results to database table metadata
             to_db_crossref = SaveMetaData()
-            to_db_crossref.save_papers_metadata(df, 'crossref')
+            to_db_crossref.save_papers_metadata(df, 'crossref', self.projname)
             logger.info(ScriptIdentifier.AHSS, f"Saved {len(df)} results to database table metadata for CrossRef")
 
         except Exception as e:
@@ -274,7 +274,7 @@ class OpenAlexHandler(AHSS):
 
                 # save the results to database table metadata
                 to_db_openalex = SaveMetaData()
-                to_db_openalex.save_papers_metadata(df, 'openalex')
+                to_db_openalex.save_papers_metadata(df, 'openalex', self.projname)
                 logger.info(ScriptIdentifier.AHSS, f"Saved {len(df)} results to database table metadata for OpenALEX")
 
             except Exception as e:
@@ -393,7 +393,7 @@ class CoreAPIHandler(AHSS):
 
             # save the results to database table metadata
             to_db_coreapi = SaveMetaData()
-            to_db_coreapi.save_papers_metadata(df, 'coreapi')
+            to_db_coreapi.save_papers_metadata(df, 'coreapi', self.projname)
             logger.info(ScriptIdentifier.AHSS, f"Saved {len(df)} results to database table metadata for Core API")
             
         except Exception as e:

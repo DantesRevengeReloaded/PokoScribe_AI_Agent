@@ -3,12 +3,20 @@ import os, shutil, PyPDF2, time, tiktoken, sys, re
 # Add the parent directory to the sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+import sys
+from pathlib import Path
+
+# Add project root to Python path
+project_root = Path(__file__).parent.parent.parent
+sys.path.append(str(project_root))
+
+
 from openai import OpenAI
 from dotenv import load_dotenv
 from typing import List
-from src.agents.config import *
+from src.config import *
 import google.generativeai as genai
-from db_ai.ai_db_manager import *
+from src.db_ai.ai_db_manager import *
 
 from logs.pokolog import PokoLogger, ScriptIdentifier
 

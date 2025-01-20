@@ -6,8 +6,8 @@ from logs.pokolog import PokoLogger, ScriptIdentifier
 import pandas as pd
 
 load_dotenv('.env')
-
 logger = PokoLogger()
+
 class AIDbManager:
     def __init__(self):
         self.conn = None
@@ -123,6 +123,7 @@ class SaveMetaData(AIDbManager):
                         type VARCHAR(50),
                         cited_by_count INTEGER,
                         apicalled VARCHAR(50),
+                        project_name VARCHAR(50),
                         insert_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                     )
                 """)
@@ -132,7 +133,7 @@ class SaveMetaData(AIDbManager):
             logger.error(ScriptIdentifier.DATABASE, f"Error creating metadata_table: {e}")
             self.conn.rollback()
 
-    def save_papers_metadata(self, df: pd.DataFrame, apicalled: str) -> None:
+    def save_papers_metadata(self, df: pd.DataFrame, apicalled: str, project_name: str) -> None:
         """Save papers metadata to database"""
         try:
             with self.conn.cursor() as cursor:
@@ -143,11 +144,11 @@ class SaveMetaData(AIDbManager):
                             title, doi, year, authors, abstract, 
                             keywords, relevance_score, pdf_url,
                             publisher, journal, type, cited_by_count,
-                            apicalled
+                            apicalled, project_name
                         ) VALUES (
                             %s, %s, %s, %s, %s, 
                             %s, %s, %s, %s, %s, 
-                            %s, %s, %s
+                            %s, %s, %s, %s
                         )
                     """, (
                         row.get('title'),
@@ -162,14 +163,17 @@ class SaveMetaData(AIDbManager):
                         row.get('journal'),
                         row.get('type'),
                         row.get('cited_by_count'),
-                        apicalled
+                        apicalled,
+                        project_name
                     ))
                     inserted += 1
                 
                 self.conn.commit()
-                logger.info(ScriptIdentifier.DATABASE, f"Saved {inserted} records from {apicalled}")
+                logger.info(ScriptIdentifier.DATABASE, f"Saved {inserted} records from {apicalled} and project {project_name}")
                 
         except Exception as e:
             logger.error(ScriptIdentifier.DATABASE, f"Error saving metadata: {e}")
             self.conn.rollback()
+
+
 
