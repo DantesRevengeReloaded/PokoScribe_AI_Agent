@@ -65,3 +65,1410 @@
 2025-01-20 21:21:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
 2025-01-20 21:21:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
 2025-01-20 21:21:53 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for How can leaders achieve high employee engagement? file: [Errno 22] Invalid argument: 'downloads\\How can leaders achieve high employee engagement?.pdf'
+2025-01-20 22:55:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.26643/gis.v14i4.5341: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.26643/gis.v14i4.5341'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.26643/gis.v14i4.5341'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.21275/sr231008004659: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.21275/sr231008004659'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.21275/sr231008004659'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.3390/su12093514: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.3390/su12093514'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': '10.3390/su12093514'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.1108/13632541311300151: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.1108/13632541311300151'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': '10.1108/13632541311300151'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.32996/jbms.2023.5.1.17: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.32996/jbms.2023.5.1.17'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.32996/jbms.2023.5.1.17'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.21203/rs.3.rs-891596/v1: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.21203/rs.3.rs-891596/v1'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.21203/rs.3.rs-891596/v1'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1007/978-3-030-94277-9_123: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1007/978-3-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.1007/978-3-030-94277-9_123'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.1111/apps.12458: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.1111/apps.12458'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.1111/apps.12458'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.17549/gbfr.2023.28.3.68: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.17549/gbfr.2023.28.3.68'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.17549/gbfr.2023.28.3.68'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.1108/ijssp-06-2021-0152: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.1108/ijssp-06-2021-0152'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.1108/ijssp-06-2021-0152'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.47191/jefms/v5-i7-20: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.47191/jefms/v5-i7-20'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.47191/jefms/v5-i7-20'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement file: [Errno 22] Invalid argument: 'tests2\\Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement.pdf'
+2025-01-20 22:55:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.1177/14705958211007874: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.1177/14705958211007874'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.1177/14705958211007874'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:56:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.5861/ijrsm.2024.1078: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.5861/ijrsm.2024.1078'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.5861/ijrsm.2024.1078'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:56:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.38124/ijisrt/ijisrt24mar825: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.38124/ijisrt...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.38124/ijisrt/ijisrt24mar825'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:56:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.31235/osf.io/q7nu2: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.31235/osf.io/q7nu2'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.31235/osf.io/q7nu2'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/0021-9010.87.2.268: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/0021-90...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/0021-9010.87.2.268'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.iedeen.2019.05.001: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.iedee...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.iedeen.2019.05.001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/23311975.2018.1470891: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/2331197...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/23311975.2018.1470891'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ijlma-10-2016-0085: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ijlma-1...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ijlma-10-2016-0085'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/sajbs-04-2016-0036: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/sajbs-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/sajbs-04-2016-0036'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/14725960310807944: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/1472596...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/14725960310807944'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ijppm-01-2013-0008: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ijppm-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ijppm-01-2013-0008'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/001872678904200705: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0018726...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/001872678904200705'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/hrdq.1078: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/hrdq.10...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/hrdq.1078'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/14630010410812306: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/1463001...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/14630010410812306'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.sbspro.2014.04.174: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.sbspr...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.sbspro.2014.04.174'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1093/jopart/mum028: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1093/jopart/...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1093/jopart/mum028'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/s1053-4822(99)00031-5: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/s1053-4...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/s1053-4822(99)00031-5'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/02683940310473118: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/0268394...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/02683940310473118'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/0021-9010.72.3.374: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/0021-90...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/0021-9010.72.3.374'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/0021-9010.62.2.237: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/0021-90...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/0021-9010.62.2.237'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.tourman.2005.02.009: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.tourm...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.tourman.2005.02.009'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/0021-9010.88.6.1057: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/0021-90...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/0021-9010.88.6.1057'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/hrm.20339: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/hrm.203...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/hrm.20339'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1073/pnas.2006991117: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1073/pnas.20...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1073/pnas.2006991117'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/pa.2508: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/pa.2508...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/pa.2508'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:57:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.13106/jafeb.2020.vol7.no8.577: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.13106/jafeb....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.13106/jafeb.2020.vol7.no8.577'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5267/j.msl.2020.6.038: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5267/j.msl.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.5267/j.msl.2020.6.038'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/joepp-06-2018-0034: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/joepp-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/joepp-06-2018-0034'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:57:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5539/ibr.v12n2p99: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5539/ibr.v12...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.5539/ibr.v12n2p99'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ijppm-01-2018-0012: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ijppm-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ijppm-01-2018-0012'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.ijhm.2018.06.014: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.ijhm....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.ijhm.2018.06.014'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/jcom-04-2016-0026: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/jcom-04...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/jcom-04-2016-0026'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ejtd-08-2016-0066: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ejtd-08...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ejtd-08-2016-0066'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jik.2017.07.003: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jik.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jik.2017.07.003'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/apl0000103: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/apl0000...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/apl0000103'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/peps.12226: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/peps.12...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1111/peps.12226'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:58:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5590/ijamt.2017.16.1.04: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5590/ijamt.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.5590/ijamt.2017.16.1.04'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/0950017016631447: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0950017...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/0950017016631447'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/intr-11-2014-0299: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/intr-11...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/intr-11-2014-0299'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ijppm-02-2016-0037: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ijppm-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ijppm-02-2016-0037'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/2278533716671630: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/2278533...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/2278533716671630'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jbusres.2016.08.004: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jbusr...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jbusres.2016.08.004'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:58:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:58:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.14569/ijarai.2016.050904: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.14569/ijarai...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.14569/ijarai.2016.050904'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jbusres.2011.03.005: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jbusr...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jbusres.2011.03.005'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/er-04-2012-0030: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/er-04-2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/er-04-2012-0030'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:58:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1207/s15327043hup1301_4: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1207/s153270...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1207/s15327043hup1301_4'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.hrmr.2011.11.005: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.hrmr....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.hrmr.2011.11.005'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.ijpe.2010.02.013: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.ijpe....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.ijpe.2010.02.013'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:59:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/0148-2963(95)00126-3: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/0148-29...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/0148-2963(95)00126-3'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/1309989: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/1309989...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/1309989'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/j.1467-6486.1989.tb00746.x: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/j.1467-...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1111/j.1467-6486.1989.tb00746.x'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1038/nature03972: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1038/nature0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1038/nature03972'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:59:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.9790/487x-0513239: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.9790/487x-05...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.9790/487x-0513239'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Review: Information Technology and Organizational Performance: An Integrative Model of IT Business Value file: [Errno 22] Invalid argument: 'tests2\\Review: Information Technology and Organizational Performance: An Integrative Model of IT Business Value.pdf'
+2025-01-20 22:59:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/25148636: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/2514863...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.2307/25148636'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/10686967.1998.11919154: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/1068696...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/10686967.1998.11919154'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/0030-5073(77)90052-6: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/0030-50...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/0030-5073(77)90052-6'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/13673270910997088: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/1367327...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/13673270910997088'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/hrm.20032: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/hrm.200...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/hrm.20032'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1207/s15327043hup1002_5: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1207/s153270...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1207/s15327043hup1002_5'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1007/bf00881663: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1007/bf00881...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1007/bf00881663'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5465/amr.2001.4845830: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5465/amr.200...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.5465/amr.2001.4845830'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5465/amj.2007.25525821: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5465/amj.200...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.5465/amj.2007.25525821'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1147/sj.404.0831: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1147/sj.404....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1147/sj.404.0831'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.omega.2004.08.002: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.omega...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.omega.2004.08.002'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/014920639201800306: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0149206...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/014920639201800306'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/j.1744-6570.2006.00045.x: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/j.1744-...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.1111/j.1744-6570.2006.00045.x'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/0092070399274002: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0092070...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/0092070399274002'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/07421222.2003.11045756: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/0742122...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/07421222.2003.11045756'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/2392457: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/2392457...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/2392457'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/0149206308330560: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0149206...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/0149206308330560'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/14783360600753653: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/1478336...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/14783360600753653'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/1478336042000255569: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/1478336...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/1478336042000255569'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/2393010: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/2393010...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/2393010'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1038/nature05317: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1038/nature0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1038/nature05317'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/0306312705052359: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0306312...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/0306312705052359'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1257/aer.97.5.1611: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1257/aer.97....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1257/aer.97.5.1611'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1257/aer.98.1.394: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1257/aer.98....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1257/aer.98.1.394'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/job.507: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/job.507...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/job.507'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/256040: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/256040'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/256040'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 23:01:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/1468-0297.00293: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/1468-02...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1111/1468-0297.00293'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1038/23932: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1038/23932'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1038/23932'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1038/379718a0: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1038/379718a...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1038/379718a0'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 23:01:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.4337/9781035304950.00007: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.4337/9781035...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.4337/9781035304950.00007'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1126/science.1060391: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1126/science...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1126/science.1060391'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 23:01:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/1913388: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/1913388...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/1913388'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 23:02:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5465/amr.2003.9416096: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5465/amr.200...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.5465/amr.2003.9416096'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/bse.564: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/bse.564...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/bse.564'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1006/jema.1997.0146: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1006/jema.19...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1006/jema.1997.0146'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1257/jel.38.3.569: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1257/jel.38....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1257/jel.38.3.569'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.riob.2012.11.002: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.riob....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.riob.2012.11.002'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1104/pp.109.1.7: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1104/pp.109....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1104/pp.109.1.7'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/095441200440340: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/0954412...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/095441200440340'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jom.2008.01.001: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jom.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jom.2008.01.001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jom.2005.09.006: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jom.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jom.2005.09.006'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/1467-6486.00059: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/1467-64...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1111/1467-6486.00059'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.ijhm.2008.08.003: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.ijhm....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.ijhm.2008.08.003'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/s0149-2063(96)90049-5: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/s0149-2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/s0149-2063(96)90049-5'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)

@@ -7,6 +7,10 @@ from time import sleep
 from dotenv import load_dotenv
 import sys
 from pathlib import Path
+import sqlalchemy as sa
+from sqlalchemy import create_engine, text
+import pandas as pd
+from time import sleep
 
 # Add project root to Python path
 project_root = Path(__file__).parent.parent.parent
@@ -17,13 +21,14 @@ from src.db_ai.ai_db_manager import *
 load_dotenv('.env')
 logger = PokoLogger()
 
-def download_paper(doi, title, scihub_url="https://sci-hub.se", download_dir="downloads"):
+def download_paper(doi, title, scihub_url="https://sci-hub.se", download_dir="tests2"):
     """
     Download a scientific paper from Sci-Hub using its DOI.
     First searches for the paper on Sci-Hub's interface, then downloads the PDF.
     
     Args:
         doi (str): The DOI of the paper to download
+        title (str): The title of the paper to download
         scihub_url (str): The base URL for Sci-Hub
         download_dir (str): Directory to save downloaded papers
     
@@ -111,22 +116,70 @@ def download_paper(doi, title, scihub_url="https://sci-hub.se", download_dir="do
         logger.error(ScriptIdentifier.SCIHUB, f" Unexpected error for {title} file: {str(e)}")
         return False
 
+def get_database_connection():
+    try:
+        # Get connection parameters from environment variables
+        db_params = {
+            'host': os.getenv('postgreshost'),
+            'database': os.getenv('postgresdb'),
+            'user': os.getenv('postgresusername'),
+            'password': os.getenv('postgrespassword')
+        }
+        
+        # Create SQLAlchemy engine
+        engine = create_engine(f"postgresql://{db_params['user']}:{db_params['password']}@{db_params['host']}/{db_params['database']}")
+        return engine
+    except Exception as e:
+        logger.error(ScriptIdentifier.SCIHUB, f"Database connection error: {str(e)}")
+        raise
 
-# Connect to database and get papers to download
-conn = AIDbManager().conn
+def update_download_status(engine, doi: str, status: bool):
+    try:
+        with engine.connect() as connection:
+            query = text("""
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = :status,
+                WHERE doi = :doi
+            """)
+            connection.execute(query, {"status": "success" if status else "failed", "doi": doi})
+            connection.commit()
+    except Exception as e:
+        logger.error(ScriptIdentifier.SCIHUB, f"Error updating status for DOI {doi}: {str(e)}")
 
-query = """
-    SELECT title, doi 
-    FROM ai_schema.project_panos_karydis_for_dl 
-"""
+def main():
+    try:
+        engine = get_database_connection()
+        
+        # Get papers to download
+        query = """
+            SELECT title, doi 
+            FROM ai_schema.project_panos_karydis_for_dl 
+            WHERE (data_retrieved IS NULL OR data_retrieved = 'failed')
+            AND project_name = 'Panos_Karydis'
+        """
+        
+        df = pd.read_sql(query, engine)
+        logger.info(ScriptIdentifier.SCIHUB, f"Found {len(df)} papers to download")
+        
+        for index, row in df.iterrows():
+            try:
+                # Download paper
+                success = download_paper(row['doi'], row['title'])
+                
+                # Update status in database
+                update_download_status(engine, row['doi'], success)
+                
+                # Wait between downloads
+                sleep(3)
+                
+            except Exception as e:
+                logger.error(ScriptIdentifier.SCIHUB, f"Error processing {row['doi']}: {str(e)}")
+                update_download_status(engine, row['doi'], False)
+                
+    except Exception as e:
+        logger.error(ScriptIdentifier.SCIHUB, f"Main process error: {str(e)}")
 
-
-df = pd.read_sql(query, conn)
-logger.info(ScriptIdentifier.SCIHUB, f"Found {len(df)} papers to download")
-
-for index, row in df.iterrows():
-    download_paper(row['doi'], row['title'])
-
-    
-            
+if __name__ == "__main__":
+    main()
 

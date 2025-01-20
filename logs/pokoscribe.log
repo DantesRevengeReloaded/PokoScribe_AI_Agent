@@ -597,3 +597,1701 @@
 2025-01-20 21:21:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/01425450710826122
 2025-01-20 21:21:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-21//9a/bhatnagar2007.pdf#navpanes=0&view=FitH
 2025-01-20 21:21:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: downloads\Talent management strategy of employee engagement in Indian ITES employees: key to retention.pdf
+2025-01-20 22:36:02 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-20 22:36:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found 130 papers to download
+2025-01-20 22:55:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found 130 papers to download
+2025-01-20 22:55:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26643/gis.v14i4.5341
+2025-01-20 22:55:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.26643/gis.v14i4.5341: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.26643/gis.v14i4.5341'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.26643/gis.v14i4.5341'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21275/sr231008004659
+2025-01-20 22:55:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.21275/sr231008004659: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.21275/sr231008004659'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.21275/sr231008004659'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.3390/su12093514
+2025-01-20 22:55:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-04-30/20/10.3390@su12093514.pdf#navpanes=0&view=FitH
+2025-01-20 22:55:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf
+2025-01-20 22:55:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.3390/su12093514: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.3390/su12093514'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': '10.3390/su12093514'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/13632541311300151
+2025-01-20 22:55:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/5466/bd63958e340d716d66a5ca5650b533e6/malik2013.pdf#navpanes=0&view=FitH
+2025-01-20 22:55:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.1108/13632541311300151: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.1108/13632541311300151'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': '10.1108/13632541311300151'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.32996/jbms.2023.5.1.17
+2025-01-20 22:55:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.32996/jbms.2023.5.1.17: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.32996/jbms.2023.5.1.17'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.32996/jbms.2023.5.1.17'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-891596/v1
+2025-01-20 22:55:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.21203/rs.3.rs-891596/v1: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.21203/rs.3.rs-891596/v1'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.21203/rs.3.rs-891596/v1'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1007/978-3-030-94277-9_123
+2025-01-20 22:55:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1007/978-3-030-94277-9_123: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1007/978-3-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.1007/978-3-030-94277-9_123'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/NaN
+2025-01-20 22:55:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1111/apps.12458
+2025-01-20 22:55:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.1111/apps.12458: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.1111/apps.12458'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.1111/apps.12458'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17549/gbfr.2023.28.3.68
+2025-01-20 22:55:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.17549/gbfr.2023.28.3.68: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.17549/gbfr.2023.28.3.68'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.17549/gbfr.2023.28.3.68'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/ijssp-06-2021-0152
+2025-01-20 22:55:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.1108/ijssp-06-2021-0152: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.1108/ijssp-06-2021-0152'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.1108/ijssp-06-2021-0152'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.47191/jefms/v5-i7-20
+2025-01-20 22:55:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:55:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.47191/jefms/v5-i7-20: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.47191/jefms/v5-i7-20'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.47191/jefms/v5-i7-20'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:55:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1177/14705958211007874
+2025-01-20 22:55:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2021-05-17/28/tauetsile2021.pdf#navpanes=0&view=FitH
+2025-01-20 22:55:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement file: [Errno 22] Invalid argument: 'tests2\\Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement.pdf'
+2025-01-20 22:55:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.1177/14705958211007874: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.1177/14705958211007874'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.1177/14705958211007874'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.5861/ijrsm.2024.1078
+2025-01-20 22:56:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:56:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.5861/ijrsm.2024.1078: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.5861/ijrsm.2024.1078'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.5861/ijrsm.2024.1078'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.38124/ijisrt/ijisrt24mar825
+2025-01-20 22:56:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:56:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.38124/ijisrt/ijisrt24mar825: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.38124/ijisrt...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.38124/ijisrt/ijisrt24mar825'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/q7nu2
+2025-01-20 22:56:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:56:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI 10.31235/osf.io/q7nu2: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = '10.31235/osf.io/q7nu2'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': '10.31235/osf.io/q7nu2'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.87.2.268
+2025-01-20 22:56:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2212/2a5bba1c3f5208a727c0857745ed7632/harter2002.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:14 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes: A meta-analysis..pdf
+2025-01-20 22:56:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/0021-9010.87.2.268: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/0021-90...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/0021-9010.87.2.268'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.iedeen.2019.05.001
+2025-01-20 22:56:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-10-21/6d/eliyana2019.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Job satisfaction and organizational commitment effect in the transformational leadership towards employee performance.pdf
+2025-01-20 22:56:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.iedeen.2019.05.001: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.iedee...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.iedeen.2019.05.001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/23311975.2018.1470891
+2025-01-20 22:56:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6948/8991649fb3178077ed348691d8b824c1/sendawula2018.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Training, employee engagement and employee performance: Evidence from Uganda’s health sector.pdf
+2025-01-20 22:56:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/23311975.2018.1470891: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/2331197...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/23311975.2018.1470891'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijlma-10-2016-0085
+2025-01-20 22:56:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/c26821d33cd25437b45fb946abe10744/pawirosumarto2017.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The effect of work environment, leadership style, and organizational culture towards job satisfaction and its implication towards employee performance in Parador Hotels and Resorts, Indonesia.pdf
+2025-01-20 22:56:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ijlma-10-2016-0085: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ijlma-1...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ijlma-10-2016-0085'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/sajbs-04-2016-0036
+2025-01-20 22:56:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/6da89c31fef6f7f4a77361349393fafc/nazir2017.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Enhancing organizational commitment and employee performance through employee engagement.pdf
+2025-01-20 22:56:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/sajbs-04-2016-0036: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/sajbs-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/sajbs-04-2016-0036'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/14725960310807944
+2025-01-20 22:56:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/5ccbdcd80c389ac5ac67fa4798422247/roelofsen2002.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The impact of office environments on employee performance: The design of the workplace as a strategy for productivity enhancement.pdf
+2025-01-20 22:56:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/14725960310807944: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/1472596...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/14725960310807944'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijppm-01-2013-0008
+2025-01-20 22:56:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-18//98/10.1108@IJPPM-01-2013-0008.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Determinants of employee engagement and their impact on employee performance.pdf
+2025-01-20 22:56:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ijppm-01-2013-0008: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ijppm-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ijppm-01-2013-0008'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/001872678904200705
+2025-01-20 22:56:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/01e27b8dfe4f93e4ad9b03c36648840a/shore1989.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Job Satisfaction and Organizational Commitment in Relation to Work Performance and Turnover Intentions.pdf
+2025-01-20 22:56:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/001872678904200705: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0018726...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/001872678904200705'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1002/hrdq.1078
+2025-01-20 22:56:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/137/93799eaf981e013dc528b25ffd2cef15/ellinger2003.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Supervisory coaching behavior, employee satisfaction, and warehouse employee performance: A dyadic perspective in the distribution industry.pdf
+2025-01-20 22:56:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/hrdq.1078: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/hrdq.10...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/hrdq.1078'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/14630010410812306
+2025-01-20 22:56:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4410/8181bd1a288e40f1955f69eed1c0b4d4/vandervoordt2004.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Productivity and employee satisfaction in flexible workplaces.pdf
+2025-01-20 22:56:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/14630010410812306: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/1463001...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/14630010410812306'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.sbspro.2014.04.174
+2025-01-20 22:56:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2573/1a80f5808d1ce6bc8b32b70102b2e847/bedarkar2014.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf
+2025-01-20 22:56:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.sbspro.2014.04.174: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.sbspr...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.sbspro.2014.04.174'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:56:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1093/jopart/mum028
+2025-01-20 22:56:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3050/0bb3f6d4f35a7802986db156c8bc3657/meier2007.pdf#navpanes=0&view=FitH
+2025-01-20 22:56:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Employee Turnover and Organizational Performance: Testing a Hypothesis from Classical Public Administration.pdf
+2025-01-20 22:56:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1093/jopart/mum028: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1093/jopart/...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1093/jopart/mum028'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/s1053-4822(99)00031-5
+2025-01-20 22:57:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/1409/7b6dffd77a9bc50fc8a71429b95108ef/currivan1999.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The Causal Order of Job Satisfaction and Organizational Commitment in Models of Employee Turnover.pdf
+2025-01-20 22:57:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/s1053-4822(99)00031-5: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/s1053-4...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/s1053-4822(99)00031-5'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/02683940310473118
+2025-01-20 22:57:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2255/19ba6aa95640b7c42c4d5267f5db82a3/crossman2003.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Job satisfaction and employee performance of Lebanese banking staff.pdf
+2025-01-20 22:57:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/02683940310473118: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/0268394...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/02683940310473118'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.72.3.374
+2025-01-20 22:57:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4935/60deb72c5fa244ad09338f4488aec3cc/carsten1987.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Unemployment, job satisfaction, and employee turnover: A meta-analytic test of the Muchinsky model..pdf
+2025-01-20 22:57:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/0021-9010.72.3.374: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/0021-90...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/0021-9010.72.3.374'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.62.2.237
+2025-01-20 22:57:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/1148/5506bce14b3f245e7c98df760d80da8c/mobley1977.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Intermediate linkages in the relationship between job satisfaction and employee turnover..pdf
+2025-01-20 22:57:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/0021-9010.62.2.237: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/0021-90...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/0021-9010.62.2.237'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.tourman.2005.02.009
+2025-01-20 22:57:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/392/4b0fe160075bff9c1eb7c64d0fd7dc23/karatepe2006.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The effects of selected individual characteristics on frontline employee performance and job satisfaction.pdf
+2025-01-20 22:57:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.tourman.2005.02.009: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.tourm...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.tourman.2005.02.009'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.88.6.1057
+2025-01-20 22:57:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/7c4b8ab5e7310d4ef76614ba0855d2ea/bond2003.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The Role of Acceptance and Job Control in Mental Health, Job Satisfaction, and Work Performance..pdf
+2025-01-20 22:57:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/0021-9010.88.6.1057: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/0021-90...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/0021-9010.88.6.1057'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1002/hrm.20339
+2025-01-20 22:57:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/137/2f7ff2d656123ecefa8ba948128fa364/rogelberg2010.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Employee satisfaction with meetings: A contemporary facet of job satisfaction.pdf
+2025-01-20 22:57:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/hrm.20339: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/hrm.203...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/hrm.20339'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1073/pnas.2006991117
+2025-01-20 22:57:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-07-11/af/10.1073@pnas.2006991117.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The impact of COVID-19 on small business outcomes and expectations.pdf
+2025-01-20 22:57:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1073/pnas.2006991117: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1073/pnas.20...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1073/pnas.2006991117'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1002/pa.2508
+2025-01-20 22:57:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-10-01/39/10.1002@pa.2508.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/pa.2508: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/pa.2508...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/pa.2508'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.13106/jafeb.2020.vol7.no8.577
+2025-01-20 22:57:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:57:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.13106/jafeb.2020.vol7.no8.577: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.13106/jafeb....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.13106/jafeb.2020.vol7.no8.577'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5267/j.msl.2020.6.038
+2025-01-20 22:57:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-11-16/73/alkurdi2020.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The impact of employee satisfaction on customer satisfaction: Theoretical and empirical underpinning.pdf
+2025-01-20 22:57:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5267/j.msl.2020.6.038: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5267/j.msl.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.5267/j.msl.2020.6.038'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/joepp-06-2018-0034
+2025-01-20 22:57:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-02-17/e9/10.1108@JOEPP-06-2018-0034.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Antecedents and consequences of employee engagement revisited.pdf
+2025-01-20 22:57:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/joepp-06-2018-0034: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/joepp-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/joepp-06-2018-0034'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5539/ibr.v12n2p99
+2025-01-20 22:57:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:57:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5539/ibr.v12n2p99: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5539/ibr.v12...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.5539/ibr.v12n2p99'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijppm-01-2018-0012
+2025-01-20 22:57:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-02/90/diamantidis2018.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Factors affecting employee performance: an empirical approach.pdf
+2025-01-20 22:57:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ijppm-01-2018-0012: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ijppm-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ijppm-01-2018-0012'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.ijhm.2018.06.014
+2025-01-20 22:57:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-11-24/c9/buil2018.pdf#navpanes=0&view=FitH
+2025-01-20 22:57:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Transformational leadership and employee performance: The role of identification, engagement and proactive personality.pdf
+2025-01-20 22:57:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.ijhm.2018.06.014: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.ijhm....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.ijhm.2018.06.014'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:57:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/jcom-04-2016-0026
+2025-01-20 22:57:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/81d5aa43b27f8b77eca22a09132f4a92/kang2017.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\How symmetrical employee communication leads to employee engagement and positive employee communication behaviors.pdf
+2025-01-20 22:58:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/jcom-04-2016-0026: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/jcom-04...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/jcom-04-2016-0026'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/ejtd-08-2016-0066
+2025-01-20 22:58:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6351/6fec9c9e4c668d6b13f4a8f89f14f37d/ibrahim2017.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The effect of soft skills and training methodology on employee performance.pdf
+2025-01-20 22:58:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ejtd-08-2016-0066: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ejtd-08...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ejtd-08-2016-0066'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jik.2017.07.003
+2025-01-20 22:58:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-07-14/6b/abubakar2017.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Knowledge management, decision-making style and organizational performance.pdf
+2025-01-20 22:58:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jik.2017.07.003: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jik.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jik.2017.07.003'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/apl0000103
+2025-01-20 22:58:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/1a2c1ba633dcbf08a6c5db9350e15182/hom2017.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\One hundred years of employee turnover theory and research..pdf
+2025-01-20 22:58:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1037/apl0000103: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1037/apl0000...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1037/apl0000103'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/peps.12226
+2025-01-20 22:58:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6260/2fa9eca11b7e6c7d99b17e817ebcc20a/rubenstein2017.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/peps.12226: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/peps.12...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1111/peps.12226'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5590/ijamt.2017.16.1.04
+2025-01-20 22:58:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:58:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5590/ijamt.2017.16.1.04: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5590/ijamt.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.5590/ijamt.2017.16.1.04'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/0950017016631447
+2025-01-20 22:58:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/5151/f56d07fd77caf40cc60c9e6cbb2e16b3/wheatley2016.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Employee satisfaction and use of flexible working arrangements.pdf
+2025-01-20 22:58:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/0950017016631447: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0950017...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/0950017016631447'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/intr-11-2014-0299
+2025-01-20 22:58:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4974/cb1c29f848438ad9a36e8e4bf3b72267/cao2016.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Exploring the influence of social media on employee work performance.pdf
+2025-01-20 22:58:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/intr-11-2014-0299: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/intr-11...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/intr-11-2014-0299'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijppm-02-2016-0037
+2025-01-20 22:58:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/74819f31524f4248b26ccecd3b036bf2/almehrzi2016.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Competing through employee engagement: a proposed framework.pdf
+2025-01-20 22:58:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/ijppm-02-2016-0037: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/ijppm-0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/ijppm-02-2016-0037'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/2278533716671630
+2025-01-20 22:58:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/47d7806ca367e6f6c5fa869b003fe372/pradhan2017.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Employee Performance at Workplace: Conceptual Model and Empirical Validation.pdf
+2025-01-20 22:58:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/2278533716671630: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/2278533...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/2278533716671630'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jbusres.2016.08.004
+2025-01-20 22:58:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/f74cc40edf46ae4e36968d6f36ac1d85/gunasekaran2016.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Big data and predictive analytics for supply chain and organizational performance.pdf
+2025-01-20 22:58:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jbusres.2016.08.004: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jbusr...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jbusres.2016.08.004'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/NaN
+2025-01-20 22:58:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:58:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.14569/ijarai.2016.050904
+2025-01-20 22:58:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:58:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.14569/ijarai.2016.050904: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.14569/ijarai...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.14569/ijarai.2016.050904'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jbusres.2011.03.005
+2025-01-20 22:58:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/a91d1b0b2c73f38f9b7a193fa99645f4/10.1016@j.jbusres.2011.03.005.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Transformational leadership influence on organizational performance through organizational learning and innovation.pdf
+2025-01-20 22:58:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jbusres.2011.03.005: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jbusr...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jbusres.2011.03.005'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/er-04-2012-0030
+2025-01-20 22:58:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/37a11d759e366374aa0fa9307e3fab7d/10.1108@er-04-2012-0030.pdf#navpanes=0&view=FitH
+2025-01-20 22:58:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Establishing linkages between religiosity and spirituality on employee performance.pdf
+2025-01-20 22:58:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/er-04-2012-0030: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/er-04-2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/er-04-2012-0030'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:58:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/NaN
+2025-01-20 22:58:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:58:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1207/s15327043hup1301_4
+2025-01-20 22:59:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/3238/5a1a867247c654b26f92d99ab7d77faf/stanton2000.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Reactions to Employee Performance Monitoring: Framework, Review, and Research Directions.pdf
+2025-01-20 22:59:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1207/s15327043hup1301_4: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1207/s153270...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1207/s15327043hup1301_4'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.hrmr.2011.11.005
+2025-01-20 22:59:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/1330/93868a128ed8f9ac85ccc32143c4d202/jiang2012.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Clarifying the construct of human resource systems: Relating human resource management to employee performance.pdf
+2025-01-20 22:59:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.hrmr.2011.11.005: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.hrmr....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.hrmr.2011.11.005'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.ijpe.2010.02.013
+2025-01-20 22:59:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/9e65f63139db68c7bf4cec62f2476451/sadikoglu2010.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Investigating the effects of innovation and employee performance on the relationship between total quality management practices and firm performance: An empirical study of Turkish firms.pdf
+2025-01-20 22:59:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.ijpe.2010.02.013: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.ijpe....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.ijpe.2010.02.013'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/NaN
+2025-01-20 22:59:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:59:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/0148-2963(95)00126-3
+2025-01-20 22:59:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/1965/a54ec838b776447666ad977258166c9a/hartline1996.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Employee performance cues in a hotel service environment: Influence on perceived service quality, value, and word-of-mouth intentions.pdf
+2025-01-20 22:59:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/0148-2963(95)00126-3: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/0148-29...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/0148-2963(95)00126-3'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/1309989
+2025-01-20 22:59:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/1537/666479572e5fdae6442cebe8400b5705/carpenter1985.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Cascading Trophic Interactions and Lake Productivity.pdf
+2025-01-20 22:59:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/1309989: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/1309989...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/1309989'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1467-6486.1989.tb00746.x
+2025-01-20 22:59:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/938/c0955c2ccb2b78a5c580442a9bf19bcd/damanpour1989.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\THE RELATIONSHIP BETWEEN TYPES OF INNOVATION AND ORGANIZATIONAL PERFORMANCE.pdf
+2025-01-20 22:59:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/j.1467-6486.1989.tb00746.x: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/j.1467-...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1111/j.1467-6486.1989.tb00746.x'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1038/nature03972
+2025-01-20 22:59:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/1048/6ca749440290fba97a4533d250540672/ciais2005.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Europe-wide reduction in primary productivity caused by the heat and drought in 2003.pdf
+2025-01-20 22:59:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1038/nature03972: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1038/nature0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1038/nature03972'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.9790/487x-0513239
+2025-01-20 22:59:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 22:59:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.9790/487x-0513239: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.9790/487x-05...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.9790/487x-0513239'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/25148636
+2025-01-20 22:59:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2338/06e9ae99341a6b32be7e3ee9dfe6f4fe/melville2004.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Review: Information Technology and Organizational Performance: An Integrative Model of IT Business Value file: [Errno 22] Invalid argument: 'tests2\\Review: Information Technology and Organizational Performance: An Integrative Model of IT Business Value.pdf'
+2025-01-20 22:59:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/25148636: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/2514863...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.2307/25148636'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/10686967.1998.11919154
+2025-01-20 22:59:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6685/cc84cc28c4a0519a5c846e65e8b0ef4d/the-improvement-guide-a-practical-approach-to-enhancing-organiza-1998.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The Improvement Guide: A Practical Approach to Enhancing Organizational Performance.pdf
+2025-01-20 22:59:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/10686967.1998.11919154: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/1068696...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/10686967.1998.11919154'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/0030-5073(77)90052-6
+2025-01-20 22:59:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/26e7ff22d0c86e601090325bc7f8d9e6/rousseau1977.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Technological differences in job characteristics, employee satisfaction, and motivation: A synthesis of job design research and sociotechnical systems theory.pdf
+2025-01-20 22:59:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/0030-5073(77)90052-6: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/0030-50...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/0030-5073(77)90052-6'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/13673270910997088
+2025-01-20 22:59:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6543/cd7b5ec2c0625aa64469b068115a4b42/zack2009.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Knowledge management and organizational performance: an exploratory analysis.pdf
+2025-01-20 22:59:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1108/13673270910997088: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1108/1367327...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1108/13673270910997088'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1002/hrm.20032
+2025-01-20 22:59:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-23//30/saari2004.pdf#navpanes=0&view=FitH
+2025-01-20 22:59:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Employee attitudes and job satisfaction.pdf
+2025-01-20 22:59:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/hrm.20032: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/hrm.200...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/hrm.20032'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 22:59:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1207/s15327043hup1002_5
+2025-01-20 22:59:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-23//7b/podsakoff1997.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Impact of Organizational Citizenship Behavior on Organizational Performance: A Review and Suggestion for Future Research.pdf
+2025-01-20 23:00:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1207/s15327043hup1002_5: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1207/s153270...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1207/s15327043hup1002_5'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1007/bf00881663
+2025-01-20 23:00:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/620/d37468350984343d65a46426e005121c/sims1994.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The influence of ethical fit on employee satisfaction, commitment and turnover.pdf
+2025-01-20 23:00:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1007/bf00881663: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1007/bf00881...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1007/bf00881663'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5465/amr.2001.4845830
+2025-01-20 23:00:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/55af01fde71296c3a3fd2bf929c65bf1/dess2001.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Voluntary Turnover, Social Capital, and Organizational Performance.pdf
+2025-01-20 23:00:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5465/amr.2001.4845830: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5465/amr.200...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.5465/amr.2001.4845830'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5465/amj.2007.25525821
+2025-01-20 23:00:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4409/f30e86092118521b64990e1f6c20659d/aryee2007.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\High-Performance Human Resource Practices, Citizenship Behavior, and Organizational Performance: A Relational Perspective.pdf
+2025-01-20 23:00:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5465/amj.2007.25525821: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5465/amj.200...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.5465/amj.2007.25525821'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1147/sj.404.0831
+2025-01-20 23:00:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2061/c6ce63ba99a34913e558524027298045/lesser2001.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Communities of practice and organizational performance.pdf
+2025-01-20 23:00:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1147/sj.404.0831: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1147/sj.404....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1147/sj.404.0831'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.omega.2004.08.002
+2025-01-20 23:00:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/1352/5040297a107335012218f8e1ea586a8a/li2006.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The impact of supply chain management practices on competitive advantage and organizational performance.pdf
+2025-01-20 23:00:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.omega.2004.08.002: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.omega...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.omega.2004.08.002'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/014920639201800306
+2025-01-20 23:00:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2277/881a7cc45601ed9f0e8fe77fccd87d26/burke1992.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\A Causal Model of Organizational Performance and Change.pdf
+2025-01-20 23:00:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/014920639201800306: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0149206...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/014920639201800306'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1744-6570.2006.00045.x
+2025-01-20 23:00:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-23//92/combs2006.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/j.1744-6570.2006.00045.x: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/j.1744-...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.1111/j.1744-6570.2006.00045.x'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/0092070399274002
+2025-01-20 23:00:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/dc2a520f0d55726169f2dbcdb1035a10/baker1999.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The Synergistic Effect of Market Orientation and Learning Orientation on Organizational Performance.pdf
+2025-01-20 23:00:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/0092070399274002: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0092070...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/0092070399274002'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/07421222.2003.11045756
+2025-01-20 23:00:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3577/0918ad9de6ab7db18df328a06200bedf/knowledge-management-enablers-processes-and-organizational-perfo-2003.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Knowledge Management Enablers, Processes, and Organizational Performance: An Integrative View and Empirical Examination.pdf
+2025-01-20 23:00:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/07421222.2003.11045756: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/0742122...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/07421222.2003.11045756'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/2392457
+2025-01-20 23:00:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2239/8f35c9900baa93ecdf44c255ab124d36/snow1980.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Strategy, Distinctive Competence, and Organizational Performance.pdf
+2025-01-20 23:00:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/2392457: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/2392457...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/2392457'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/0149206308330560
+2025-01-20 23:00:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/1144/52016a84a7ca63df3fc9a01c16e5f141/richard2009.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Measuring Organizational Performance: Towards Methodological Best Practice.pdf
+2025-01-20 23:00:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/0149206308330560: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0149206...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/0149206308330560'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/14783360600753653
+2025-01-20 23:00:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/3075/dc02b5d283c4bf09d36e751addc9ac8a/matzler2006.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The Relationship between Interpersonal Trust, Employee Satisfaction, and Employee Loyalty.pdf
+2025-01-20 23:00:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/14783360600753653: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/1478336...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/14783360600753653'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:00:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/1478336042000255569
+2025-01-20 23:00:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/443c2390371c64ab76d8cb14c518b1f2/matzler2004.pdf#navpanes=0&view=FitH
+2025-01-20 23:00:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Employee Satisfaction: Does Kano's Model Apply?.pdf
+2025-01-20 23:00:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/1478336042000255569: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/1478336...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/1478336042000255569'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/2393010
+2025-01-20 23:01:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2983/4f17c0e7e05bbafebe6d1049da384c42/staw1983.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The Justification of Organizational Performance.pdf
+2025-01-20 23:01:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/2393010: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/2393010...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/2393010'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1038/nature05317
+2025-01-20 23:01:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/1048/1eff82f82a9a186c103c2d1a6bfa4aa9/behrenfeld2006.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Climate-driven trends in contemporary ocean productivity.pdf
+2025-01-20 23:01:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1038/nature05317: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1038/nature0...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1038/nature05317'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/0306312705052359
+2025-01-20 23:01:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2277/fb57568ff69f04b1b64bdf4d1d4f601a/lee2005.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The Impact of Research Collaboration on Scientific Productivity.pdf
+2025-01-20 23:01:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1177/0306312705052359: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1177/0306312...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1177/0306312705052359'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1257/aer.97.5.1611
+2025-01-20 23:01:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/0f6aadcf30d0dec5a1375971280f8a95/amiti2007.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Trade Liberalization, Intermediate Inputs, and Productivity: Evidence from Indonesia.pdf
+2025-01-20 23:01:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1257/aer.97.5.1611: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1257/aer.97....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1257/aer.97.5.1611'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1257/aer.98.1.394
+2025-01-20 23:01:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/12a1804b77c0d862be60f37bb5d61d29/foster2008.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Reallocation, Firm Turnover, and Efficiency: Selection on Productivity or Profitability?.pdf
+2025-01-20 23:01:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1257/aer.98.1.394: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1257/aer.98....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1257/aer.98.1.394'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1002/job.507
+2025-01-20 23:01:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/158/e70dddd6a54715ce0e796c037c1da997/luthans2008.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The mediating role of psychological capital in the supportive organizational climate—employee performance relationship.pdf
+2025-01-20 23:01:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/job.507: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/job.507...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/job.507'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/256040
+2025-01-20 23:01:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/7cac062a97f7dd430bfc40465f9fb5d5/dess1984.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Porter's (1980) Generic Strategies as Determinants of Strategic Group Membership and Organizational Performance..pdf
+2025-01-20 23:01:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/256040: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/256040'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/256040'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/NaN
+2025-01-20 23:01:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 23:01:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/1468-0297.00293
+2025-01-20 23:01:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/3428f42aabfda0a078c0a4cc960cf65c/edwards1998.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Openness, Productivity and Growth: What Do We Really Know?.pdf
+2025-01-20 23:01:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/1468-0297.00293: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/1468-02...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1111/1468-0297.00293'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1038/23932
+2025-01-20 23:01:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/9c0bc7386df9a16434c8e1b2f0e8a45e/sanders1998.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Mycorrhizal fungal diversity determines plant biodiversity, ecosystem variability and productivity.pdf
+2025-01-20 23:01:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1038/23932: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1038/23932'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1038/23932'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1038/379718a0
+2025-01-20 23:01:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/1039/d1bf7f6852ae27b494b8bad74239ac9a/tilman1996.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Productivity and sustainability influenced by biodiversity in grassland ecosystems.pdf
+2025-01-20 23:01:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1038/379718a0: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1038/379718a...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1038/379718a0'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.4337/9781035304950.00007
+2025-01-20 23:01:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 23:01:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.4337/9781035304950.00007: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.4337/9781035...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'https://doi.org/10.4337/9781035304950.00007'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1126/science.1060391
+2025-01-20 23:01:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/3e98239473f105ce0878eee4f8f76918/tilman2001.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Diversity and Productivity in a Long-Term Grassland Experiment.pdf
+2025-01-20 23:01:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1126/science.1060391: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1126/science...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1126/science.1060391'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/NaN
+2025-01-20 23:01:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 23:01:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:01:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/1913388
+2025-01-20 23:01:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2258/b19377f09549f22fc5120744a4f91eff/caves1982.pdf#navpanes=0&view=FitH
+2025-01-20 23:01:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\The Economic Theory of Index Numbers and the Measurement of Input, Output, and Productivity.pdf
+2025-01-20 23:01:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.2307/1913388: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.2307/1913388...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.2307/1913388'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/NaN
+2025-01-20 23:02:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-20 23:02:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI NaN: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'NaN'
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'failed', 'doi': 'NaN'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5465/amr.2003.9416096
+2025-01-20 23:02:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/90b00cbf198074f58be5fda34bd5e11e/benner2003.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Exploitation, Exploration, and Process Management: The Productivity Dilemma Revisited.pdf
+2025-01-20 23:02:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.5465/amr.2003.9416096: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.5465/amr.200...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.5465/amr.2003.9416096'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1002/bse.564
+2025-01-20 23:02:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/75/f39f93db35f056b5747d8a899fcba231/hubbard2009.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Measuring organizational performance: beyond the triple bottom line.pdf
+2025-01-20 23:02:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1002/bse.564: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1002/bse.564...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1002/bse.564'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1006/jema.1997.0146
+2025-01-20 23:02:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/188/a6211075435a8b39e56f5f1010260cf9/chung1997.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Productivity and Undesirable Outputs: A Directional Distance Function Approach.pdf
+2025-01-20 23:02:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1006/jema.1997.0146: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1006/jema.19...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1006/jema.1997.0146'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1257/jel.38.3.569
+2025-01-20 23:02:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/4298/6f83a06e7bfa6a5ee636174c392493fc/bartelsman2000.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Understanding Productivity: Lessons from Longitudinal Microdata.pdf
+2025-01-20 23:02:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1257/jel.38.3.569: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1257/jel.38....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1257/jel.38.3.569'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.riob.2012.11.002
+2025-01-20 23:02:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6198/6a4ee9a7ee12d05a60c93b6331913bad/bauman2012.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Corporate social responsibility as a source of employee satisfaction.pdf
+2025-01-20 23:02:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.riob.2012.11.002: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.riob....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.riob.2012.11.002'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1104/pp.109.1.7
+2025-01-20 23:02:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/753a6a6e1b5e9b7018b74323eabba819/lynch1995.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Root Architecture and Plant Productivity.pdf
+2025-01-20 23:02:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1104/pp.109.1.7: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1104/pp.109....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1104/pp.109.1.7'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/095441200440340
+2025-01-20 23:02:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/cac3043347a29652031ff165fbe281fd/eskildsen2000.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\A causal model for employee satisfaction.pdf
+2025-01-20 23:02:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1080/095441200440340: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1080/0954412...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1080/095441200440340'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jom.2008.01.001
+2025-01-20 23:02:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/9adc8722b0454de517a12639b6171814/yee2008.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jom.2008.01.001: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jom.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jom.2008.01.001'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jom.2005.09.006
+2025-01-20 23:02:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6201/9e4a465b9bbdaf030fe1e1a315eafa32/jun2006.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\TQM practice in maquiladora: Antecedents of employee satisfaction and loyalty.pdf
+2025-01-20 23:02:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.jom.2005.09.006: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.jom.2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.jom.2005.09.006'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/1467-6486.00059
+2025-01-20 23:02:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/881/cddf9b60134b753573ffccc59a3a792e/floyd1997.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Middle Management’s Strategic Influence and Organizational Performance.pdf
+2025-01-20 23:02:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1111/1467-6486.00059: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1111/1467-64...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1111/1467-6486.00059'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.ijhm.2008.08.003
+2025-01-20 23:02:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6949/6b52b70769cd1ab8d07bd652f3ab1168/chi2009.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Employee satisfaction, customer satisfaction, and financial performance: An empirical examination.pdf
+2025-01-20 23:02:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/j.ijhm.2008.08.003: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/j.ijhm....
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/j.ijhm.2008.08.003'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-20 23:02:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/s0149-2063(96)90049-5
+2025-01-20 23:02:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/1753/84b67c79ad12006ea18173380ca450a6/podsakoff1996.pdf#navpanes=0&view=FitH
+2025-01-20 23:02:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: tests2\Transformational leader behaviors and substitutes for leadership as determinants of employee satisfaction, commitment, trust, and organizational citize.pdf
+2025-01-20 23:02:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Error updating status for DOI https://doi.org/10.1016/s0149-2063(96)90049-5: (psycopg2.errors.SyntaxError) syntax error at or near "WHERE"
+LINE 5:                 WHERE doi = 'https://doi.org/10.1016/s0149-2...
+                        ^
+
+[SQL: 
+                UPDATE ai_schema.project_panos_karydis_for_dlata 
+                SET 
+                    data_retrieved = %(status)s,
+                WHERE doi = %(doi)s
+            ]
+[parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/s0149-2063(96)90049-5'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
