@@ -64,7 +64,7 @@ def filter_metadata():
                 {"role": "system", "content": "You are a bot."},
                 {"role": "user", "content": prompt}
             ],
-            model="gpt-3.5-turbo",
+            model="o1-mini",
             max_tokens=1000,
             temperature=0.5,
         )
