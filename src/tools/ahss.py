@@ -5,16 +5,13 @@ from datetime import datetime
 from urllib.parse import quote_plus
 from tqdm import tqdm
 from abc import ABC, abstractmethod
-import sys
-from pathlib import Path
+import sys, requests, time, os, csv, json
 
 # Add project root to Python path
 project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
-from db_ai.ai_db_manager import *
+from src.db_ai.ai_db_manager import *
 from src.config import *
-
-import requests, time, os, csv, json
 
 
 """

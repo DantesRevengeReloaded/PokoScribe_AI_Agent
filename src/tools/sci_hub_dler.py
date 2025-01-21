@@ -1,16 +1,12 @@
-import requests
+import requests, os, re, sys
 from bs4 import BeautifulSoup
-import os
-import re
 from urllib.parse import urljoin, urlparse
 from time import sleep
 from dotenv import load_dotenv
-import sys
 from pathlib import Path
 import sqlalchemy as sa
 from sqlalchemy import create_engine, text
 import pandas as pd
-from time import sleep
 
 # Add project root to Python path
 project_root = Path(__file__).parent.parent.parent
@@ -21,7 +17,24 @@ from src.db_ai.ai_db_manager import *
 load_dotenv('.env')
 logger = PokoLogger()
 
-def download_paper(doi, title, scihub_url="https://sci-hub.se", download_dir="tests2"):
+def sanitize_filename(filename):
+    """
+    Sanitize a string to be used as a filename.
+    Removes invalid characters and truncates to 255 characters.
+    
+    Args:
+        filename (str): The filename to sanitize
+    
+    Returns:
+        str: The sanitized filename
+    """
+    # Remove invalid characters
+    filename = re.sub(r'[<>:"/\\|?*]', '', filename)
+    
+    # Truncate to 255 characters
+    return filename[:255]
+
+def download_paper(doi, title, scihub_url="https://sci-hub.se", download_dir="resources/downloads"):
     """
     Download a scientific paper from Sci-Hub using its DOI.
     First searches for the paper on Sci-Hub's interface, then downloads the PDF.
@@ -100,9 +113,10 @@ def download_paper(doi, title, scihub_url="https://sci-hub.se", download_dir="te
         # Download the PDF
         pdf_response = requests.get(pdf_url, headers=headers, timeout=30)
         pdf_response.raise_for_status()
-        
+
+        titleforpath = sanitize_filename(title)
         # Save the file
-        filename = os.path.join(download_dir, f"{title}.pdf")
+        filename = os.path.join(download_dir, f"{titleforpath}.pdf")
         with open(filename, 'wb') as f:
             f.write(pdf_response.content)
         
@@ -147,39 +161,4 @@ def update_download_status(engine, doi: str, status: bool):
     except Exception as e:
         logger.error(ScriptIdentifier.SCIHUB, f"Error updating status for DOI {doi}: {str(e)}")
 
-def main():
-    try:
-        engine = get_database_connection()
-        
-        # Get papers to download
-        query = """
-            SELECT title, doi 
-            FROM ai_schema.project_panos_karydis_for_dl 
-            WHERE (data_retrieved IS NULL OR data_retrieved = 'failed')
-            AND project_name = 'Panos_Karydis'
-        """
-        
-        df = pd.read_sql(query, engine)
-        logger.info(ScriptIdentifier.SCIHUB, f"Found {len(df)} papers to download")
-        
-        for index, row in df.iterrows():
-            try:
-                # Download paper
-                success = download_paper(row['doi'], row['title'])
-                
-                # Update status in database
-                update_download_status(engine, row['doi'], success)
-                
-                # Wait between downloads
-                sleep(3)
-                
-            except Exception as e:
-                logger.error(ScriptIdentifier.SCIHUB, f"Error processing {row['doi']}: {str(e)}")
-                update_download_status(engine, row['doi'], False)
-                
-    except Exception as e:
-        logger.error(ScriptIdentifier.SCIHUB, f"Main process error: {str(e)}")
-
-if __name__ == "__main__":
-    main()
 

@@ -2295,3 +2295,10 @@ LINE 5:                 WHERE doi = 'https://doi.org/10.1016/s0149-2...
             ]
 [parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/s0149-2063(96)90049-5'}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
+2025-01-21 20:57:10 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-21 20:57:10 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 999 records from project Panos_Karydis
+2025-01-21 20:57:42 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-21 20:57:42 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 999 records from project Panos_Karydis
+2025-01-21 21:12:31 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-21 21:12:31 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 999 records from project Panos_Karydis
+2025-01-21 21:12:32 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Failed to filter metadata in automated procedure: Error code: 400 - {'error': {'message': "This model's maximum context length is 16385 tokens. However, your messages resulted in 22828 tokens. Please reduce the length of the messages.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}

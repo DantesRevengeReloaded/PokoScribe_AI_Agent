@@ -29,6 +29,8 @@ class SystemPars:
 
         self.project_name = 'Panos_Karydis'
 
+        self.filter_sources_for_dl = 'prompt-engineering\main_for_filtering_resources.txt'
+
 # Define the keywords and search queries to be used in the search of AHSS tool      
 def get_keywords() -> list:
     keywords = [

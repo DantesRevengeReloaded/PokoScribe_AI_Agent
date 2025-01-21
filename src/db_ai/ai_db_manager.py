@@ -176,4 +176,21 @@ class SaveMetaData(AIDbManager):
             self.conn.rollback()
 
 
+class GetMetaData(AIDbManager):
+    def __init__(self):
+        super().__init__()
 
+    def get_papers_metadata_by_title(self, project_name: str) -> pd.DataFrame:
+        """Get papers metadata by title from database"""
+        try:
+            with self.conn.cursor() as cursor:
+                cursor.execute("""
+                    SELECT id, title FROM ai_schema.papers_metadata
+                    WHERE project_name = %s
+                """, (project_name,))
+                df = pd.DataFrame(cursor.fetchall(), columns=[desc[0] for desc in cursor.description])
+                logger.info(ScriptIdentifier.DATABASE, f"Retrieved {len(df)} records from project {project_name}")
+                return df
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error getting metadata by title: {e}")
+            return pd.DataFrame()
