@@ -1473,3 +1473,597 @@ LINE 5:                 WHERE doi = 'https://doi.org/10.1016/s0149-2...
 [parameters: {'status': 'success', 'doi': 'https://doi.org/10.1016/s0149-2063(96)90049-5'}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
 2025-01-21 21:12:32 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Failed to filter metadata in automated procedure: Error code: 400 - {'error': {'message': "This model's maximum context length is 16385 tokens. However, your messages resulted in 22828 tokens. Please reduce the length of the messages.", 'type': 'invalid_request_error', 'param': 'messages', 'code': 'context_length_exceeded'}}
+2025-01-22 12:04:49 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Failed to filter metadata in automated procedure: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-22 12:05:12 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Failed to filter metadata in automated procedure: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-22 12:11:50 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Failed to filter metadata in automated procedure: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-22 12:16:18 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Failed to filter metadata in automated procedure: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-01-22 12:16:48 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Failed to filter metadata in automated procedure: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.7 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-22 13:01:28 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error inserting filtered metadata: syntax error at or near """"select * from ai_schema.papers_metadata where id in (1,2,3,4,5,6,8,9,10,11,12,13,14,15,16,17,18,19,20,22,25,29,30,31,34,36,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,105,106,107,108,109,111,112,113)""""
+LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
+        ^
+
+2025-01-22 13:48:34 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Failed to download filtered metadata in automated procedure: 'SciHubDler' object has no attribute 'strip'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper An empirical study on factors influencing level of employee engagement with reference to select organization: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Exploring the Relationship among Employee Participation and Job Satisfaction, Employee Commitment and Employee Performance: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Exploring the Link between Training and Development, Employee Engagement and Employee Retention: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee Monetary Compensation and Employee Job Satisfaction: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The Job Satisfaction-Job Performance Link Revisited: Specificity Matters: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Study of Relationship between Job Stress and Job Satisfaction in Print Media: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Strengthening the Link Between Organizational Culture and Employee Loyalty: Exploring the Mediating Effects of Employee Trust and Job Satisfaction: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The determinants of the link between life satisfaction and job satisfaction across Europe: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper A Study of ERP Implementation in Technical Educational Institutions for Quality Service and Employee Satisfaction: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee compensation, employee satisfaction, and employee performance: Basis for comprehensive compensation and satisfaction framework: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Overqualification as Moderator for the Link Between Job Change and Job Satisfaction Among Immigrants and Natives in Germany: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Job Satisfaction and Job Design: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Measurement of Job Satisfaction Among the Employees in Select Commercial Banks in Chittoor District of Andhra Pradesh: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Impact of Training and Development on Employee Performance in Select Public Sector organizations: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Job insecurity, job satisfaction, life satisfaction and happiness. Is the impact of job insecurity on happiness and life satisfaction caused by job satisfaction?: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Work Performance of Print Media Employees: A Path Analysis using Organization and Psychological Behaviors: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Effect of Psychological Contract on Employee Turnover Intention: Moderating Role of Select Demographic Variables: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Turning Over Employee Turnover: A Review on Employee Alumni and Rehiring: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The mediating effect of job satisfaction on the link between employees’ motivation and job performance: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper MODELLING THE LINK BETWEEN CONFLICT MANAGEMENT STYLES, ORGANISATIONAL TRUST AND EMPLOYEE JOB SATISFACTION: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Bullying effects on performance and engagement among academics: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper An Empirical Approach to Evaluate Employee Performance Using Finger Print Attendance: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Impact of dimensions of organisational culture on employee satisfaction and performance level in select organisations: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The Link Between Leadership Style, Communicator Competence, and Employee Satisfaction: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Examining the Link between Employee Job Satisfaction and Commitment at the Prevention and Combating of Corruption Bureau in Tanzania: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Type of School and Job Satisfaction among Secondary School Teachers: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper What is Employee Engagement?: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper What Prevents Employee Engagement?: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Global Talent Retention: Understanding Employee Turnover Around the World: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Does commuting drive employee turnover A select case of women employed in the Indian retail industry: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Does commuting drive employee turnover A select case of women employed in the Indian retail industry: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee Turnover in Turkey: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Globalization and Employee Turnover: The Case of Bulgaria: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper HRM and Employee Engagement Link: Mediating Role of Employee Well-being: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Effect of Mediating Variable Job Satisfaction in Relationship of Organizational Commitment and Quality of Work Life of Workforce of Select IT Companies at Hyderabad: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Exploring the link between HRPractices, Employee Motivation, Employee Empowerment and Employee Performance in Engineering Firms of Indonesia: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Theories of Employee Turnover: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Evaluating the link between Corporate Social Responsibility (CSR) and Employee Engagement: Evidence from Selected Commercial Banks of Bangladesh: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The impact of employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper What exactly is employee engagement?: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Final reflections on employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The expression of employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Emerging developments in employee engagement research: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The case for employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Colliding Employer-Employee Perspectives of Employee Turnover: Evidence from a Born-Global Industry: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee turnover as a cost factor of organizations: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Understanding and measuring employee turnover: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Succession planning, job engagement and job satisfaction: the missing link: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee turnover and the expansion and contraction of employers: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Introduction: the state of employee turnover: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee turnover: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper High-performance human resource practices and voluntary employee turnover: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper JOB SATISFACTION:  A LINK IN THE CHAIN BETWEEN PERSONALITY ATTRIBUTES AND CAREER SATISFACTION?: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Compensation policy and employee turnover: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee turnover in manufacturing SMEs in Japan: an analysis of the link with HRM practices: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Job Training Satisfaction, Job Satisfaction, and Job Performance: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The Link Between Job Satisfaction and Firm Value, with Implications for Corporate Social Responsibility: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Re-Examining the Link between Job Characteristics and Job Satisfaction: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee Engagement Implementation Leading Towards Employee Creativity: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Human resource development and employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The antecedents and drivers of employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The Determinants of the Link between Life Satisfaction and Job Satisfaction across Europe: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Comparison of published measures of job satisfaction on a taxonomy of job rewards.: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee engagement in a cultural context: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Impact of Job Satisfaction on Employee Job Performance in Information Technology Industry-A Select Study in Bangalore: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Strategic HRM and employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee engagement: fashionable fad or long-term fixture?: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Impact of Employee Turnover in the Hotel Industry An Empirical Study of Select Hotels in Uttar Pradesh: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Quantifying the Link between Employee Engagement and Customer Satisfaction in the Car Rental Industry: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Quantifying the Link between Employee Engagement and Customer Satisfaction in the Car Rental Industry: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Case studies in employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper A Meta-Analytic Investigation of the Unit-Level Employee Satisfaction-Performance Link: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Leadership and employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Why Does Employee Engagement Matter?: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee engagement and balance scorecard performance in full- and select-service hotels: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee engagement in multinational organizations: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper EMPLOYEE TURNOVER: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Job design and employee engagement: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The impact of employer-employee communication on employee turnover: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The impact of employer-employee communication on employee turnover: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Exploring the Link Between Transformational Leadership and Employee Job Satisfaction and The Mediation Effect of Employee Work Motivation among Higher Education Teachers: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Comparison of Published Measures of Job Satisfaction on a Taxonomy of Job Rewards.: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Exploring the link between employer-employee relationships and employee
+                    productivity: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Job satisfaction among a select group of coal miners: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Employee engagement and balance scorecard performance in full- and select-service hotels: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The Effects of Type of Child Care Arrangement and Satisfaction with Care on Employee Job Satisfaction and Absenteeism: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Mentoring and job satisfaction among professional psychology interns: Is there a link?: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper The Effects of Type of Child Care Arrangement and Satisfaction with Care on Employee Job Satisfaction and Absenteeism: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper How Career Orientation Shapes the Job Satisfaction-Turnover Intention Link: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper A Longitudinal Unit-Level Test of the Employee Satisfaction-Performance Link: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Exploring the Link between Stress and Job Satisfaction Among Retail Employees in Urban Malaysia: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Exploring the link between employer-employee relationships and employee
+                    productivity: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Determinants of doctorate holders’ job satisfaction. An analysis by employment sector and type of satisfaction in Spain: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Investigating link between job characteristics and job satisfaction of extension workers: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Professional Satisfaction as a Key Factor in Employee Retention: A case of the Service Sector: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 13:58:02 - [POKOSCRIBE] - ERROR - [pokolog.py:68] - Error downloading paper Does Employee Perceived Invasion of Information Privacy Link to Turnover Intention?: SciHubDler.download_paper() got multiple values for argument 'doi'
+2025-01-22 14:01:07 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:07 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:11 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Study of Relationship between Job Stress and Job Satisfaction in Print Media file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Request error: for Job Satisfaction and Job Design file: 451 Client Error:  for url: http://library.lol/main/158D6C7C675EDDDE75DA77100DA001C6
+2025-01-22 14:01:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Bullying effects on performance and engagement among academics file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The Link Between Leadership Style, Communicator Competence, and Employee Satisfaction file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for HRM and Employee Engagement Link: Mediating Role of Employee Well-being file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:27 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:27 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:27 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Colliding Employer-Employee Perspectives of Employee Turnover: Evidence from a Born-Global Industry file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Succession planning, job engagement and job satisfaction: the missing link file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Introduction: the state of employee turnover file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Job Training Satisfaction, Job Satisfaction, and Job Performance file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The Link Between Job Satisfaction and Firm Value, with Implications for Corporate Social Responsibility file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Re-Examining the Link between Job Characteristics and Job Satisfaction file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee Engagement Implementation Leading Towards Employee Creativity file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Quantifying the Link between Employee Engagement and Customer Satisfaction in the Car Rental Industry file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Quantifying the Link between Employee Engagement and Customer Satisfaction in the Car Rental Industry file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Job satisfaction among a select group of coal miners file: GetMetaData.update_filtered_metadata_succeeded_dl() missing 1 required positional argument: 'success_dl'
+2025-01-22 14:01:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:01:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:17:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:17:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:17:51 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:17:55 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:17:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:17:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:17:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:17:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:00 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:05 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Request error: for Job Satisfaction and Job Design file: 451 Client Error:  for url: http://library.lol/main/158D6C7C675EDDDE75DA77100DA001C6
+2025-01-22 14:18:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:11 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:11 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:11 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:11 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:13 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:17 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:24 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:32 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:37 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:41 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:18:47 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:51 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:55 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:18:59 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:19:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:06 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:19:10 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:19:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:18 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:19:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:19:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:17 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:58:21 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:58:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:26 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:58:30 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:58:35 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:58:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:39 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:58:43 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:58:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:49 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:58:53 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:58:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:58:57 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:02 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:07 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:08 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:12 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:16 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:21 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:25 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:30 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:34 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:38 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:42 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:46 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:52 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 14:59:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 14:59:57 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:01 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:05 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:11 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:15 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:19 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:24 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:28 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:33 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:37 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:41 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:45 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:00:46 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:00:50 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:00:55 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:00 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:01:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:01:04 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:09 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:01:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:01:13 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:18 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:01:22 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:27 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:31 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:35 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:39 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:43 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:50 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:54 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:01:58 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:02 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:07 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:13 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:17 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:21 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:25 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:30 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:35 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:40 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:45 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:02:49 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:53 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:02:53 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:02:58 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:01 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:04 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:07 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:09 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:15 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:19 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:23 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:28 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:32 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Request error: for The Wiley Blackwell Handbook of the Psychology of Occupational Safety and Workplace Health file: 451 Client Error:  for url: http://library.lol/main/F388C95FD03A07BE4414CC6839344EC5
+2025-01-22 15:03:37 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:41 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:46 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:53 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:03:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:03:58 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:04:01 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:03 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:04:07 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:04:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:13 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:04:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:18 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:04:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:23 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:04:27 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:28 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:04:32 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:04:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:44 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: not all arguments converted during string formatting
+2025-01-22 15:04:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:53 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:53 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:57 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:57 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:04:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:01 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:01 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:02 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:03 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:07 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:07 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:07 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:10 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:11 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:11 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:14 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:15 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:21 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:23 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:27 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:27 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:27 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 15:05:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link

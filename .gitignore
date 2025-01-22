@@ -19,3 +19,5 @@ __pycache__
 /resources/downloads
 
 /tests2
+
+tests/downloads

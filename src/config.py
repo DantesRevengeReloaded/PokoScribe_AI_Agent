@@ -27,7 +27,7 @@ class SystemPars:
         # file with the chapters produced by the chatbot appended ech time
         self.chapters_historicity = 'prompts-roles\history\chapters.txt'
 
-        self.project_name = 'Panos_Karydis'
+        self.project_name = 'Panos_Karydis_Update'
 
         self.filter_sources_for_dl = 'prompt-engineering\main_for_filtering_resources.txt'
 

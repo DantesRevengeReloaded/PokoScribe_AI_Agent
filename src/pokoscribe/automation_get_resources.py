@@ -1,4 +1,4 @@
-import sys, json
+import sys, json, re
 from pathlib import Path
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -8,6 +8,7 @@ project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
 
 from src.tools.ahss import CrossRefHandler, OpenAlexHandler, CoreAPIHandler
+from src.tools.sci_hub_dler import *
 from src.db_ai.ai_db_manager import *
 from logs.pokolog import *
 from src.config import SystemPars
@@ -39,6 +40,7 @@ def get_metadata():
         # Run Core API search
         coreapi = CoreAPIHandler()
         coreapi.search_specific_papers()
+        logger.info(ScriptIdentifier.MAIN, "Metadata retrieved successfully from the platforms.")
     except Exception as e:
         logger.error(ScriptIdentifier.MAIN, f"Failed to get metadata in automated procedure: {e}")
 
@@ -59,21 +61,68 @@ def filter_metadata():
         load_dotenv('.env')
         api_key = os.getenv('OPENAI_API_KEY')
         client = OpenAI(api_key=api_key)
+        
         response = client.chat.completions.create(
             messages=[
-                {"role": "system", "content": "You are a bot."},
+                
                 {"role": "user", "content": prompt}
             ],
             model="o1-mini",
-            max_tokens=1000,
-            temperature=0.5,
+            temperature=1,
         )
         filtered_metadata = response.choices[0].message.content.strip()
-        return filtered_metadata
+        
+        # Extract SELECT statement from response using regex
+        select_statement = re.search(r'[Ss][Ee][Ll][Ee][Cc][Tt].*?\)', filtered_metadata, re.DOTALL)
+        if select_statement:
+            sql = select_statement.group()
+            # Store the filtered results
+            store_metadata = GetMetaData()
+            store_metadata.insert_filtered_metadata(sql)
+        else:
+            logger.error(ScriptIdentifier.MAIN, "Could not find SELECT statement in AI response")
 
     except Exception as e:
         logger.error(ScriptIdentifier.MAIN, f"Failed to filter metadata in automated procedure: {e}")
 
-filter_metadata()
+def download_filtered_papers():
+    try:
+        # Get project name and metadata
+        projname = SystemPars().project_name
+        retrieve_metadata = GetMetaData()
+        df_retr = retrieve_metadata.get_filtered_metadata(projname)
+        
+        # Initialize downloader
+        dl_paper = SciHubDler()
+        
+        # Process each paper
+        for index, row in df_retr.iterrows():
+            try:
+                # Clean and validate DOI
+                doi = str(row['doi']).strip()
+                if not doi or doi == 'N/A':
+                    logger.warning(ScriptIdentifier.MAIN, 
+                                 f"Invalid DOI for paper: {row['title']}")
+                    continue
+                
+                # Download paper
+                success = dl_paper.download_paper(
+                    doi=doi,
+                    title=str(row['title']),
+                    metadata_id=int(row['metadata_id'])
+                )
+                
+            except Exception as e:
+                logger.error(ScriptIdentifier.MAIN, 
+                           f"Error downloading paper {row['title']}: {e}")
+                continue
+                
+    except Exception as e:
+        logger.error(ScriptIdentifier.MAIN, 
+                    f"Failed to download filtered metadata: {e}")
+        raise
 
-
+if __name__ == "__main__":
+    get_metadata()
+    filter_metadata()
+    download_filtered_papers()

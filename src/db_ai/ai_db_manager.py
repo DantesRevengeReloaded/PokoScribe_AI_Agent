@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import os
 from logs.pokolog import PokoLogger, ScriptIdentifier
 import pandas as pd
+from src.config import SystemPars
 
 load_dotenv('.env')
 logger = PokoLogger()
@@ -19,6 +20,7 @@ class AIDbManager:
                 host=os.getenv('postgreshost'),
                 port=os.getenv('postgresport')
             )
+            self.project_name = SystemPars().project_name
             self.conn.autocommit = True
             logger.info(ScriptIdentifier.DATABASE, "Connected to the database.")
             
@@ -193,4 +195,83 @@ class GetMetaData(AIDbManager):
                 return df
         except Exception as e:
             logger.error(ScriptIdentifier.DATABASE, f"Error getting metadata by title: {e}")
+            return pd.DataFrame()
+        
+    def insert_filtered_metadata(self, sql_query: str) -> pd.DataFrame:
+        """Retrieve filtered metadata from database"""
+        try:
+            cleaned_query = sql_query.strip('"').strip("'")
+            project_name = self.project_name
+            cursor = self.conn.cursor()
+            cursor.execute(cleaned_query)
+            df = pd.DataFrame(cursor.fetchall(), columns=[desc[0] for desc in cursor.description])
+            df['success_dl'] = 'NotDownloaded'
+            # Create filtered sources table
+            cursor.execute(f"""
+                CREATE TABLE IF NOT EXISTS ai_schema.{project_name}_filtered_sources (
+                    id SERIAL PRIMARY KEY,
+                    metadata_id INTEGER REFERENCES ai_schema.papers_metadata(id),
+                    title TEXT NOT NULL,
+                    doi VARCHAR(255),
+                    year TEXT,
+                    abstract TEXT,
+                    pdf_url TEXT,
+                    success_dl TEXT,
+                    insert_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                )
+            """)
+            self.conn.commit()
+            logger.info(ScriptIdentifier.DATABASE, f"Created filtered sources table for {project_name}")
+            # Insert data into filtered sources table
+            for _, row in df.iterrows():
+                cursor.execute("""
+                    INSERT INTO ai_schema.{}_filtered_sources (
+                        metadata_id, title, doi, year, abstract, pdf_url, success_dl
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s)
+                """.format(project_name), (
+                    row['id'],
+                    row['title'],
+                    row['doi'],
+                    row['year'],
+                    row['abstract'],
+                    row['pdf_url'],
+                    row['success_dl']
+                ))
+            self.conn.commit()
+            logger.info(ScriptIdentifier.DATABASE, f"Inserted {len(df)} records into filtered sources table")
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error inserting filtered metadata: {e}")
+
+    def update_filtered_metadata_succeeded_dl(self, metadata_id:int, success_dl: str) -> None:
+        """Update filtered metadata with download success"""
+        try:
+            cursor = self.conn.cursor()
+            cursor.execute("""
+                UPDATE ai_schema.{}_filtered_sources
+                SET success_dl = 'Downloaded'
+                WHERE metadata_id = %s
+            """.format(self.project_name), (success_dl, metadata_id))
+            self.conn.commit()
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error updating filtered metadata: {e}")
+
+    def get_filtered_metadata(self, project_name: str) -> pd.DataFrame:
+        """Get filtered metadata from database"""
+        try:
+            with self.conn.cursor() as cursor:
+                cursor.execute(f"""
+                    SELECT *
+                    FROM ai_schema.{project_name}_filtered_sources
+                    WHERE success_dl != 'Downloaded'
+                    """)
+                if cursor.rowcount == 0:
+                    logger.info(ScriptIdentifier.DATABASE, 
+                            f"No unprocessed records found for project {project_name}")
+                    return pd.DataFrame()
+                df = pd.DataFrame(cursor.fetchall(), columns=[desc[0] for desc in cursor.description])
+                logger.info(ScriptIdentifier.DATABASE, f"Retrieved {len(df)} records from project {project_name}")
+                return df
+            
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error getting filtered metadata: {e}")
             return pd.DataFrame()
