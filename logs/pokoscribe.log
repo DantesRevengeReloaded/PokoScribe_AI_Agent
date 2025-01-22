@@ -3885,3 +3885,871 @@ LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
 2025-01-22 15:05:40 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
 2025-01-22 15:05:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
 2025-01-22 15:05:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Could not find PDF download link
+2025-01-22 17:28:41 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:28:41 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 285 records from project Panos_Karydis_Update
+2025-01-22 17:28:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26643/gis.v14i4.5341
+2025-01-22 17:28:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21275/sr231008004659
+2025-01-22 17:28:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.3390/su12093514
+2025-01-22 17:28:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-04-30/20/10.3390@su12093514.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/13632541311300151
+2025-01-22 17:28:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/5466/bd63958e340d716d66a5ca5650b533e6/malik2013.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.32996/jbms.2023.5.1.17
+2025-01-22 17:28:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-891596/v1
+2025-01-22 17:28:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:28:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/13620430310505304
+2025-01-22 17:28:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4857/dc908a4b33321626681e0e6b0646e652/10.1108@13620430310505304.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee satisfaction in higher education: the case of academic and administrative staff in Turkey file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.3233/wor-2012-1028-2605
+2025-01-22 17:28:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6180/67ce2c26d51944d040699248e7ed709e/blok2012.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for New Ways of Working: does flexibility in time and location of work change work behavior and affect business outcomes? file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.3233/wor-2012-0800-5075
+2025-01-22 17:28:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/7044/c6f6c5d9ae50457d6a53ca62b9236ed5/blok2012.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:48 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for New ways of working: does flexibility in time and location of work change work behavior and affect business outcomes? file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:28:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/0731121416629992
+2025-01-22 17:28:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/5304/99f2eed7fd956887cafe153e1809f98b/trevizo2016.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Neighborhood Segregation and Business Outcomes file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/08985626.2011.617787
+2025-01-22 17:28:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3226/9195ecfb60b9a6d591a16acd81e8b903/10.1080@08985626.2011.617787.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:51 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Marketing practices in the Spanish rural tourism sector and their contribution to business outcomes file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1111/apps.12458
+2025-01-22 17:28:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17549/gbfr.2023.28.3.68
+2025-01-22 17:28:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/ijssp-06-2021-0152
+2025-01-22 17:28:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.47191/jefms/v5-i7-20
+2025-01-22 17:28:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/00483480410518022
+2025-01-22 17:28:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3624/5cbb169d0fe70dabceb6644fbfa812f6/morrell2004.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:53 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Organisational change and employee turnover file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1177/14705958211007874
+2025-01-22 17:28:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2021-05-17/28/tauetsile2021.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.5861/ijrsm.2024.1078
+2025-01-22 17:28:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/mrr-10-2012-0218
+2025-01-22 17:28:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2322/f4f1c7e2252049a1a1e1e148a7acf54a/katerattanakul2014.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:55 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Effect of business characteristics and ERP implementation on business outcomes file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.9790/487x-0362636
+2025-01-22 17:28:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1007/978-3-319-10208-5_23
+2025-01-22 17:28:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/3573/eb414e47426abdaf4f99acd30c6a90b1/herzig2014.pdf#navpanes=0&view=FitH
+2025-01-22 17:28:57 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Workplace Psychology and Gamification: Theory and Application file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:28:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:28:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/amp0000716
+2025-01-22 17:28:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/q7nu2
+2025-01-22 17:28:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.36713/epra15559
+2025-01-22 17:28:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/mfj8c
+2025-01-22 17:28:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.22161/ijreh.5.2.3
+2025-01-22 17:28:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1007/s10551-005-1548-7
+2025-01-22 17:28:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/777/97c8b270d8c8228934be8782d055c670/luthar2005.pdf#navpanes=0&view=FitH
+2025-01-22 17:29:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Exposure to Ethics Education and the Perception of Linkage between Organizational Ethical Behavior and Business Outcomes file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:29:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1097/jom.0000000000000914
+2025-01-22 17:29:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/5d5afdf36037fc58acdda82991674abb/10.1097@jom.0000000000000914.pdf#navpanes=0&view=FitH
+2025-01-22 17:29:01 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The Positive Effect of Resilience on Stress and Business Outcomes in Difficult Work Environments file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:29:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.54517/esp.v9i5.1793
+2025-01-22 17:29:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/jpim.12516
+2025-01-22 17:29:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-07-11/46/10.1111@jpim.12516.pdf#navpanes=0&view=FitH
+2025-01-22 17:29:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/xc3wp
+2025-01-22 17:29:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-2158214/v1
+2025-01-22 17:29:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/er-11-2017-0264
+2025-01-22 17:29:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-07-21/28/10.1108@er-11-2017-0264.pdf#navpanes=0&view=FitH
+2025-01-22 17:29:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Bullying effects on performance and engagement among academics file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:29:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/14719037.2010.525033
+2025-01-22 17:29:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3217/b8f2ec781d5f7350dfb2aa9029d08526/cho2011.pdf#navpanes=0&view=FitH
+2025-01-22 17:29:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Exploring the Relationships Among Trust, Employee Satisfaction, and Organizational Commitment file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:29:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1038/s41560-020-00683-8
+2025-01-22 17:29:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-09-15/59/10.1038@s41560-020-00683-8.pdf#navpanes=0&view=FitH
+2025-01-22 17:29:06 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Patenting and business outcomes for cleantech startups funded by the Advanced Research Projects Agency-Energy file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:29:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/jamr-05-2017-0060
+2025-01-22 17:29:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6865/1614b500aa6037604b05e2d362f26d6e/cao2018.pdf#navpanes=0&view=FitH
+2025-01-22 17:29:07 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Using social media for competitive business outcomes file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:29:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/09544120120011424
+2025-01-22 17:29:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3197/9f8dfac482c2c805f737bd4460fc9fc9/rahman2001.pdf#navpanes=0&view=FitH
+2025-01-22 17:29:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Total quality management practices and business outcome: Evidence from small and medium enterprises in Western Australia file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:29:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1123/jsm.19.4.523
+2025-01-22 17:29:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/5955/9cc2fdc1f20957650d564875c254e8b7/cunningham2005.pdf#navpanes=0&view=FitH
+2025-01-22 17:29:09 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The Psychology and Management of Workplace Diversity file: join() argument must be str, bytes, or os.PathLike object, not 'int'
+2025-01-22 17:29:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.3390/su10114080
+2025-01-22 17:29:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/tree/38/62/3862deb3150fbee83ddb81642dbfae69.pdf#navpanes=0&view=FitH
+2025-01-22 17:33:27 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:33:27 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 285 records from project Panos_Karydis_Update
+2025-01-22 17:33:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26643/gis.v14i4.5341
+2025-01-22 17:33:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21275/sr231008004659
+2025-01-22 17:33:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.3390/su12093514
+2025-01-22 17:33:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-04-30/20/10.3390@su12093514.pdf#navpanes=0&view=FitH
+2025-01-22 17:33:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1002_Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf
+2025-01-22 17:33:29 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:33:29 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: 'int' object does not support indexing
+2025-01-22 17:33:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link
+2025-01-22 17:33:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/13632541311300151
+2025-01-22 17:33:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/5466/bd63958e340d716d66a5ca5650b533e6/malik2013.pdf#navpanes=0&view=FitH
+2025-01-22 17:33:33 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:33:33 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: 'int' object does not support indexing
+2025-01-22 17:33:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.32996/jbms.2023.5.1.17
+2025-01-22 17:33:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-891596/v1
+2025-01-22 17:33:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:33:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/13620430310505304
+2025-01-22 17:33:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/4857/dc908a4b33321626681e0e6b0646e652/10.1108@13620430310505304.pdf#navpanes=0&view=FitH
+2025-01-22 17:33:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1879_Employee satisfaction in higher education the case of academic and administrative staff in Turkey.pdf
+2025-01-22 17:33:38 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:33:38 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: 'int' object does not support indexing
+2025-01-22 17:33:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Employee satisfaction in higher education: the case of academic and administrative staff in Turkey
+2025-01-22 17:33:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.3233/wor-2012-1028-2605
+2025-01-22 17:33:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6180/67ce2c26d51944d040699248e7ed709e/blok2012.pdf#navpanes=0&view=FitH
+2025-01-22 17:33:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1901_New Ways of Working does flexibility in time and location of work change work behavior and affect business outcomes.pdf
+2025-01-22 17:33:42 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:33:42 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: 'int' object does not support indexing
+2025-01-22 17:33:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for New Ways of Working: does flexibility in time and location of work change work behavior and affect business outcomes?
+2025-01-22 17:33:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.3233/wor-2012-0800-5075
+2025-01-22 17:33:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/7044/c6f6c5d9ae50457d6a53ca62b9236ed5/blok2012.pdf#navpanes=0&view=FitH
+2025-01-22 17:33:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1902_New ways of working does flexibility in time and location of work change work behavior and affect business outcomes.pdf
+2025-01-22 17:33:46 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:33:46 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: 'int' object does not support indexing
+2025-01-22 17:33:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for New ways of working: does flexibility in time and location of work change work behavior and affect business outcomes?
+2025-01-22 17:33:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:33:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/0731121416629992
+2025-01-22 17:33:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/99f2eed7fd956887cafe153e1809f98b/trevizo2016.pdf#navpanes=0&view=FitH
+2025-01-22 17:33:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1904_Neighborhood Segregation and Business Outcomes.pdf
+2025-01-22 17:33:51 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:33:51 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: 'int' object does not support indexing
+2025-01-22 17:33:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Neighborhood Segregation and Business Outcomes
+2025-01-22 17:33:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/08985626.2011.617787
+2025-01-22 17:33:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/9195ecfb60b9a6d591a16acd81e8b903/10.1080@08985626.2011.617787.pdf#navpanes=0&view=FitH
+2025-01-22 17:33:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1905_Marketing practices in the Spanish rural tourism sector and their contribution to business outcomes.pdf
+2025-01-22 17:33:55 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:33:55 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: 'int' object does not support indexing
+2025-01-22 17:33:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Marketing practices in the Spanish rural tourism sector and their contribution to business outcomes
+2025-01-22 17:33:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1111/apps.12458
+2025-01-22 17:33:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17549/gbfr.2023.28.3.68
+2025-01-22 17:33:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/ijssp-06-2021-0152
+2025-01-22 17:33:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.47191/jefms/v5-i7-20
+2025-01-22 17:34:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/00483480410518022
+2025-01-22 17:34:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3624/5cbb169d0fe70dabceb6644fbfa812f6/morrell2004.pdf#navpanes=0&view=FitH
+2025-01-22 17:34:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1880_Organisational change and employee turnover.pdf
+2025-01-22 17:34:01 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:34:01 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error updating filtered metadata: 'int' object does not support indexing
+2025-01-22 17:34:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Organisational change and employee turnover
+2025-01-22 17:39:37 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:37 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 285 records from project Panos_Karydis_Update
+2025-01-22 17:39:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26643/gis.v14i4.5341
+2025-01-22 17:39:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21275/sr231008004659
+2025-01-22 17:39:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.3390/su12093514
+2025-01-22 17:39:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-04-30/20/10.3390@su12093514.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1002_Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf
+2025-01-22 17:39:38 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link file: No active exception to reraise
+2025-01-22 17:39:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/13632541311300151
+2025-01-22 17:39:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/5466/bd63958e340d716d66a5ca5650b533e6/malik2013.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:39 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.32996/jbms.2023.5.1.17
+2025-01-22 17:39:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-891596/v1
+2025-01-22 17:39:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:39:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/13620430310505304
+2025-01-22 17:39:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4857/dc908a4b33321626681e0e6b0646e652/10.1108@13620430310505304.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1879_Employee satisfaction in higher education the case of academic and administrative staff in Turkey.pdf
+2025-01-22 17:39:42 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee satisfaction in higher education: the case of academic and administrative staff in Turkey file: No active exception to reraise
+2025-01-22 17:39:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.3233/wor-2012-1028-2605
+2025-01-22 17:39:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6180/67ce2c26d51944d040699248e7ed709e/blok2012.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1901_New Ways of Working does flexibility in time and location of work change work behavior and affect business outcomes.pdf
+2025-01-22 17:39:43 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:43 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for New Ways of Working: does flexibility in time and location of work change work behavior and affect business outcomes? file: No active exception to reraise
+2025-01-22 17:39:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.3233/wor-2012-0800-5075
+2025-01-22 17:39:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/7044/c6f6c5d9ae50457d6a53ca62b9236ed5/blok2012.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1902_New ways of working does flexibility in time and location of work change work behavior and affect business outcomes.pdf
+2025-01-22 17:39:44 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for New ways of working: does flexibility in time and location of work change work behavior and affect business outcomes? file: No active exception to reraise
+2025-01-22 17:39:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:39:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/0731121416629992
+2025-01-22 17:39:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/5304/99f2eed7fd956887cafe153e1809f98b/trevizo2016.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1904_Neighborhood Segregation and Business Outcomes.pdf
+2025-01-22 17:39:46 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Neighborhood Segregation and Business Outcomes file: No active exception to reraise
+2025-01-22 17:39:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/08985626.2011.617787
+2025-01-22 17:39:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/9195ecfb60b9a6d591a16acd81e8b903/10.1080@08985626.2011.617787.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1905_Marketing practices in the Spanish rural tourism sector and their contribution to business outcomes.pdf
+2025-01-22 17:39:47 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Marketing practices in the Spanish rural tourism sector and their contribution to business outcomes file: No active exception to reraise
+2025-01-22 17:39:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1111/apps.12458
+2025-01-22 17:39:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17549/gbfr.2023.28.3.68
+2025-01-22 17:39:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/ijssp-06-2021-0152
+2025-01-22 17:39:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.47191/jefms/v5-i7-20
+2025-01-22 17:39:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/00483480410518022
+2025-01-22 17:39:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3624/5cbb169d0fe70dabceb6644fbfa812f6/morrell2004.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1880_Organisational change and employee turnover.pdf
+2025-01-22 17:39:49 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:49 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Organisational change and employee turnover file: No active exception to reraise
+2025-01-22 17:39:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1177/14705958211007874
+2025-01-22 17:39:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2021-05-17/28/tauetsile2021.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1011_Employee engagement in non-Western contexts The link between social resources iUbuntui and employee engagement.pdf
+2025-01-22 17:39:50 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:50 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement file: No active exception to reraise
+2025-01-22 17:39:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.5861/ijrsm.2024.1078
+2025-01-22 17:39:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/mrr-10-2012-0218
+2025-01-22 17:39:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2322/f4f1c7e2252049a1a1e1e148a7acf54a/katerattanakul2014.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1906_Effect of business characteristics and ERP implementation on business outcomes.pdf
+2025-01-22 17:39:52 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:52 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Effect of business characteristics and ERP implementation on business outcomes file: No active exception to reraise
+2025-01-22 17:39:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.9790/487x-0362636
+2025-01-22 17:39:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1007/978-3-319-10208-5_23
+2025-01-22 17:39:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/3573/eb414e47426abdaf4f99acd30c6a90b1/herzig2014.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1908_Workplace Psychology and Gamification Theory and Application.pdf
+2025-01-22 17:39:53 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:53 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Workplace Psychology and Gamification: Theory and Application file: No active exception to reraise
+2025-01-22 17:39:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:39:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/amp0000716
+2025-01-22 17:39:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/q7nu2
+2025-01-22 17:39:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.36713/epra15559
+2025-01-22 17:39:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/mfj8c
+2025-01-22 17:39:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.22161/ijreh.5.2.3
+2025-01-22 17:39:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1007/s10551-005-1548-7
+2025-01-22 17:39:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/777/97c8b270d8c8228934be8782d055c670/luthar2005.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1882_Exposure to Ethics Education and the Perception of Linkage between Organizational Ethical Behavior and Business Outcomes.pdf
+2025-01-22 17:39:56 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Exposure to Ethics Education and the Perception of Linkage between Organizational Ethical Behavior and Business Outcomes file: No active exception to reraise
+2025-01-22 17:39:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1097/jom.0000000000000914
+2025-01-22 17:39:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6326/5d5afdf36037fc58acdda82991674abb/10.1097@jom.0000000000000914.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1883_The Positive Effect of Resilience on Stress and Business Outcomes in Difficult Work Environments.pdf
+2025-01-22 17:39:57 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:57 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The Positive Effect of Resilience on Stress and Business Outcomes in Difficult Work Environments file: No active exception to reraise
+2025-01-22 17:39:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.54517/esp.v9i5.1793
+2025-01-22 17:39:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/jpim.12516
+2025-01-22 17:39:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-07-11/46/10.1111@jpim.12516.pdf#navpanes=0&view=FitH
+2025-01-22 17:39:59 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:39:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/xc3wp
+2025-01-22 17:39:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-2158214/v1
+2025-01-22 17:39:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/er-11-2017-0264
+2025-01-22 17:39:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-07-21/28/10.1108@er-11-2017-0264.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 271 records from project Panos_Karydis_Update
+2025-01-22 17:42:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26643/gis.v14i4.5341
+2025-01-22 17:42:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21275/sr231008004659
+2025-01-22 17:42:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.32996/jbms.2023.5.1.17
+2025-01-22 17:42:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-891596/v1
+2025-01-22 17:42:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:42:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:42:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1111/apps.12458
+2025-01-22 17:42:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17549/gbfr.2023.28.3.68
+2025-01-22 17:42:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/ijssp-06-2021-0152
+2025-01-22 17:42:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.47191/jefms/v5-i7-20
+2025-01-22 17:42:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.5861/ijrsm.2024.1078
+2025-01-22 17:42:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.9790/487x-0362636
+2025-01-22 17:42:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:42:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/amp0000716
+2025-01-22 17:42:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/q7nu2
+2025-01-22 17:42:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.36713/epra15559
+2025-01-22 17:42:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/mfj8c
+2025-01-22 17:42:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.22161/ijreh.5.2.3
+2025-01-22 17:42:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.54517/esp.v9i5.1793
+2025-01-22 17:42:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/xc3wp
+2025-01-22 17:42:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-2158214/v1
+2025-01-22 17:42:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/er-11-2017-0264
+2025-01-22 17:42:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-07-21/28/10.1108@er-11-2017-0264.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1019_Bullying effects on performance and engagement among academics.pdf
+2025-01-22 17:42:26 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Bullying effects on performance and engagement among academics file: No active exception to reraise
+2025-01-22 17:42:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/14719037.2010.525033
+2025-01-22 17:42:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3217/b8f2ec781d5f7350dfb2aa9029d08526/cho2011.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1884_Exploring the Relationships Among Trust, Employee Satisfaction, and Organizational Commitment.pdf
+2025-01-22 17:42:27 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:27 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Exploring the Relationships Among Trust, Employee Satisfaction, and Organizational Commitment file: No active exception to reraise
+2025-01-22 17:42:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1038/s41560-020-00683-8
+2025-01-22 17:42:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2020-09-15/59/10.1038@s41560-020-00683-8.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1885_Patenting and business outcomes for cleantech startups funded by the Advanced Research Projects Agency-Energy.pdf
+2025-01-22 17:42:28 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Patenting and business outcomes for cleantech startups funded by the Advanced Research Projects Agency-Energy file: No active exception to reraise
+2025-01-22 17:42:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/jamr-05-2017-0060
+2025-01-22 17:42:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6865/1614b500aa6037604b05e2d362f26d6e/cao2018.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1886_Using social media for competitive business outcomes.pdf
+2025-01-22 17:42:29 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Using social media for competitive business outcomes file: No active exception to reraise
+2025-01-22 17:42:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/09544120120011424
+2025-01-22 17:42:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/3197/9f8dfac482c2c805f737bd4460fc9fc9/rahman2001.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1887_Total quality management practices and business outcome Evidence from small and medium enterprises in Western Australia.pdf
+2025-01-22 17:42:30 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Total quality management practices and business outcome: Evidence from small and medium enterprises in Western Australia file: No active exception to reraise
+2025-01-22 17:42:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1123/jsm.19.4.523
+2025-01-22 17:42:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/5955/9cc2fdc1f20957650d564875c254e8b7/cunningham2005.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1969_The Psychology and Management of Workplace Diversity.pdf
+2025-01-22 17:42:31 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The Psychology and Management of Workplace Diversity file: No active exception to reraise
+2025-01-22 17:42:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.3390/su10114080
+2025-01-22 17:42:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/tree/38/62/3862deb3150fbee83ddb81642dbfae69.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1888_Sustainability and Business Outcomes in the Context of SMEs Comparing Family Firms vs. Non-Family Firms.pdf
+2025-01-22 17:42:33 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Sustainability and Business Outcomes in the Context of SMEs: Comparing Family Firms vs. Non-Family Firms file: No active exception to reraise
+2025-01-22 17:42:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/1059601196213003
+2025-01-22 17:42:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/8d3d892e40058072f995ba922dfebc4c/howard1996.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1889_The Effects of Organizational Restructure on Employee Satisfaction.pdf
+2025-01-22 17:42:35 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The Effects of Organizational Restructure on Employee Satisfaction file: No active exception to reraise
+2025-01-22 17:42:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:42:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1300/j075v24n01_07
+2025-01-22 17:42:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2208/b67ebbbb0c640d173e1fbfd8ce27fc06/martin2005.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1890_The Role of Positive Psychology in Enhancing Satisfaction, Motivation, and Productivity in the Workplace.pdf
+2025-01-22 17:42:37 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The Role of Positive Psychology in Enhancing Satisfaction, Motivation, and Productivity in the Workplace file: No active exception to reraise
+2025-01-22 17:42:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.15288/jsa.1993.54.61
+2025-01-22 17:42:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/b5bb421aeb0c4c00d36fd549d60d8203/blum1993.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1891_Alcohol consumption and work performance..pdf
+2025-01-22 17:42:38 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Alcohol consumption and work performance. file: No active exception to reraise
+2025-01-22 17:42:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jbusres.2019.08.015
+2025-01-22 17:42:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-09-22/07/gnizy2019.pdf#navpanes=0&view=FitH
+2025-01-22 17:42:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1892_The role of inter-firm dispersion of international marketing capabilities in marketing strategy and business outcomes.pdf
+2025-01-22 17:42:39 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:42:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The role of inter-firm dispersion of international marketing capabilities in marketing strategy and business outcomes file: No active exception to reraise
+2025-01-22 17:42:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/obr.12912
+2025-01-22 17:42:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-08-09/70/10.1111@obr.12912.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:19 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:19 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 260 records from project Panos_Karydis_Update
+2025-01-22 17:48:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26643/gis.v14i4.5341
+2025-01-22 17:48:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21275/sr231008004659
+2025-01-22 17:48:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.32996/jbms.2023.5.1.17
+2025-01-22 17:48:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-891596/v1
+2025-01-22 17:48:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:48:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:48:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1111/apps.12458
+2025-01-22 17:48:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17549/gbfr.2023.28.3.68
+2025-01-22 17:48:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/ijssp-06-2021-0152
+2025-01-22 17:48:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.47191/jefms/v5-i7-20
+2025-01-22 17:48:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.5861/ijrsm.2024.1078
+2025-01-22 17:48:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.9790/487x-0362636
+2025-01-22 17:48:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:48:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/amp0000716
+2025-01-22 17:48:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/q7nu2
+2025-01-22 17:48:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.36713/epra15559
+2025-01-22 17:48:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/mfj8c
+2025-01-22 17:48:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.22161/ijreh.5.2.3
+2025-01-22 17:48:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.54517/esp.v9i5.1793
+2025-01-22 17:48:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/xc3wp
+2025-01-22 17:48:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-2158214/v1
+2025-01-22 17:48:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:48:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/obr.12912
+2025-01-22 17:48:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-08-09/70/10.1111@obr.12912.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1893_Investigating business outcomes of healthy food retail strategies A systematic scoping review.pdf
+2025-01-22 17:48:28 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Investigating business outcomes of healthy food retail strategies: A systematic scoping review file: No active exception to reraise
+2025-01-22 17:48:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/08876041211245236
+2025-01-22 17:48:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2253/929e23e66f2dd0e4a34105a2d9d9bb26/jeon2012.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1894_The relationship between employee satisfaction and customer satisfaction.pdf
+2025-01-22 17:48:29 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The relationship between employee satisfaction and customer satisfaction file: No active exception to reraise
+2025-01-22 17:48:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/10967494.2018.1457107
+2025-01-22 17:48:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6749/fbcbb59f9885c8d0c48d581482b02127/brogaard2018.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1895_Business Value in Public-Private Partnerships The Positive Impact of Trust and Task-Relevant Competencies on Business Outcomes in PPPs.pdf
+2025-01-22 17:48:30 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Business Value in Public-Private Partnerships: The Positive Impact of Trust and Task-Relevant Competencies on Business Outcomes in PPPs file: No active exception to reraise
+2025-01-22 17:48:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.iimb.2017.05.001
+2025-01-22 17:48:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6361/fa55387915f3571a4e983609e6d607b7/banchuen2017.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1896_Supply chain collaboration aligns order-winning strategy with business outcomes.pdf
+2025-01-22 17:48:32 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Supply chain collaboration aligns order-winning strategy with business outcomes file: No active exception to reraise
+2025-01-22 17:48:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/07421222.1997.11518152
+2025-01-22 17:48:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/1583e9702c4b092bd6048574279e5e0b/chatfield1997.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1897_The Impact of IOS-Enabled Business Process Change on Business Outcomes Transformation of the Value Chain of Japan Airlines.pdf
+2025-01-22 17:48:34 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for The Impact of IOS-Enabled Business Process Change on Business Outcomes: Transformation of the Value Chain of Japan Airlines file: No active exception to reraise
+2025-01-22 17:48:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/00251741011068815
+2025-01-22 17:48:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4934/bd9d59b116e445e8c7a1b89f99ee9163/hirota2010.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1898_Corporate mission, corporate policies and business outcomes evidence from Japan.pdf
+2025-01-22 17:48:35 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:35 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Corporate mission, corporate policies and business outcomes: evidence from Japan file: No active exception to reraise
+2025-01-22 17:48:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1287/mnsc.2016.2472
+2025-01-22 17:48:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/5866/fcc131c44268f1d44c59693268e6d7a7/bulte2016.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1899_Do Gender and Business Trainings Affect Business Outcomes Experimental Evidence from Vietnam.pdf
+2025-01-22 17:48:36 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:36 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Do Gender and Business Trainings Affect Business Outcomes? Experimental Evidence from Vietnam file: No active exception to reraise
+2025-01-22 17:48:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.resconrec.2016.02.014
+2025-01-22 17:48:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/5088/35ba767647ecd29a225bfb732d72ebc5/sabbaghi2016.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1900_Business outcomes of product repairability A survey-based study of consumer repair experiences.pdf
+2025-01-22 17:48:37 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Business outcomes of product repairability: A survey-based study of consumer repair experiences file: No active exception to reraise
+2025-01-22 17:48:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/17439760.2021.1940251
+2025-01-22 17:48:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/03090590710746450
+2025-01-22 17:48:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/3540/ca03ee42e3c92f1bfb349d3b86716150/laiwan2007.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1967_Human capital development policies enhancing employees' satisfaction.pdf
+2025-01-22 17:48:39 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Human capital development policies: enhancing employees' satisfaction file: No active exception to reraise
+2025-01-22 17:48:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.39-3097
+2025-01-22 17:48:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1744-6570.2008.00121.x
+2025-01-22 17:48:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/994/dd6b0ba9439d2d574224c6c9ebceed05/nishii2008.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1913_EMPLOYEE ATTRIBUTIONS OF THE “WHY” OF HR PRACTICES THEIR EFFECTS ON EMPLOYEE ATTITUDES AND BEHAVIORS, AND CUSTOMER SATISFACTION.pdf
+2025-01-22 17:48:41 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:41 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for EMPLOYEE ATTRIBUTIONS OF THE “WHY” OF HR PRACTICES: THEIR EFFECTS ON EMPLOYEE ATTITUDES AND BEHAVIORS, AND CUSTOMER SATISFACTION file: No active exception to reraise
+2025-01-22 17:48:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0033-2909.124.2.240
+2025-01-22 17:48:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/2c22eba2497bce6acf8f64c8c3407799/stajkovic1998.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1914_Self-efficacy and work-related performance A meta-analysis..pdf
+2025-01-22 17:48:42 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Self-efficacy and work-related performance: A meta-analysis. file: No active exception to reraise
+2025-01-22 17:48:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijchm-01-2014-0028
+2025-01-22 17:48:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/ffd10569d31992f1e145fade87c580b3/karatepe2015.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1915_Do psychological capital and work engagement foster frontline employees’ satisfaction.pdf
+2025-01-22 17:48:44 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:44 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Do psychological capital and work engagement foster frontline employees’ satisfaction? file: No active exception to reraise
+2025-01-22 17:48:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/10662-000
+2025-01-22 17:48:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:48:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1162/003355300554881
+2025-01-22 17:48:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/791b9a063a6ce68298d4da6b4c53283b/akerlof2000.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1918_Economics and Identity.pdf
+2025-01-22 17:48:46 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Economics and Identity* file: No active exception to reraise
+2025-01-22 17:48:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/0005-7967(92)90023-a
+2025-01-22 17:48:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/0640d6cf388999d003e6a16133f8805f/jayasinghe1992.pdf#navpanes=0&view=FitH
+2025-01-22 17:48:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1919_Work psychology—Understanding human behaviour in the workplace.pdf
+2025-01-22 17:48:47 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:48:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] -  Unexpected error for Work psychology—Understanding human behaviour in the workplace file: No active exception to reraise
+2025-01-22 17:48:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.42-0404
+2025-01-22 17:48:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:52:15 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:52:15 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 246 records from project Panos_Karydis_Update
+2025-01-22 17:52:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26643/gis.v14i4.5341
+2025-01-22 17:52:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21275/sr231008004659
+2025-01-22 17:52:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.32996/jbms.2023.5.1.17
+2025-01-22 17:52:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-891596/v1
+2025-01-22 17:52:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:52:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:52:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1111/apps.12458
+2025-01-22 17:52:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17549/gbfr.2023.28.3.68
+2025-01-22 17:52:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/ijssp-06-2021-0152
+2025-01-22 17:52:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.47191/jefms/v5-i7-20
+2025-01-22 17:52:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.5861/ijrsm.2024.1078
+2025-01-22 17:52:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.9790/487x-0362636
+2025-01-22 17:52:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:52:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/amp0000716
+2025-01-22 17:52:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/q7nu2
+2025-01-22 17:52:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.36713/epra15559
+2025-01-22 17:52:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/mfj8c
+2025-01-22 17:52:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.22161/ijreh.5.2.3
+2025-01-22 17:52:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.54517/esp.v9i5.1793
+2025-01-22 17:52:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/xc3wp
+2025-01-22 17:52:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-2158214/v1
+2025-01-22 17:52:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:52:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/17439760.2021.1940251
+2025-01-22 17:52:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.39-3097
+2025-01-22 17:52:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/10662-000
+2025-01-22 17:52:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:52:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.42-0404
+2025-01-22 17:52:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:52:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1744-6570.2010.01203.x
+2025-01-22 17:52:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-07/b4/christian2011.pdf#navpanes=0&view=FitH
+2025-01-22 17:52:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1922_WORK ENGAGEMENT A QUANTITATIVE REVIEW AND TEST OF ITS RELATIONS WITH TASK AND CONTEXTUAL PERFORMANCE.pdf
+2025-01-22 17:52:26 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:52:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Unexpected error for WORK ENGAGEMENT: A QUANTITATIVE REVIEW AND TEST OF ITS RELATIONS WITH TASK AND CONTEXTUAL PERFORMANCE: No active exception to reraise
+2025-01-22 17:52:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5465/amj.2007.24634438
+2025-01-22 17:52:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4576/1fd835e65fc8c61a79433046584f6912/griffin2007.pdf#navpanes=0&view=FitH
+2025-01-22 17:52:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1923_A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf
+2025-01-22 17:52:28 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:52:28 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Unexpected error for A New Model of Work Role Performance: Positive Behavior in Uncertain and Interdependent Contexts: No active exception to reraise
+2025-01-22 17:52:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 17:52:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/03075079.2010.532548
+2025-01-22 17:52:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/4145/cc0e508ffbdb35c9be459db1f8fa622b/wilton2012.pdf#navpanes=0&view=FitH
+2025-01-22 17:52:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1925_The impact of work placements on skills development and career outcomes for business and management graduates.pdf
+2025-01-22 17:52:29 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:52:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Unexpected error for The impact of work placements on skills development and career outcomes for business and management graduates: No active exception to reraise
+2025-01-22 17:52:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jbusvent.2012.02.007
+2025-01-22 17:52:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2283/42e805b5b88f047cc5d34b0bd34c5246/powell2013.pdf#navpanes=0&view=FitH
+2025-01-22 17:52:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1926_Linking family-to-business enrichment and support to entrepreneurial success Do female and male entrepreneurs experience different outcomes.pdf
+2025-01-22 17:52:30 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:52:30 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Unexpected error for Linking family-to-business enrichment and support to entrepreneurial success: Do female and male entrepreneurs experience different outcomes?: No active exception to reraise
+2025-01-22 17:52:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1007/s10551-011-0952-4
+2025-01-22 17:52:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/777/ffa98fdbaf572e17b3b20d027123aebd/voegtlin2011.pdf#navpanes=0&view=FitH
+2025-01-22 17:52:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1927_Responsible Leadership in Global Business A New Approach to Leadership and Its Multi-Level Outcomes.pdf
+2025-01-22 17:52:32 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:52:32 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Unexpected error for Responsible Leadership in Global Business: A New Approach to Leadership and Its Multi-Level Outcomes: No active exception to reraise
+2025-01-22 17:52:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2753/mis0742-1222240209
+2025-01-22 17:52:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2131/e541c23605c6e3742303fc88d0331167/karimi2007.pdf#navpanes=0&view=FitH
+2025-01-22 17:52:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1928_The Role of Information Systems Resources in ERP Capability Building and Business Process Outcomes.pdf
+2025-01-22 17:52:33 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:52:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Unexpected error for The Role of Information Systems Resources in ERP Capability Building and Business Process Outcomes: No active exception to reraise
+2025-01-22 17:52:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/0149206310392233
+2025-01-22 17:52:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2653/b7b41fd8efd2d04e9e3e2133b0bc4a34/lux2010.pdf#navpanes=0&view=FitH
+2025-01-22 17:52:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1929_Mixing Business With Politics A Meta-Analysis of the Antecedents and Outcomes of Corporate Political Activity.pdf
+2025-01-22 17:52:34 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 17:52:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Unexpected error for Mixing Business With Politics: A Meta-Analysis of the Antecedents and Outcomes of Corporate Political Activity: No active exception to reraise
+2025-01-22 17:52:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.91.1.156
+2025-01-22 18:01:23 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:01:23 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Retrieved 239 records from project Panos_Karydis_Update
+2025-01-22 18:01:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26643/gis.v14i4.5341
+2025-01-22 18:01:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21275/sr231008004659
+2025-01-22 18:01:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.32996/jbms.2023.5.1.17
+2025-01-22 18:01:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-891596/v1
+2025-01-22 18:01:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:01:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:01:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1111/apps.12458
+2025-01-22 18:01:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17549/gbfr.2023.28.3.68
+2025-01-22 18:01:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/ijssp-06-2021-0152
+2025-01-22 18:01:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.47191/jefms/v5-i7-20
+2025-01-22 18:01:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.5861/ijrsm.2024.1078
+2025-01-22 18:01:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.9790/487x-0362636
+2025-01-22 18:01:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:01:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/amp0000716
+2025-01-22 18:01:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/q7nu2
+2025-01-22 18:01:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.36713/epra15559
+2025-01-22 18:01:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/mfj8c
+2025-01-22 18:01:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.22161/ijreh.5.2.3
+2025-01-22 18:01:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.54517/esp.v9i5.1793
+2025-01-22 18:01:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31235/osf.io/xc3wp
+2025-01-22 18:01:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21203/rs.3.rs-2158214/v1
+2025-01-22 18:01:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:01:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1080/17439760.2021.1940251
+2025-01-22 18:01:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.39-3097
+2025-01-22 18:01:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/10662-000
+2025-01-22 18:01:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:01:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.42-0404
+2025-01-22 18:01:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:01:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:01:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.91.1.156
+2025-01-22 18:01:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/5916/b8eb8023162247eece32728c10ed7494/peterson2006.pdf#navpanes=0&view=FitH
+2025-01-22 18:01:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1930_The impact of financial and nonfinancial incentives on business-unit outcomes over time..pdf
+2025-01-22 18:01:35 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:01:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for The impact of financial and nonfinancial incentives on business-unit outcomes over time.
+2025-01-22 18:01:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5465/amr.2000.2791611
+2025-01-22 18:01:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4561/d6945208baee644d1540f4f0c970a272/shane2000.pdf#navpanes=0&view=FitH
+2025-01-22 18:01:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1931_The Promise of Entrepreneurship as a Field of Research.pdf
+2025-01-22 18:01:41 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:01:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for The Promise of Entrepreneurship as a Field of Research
+2025-01-22 18:01:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2753/mis0742-1222230306
+2025-01-22 18:01:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2131/eb74b23426b8c29f297fe2c8aa2c9132/kearns2007.pdf#navpanes=0&view=FitH
+2025-01-22 18:01:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1932_Strategic Alignment Between Business and Information Technology A Knowledge-Based View of Behaviors, Outcome, and Consequences.pdf
+2025-01-22 18:01:45 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:01:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Strategic Alignment Between Business and Information Technology: A Knowledge-Based View of Behaviors, Outcome, and Consequences
+2025-01-22 18:01:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2753/mis0742-1222240103
+2025-01-22 18:01:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-29//3e/karim2007.pdf#navpanes=0&view=FitH
+2025-01-22 18:01:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1933_The Impact of ERP Implementation on Business Process Outcomes A Factor-Based Study.pdf
+2025-01-22 18:01:49 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:01:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for The Impact of ERP Implementation on Business Process Outcomes: A Factor-Based Study
+2025-01-22 18:01:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1509/jmkg.66.4.86.18511
+2025-01-22 18:01:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/3532/91207635d878980edf5ec36b2b5fb8d5/homburg2002.pdf#navpanes=0&view=FitH
+2025-01-22 18:01:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1934_Service Orientation of a Retailer's Business Strategy Dimensions, Antecedents, and Performance Outcomes.pdf
+2025-01-22 18:01:53 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:01:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Service Orientation of a Retailer's Business Strategy: Dimensions, Antecedents, and Performance Outcomes
+2025-01-22 18:01:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.90.2.389
+2025-01-22 18:01:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4487/6d3d95a08d023ab8e550cc8f69cb870e/kraimer2005.pdf#navpanes=0&view=FitH
+2025-01-22 18:01:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1935_The Role of Job Security in Understanding the Relationship Between Employees' Perceptions of Temporary Workers and Employees' Performance..pdf
+2025-01-22 18:01:57 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:01:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for The Role of Job Security in Understanding the Relationship Between Employees' Perceptions of Temporary Workers and Employees' Performance.
+2025-01-22 18:02:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1145/129630.129631
+2025-01-22 18:02:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2687/c1162357c1ee401696ce036b4bfa12b5/igbaria1992.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1936_Determinants of MIS employees' turnover intentions.pdf
+2025-01-22 18:02:03 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Determinants of MIS employees' turnover intentions
+2025-01-22 18:02:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/257057
+2025-01-22 18:02:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/651390b9356240ceb7dd7ede0b3d0a34/turban1997.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1937_CORPORATE SOCIAL PERFORMANCE AND ORGANIZATIONAL ATTRACTIVENESS TO PROSPECTIVE EMPLOYEES..pdf
+2025-01-22 18:02:08 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for CORPORATE SOCIAL PERFORMANCE AND ORGANIZATIONAL ATTRACTIVENESS TO PROSPECTIVE EMPLOYEES.
+2025-01-22 18:02:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/02621710610670137
+2025-01-22 18:02:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/2319/a582a5b4ce4f49ab22c81aa8f09c77a0/garg2006.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1938_New model of job design motivating employees' performance.pdf
+2025-01-22 18:02:12 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for New model of job design: motivating employees' performance
+2025-01-22 18:02:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/2068333
+2025-01-22 18:02:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/22c34137976e98fb4d4cc5f8869d05d3/trice1984.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1939_Employee-Organization Linkages The Psychology of Commitment, Absenteeism, and Turnover..pdf
+2025-01-22 18:02:16 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Employee-Organization Linkages: The Psychology of Commitment, Absenteeism, and Turnover.
+2025-01-22 18:02:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/2673267
+2025-01-22 18:02:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2645/5a471969f49e14e625c86a2543a2d4f8/rowan1997.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1940_Using Research on Employees' Performance to Study the Effects of Teachers on Students' Achievement.pdf
+2025-01-22 18:02:21 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Using Research on Employees' Performance to Study the Effects of Teachers on Students' Achievement
+2025-01-22 18:02:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/00483480710773981
+2025-01-22 18:02:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/7baac0e774b0ee0c728f56a204aac926/10.1108@00483480710773981.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1941_Leadership style, organizational politics, and employees' performance.pdf
+2025-01-22 18:02:25 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Leadership style, organizational politics, and employees' performance
+2025-01-22 18:02:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/2667029
+2025-01-22 18:02:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2322/e819895c191ff937c18a3d625a04e800/pelled1999.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1942_Exploring the Black Box An Analysis of Work Group Diversity, Conflict and Performance.pdf
+2025-01-22 18:02:30 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Exploring the Black Box: An Analysis of Work Group Diversity, Conflict and Performance
+2025-01-22 18:02:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/003803857200600101
+2025-01-22 18:02:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-28//12/child1972.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1943_Organizational Structure, Environment and Performance The Role of Strategic Choice.pdf
+2025-01-22 18:02:34 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Organizational Structure, Environment and Performance: The Role of Strategic Choice
+2025-01-22 18:02:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.43-5845
+2025-01-22 18:02:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.89.6.1008
+2025-01-22 18:02:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2108/014682ed65dd71c04625e6eaa464a5f6/vanknippenberg2004.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1945_Work Group Diversity and Group Performance An Integrative Model and Research Agenda..pdf
+2025-01-22 18:02:39 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Work Group Diversity and Group Performance: An Integrative Model and Research Agenda.
+2025-01-22 18:02:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/10594-000
+2025-01-22 18:02:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5465/amle.2008.32712618
+2025-01-22 18:02:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/4536/4d6e85e394acb768e0b42b9a2c4105d6/luthans2008.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1947_Experimental Analysis of a Web-Based Training Intervention to Develop Positive Psychological Capital.pdf
+2025-01-22 18:02:43 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Experimental Analysis of a Web-Based Training Intervention to Develop Positive Psychological Capital
+2025-01-22 18:02:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/3250982
+2025-01-22 18:02:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/2162/e02dd807fbf491f5c460807c86b0885d/moore2000.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1948_One Road to Turnover An Examination of Work Exhaustion in Technology Professionals.pdf
+2025-01-22 18:02:47 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for One Road to Turnover: An Examination of Work Exhaustion in Technology Professionals
+2025-01-22 18:02:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.4324/9780203464984
+2025-01-22 18:02:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5465/ame.2002.6640181
+2025-01-22 18:02:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/4619/8f2182897bb34ecf14f837f5b0e0c60c/luthans2002.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1950_Positive organizational behavior Developing and managing psychological strengths.pdf
+2025-01-22 18:02:53 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Positive organizational behavior: Developing and managing psychological strengths
+2025-01-22 18:02:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2307/j.ctv1chs29w
+2025-01-22 18:02:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.91.5.998
+2025-01-22 18:02:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/5920/185ca30e70a1df76374859a59d4aed0f/bowling2006.pdf#navpanes=0&view=FitH
+2025-01-22 18:02:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1952_Workplace harassment from the victim's perspective A theoretical model and meta-analysis..pdf
+2025-01-22 18:02:58 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:02:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Workplace harassment from the victim's perspective: A theoretical model and meta-analysis.
+2025-01-22 18:03:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.45-2902
+2025-01-22 18:03:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:03:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/10434-000
+2025-01-22 18:03:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:03:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1108/tr-11-2022-0538
+2025-01-22 18:03:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0022-006x.70.2.406
+2025-01-22 18:03:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/576ab8f9f4650bb19f74709cd4c87d7b/greenberg2002.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1958_Resolving unfinished business Relating process to outcome..pdf
+2025-01-22 18:03:04 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Resolving unfinished business: Relating process to outcome.
+2025-01-22 18:03:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1177/089124249801200403
+2025-01-22 18:03:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/c4933a9a462ba316974b3101218c2558/sherman1998.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1959_Methodological Challenges in Evaluating Business Incubator Outcomes.pdf
+2025-01-22 18:03:08 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Methodological Challenges in Evaluating Business Incubator Outcomes
+2025-01-22 18:03:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/cou0000411
+2025-01-22 18:03:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1146/annurev-orgpsych-012119-044924
+2025-01-22 18:03:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-10-05/0f/eby2019.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1961_The Psychology of Workplace Mentoring Relationships.pdf
+2025-01-22 18:03:13 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for The Psychology of Workplace Mentoring Relationships
+2025-01-22 18:03:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0003-066x.63.4.252
+2025-01-22 18:03:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/4555/02b7ceb2d1cb6bed3c4a6ffb8363bedd/fassinger2008.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1962_Workplace diversity and public policy Challenges and opportunities for psychology..pdf
+2025-01-22 18:03:17 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Workplace diversity and public policy: Challenges and opportunities for psychology.
+2025-01-22 18:03:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1002/bse.348
+2025-01-22 18:03:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/75/40be9cfb9dc89cf23544028eb5a7d51d/vernon2003.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:21 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1002/9781118979013
+2025-01-22 18:03:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:68] - Request error for The Wiley Blackwell Handbook of the Psychology of Occupational Safety and Workplace Health: 451 Client Error:  for url: http://library.lol/main/F388C95FD03A07BE4414CC6839344EC5
+2025-01-22 18:03:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1007/s10804-009-9080-0
+2025-01-22 18:03:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/785/2a909882cf200904b82860b0c561a505/froman2009.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1965_Positive Psychology in the Workplace.pdf
+2025-01-22 18:03:26 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Positive Psychology in the Workplace
+2025-01-22 18:03:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.2975/26.2003.359.367
+2025-01-22 18:03:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/27e3c9aae5624c76dbeae45d5fac568a/krupa2003.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1966_Transforming sheltered workshops into affirmative businesses An outcome evaluation..pdf
+2025-01-22 18:03:30 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Transforming sheltered workshops into affirmative businesses: An outcome evaluation.
+2025-01-22 18:03:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.4324/9780203735565
+2025-01-22 18:03:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/0003-066x.45.2.171
+2025-01-22 18:03:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/5922/58f30854ace3718e34a3408150efeaa1/turnage1990.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1972_The challenge of new workplace technology for psychology..pdf
+2025-01-22 18:03:34 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for The challenge of new workplace technology for psychology.
+2025-01-22 18:03:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.4324/9781315795560
+2025-01-22 18:03:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/6240/8703cee1b926f667c3e4a9634e8a5b60/psychological-stress-in-the-workplace-psychology-revivals-2013.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1973_Psychological Stress in the Workplace (Psychology Revivals).pdf
+2025-01-22 18:03:41 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Psychological Stress in the Workplace (Psychology Revivals)
+2025-01-22 18:03:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:03:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1754-9434.2010.01258.x
+2025-01-22 18:03:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/5bafbe79bd60943854e4505db17cbee6/dalal2010.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1975_What If Industrial–Organizational Psychology Decided to Take Workplace Decisions Seriously.pdf
+2025-01-22 18:03:46 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for What If Industrial–Organizational Psychology Decided to Take Workplace Decisions Seriously?
+2025-01-22 18:03:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:03:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.51-2762
+2025-01-22 18:03:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/13743-000
+2025-01-22 18:03:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1089/cpb.2006.9935
+2025-01-22 18:03:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-01-23//1c/eastin2007.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1979_Psychology of Communication Technology Use in the Workplace.pdf
+2025-01-22 18:03:52 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Psychology of Communication Technology Use in the Workplace
+2025-01-22 18:03:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1007/978-3-319-33033-4_7
+2025-01-22 18:03:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/5850/f12d3d91e75d5b752a96ea1b72895cff/10.1007@978-3-319-33033-47.pdf#navpanes=0&view=FitH
+2025-01-22 18:03:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1980_Research in Work and Organizational Psychology Social Exclusion in the Workplace.pdf
+2025-01-22 18:03:56 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:03:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Research in Work and Organizational Psychology: Social Exclusion in the Workplace
+2025-01-22 18:03:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.4324/9780203135068
+2025-01-22 18:03:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/tep0000015
+2025-01-22 18:03:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/4244/ae7421a3614d3d365f43fb294666eb3d/yamada2014.pdf#navpanes=0&view=FitH
+2025-01-22 18:04:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1982_Workplace bullying in Canadian graduate psychology programs Student perspectives of student–supervisor relationships..pdf
+2025-01-22 18:04:02 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:04:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Workplace bullying in Canadian graduate psychology programs: Student perspectives of student–supervisor relationships.
+2025-01-22 18:04:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/12169-014
+2025-01-22 18:04:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1037/1065-9293.58.1.23
+2025-01-22 18:04:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/9ac3dbae9bd6502326d8dd4de72d29ae/lloyd2006.pdf#navpanes=0&view=FitH
+2025-01-22 18:04:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1985_Creating healthy, high-performance workplaces Strategies from health and sports psychology..pdf
+2025-01-22 18:04:07 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:04:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Creating healthy, high-performance workplaces: Strategies from health and sports psychology.
+2025-01-22 18:04:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1353/jip.2014.0020
+2025-01-22 18:04:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-03-01/5f/astrauskaite2014.pdf#navpanes=0&view=FitH
+2025-01-22 18:04:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1987_An Individual Psychology Approach to Underlying Factors of Workplace Bullying.pdf
+2025-01-22 18:04:11 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:04:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for An Individual Psychology Approach to Underlying Factors of Workplace Bullying
+2025-01-22 18:04:14 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/b978-0-08-097086-8.25041-1
+2025-01-22 18:04:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://moscow.sci-hub.se/3994/8a9cb3329d69e861b5f91bcf18ae1101/lee2015.pdf#navpanes=0&view=FitH
+2025-01-22 18:04:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1989_Wellbeing and Burnout in the Workplace, Psychology of.pdf
+2025-01-22 18:04:16 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:04:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Wellbeing and Burnout in the Workplace, Psychology of
+2025-01-22 18:04:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/https://doi.org/10.1016/b0-08-043076-7/01396-6
+2025-01-22 18:04:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://2024.sci-hub.se/7002/24fa3b4b50e95c8bed805349a81b5d08/sonnentag2001.pdf#navpanes=0&view=FitH
+2025-01-22 18:04:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\1990_Well-being and Burnout in the Workplace, Psychology of.pdf
+2025-01-22 18:04:19 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:04:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for Well-being and Burnout in the Workplace, Psychology of
+2025-01-22 18:04:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.59141/jist.v5i9.1197
+2025-01-22 18:04:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26618/profitability.v7i2.11063
+2025-01-22 18:04:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.12928/fokus.v13i2.8405
+2025-01-22 18:04:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.30872/psikostudia.v13i1.13847
+2025-01-22 18:04:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.33215/sjom.v4i3.641
+2025-01-22 18:04:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.53909/rms.05.01.0192
+2025-01-22 18:04:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.38142/ijesss.v5i1.1031
+2025-01-22 18:04:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.5267/j.msl.2019.3.011
+2025-01-22 18:04:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Found PDF URL: https://sci-hub.se/downloads/2019-04-21/75/mira2019.pdf#navpanes=0&view=FitH
+2025-01-22 18:04:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Downloaded: resources/downloads\2008_The effect of HRM practices and employees’ job satisfaction on employee performance.pdf
+2025-01-22 18:04:31 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-22 18:04:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Updated metadata with download status for The effect of HRM practices and employees’ job satisfaction on employee performance
+2025-01-22 18:04:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.37680/ijief.v4i1.5213
+2025-01-22 18:04:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.36088/manazhim.v6i1.4515
+2025-01-22 18:04:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.29408/jpek.v7i1.13370
+2025-01-22 18:04:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.14414/jebav.v26i1.3069
+2025-01-22 18:04:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21511/ppm.21(3).2023.31
+2025-01-22 18:04:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.46336/ijqrm.v3i3.329
+2025-01-22 18:04:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26811/peuradeun.v9i2.530
+2025-01-22 18:04:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.32535/ijabim.v5i3.737
+2025-01-22 18:04:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.18551/rjoas.2019-04.19
+2025-01-22 18:04:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.22441/jurnal_mix.2024.v14i3.013
+2025-01-22 18:04:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.46827/ejhrms.v8i2.1830
+2025-01-22 18:04:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17358/jabm.9.1.129
+2025-01-22 18:04:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26668/businessreview/2023.v8i4.1239
+2025-01-22 18:04:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.47305/jlia2392216a
+2025-01-22 18:04:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.33059/jmk.v9i3.2731
+2025-01-22 18:04:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:04:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.46827/ejsss.v0i0.187
+2025-01-22 18:05:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.46827/ejsss.v0i0.187
+2025-01-22 18:05:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17358/jabm.10.3.813
+2025-01-22 18:05:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.55544/jrasb.2.4.23
+2025-01-22 18:05:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21009/ijhcm.05.02.13
+2025-01-22 18:05:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.18510/hssr.2019.76158
+2025-01-22 18:05:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.29040/ijebar.v4i02.1101
+2025-01-22 18:05:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.1108/ijppm-03-2019-0124
+2025-01-22 18:05:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.20525/ijrbs.v9i7.924
+2025-01-22 18:05:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.21272/bel.5(3).6-21.2021
+2025-01-22 18:05:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26737/ij-mds.v2i1.948
+2025-01-22 18:05:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.18510/hssr.2019.76158
+2025-01-22 18:05:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:14 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.17358/jabm.10.2.503
+2025-01-22 18:05:14 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31004/joe.v5i4.2624
+2025-01-22 18:05:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26668/businessreview/2023.v8i8.3338
+2025-01-22 18:05:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.15408/ess.v11i2.20389
+2025-01-22 18:05:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.7160/eriesj.2020.130301
+2025-01-22 18:05:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.28991/esj-2023-07-02-016
+2025-01-22 18:05:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.52728/ijss.v4i3.876
+2025-01-22 18:05:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.46827/ejhrms.v6i2.1410
+2025-01-22 18:05:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.31539/costing.v7i5.11332
+2025-01-22 18:05:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26668/businessreview/2023.v8i10.1621
+2025-01-22 18:05:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.26710/jbsee.v4i1.361
+2025-01-22 18:05:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/10.5539/ijbm.v17n3p103
+2025-01-22 18:05:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None
+2025-01-22 18:05:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:68] - Searching: https://sci-hub.se/None

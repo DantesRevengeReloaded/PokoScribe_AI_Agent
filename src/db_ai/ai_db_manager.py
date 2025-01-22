@@ -242,7 +242,7 @@ class GetMetaData(AIDbManager):
         except Exception as e:
             logger.error(ScriptIdentifier.DATABASE, f"Error inserting filtered metadata: {e}")
 
-    def update_filtered_metadata_succeeded_dl(self, metadata_id:int, success_dl: str) -> None:
+    def update_filtered_metadata_succeeded_dl(self, metadata_id:int) -> None:
         """Update filtered metadata with download success"""
         try:
             cursor = self.conn.cursor()
@@ -250,11 +250,13 @@ class GetMetaData(AIDbManager):
                 UPDATE ai_schema.{}_filtered_sources
                 SET success_dl = 'Downloaded'
                 WHERE metadata_id = %s
-            """.format(self.project_name), (success_dl, metadata_id))
+            """.format(self.project_name), (metadata_id,))
             self.conn.commit()
         except Exception as e:
+            self.conn.rollback()
             logger.error(ScriptIdentifier.DATABASE, f"Error updating filtered metadata: {e}")
-
+     
+    
     def get_filtered_metadata(self, project_name: str) -> pd.DataFrame:
         """Get filtered metadata from database"""
         try:

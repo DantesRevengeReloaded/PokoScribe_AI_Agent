@@ -38,7 +38,6 @@ class SciHubDler:
     def __init__(self):
         pass
 
-
     def download_paper(self, doi, title, metadata_id, scihub_url="https://sci-hub.se", download_dir="resources/downloads"):
         """
         Download a scientific paper from Sci-Hub using its DOI.
@@ -47,6 +46,7 @@ class SciHubDler:
         Args:
             doi (str): The DOI of the paper to download
             title (str): The title of the paper to download
+            metadata_id (int): The metadata ID of the filtered table to update download status (table is product of AI filtering the crude metadata)
             scihub_url (str): The base URL for Sci-Hub
             download_dir (str): Directory to save downloaded papers
         
@@ -87,7 +87,6 @@ class SciHubDler:
             )
             
             if not download_button:
-                logger.error(ScriptIdentifier.SCIHUB, "Could not find PDF download link")
                 return False
                 
             # Get the PDF URL
@@ -120,19 +119,26 @@ class SciHubDler:
             pdf_response.raise_for_status()
 
             titleforpath = sanitize_filename(title)
-            # Save the file
-            filename = os.path.join(download_dir, f"{titleforpath}.pdf")
+            metadata_id_str = str(metadata_id)
+            # Save the file with metadata_id and title
+            filename = os.path.join(download_dir, f"{metadata_id_str}_{titleforpath}.pdf")
+            
             with open(filename, 'wb') as f:
                 f.write(pdf_response.content)
             
+            # Update metadata with download status
+            # table of filtered data must existS
             logger.info(ScriptIdentifier.SCIHUB, f"Downloaded: {filename}")
             insert_update_dl = GetMetaData()
-            insert_update_dl.update_filtered_metadata_succeeded_dl(metadata_id, True)
+            insert_update_dl.update_filtered_metadata_succeeded_dl(metadata_id)
             logger.info(ScriptIdentifier.SCIHUB, f"Updated metadata with download status for {title}")
             time.sleep(3)
-            
-        except requests.exceptions.RequestException as e:
-            logger.error(ScriptIdentifier.SCIHUB, f"Request error: for {title} file: {str(e)}")
-        except Exception as e:
-            logger.error(ScriptIdentifier.SCIHUB, f" Unexpected error for {title} file: {str(e)}")
+            return True
 
+        except requests.exceptions.RequestException as e:
+            logger.error(ScriptIdentifier.SCIHUB, f"Request error for {title}: {str(e)}")
+            return False
+
+        except Exception as e:
+            logger.error(ScriptIdentifier.SCIHUB, f"Unexpected error for {title}: {str(e)}")
+            return False

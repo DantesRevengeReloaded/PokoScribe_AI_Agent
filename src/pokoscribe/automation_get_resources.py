@@ -123,6 +123,5 @@ def download_filtered_papers():
         raise
 
 if __name__ == "__main__":
-    get_metadata()
-    filter_metadata()
+
     download_filtered_papers()
