@@ -46,7 +46,6 @@ class SystemPars:
         self.chapters_historicity = 'prompts-roles\history\chapters.txt'
 
 
-
 # Define the keywords and search queries to be used in the search of AHSS tool      
 def get_keywords() -> list:
     keywords = [
@@ -84,8 +83,7 @@ class ChatGPTPars:
         self.role_user = "user"
         self.tokenslimit = 27000 # limit of tokens per document
 
-
-# Configuration for the summerizerclass ChatGPTPdfSummerizerPars(SystemPars):
+class ChatGPTPdfSummerizerPars(SystemPars):
     def __init__(self):
         super().__init__()
         

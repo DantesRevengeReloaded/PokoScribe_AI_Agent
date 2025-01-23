@@ -51,8 +51,14 @@ class TokenCounter:
     
     def count_text(self, file_path: str) -> dict:
         """Count tokens in a text file"""
-        with open(file_path, 'r', encoding='utf-8') as f:
-            text = f.read()
+        try:
+            with open(file_path, 'r', encoding='utf-8') as f:
+                text = f.read()
+        except UnicodeDecodeError:
+            # Try with different encoding if UTF-8 fails
+            with open(file_path, 'r', encoding='cp1252') as f:
+                text = f.read()
+        
         tokens = self.count_tokens(text)
         return {
             'file': os.path.basename(file_path),
@@ -92,15 +98,15 @@ class TokenCounter:
 def main():
     counter = TokenCounter()
     
-    # Example usage
+    # Example usage with proper path handling
     files = [
-        'merged_results.csv'
+        Path('resources/output_of_ai/summary_total.txt')
     ]
     
     for file in files:
-        if os.path.exists(file):
+        if file.exists():
             try:
-                result = counter.count_file(file)
+                result = counter.count_file(str(file))
                 print(f"\nResults for {file}:")
                 for key, value in result.items():
                     print(f"{key}: {value}")
