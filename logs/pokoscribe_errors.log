@@ -2142,3 +2142,13 @@ LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
 2025-01-23 23:40:57 - [AI_SUMMARIZER] - ERROR - [pokolog.py:68] - Error processing resources\summary_agent\input\An Individual Psychology Approach to Underlying Factors of Workplace Bullying.pdf: expected string or buffer
 2025-01-23 23:40:57 - [AI_SUMMARIZER] - WARNING - [pokolog.py:68] - resources\summary_agent\input\An Individual Psychology Approach to Underlying Factors of Workplace Bullying.pdf moved to resources\summary_agent\incompleted
 2025-01-23 23:41:21 - [AI_SUMMARIZER] - ERROR - [pokolog.py:68] - Error saving summary of resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf to resources\output_of_ai\summary_total.txt: 'charmap' codec can't encode character '\u2192' in position 2229: character maps to <undefined>
+2025-01-23 23:48:31 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error inserting row resources\summary_agent\input\Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes.pdf: value too long for type character varying(255)
+
+2025-01-23 23:49:07 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error inserting row resources\summary_agent\input\Clarifying the construct of human resource systems.pdf: value too long for type character varying(255)
+
+2025-01-23 23:49:31 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error inserting row resources\summary_agent\input\Climate-driven trends in contemporary ocean productivity.pdf: value too long for type character varying(255)
+
+2025-01-23 23:55:48 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error inserting row resources\summary_agent\input\Do psychological capital and work engagement foster frontline employees’ satisfaction.pdf: value too long for type character varying(255)
+
+2025-01-23 23:56:47 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error inserting row resources\summary_agent\input\Effect of business characteristics and ERP implementation on business outcomes.pdf: value too long for type character varying(255)
+

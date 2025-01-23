@@ -76,9 +76,16 @@ class PDFReader:
                 reader = PyPDF2.PdfReader(file)
                 text = ''
                 for page in reader.pages:
-                    text += page.extract_text()
-            logger.info(ScriptIdentifier.SUMMARIZER, f"Text extracted from {self.file_path}")
+                    extracted_text = page.extract_text()
+                    if extracted_text:
+                        # Clean and normalize text
+                        text += extracted_text.encode('utf-8', errors='ignore').decode('utf-8')
+            
+            if not text.strip():
+                raise ValueError("No text extracted from PDF")
+                
             return text
+            
         except Exception as e:
             logger.error(ScriptIdentifier.SUMMARIZER, f"Error reading {self.file_path}: {e}")
             return None
@@ -435,11 +442,14 @@ class PDFSummarizer:
                                       )
                 todatabase.close()
 
-                with open(self.output_file, 'a') as file:
+                with open(self.output_file, 'a', encoding='utf-8') as file:
                     try:
                         file.write(f"Summary of {pdf_file}:\n")
-                        file.write(summary + '\n\n')
-                        file.write('--------\n\n')
+                        clean_summary = summary.encode('utf-8', errors='ignore').decode('utf-8')
+                        # Replace specific problematic characters
+                        clean_summary = clean_summary.replace('\u2192', '->')
+                        file.write(clean_summary + '\n\n')
+                        file.write('----------------------------------------\n\n')
                         logger.info(ScriptIdentifier.SUMMARIZER, f"Summary of {pdf_file} saved to {self.output_file}")
                         self.completedfiles += 1
                     except Exception as e:
