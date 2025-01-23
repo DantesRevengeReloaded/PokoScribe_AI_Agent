@@ -2,7 +2,7 @@ Summary of resources\summary_agent\input\A causal model for employee satisfactio
 ### Summary of the Article for the Paper on Psychology, Job Satisfaction, Leadership, and Employee Performance
 
 #### **1. Information about Psychology**
-The article emphasizes the importance of understanding the psychological needs of employees in the workplace. It draws on Hackman and Oldham’s Work Design Model, which highlights the critical psychological states that influence employee satisfaction and motivation. These states include:
+The article emphasizes the importance of understanding the psychological needs of employees in the workplace. It draws on Hackman and Oldhamï¿½s Work Design Model, which highlights the critical psychological states that influence employee satisfaction and motivation. These states include:
 - **Experienced meaningfulness of work**: Employees need to feel that their work is significant and aligns with their values.
 - **Experienced responsibility for outcomes**: Employees should feel accountable for the results of their work.
 - **Knowledge of actual results**: Employees need feedback on their performance to understand their impact.
@@ -10,16 +10,16 @@ The article emphasizes the importance of understanding the psychological needs o
 These psychological states are influenced by core job characteristics such as task significance, autonomy, skill variety, task identity, and feedback. The article argues that addressing these psychological needs through job design can enhance employee satisfaction and productivity.
 
 #### **2. Information about Job Satisfaction**
-Job satisfaction is a central theme in the article, linked to the EFQM Excellence Model’s criterion of "people results." The article suggests that job satisfaction is influenced by factors such as:
+Job satisfaction is a central theme in the article, linked to the EFQM Excellence Modelï¿½s criterion of "people results." The article suggests that job satisfaction is influenced by factors such as:
 - **Empowerment and involvement**: Employees feel more satisfied when they are involved in decision-making and have control over their work.
 - **Recognition and development**: Providing opportunities for growth and recognizing employee contributions enhances satisfaction.
-- **Alignment of individual goals with organizational objectives**: When employees’ personal goals align with the company’s strategy, satisfaction increases.
+- **Alignment of individual goals with organizational objectives**: When employeesï¿½ personal goals align with the companyï¿½s strategy, satisfaction increases.
 
 The article also highlights the empirical link between employee satisfaction and customer satisfaction, suggesting that satisfied employees are more likely to deliver high-quality service, leading to satisfied customers.
 
 #### **3. Information about Leadership**
 Leadership plays a critical role in shaping employee satisfaction and performance. The article identifies leadership as a key enabler in the EFQM Excellence Model, influencing:
-- **Policy and strategy**: Leaders set the agenda for the organization’s future, including its quality and human resource plans.
+- **Policy and strategy**: Leaders set the agenda for the organizationï¿½s future, including its quality and human resource plans.
 - **People management**: Leaders influence how employees are empowered, involved, and recognized.
 - **Resource allocation**: Leaders ensure that resources are allocated to support employee development and innovation.
 
@@ -34,38 +34,145 @@ The article establishes a causal relationship between the enablers in the EFQM E
 The article uses Structural Equation Modeling (SEM) to empirically validate these relationships, showing that organizations can enhance employee satisfaction and performance by focusing on the enablers outlined in the EFQM Excellence Model.
 
 #### **5. Other Relevant Information**
-The article also discusses the limitations of the EFQM Excellence Model, noting that it does not explicitly outline the causal relationships between enablers and results. By integrating Hackman and Oldham’s Work Design Model, the authors provide a theoretical framework that fills this gap. Additionally, the article highlights the importance of continuous improvement and innovation in maintaining high levels of employee satisfaction and performance.
+The article also discusses the limitations of the EFQM Excellence Model, noting that it does not explicitly outline the causal relationships between enablers and results. By integrating Hackman and Oldhamï¿½s Work Design Model, the authors provide a theoretical framework that fills this gap. Additionally, the article highlights the importance of continuous improvement and innovation in maintaining high levels of employee satisfaction and performance.
 
 #### **6. Summary of Discussion**
 The article concludes that employee satisfaction is a critical driver of organizational success. By addressing the psychological needs of employees through effective leadership, well-designed jobs, and supportive policies, organizations can enhance both employee satisfaction and overall performance. The empirical validation of the causal relationships in the EFQM Excellence Model provides a practical tool for organizations to improve their self-assessment processes and achieve business excellence.
 
 #### **Citation**
--?!Eskildsen, J.K. and Dahlgaard, J.J. (2000) A causal model for employee satisfaction. *Total Quality Management*, 11(8), pp. 1081–1094. Available at: http://dx.doi.org/10.1080/095441200440340 [Accessed 08 May 2013].-?!
+-?!Eskildsen, J.K. and Dahlgaard, J.J. (2000) A causal model for employee satisfaction. *Total Quality Management*, 11(8), pp. 1081ï¿½1094. Available at: http://dx.doi.org/10.1080/095441200440340 [Accessed 08 May 2013].-?!
 
 --------
 
-Summary of resources\summary_agent\input\A causal model for employee satisfaction.pdf:
-### Summary of the Article
 
-#### Information about Psychology
-The article emphasizes the crucial role of employee satisfaction within organizations, highlighting that it is an essential psychological component for driving productivity and maintaining a competitive edge in the marketplace. It discusses the psychological stages identified in Hackman and Oldham's Work Design Model, which include the experienced meaningfulness of work, felt responsibility for outcomes, and knowledge of the actual results of work activities. These stages are pivotal in fostering a motivated workforce, which in turn influences overall job satisfaction.
+Summary of resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf:
+### Summary of the Article for the Paper on Psychology, Job Satisfaction, Leadership, and Employee Performance
 
-#### Information about Job Satisfaction
-Job satisfaction is portrayed as a multi-faceted construct influenced by various factors including job design, employee involvement, and organizational support systems. The EFQM Excellence Model identifies "people results" as a critical criterion that reflects employee satisfaction and engagement levels. The article asserts that there is a direct link between organizational practices aimed at enhancing job satisfaction and the subsequent performance outcomes for employees.
+#### **Psychology**  
+The article emphasizes the role of psychological factors in shaping employee behavior and organizational outcomes. It highlights that employees' mental and emotional states significantly influence their engagement, motivation, and overall performance. Psychological well-being is linked to factors such as stress management, work-life balance, and the alignment of personal and organizational values. The study suggests that fostering a positive psychological environment can enhance employee resilience and adaptability, which are critical for organizational success.
 
-#### Information about Leadership
-Leadership is presented as a foundational element that affects both the policy and strategy of an organization and the overall employee experience. Effective leadership practices that promote employee involvement and recognition are essential for cultivating a work environment conducive to high job satisfaction. The article discusses how leadership serves as a driver for organizational culture, significantly impacting both the psychological well-being of employees and the enabling factors that lead to positive outcomes.
+#### **Job Satisfaction**  
+Job satisfaction is identified as a key determinant of employee productivity and retention. The article underscores that satisfaction is influenced by intrinsic factors (e.g., meaningful work, recognition) and extrinsic factors (e.g., compensation, work conditions). Employees who feel valued and adequately rewarded are more likely to exhibit higher levels of commitment and performance. The study also notes that job satisfaction is closely tied to organizational culture and leadership practices, which can either enhance or diminish employee morale.
 
-#### Information about Impact of Above in Work Performance and Productivity
-The article outlines empirical findings that suggest a strong positive correlation between employee satisfaction, effective leadership, and productivity. Satisfied employees are more likely to exhibit high levels of motivation and commitment, which translates into enhanced work performance. The causal relationships established through structural equation modeling indicate that organizations can achieve improved productivity by focusing on factors that enhance employee satisfaction and well-being.
+#### **Leadership**  
+Leadership plays a pivotal role in shaping organizational performance and employee satisfaction. The article discusses how effective leadership styles, such as transformational and participative leadership, can inspire employees, foster innovation, and create a sense of purpose. Leaders who communicate clearly, provide support, and encourage professional development contribute to a positive work environment. Conversely, poor leadership can lead to disengagement, low morale, and reduced productivity. The study highlights the importance of aligning leadership practices with organizational goals and employee needs.
 
-#### Other Relevant Information
-Additionally, the article emphasizes the importance of continuous improvement and employee involvement in the organizational context. It references research indicating that organizations that prioritize employee engagement and satisfaction are likely to experience better customer satisfaction and loyalty. This interconnectedness underscores the notion that employee satisfaction is not an isolated factor but rather a critical component of a broader organizational success framework.
+#### **Impact on Work Performance and Productivity**  
+The article presents a causal model linking psychology, job satisfaction, and leadership to organizational performance. It argues that employees who are psychologically healthy, satisfied with their jobs, and supported by effective leadership are more likely to perform at higher levels. These factors collectively contribute to improved productivity, innovation, and overall organizational success. The study also emphasizes the need for continuous assessment and adaptation of organizational practices to maintain high performance levels.
 
-#### Summary of Discussion
-The discussion highlights the necessity of a theoretical framework that links employee satisfaction to organizational outcomes through leadership and job design. It concludes that understanding these relationships allows organizations to implement targeted strategies that can improve employee satisfaction, leading to enhanced performance and productivity. The empirical support for the proposed model reinforces the importance of managing human resources effectively to achieve excellence in organizational performance.
+#### **Other Relevant Information**  
+The article discusses the importance of organizational change and adaptability in maintaining competitiveness. It suggests that organizations must regularly evaluate their internal dynamics, including employee psychology, satisfaction, and leadership effectiveness, to identify areas for improvement. Additionally, the study highlights the role of external factors, such as market conditions and technological advancements, in influencing organizational performance.
 
--?!Eskildsen, J.K. & Dahlgaard, J.J. (2000) A causal model for employee satisfaction, Total Quality Management, 11(8), 1081-1094.-?!
+#### **Summary of Discussion**  
+The article concludes that psychology, job satisfaction, and leadership are interconnected factors that significantly impact employee performance and organizational productivity. By fostering a positive psychological environment, ensuring job satisfaction, and implementing effective leadership practices, organizations can enhance their overall performance and adaptability in a dynamic business landscape. The study calls for further research to explore these relationships in different organizational contexts.
+
+-?!Burke, W.W. and Litwin, G.H., 1992. A causal model of organizational performance and change. *Journal of Management*, 18(3), pp.523-545. Available at: http://jom.sagepub.com/content/18/3/523 [Accessed 13 Nov 2013].-?!
+
+--------
+
+Summary of resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf:
+### Summary of the Article: A New Model of Work Role Performance
+
+#### **Psychology and Work Role Performance**
+The article emphasizes the importance of psychology in understanding work role performance. It highlights how individual behaviors, such as proficiency, adaptivity, and proactivity, are shaped by psychological factors like role clarity, openness to change, and self-efficacy. These psychological constructs influence how employees perceive their roles and respond to organizational demands, particularly in uncertain and interdependent work environments. The study integrates psychological theories, such as role theory, to explain how employees adapt to and initiate changes in their work roles, which are critical for organizational effectiveness.
+
+#### **Job Satisfaction**
+Job satisfaction is indirectly addressed through the discussion of how employees perceive their roles and the support they receive from their teams and organizations. The study suggests that when employees feel supported and have clarity about their roles, they are more likely to engage in positive work behaviors, such as team member proficiency and organization member proactivity. These behaviors are linked to higher job satisfaction, as employees feel more competent and valued within their roles. Additionally, the study highlights that employees who are open to change and feel confident in their abilities are more likely to experience satisfaction, as they can adapt to and influence their work environments effectively.
+
+#### **Leadership**
+Leadership plays a critical role in shaping work role performance. The study suggests that leaders who provide clear role expectations and foster a supportive team environment can enhance employees' proficiency, adaptivity, and proactivity. Leadership behaviors that encourage open communication, team support, and organizational commitment are particularly important for promoting positive work behaviors. The study also emphasizes that leaders must recognize and reward proactive behaviors, as these are essential for organizational innovation and adaptability.
+
+#### **Impact on Work Performance and Productivity**
+The study introduces a new model of work role performance that categorizes behaviors into nine subdimensions based on proficiency, adaptivity, and proactivity at individual, team, and organizational levels. These behaviors are critical for managing uncertainty and interdependence in modern work environments. The findings suggest that employees who exhibit high levels of adaptivity and proactivity contribute significantly to organizational effectiveness, particularly in dynamic and uncertain contexts. For example, proactive employees who initiate changes and adapt to new challenges can improve team and organizational performance. The study also highlights that role clarity and team support are key predictors of individual task proficiency, while openness to change and self-efficacy are critical for adaptive and proactive behaviors.
+
+#### **Other Relevant Information**
+The study provides empirical evidence supporting the proposed model, using data from supervisors and employees across multiple organizations. It demonstrates that employees and supervisors can differentiate between the nine subdimensions of work role performance, validating the model's structure. The study also highlights the importance of external validation, showing that external measures of proactivity, such as expert ratings and suggestion rates, correlate with self-reported proactive behaviors.
+
+#### **Summary of Discussion**
+The article concludes that the proposed model of work role performance provides a comprehensive framework for understanding how individual behaviors contribute to organizational effectiveness. By integrating adaptive and proactive behaviors into the performance domain, the model addresses the limitations of traditional performance frameworks, which often focus solely on task proficiency. The study emphasizes the importance of considering the broader organizational context, including uncertainty and interdependence, when evaluating work role performance. It also highlights practical implications for performance management, such as the need to recognize and reward team member and organization member behaviors, as well as proactive and adaptive behaviors.
+
+#### **Citation**
+-?!Griffin, M. A., Neal, A., & Parker, S. K. (2007). A new model of work role performance: Positive behavior in uncertain and interdependent contexts. *Academy of Management Journal*, 50(2), 327-347.-?!
+
+--------
+
+Summary of resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf:
+### Summary of the Article: "A Study on the Drivers of Employee Engagement Impacting Employee Performance"
+
+#### **Psychology**
+Employee engagement is deeply rooted in psychological principles, particularly in role theory and flow theory. Kahn (1990) defines engagement as the harnessing of employees' physical, cognitive, and emotional selves to their work roles. Psychological conditions such as safety, meaningfulness, and availability are critical for fostering engagement. Employees who feel psychologically safe and find their work meaningful are more likely to be engaged. Additionally, Schaufeli et al. (2002) describe engagement as a positive, fulfilling work-related state characterized by vigor, dedication, and absorption. These psychological constructs highlight the importance of creating a work environment that supports employees' mental and emotional well-being.
+
+#### **Job Satisfaction**
+Job satisfaction is a key driver of employee engagement. Engaged employees are more likely to feel satisfied with their jobs, as they perceive their work as meaningful and aligned with their personal values. Studies have shown that job satisfaction is closely linked to engagement, with factors such as recognition, career growth opportunities, and work-life balance playing significant roles. Employees who are satisfied with their jobs are more likely to exhibit behaviors such as staying with the organization, speaking positively about it, and striving to contribute to its success.
+
+#### **Leadership**
+Leadership is a critical factor in driving employee engagement. Effective leadership behaviors, such as providing support, fostering trust, and creating a blame-free environment, contribute to psychological safety, which is essential for engagement. Transformational leadership, in particular, has been shown to positively impact engagement by inspiring employees and aligning their goals with organizational objectives. Leaders who communicate clearly, provide role clarity, and empower employees to take initiative are more likely to foster a culture of engagement.
+
+#### **Impact on Work Performance and Productivity**
+Employee engagement has a direct and significant impact on work performance and productivity. Engaged employees are more likely to go above and beyond their job requirements, leading to higher levels of productivity and organizational performance. Studies have shown that engagement leads to improved customer satisfaction, employee retention, and overall business success. For example, Harter et al. (2002) found a strong correlation between employee engagement and business outcomes such as profitability and productivity. Engaged employees are also more innovative, creative, and committed to achieving organizational goals.
+
+#### **Other Relevant Information**
+The study identifies three key drivers of employee engagement: communication, work-life balance, and leadership. Effective communication ensures that employees understand their roles and how they contribute to the organization's goals. Work-life balance is crucial for maintaining employee well-being and preventing burnout, which can negatively impact engagement. Leadership plays a pivotal role in creating an environment where employees feel valued and motivated to perform at their best.
+
+#### **Summary of Discussion**
+The article emphasizes that employee engagement is a multifaceted construct influenced by psychological, organizational, and leadership factors. Organizations must focus on creating a supportive work environment that fosters psychological safety, meaningful work, and effective communication. Leadership plays a crucial role in driving engagement, and organizations should prioritize strategies that enhance work-life balance and job satisfaction. Ultimately, engaged employees are more productive, innovative, and committed to organizational success, making employee engagement a critical component of business strategy.
+
+-?!Bedarkar, M. and Pandita, D. (2014). A study on the drivers of employee engagement impacting employee performance. *Procedia - Social and Behavioral Sciences*, 133, pp. 106–115. Available at: https://doi.org/10.1016/j.sbspro.2014.04.174-?!
+
+--------
+
+Summary of resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf:
+Summary of resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf:
+### Summary of the Article: "Antecedents and Consequences of Employee Engagement Revisited" by Alan M. Saks (2019)
+
+#### **1. Information about Psychology**
+Employee engagement is a psychological construct rooted in Kahn’s (1990) concept of personal engagement, which involves the physical, cognitive, and emotional investment of employees in their work roles. Schaufeli et al. (2002) further defined engagement as a positive work-related state characterized by vigor, dedication, and absorption. Saks (2006) expanded this by distinguishing between **job engagement** (engagement in one’s specific job role) and **organization engagement** (engagement as a member of the organization). Engagement is influenced by psychological factors such as meaningfulness, safety, and availability, which are shaped by job characteristics, social support, and organizational resources.
+
+#### **2. Information about Job Satisfaction**
+Job satisfaction is a key consequence of employee engagement. Engaged employees are more likely to experience higher levels of job satisfaction due to the fulfillment they derive from their work. Saks (2006) found that both job engagement and organization engagement significantly predict job satisfaction. The study also revealed that engagement mediates the relationship between job characteristics, perceived organizational support (POS), and job satisfaction. This suggests that when employees feel supported and their jobs are designed to be meaningful, they are more likely to be engaged and, consequently, satisfied with their work.
+
+#### **3. Information about Leadership**
+Leadership plays a critical role in fostering employee engagement. Transformational leadership, in particular, has been shown to positively influence engagement by inspiring employees and creating a supportive work environment. Saks (2006) highlighted that perceived supervisor support (PSS) and perceived organizational support (POS) are significant antecedents of engagement. Leaders who provide recognition, rewards, and opportunities for development can enhance employee engagement. Additionally, ethical and authentic leadership styles have been linked to higher levels of engagement, as they build trust and psychological safety among employees.
+
+#### **4. Information about the Impact of the Above on Work Performance and Productivity**
+Employee engagement has a direct and positive impact on work performance and productivity. Engaged employees are more likely to exhibit organizational citizenship behaviors (OCB), such as helping colleagues and going beyond their job requirements. They also demonstrate higher levels of task performance and extra-role performance. Saks (2006) found that engagement mediates the relationship between job characteristics, POS, and performance outcomes. Furthermore, engagement reduces turnover intentions, which contributes to organizational stability and productivity. Organizations that foster engagement through supportive leadership, fair practices, and meaningful job design are likely to see improvements in overall performance.
+
+#### **5. Other Relevant Information**
+- **Job Characteristics**: Skill variety, autonomy, and feedback are key job characteristics that drive engagement. Skill variety, in particular, was found to be the strongest predictor of job engagement.
+- **Perceived Organizational Support (POS)**: POS is a critical antecedent of both job and organization engagement. Employees who feel supported by their organization are more likely to engage deeply in their roles.
+- **Single-Item Measures**: Single-item measures of job and organization engagement were found to be effective and practical for assessing engagement, providing organizations with a quick and easy way to monitor employee engagement levels.
+- **Mediating Role of Engagement**: Engagement mediates the relationship between antecedents (e.g., job characteristics, POS) and consequences (e.g., job satisfaction, performance, turnover intentions).
+
+#### **6. Summary of Discussion**
+The study revisits Saks’ (2006) model of employee engagement and confirms its validity using the Utrecht Work Engagement Scale (UWES) and single-item measures. The findings suggest that skill variety and POS are the most significant predictors of job engagement. Engagement, in turn, predicts job satisfaction, organizational commitment, OCB, and reduced turnover intentions. The study also highlights the importance of leadership and job design in fostering engagement. A revised model of engagement is proposed, incorporating additional antecedents such as job demands, opportunities for learning, and leadership styles. The study concludes that organizations can enhance engagement by focusing on skill variety, POS, and supportive leadership, which will ultimately improve performance and productivity.
+
+#### **Citation**
+-?!Saks, A.M. (2019). Antecedents and consequences of employee engagement revisited. *Journal of Organizational Effectiveness: People and Performance*. https://doi.org/10.1108/JOEPP-06-2018-0034-?!
+
+--------
+
+Summary of resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf:
+### Summary of the Article: "Bullying Effects on Performance and Engagement Among Academics"
+
+#### **1. Information about Psychology**
+The study explores the psychological impact of workplace bullying on academics, focusing on how bullying affects their mental health, well-being, and engagement. Workplace bullying is defined as repeated and prolonged exposure to harassing behavior, where the victim is unable to defend themselves. The psychological consequences of bullying include stress, anxiety, depression, and a decline in overall mental health. The study highlights that bullying undermines basic psychological needs such as autonomy, competence, and relatedness, which are essential for intrinsic motivation and well-being. These unmet needs lead to decreased work engagement and performance.
+
+#### **2. Information about Job Satisfaction**
+Job satisfaction is significantly impacted by workplace bullying, particularly through feelings of "professional understating," where employees are assigned tasks below their competence level or have key responsibilities removed. This form of bullying leads to dissatisfaction, as it violates the psychological contract between employees and employers. Employees feel undervalued and disrespected, which reduces their commitment to the organization. The study also notes that job insecurity, resulting from bullying, further diminishes job satisfaction and engagement.
+
+#### **3. Information about Leadership**
+Leadership plays a critical role in either fostering or mitigating workplace bullying. The study suggests that poor leadership practices, such as authoritarian or unsupportive management styles, can create an environment conducive to bullying. Leaders who fail to address bullying or who themselves engage in bullying behaviors contribute to a toxic workplace culture. Effective leadership, on the other hand, can prevent bullying by promoting open communication, fairness, and support for employees. The study emphasizes the need for leaders to recognize and address bullying to maintain a positive work environment.
+
+#### **4. Information about the Impact on Work Performance and Productivity**
+Workplace bullying has a direct negative impact on employee performance and productivity. The study identifies "professional understating" as a significant factor that reduces both engagement and performance. Employees who experience bullying are less likely to perform well, as they suffer from decreased motivation, concentration, and commitment. The study also finds that bullying leads to counterproductive work behaviors (CWB) and reduces organizational citizenship behaviors (OCB), which are essential for maintaining a productive work environment. The decline in performance is often followed by a decrease in engagement, creating a vicious cycle that further harms productivity.
+
+#### **5. Other Relevant Information**
+The study highlights the importance of addressing workplace bullying to improve employee well-being and organizational outcomes. It suggests that interventions should focus on creating a supportive work environment, promoting fair treatment, and ensuring that employees' psychological needs are met. The study also calls for longitudinal research to better understand the causal relationships between bullying, engagement, and performance. Additionally, it emphasizes the need for clear policies and guidelines to prevent and address bullying in academic institutions.
+
+#### **6. Summary of Discussion**
+The study concludes that workplace bullying, particularly in the form of "professional understating," has a detrimental effect on both work engagement and performance among academics. Bullying undermines employees' psychological needs, leading to decreased job satisfaction, motivation, and productivity. Effective leadership and supportive organizational practices are essential to prevent bullying and promote a positive work environment. The study calls for further research to explore the long-term effects of bullying and to develop strategies for mitigating its impact on employees and organizations.
+
+-?!Meriläinen, M., Kõiv, K., and Honkanen, A. (2019). Bullying effects on performance and engagement among academics. *Employee Relations: The International Journal*, 41(6), 1205-1223. doi:10.1108/ER-11-2017-0264-?!
 
 --------
 

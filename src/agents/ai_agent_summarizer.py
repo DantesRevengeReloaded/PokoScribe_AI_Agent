@@ -68,4 +68,4 @@ class AIBotSummarizer:
             logger.error(ScriptIdentifier.AGENTSUMMARIZER, f"Error in Summarizer AI model of Deepseek {e}")
 
 to = AIBotSummarizer()
-to.chatgptsummerize()
+to.deepseeksummerize()

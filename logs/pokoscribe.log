@@ -4821,3 +4821,147 @@ LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
 2025-01-23 20:42:21 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Summarizer AI model with OpenAI completed in 14.721813201904297 seconds.
 2025-01-23 20:42:21 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Total files processed: 1
 2025-01-23 20:42:21 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Completed files: 1
+2025-01-23 23:39:29 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Using DeepSeek model...
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Initializing PDFSummarizer...
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - AI parameters initialized successfully.
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Prompt loaded successfully, content preview: create a summary of the following article for the ...
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Citation loaded successfully, content preview: in the end of the answer cite the source in HARVAR...
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Role loaded successfully, content preview: you are an academic who wants to write a paper abo...
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - PDFSummarizer initialized successfully.
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Found 7 PDF files in resources\summary_agent\input...
+2025-01-23 23:39:29 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Session ID recieved: 6
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Processing resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf...
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Reading resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf...
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Text extracted from resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf: 810
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summarizing resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf (less than 27000 tokens)...
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - SESSION INFO:
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using source model: deepseek
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using model: deepseek-chat
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - max tokens: 4500
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - temperature: {aiparameters.temperature}
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role system: system
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role user: user
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - prompt: create a summary of the following article for the paper that is specified in your role, focusing on psychology, job satisfaction, leadership and impact in performance of employess.
+2025-01-23 23:39:29 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Prompt created for DeepSeek
+2025-01-23 23:39:49 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - DeepSeek response received without problems
+2025-01-23 23:39:49 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of summary of resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf: 628
+2025-01-23 23:39:49 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Citation extracted from summary: Burke, W.W. and Litwin, G.H., 1992. A causal model of organizational performance and change. *Journal of Management*, 18(3), pp.523-545. Available at: http://jom.sagepub.com/content/18/3/523 [Accessed 13 Nov 2013].-?
+2025-01-23 23:39:49 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-23 23:39:49 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Row for resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf file inserted successfully.
+2025-01-23 23:39:49 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summary of resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf saved to resources\output_of_ai\summary_total.txt
+2025-01-23 23:39:49 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - resources\summary_agent\input\A Causal Model of Organizational Performance and Change.pdf moved to resources\summary_agent\completed waiting 3 seconds for next file...
+2025-01-23 23:39:54 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Processing resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf...
+2025-01-23 23:39:54 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Reading resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf...
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Text extracted from resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf: 22848
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summarizing resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf (less than 27000 tokens)...
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - SESSION INFO:
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using source model: deepseek
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using model: deepseek-chat
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - max tokens: 4500
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - temperature: {aiparameters.temperature}
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role system: system
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role user: user
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - prompt: create a summary of the following article for the paper that is specified in your role, focusing on psychology, job satisfaction, leadership and impact in performance of employess. , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?!
+2025-01-23 23:39:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Prompt created for DeepSeek
+2025-01-23 23:40:22 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - DeepSeek response received without problems
+2025-01-23 23:40:22 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of summary of resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf: 753
+2025-01-23 23:40:22 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Citation extracted from summary: Griffin, M. A., Neal, A., & Parker, S. K. (2007). A new model of work role performance: Positive behavior in uncertain and interdependent contexts. *Academy of Management Journal*, 50(2), 327-347.-?
+2025-01-23 23:40:22 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-23 23:40:22 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Row for resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf file inserted successfully.
+2025-01-23 23:40:22 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summary of resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf saved to resources\output_of_ai\summary_total.txt
+2025-01-23 23:40:22 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - resources\summary_agent\input\A New Model of Work Role Performance Positive Behavior in Uncertain and Interdependent Contexts.pdf moved to resources\summary_agent\completed waiting 3 seconds for next file...
+2025-01-23 23:40:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Processing resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf...
+2025-01-23 23:40:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Reading resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf...
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Text extracted from resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf: 9181
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summarizing resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf (less than 27000 tokens)...
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - SESSION INFO:
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using source model: deepseek
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using model: deepseek-chat
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - max tokens: 4500
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - temperature: {aiparameters.temperature}
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role system: system
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role user: user
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - prompt: create a summary of the following article for the paper that is specified in your role, focusing on psychology, job satisfaction, leadership and impact in performance of employess. , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?!
+2025-01-23 23:40:28 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Prompt created for DeepSeek
+2025-01-23 23:40:51 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - DeepSeek response received without problems
+2025-01-23 23:40:51 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of summary of resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf: 728
+2025-01-23 23:40:51 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Citation extracted from summary: Bedarkar, M. and Pandita, D. (2014). A study on the drivers of employee engagement impacting employee performance. *Procedia - Social and Behavioral Sciences*, 133, pp. 106–115. Available at: https://doi.org/10.1016/j.sbspro.2014.04.174-?
+2025-01-23 23:40:52 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-23 23:40:52 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Row for resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf file inserted successfully.
+2025-01-23 23:40:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summary of resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf saved to resources\output_of_ai\summary_total.txt
+2025-01-23 23:40:52 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - resources\summary_agent\input\A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf moved to resources\summary_agent\completed waiting 3 seconds for next file...
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Processing resources\summary_agent\input\An Individual Psychology Approach to Underlying Factors of Workplace Bullying.pdf...
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Reading resources\summary_agent\input\An Individual Psychology Approach to Underlying Factors of Workplace Bullying.pdf...
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - ERROR - [pokolog.py:68] - Error reading resources\summary_agent\input\An Individual Psychology Approach to Underlying Factors of Workplace Bullying.pdf: Odd-length string
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - ERROR - [pokolog.py:68] - Error processing resources\summary_agent\input\An Individual Psychology Approach to Underlying Factors of Workplace Bullying.pdf: expected string or buffer
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - WARNING - [pokolog.py:68] - resources\summary_agent\input\An Individual Psychology Approach to Underlying Factors of Workplace Bullying.pdf moved to resources\summary_agent\incompleted
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Processing resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf...
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Reading resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf...
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Text extracted from resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf: 16110
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summarizing resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf (less than 27000 tokens)...
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - SESSION INFO:
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using source model: deepseek
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using model: deepseek-chat
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - max tokens: 4500
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - temperature: {aiparameters.temperature}
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role system: system
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role user: user
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - prompt: create a summary of the following article for the paper that is specified in your role, focusing on psychology, job satisfaction, leadership and impact in performance of employess. , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?!
+2025-01-23 23:40:57 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Prompt created for DeepSeek
+2025-01-23 23:41:21 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - DeepSeek response received without problems
+2025-01-23 23:41:21 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of summary of resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf: 664
+2025-01-23 23:41:21 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Citation extracted from summary: Kim, M.-J. and Kim, B.-J. (2020). Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link. *Sustainability*, 12(9), 3514. https://doi.org/10.3390/su12093514-?
+2025-01-23 23:41:21 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-23 23:41:21 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Row for resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf file inserted successfully.
+2025-01-23 23:41:21 - [AI_SUMMARIZER] - ERROR - [pokolog.py:68] - Error saving summary of resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf to resources\output_of_ai\summary_total.txt: 'charmap' codec can't encode character '\u2192' in position 2229: character maps to <undefined>
+2025-01-23 23:41:21 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - resources\summary_agent\input\Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf moved to resources\summary_agent\completed waiting 3 seconds for next file...
+2025-01-23 23:41:26 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Processing resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf...
+2025-01-23 23:41:26 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Reading resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf...
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Text extracted from resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf: 18216
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summarizing resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf (less than 27000 tokens)...
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - SESSION INFO:
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using source model: deepseek
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using model: deepseek-chat
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - max tokens: 4500
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - temperature: {aiparameters.temperature}
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role system: system
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role user: user
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - prompt: create a summary of the following article for the paper that is specified in your role, focusing on psychology, job satisfaction, leadership and impact in performance of employess. , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?!
+2025-01-23 23:41:27 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Prompt created for DeepSeek
+2025-01-23 23:41:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - DeepSeek response received without problems
+2025-01-23 23:41:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of summary of resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf: 916
+2025-01-23 23:41:55 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Citation extracted from summary: Saks, A.M. (2019). Antecedents and consequences of employee engagement revisited. *Journal of Organizational Effectiveness: People and Performance*. https://doi.org/10.1108/JOEPP-06-2018-0034-?
+2025-01-23 23:41:56 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-23 23:41:56 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Row for resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf file inserted successfully.
+2025-01-23 23:41:56 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summary of resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf saved to resources\output_of_ai\summary_total.txt
+2025-01-23 23:41:56 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - resources\summary_agent\input\Antecedents and consequences of employee engagement revisited.pdf moved to resources\summary_agent\completed waiting 3 seconds for next file...
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Processing resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf...
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Reading resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf...
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Text extracted from resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf: 16825
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summarizing resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf (less than 27000 tokens)...
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - SESSION INFO:
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using source model: deepseek
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - using model: deepseek-chat
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - max tokens: 4500
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - temperature: {aiparameters.temperature}
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role system: system
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - role user: user
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - prompt: create a summary of the following article for the paper that is specified in your role, focusing on psychology, job satisfaction, leadership and impact in performance of employess. , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?! , in the end of the answer cite the source in HARVARD style of citation putting the citation inside the following symbols -?! like the example that follows -?!citation-?!
+2025-01-23 23:42:01 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Prompt created for DeepSeek
+2025-01-23 23:42:25 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - DeepSeek response received without problems
+2025-01-23 23:42:25 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Token count of summary of resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf: 746
+2025-01-23 23:42:25 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Citation extracted from summary: Meriläinen, M., Kõiv, K., and Honkanen, A. (2019). Bullying effects on performance and engagement among academics. *Employee Relations: The International Journal*, 41(6), 1205-1223. doi:10.1108/ER-11-2017-0264-?
+2025-01-23 23:42:25 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Connected to the database.
+2025-01-23 23:42:25 - [DATABASE_MANAGER] - INFO - [pokolog.py:68] - Row for resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf file inserted successfully.
+2025-01-23 23:42:25 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - Summary of resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf saved to resources\output_of_ai\summary_total.txt
+2025-01-23 23:42:25 - [AI_SUMMARIZER] - INFO - [pokolog.py:68] - resources\summary_agent\input\Bullying effects on performance and engagement among academics.pdf moved to resources\summary_agent\completed waiting 3 seconds for next file...
+2025-01-23 23:42:30 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Summarizer AI model with DeepSeek completed in 181.7603635787964 seconds.
+2025-01-23 23:42:30 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Total files processed: 7
+2025-01-23 23:42:30 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Completed files: 5
