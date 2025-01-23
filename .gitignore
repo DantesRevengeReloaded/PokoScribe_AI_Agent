@@ -21,3 +21,15 @@ __pycache__
 /tests2
 
 tests/downloads
+
+# Completed files folder
+resources\summary_agent\completed*
+!completed/.gitkeep
+
+# Incomplete/In-progress files
+incompleted/*
+!incompleted/.gitkeep
+
+# Input files folder
+input/*
+!input/.gitkeep
