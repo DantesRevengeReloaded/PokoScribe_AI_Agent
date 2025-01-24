@@ -22,7 +22,7 @@ from logs.pokolog import PokoLogger, ScriptIdentifier
 
 logger = PokoLogger()
 
-model_lists = ['openai', 'gemini', 'deepseek']
+model_lists = SystemPars().model_lists
 
 #empty dictionary to be used to insert in the database
 todbdic = {

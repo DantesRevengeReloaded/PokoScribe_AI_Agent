@@ -8,6 +8,7 @@ import os
 class TokenCounter:
     def __init__(self, model="gpt-3.5-turbo"):
         self.encoding = tiktoken.encoding_for_model(model)
+        self.summary_file = "resources/output_of_ai/summary_total.txt"
         
     def count_tokens(self, text: str) -> int:
         """Count tokens in a text string"""
@@ -50,21 +51,39 @@ class TokenCounter:
         }
     
     def count_text(self, file_path: str) -> dict:
-        """Count tokens in a text file"""
-        try:
-            with open(file_path, 'r', encoding='utf-8') as f:
-                text = f.read()
-        except UnicodeDecodeError:
-            # Try with different encoding if UTF-8 fails
-            with open(file_path, 'r', encoding='cp1252') as f:
-                text = f.read()
+        """Count tokens in a text file with robust encoding handling"""
+        # List of encodings to try
+        encodings = ['utf-8', 'utf-8-sig', 'cp1252', 'iso-8859-1', 'latin1']
+        text = None
+        
+        # Try reading with different encodings
+        for encoding in encodings:
+            try:
+                with open(file_path, 'r', encoding=encoding) as f:
+                    text = f.read()
+                print(f"Successfully read file using {encoding} encoding")
+                break
+            except UnicodeDecodeError:
+                print(f"Failed to read with {encoding} encoding, trying next...")
+                continue
+        
+        # If all encodings fail, try binary read and decode
+        if text is None:
+            try:
+                with open(file_path, 'rb') as f:
+                    raw_bytes = f.read()
+                    text = raw_bytes.decode('utf-8', errors='ignore')
+                print("Used binary read with UTF-8 ignore")
+            except Exception as e:
+                raise ValueError(f"Could not read file with any encoding: {e}")
         
         tokens = self.count_tokens(text)
         return {
             'file': os.path.basename(file_path),
             'tokens': tokens,
             'characters': len(text),
-            'lines': text.count('\n') + 1
+            'lines': text.count('\n') + 1,
+            'encoding_used': encoding if text else 'binary'
         }
     
     def count_json(self, file_path: str) -> dict:
@@ -95,23 +114,15 @@ class TokenCounter:
         else:
             raise ValueError(f"Unsupported file type: {file_type}")
 
-def main():
-    counter = TokenCounter()
-    
-    # Example usage with proper path handling
-    files = [
-        Path('resources/output_of_ai/summary_total.txt')
-    ]
-    
-    for file in files:
-        if file.exists():
-            try:
-                result = counter.count_file(str(file))
-                print(f"\nResults for {file}:")
-                for key, value in result.items():
-                    print(f"{key}: {value}")
-            except Exception as e:
-                print(f"Error processing {file}: {e}")
-
-if __name__ == "__main__":
-    main()
+    def count_summary(self) -> dict:
+        """Count tokens in the summary file"""
+        try:
+            return self.count_text(self.summary_file)
+        except Exception as e:
+            return {
+                'file': self.summary_file,
+                'tokens': 0,
+                'characters': 0,
+                'lines': 0,
+                'encoding_used': None
+            }

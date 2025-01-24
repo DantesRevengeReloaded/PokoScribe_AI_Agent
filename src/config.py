@@ -45,6 +45,9 @@ class SystemPars:
         # file with the chapters produced by the chatbot appended ech time
         self.chapters_historicity = 'prompts-roles\history\chapters.txt'
 
+        
+        self.model_lists = ['openai', 'gemini', 'deepseek']
+
 
 # Define the keywords and search queries to be used in the search of AHSS tool      
 def get_keywords() -> list:
