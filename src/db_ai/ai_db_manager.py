@@ -277,3 +277,22 @@ class GetMetaData(AIDbManager):
         except Exception as e:
             logger.error(ScriptIdentifier.DATABASE, f"Error getting filtered metadata: {e}")
             return pd.DataFrame()
+        
+class BiblioCreator(AIDbManager):
+    def __init__(self):
+        pass
+
+    def get_biblio(self, project_name: str) -> pd.DataFrame:
+        """ Get From summaries history table ciation column based on project name"""
+        try:
+            with self.conn.cursor() as cursor:
+                cursor.execute("""
+                    SELECT citation FROM ai_schema.summaries_history
+                    WHERE projectname = %s
+                """, (project_name,))
+                df = pd.DataFrame(cursor.fetchall(), columns=[desc[0] for desc in cursor.description])
+                logger.info(ScriptIdentifier.DATABASE, f"Retrieved {len(df)} records from project {project_name}")
+                return df
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error getting biblio: {e}")
+            return pd.DataFrame()

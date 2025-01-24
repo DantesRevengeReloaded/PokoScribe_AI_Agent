@@ -6074,3 +6074,4 @@ Nishii, L. H., Lepak, D. P., & Schneider, B. (2008). Employee attributions of th
 2025-01-24 00:38:38 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Summarizer AI model with DeepSeek completed in 687.8906178474426 seconds.
 2025-01-24 00:38:38 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Total files processed: 17
 2025-01-24 00:38:38 - [AI_AGENT_SUMMARIZER] - INFO - [pokolog.py:68] - Completed files: 17
+2025-01-24 07:43:24 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error getting biblio: 'BiblioCreator' object has no attribute 'conn'

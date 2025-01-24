@@ -2152,3 +2152,4 @@ LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
 
 2025-01-23 23:56:47 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error inserting row resources\summary_agent\input\Effect of business characteristics and ERP implementation on business outcomes.pdf: value too long for type character varying(255)
 
+2025-01-24 07:43:24 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error getting biblio: 'BiblioCreator' object has no attribute 'conn'
