@@ -2153,3 +2153,6 @@ LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
 2025-01-23 23:56:47 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error inserting row resources\summary_agent\input\Effect of business characteristics and ERP implementation on business outcomes.pdf: value too long for type character varying(255)
 
 2025-01-24 07:43:24 - [DATABASE_MANAGER] - ERROR - [pokolog.py:68] - Error getting biblio: 'BiblioCreator' object has no attribute 'conn'
+2025-01-24 19:23:26 - [AI_SUMMARIZER] - ERROR - [pokolog.py:68] - Error reading resources\summary_agent\input\Leadership style, organizational politics, and employees' performance.pdf: Invalid Elementary Object starting with b')' @5207: b'icent)]TJ\n/F2 1 Tf\n1)-3889 0 TD\n[(,)-203(Vol.)-209(251,)]TJ\n3033268 -1.1255 TD\n['
+2025-01-24 19:23:26 - [AI_SUMMARIZER] - ERROR - [pokolog.py:68] - Error processing resources\summary_agent\input\Leadership style, organizational politics, and employees' performance.pdf: expected string or buffer
+2025-01-24 19:23:26 - [AI_SUMMARIZER] - WARNING - [pokolog.py:68] - resources\summary_agent\input\Leadership style, organizational politics, and employees' performance.pdf moved to resources\summary_agent\incompleted

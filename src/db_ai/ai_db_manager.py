@@ -280,7 +280,7 @@ class GetMetaData(AIDbManager):
         
 class BiblioCreator(AIDbManager):
     def __init__(self):
-        pass
+        super().__init__()
 
     def get_biblio(self, project_name: str) -> pd.DataFrame:
         """ Get From summaries history table ciation column based on project name"""

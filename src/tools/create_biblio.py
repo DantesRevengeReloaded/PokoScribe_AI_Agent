@@ -13,3 +13,8 @@ projname = SystemPars().project_name
 get_cits = BiblioCreator()
 df = get_cits.get_biblio(projname)
 
+df = df.sort_values(['citation'], ascending=[True])
+
+
+outfile = project_root / 'resources' / 'bibliography.txt'
+df.to_csv(outfile, sep='\t', index=False)
