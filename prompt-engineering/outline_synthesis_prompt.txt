@@ -1,0 +1,7 @@
+Based on these separate outlines that are product of parts of a single summary text, create a unified, coherent outline, Create a comprehensive outline that synthesizes all major themes and findings
+Based on these proposed outline, provide:
+1. Potential main chapters
+2. Suggested sub-sections
+3. Rationale for the structure
+
+Return the response so there will be a comprehensive outline that synthesizes all major themes and findings from the summaries.

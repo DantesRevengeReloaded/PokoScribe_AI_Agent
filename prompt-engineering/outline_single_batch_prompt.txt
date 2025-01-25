@@ -5,7 +5,4 @@ Based on these summaries, provide:
 2. Suggested sub-sections
 3. Rationale for the structure
 
-Return the response with lines: 
-- 'chapters': list of chapter titles
-- 'sections': a list of chapters and their subsections
-- 'rationale': explanation of the proposed structure,
+Return the response so there will be a comprehensive outline that synthesizes all major themes and findings from the summaries.

@@ -9255,3 +9255,32 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-25 15:56:56 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
 2025-01-25 15:56:56 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
 2025-01-25 15:57:10 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 23:55:51 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Initializing DeepSeekOutliner
+2025-01-25 23:55:51 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Initializing BatchOutliner
+2025-01-25 23:55:51 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 23:55:51 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 23:55:51 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 23:55:51 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Used iso-8859-1 encoding
+2025-01-25 23:55:51 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-25 23:55:51 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Successfully read with iso-8859-1
+2025-01-25 23:55:51 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Split text into 6 batches
+2025-01-25 23:55:51 - [AI_OUTLINER] - INFO - [pokolog.py:69] - BatchOutliner initialized successfully
+2025-01-25 23:55:51 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Processing batch 1 of 6
+2025-01-25 23:55:51 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 23:56:56 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 23:56:56 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Processing batch 2 of 6
+2025-01-25 23:56:56 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 23:58:06 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 23:58:06 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Processing batch 3 of 6
+2025-01-25 23:58:06 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 23:59:07 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 23:59:07 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Processing batch 4 of 6
+2025-01-25 23:59:07 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-26 00:00:24 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-26 00:00:24 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Processing batch 5 of 6
+2025-01-26 00:00:24 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-26 00:01:26 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-26 00:01:26 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Processing batch 6 of 6
+2025-01-26 00:01:26 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-26 00:02:12 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-26 00:03:06 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems

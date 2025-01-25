@@ -103,9 +103,9 @@ class ChatGPTChapterMakerPars(SystemPars):
 
 class DeepSeekPars:
     def __init__(self):
-        self.model="deepseek-chat"
+        self.model="deepseek-reasoner"
         self.max_tokens=4500 # max output tokens
-        self.temperature=0.7
+        self.temperature=1.4
         self.role_system = "system"
         self.role_user = "user"
         self.tokenslimit = 27000 # limit of tokens per document

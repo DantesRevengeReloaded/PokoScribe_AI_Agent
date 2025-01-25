@@ -39,6 +39,7 @@ class PaperOutliner:
 
 class BatchOutliner():
     def __init__(self):
+        logger.info(ScriptIdentifier.OUTLINER, "Initializing BatchOutliner")
         self.summary_file = SystemPars().big_text_file
         self.token_limit = SystemPars().token_limit
         # Initialize token counter and get summary stats
@@ -88,16 +89,23 @@ class BatchOutliner():
             logger.info(ScriptIdentifier.OUTLINER, 
                        f"Split text into {len(batches)} batches")
             self.batches = batches
+            logger.info(ScriptIdentifier.OUTLINER, f"BatchOutliner initialized successfully")   
         except Exception as e:
             logger.error(ScriptIdentifier.OUTLINER, f"Batch splitting error: {e}")
             raise
 
 class DeepSeekOutliner(BatchOutliner):
     def __init__(self):
-        super().__init__()
-        self.aiparameters = DeepSeekPars()
-        self.api_key = os.getenv('DEEPSEEK_API_KEY')
-            
+        logger.info(ScriptIdentifier.OUTLINER, "Initializing DeepSeekOutliner")
+        try:
+            super().__init__()
+            self.aiparameters = DeepSeekPars()
+            self.api_key = os.getenv('DEEPSEEK_API_KEY')
+        except Exception as e:
+            logger.error(ScriptIdentifier.OUTLINER, f"Error initializing DeepSeekOutliner: {e}")
+            raise
+
+    def single_batch(self):
         for i, batch in enumerate(self.batches, 1):
             try:
                 logger.info(ScriptIdentifier.OUTLINER, f"Processing batch {i} of {len(self.batches)}")
@@ -118,20 +126,22 @@ class DeepSeekOutliner(BatchOutliner):
                     max_tokens=self.aiparameters.max_tokens,
                     temperature=self.aiparameters.temperature,
                 )
-                logger.info(ScriptIdentifier.OUTLINER, f"DeepSeek response received without problems")
+                logger.info(ScriptIdentifier.OUTLINER, f"DeepSeek response for final outliner received without problems")
                 self.cached_responses.append(response)
+                with open('resources/output_of_ai/outline.txt', 'a', encoding='utf-8') as f1:
+                    f1.write('\n\n')
+                    f1.write('-'*10)
+                    f1.write('Batch Outline')
+                    f1.write(response.choices[0].message.content)
             except Exception as e:
                 logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")  
-                print(self.cached_responses)
+                
         
         self.cached_responses = [response.choices[0].message.content for response in self.cached_responses]          
 
-            """Create final outline from cached responses"""
-        synthesis_prompt = f"""Based on these separate outlines that are product of parts of a single summary text, create a unified, coherent outline:
 
-        {' '.join(self.cached_responses)}
-
-        Create a comprehensive outline that synthesizes all major themes and findings."""
+            #Create final outline from cached responses
+        synthesis_prompt = f"{self.synthesis_prompt_text} {' '.join(self.cached_responses)}"
 
 
         try:
@@ -148,6 +158,9 @@ class DeepSeekOutliner(BatchOutliner):
             logger.info(ScriptIdentifier.OUTLINER, f"DeepSeek response received without problems")
             print(response)
             with open('resources/output_of_ai/outline.txt', 'a', encoding='utf-8') as f:
+                f.write('\n\n')
+                f.write('-'*20)
+                f.write('Final Outline')
                 f.write(response.choices[0].message.content)
         except Exception as e:
             logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")
