@@ -1,0 +1,11 @@
+
+
+Based on these summaries, provide:
+1. Potential main chapters
+2. Suggested sub-sections
+3. Rationale for the structure
+
+Return the response as a JSON with keys: 
+- 'chapters': list of chapter titles
+- 'sections': dict of chapters and their subsections
+- 'rationale': explanation of the proposed structure,

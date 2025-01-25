@@ -97,72 +97,72 @@ class ChatGPTOutliner(BatchOutliner):
             
     def single_batch(self):
         for batch in self.batches:
-            prompt f"{batch_prompt_text}",
+            prompt = f"{self.batch_prompt_text} {batch}"
 
             {batch}
                 """Process single batch with AI model"""
-                prompt = f"""Create a detailed outline for an academic paper section based on these summaries:
+            prompt = f"""Create a detailed outline for an academic paper section based on these summaries:
 
-                {batch_text}
+            {batch_text}
 
-                Generate a structured outline with main points and sub-points."""
+            Generate a structured outline with main points and sub-points."""
+            
+            try:
+                if self.model_type == 'openai':
+                    response = self._process_with_openai(prompt)
+                elif self.model_type == 'gemini':
+                    response = self._process_with_gemini(prompt)
+                elif self.model_type == 'deepseek':
+                    response = self._process_with_deepseek(prompt)
+                    
+                self.cached_responses.append(response)
+                return response
                 
-                try:
-                    if self.model_type == 'openai':
-                        response = self._process_with_openai(prompt)
-                    elif self.model_type == 'gemini':
-                        response = self._process_with_gemini(prompt)
-                    elif self.model_type == 'deepseek':
-                        response = self._process_with_deepseek(prompt)
-                        
-                    self.cached_responses.append(response)
-                    return response
+            except Exception as e:
+                logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")
+                raise
                     
-                except Exception as e:
-                    logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")
-                    raise
+        def synthesize_final_outline(self) -> str:
+            """Create final outline from cached responses"""
+            synthesis_prompt = f"""Based on these separate outlines, create a unified, coherent outline:
+
+        {' '.join(self.cached_responses)}
+
+    Create a comprehensive outline that synthesizes all major themes and findings."""
+            
+            try:
+                if self.model_type == 'openai':
+                    final_outline = self._process_with_openai(synthesis_prompt)
+                elif self.model_type == 'gemini':
+                    final_outline = self._process_with_gemini(synthesis_prompt)
+                elif self.model_type == 'deepseek':
+                    final_outline = self._process_with_deepseek(synthesis_prompt)
                     
-            def synthesize_final_outline(self) -> str:
-                """Create final outline from cached responses"""
-                synthesis_prompt = f"""Based on these separate outlines, create a unified, coherent outline:
-
-            {' '.join(self.cached_responses)}
-
-        Create a comprehensive outline that synthesizes all major themes and findings."""
+                return final_outline
                 
-                try:
-                    if self.model_type == 'openai':
-                        final_outline = self._process_with_openai(synthesis_prompt)
-                    elif self.model_type == 'gemini':
-                        final_outline = self._process_with_gemini(synthesis_prompt)
-                    elif self.model_type == 'deepseek':
-                        final_outline = self._process_with_deepseek(synthesis_prompt)
-                        
-                    return final_outline
+            except Exception as e:
+                logger.error(ScriptIdentifier.OUTLINER, 
+                            f"Final synthesis error: {e}")
+                raise
+                
+        def generate_outline(self) -> str:
+            """Main method to generate complete outline"""
+            try:
+                batches = self.split_into_batches()
+                
+                for i, batch in enumerate(batches, 1):
+                    logger.info(ScriptIdentifier.OUTLINER, 
+                            f"Processing batch {i}/{len(batches)}")
+                    self.process_batch(batch)
                     
-                except Exception as e:
-                    logger.error(ScriptIdentifier.OUTLINER, 
-                                f"Final synthesis error: {e}")
-                    raise
-                    
-            def generate_outline(self) -> str:
-                """Main method to generate complete outline"""
-                try:
-                    batches = self.split_into_batches()
-                    
-                    for i, batch in enumerate(batches, 1):
-                        logger.info(ScriptIdentifier.OUTLINER, 
-                                f"Processing batch {i}/{len(batches)}")
-                        self.process_batch(batch)
-                        
-                    final_outline = self.synthesize_final_outline()
-                    
-                    return final_outline
-                    
-                except Exception as e:
-                    logger.error(ScriptIdentifier.OUTLINER, 
-                                f"Outline generation error: {e}")
-                    raise
+                final_outline = self.synthesize_final_outline()
+                
+                return final_outline
+                
+            except Exception as e:
+                logger.error(ScriptIdentifier.OUTLINER, 
+                            f"Outline generation error: {e}")
+                raise
 
 
 ll = BatchOutliner('deepseek')
