@@ -9216,3 +9216,42 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-25 13:31:28 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
 2025-01-25 13:31:28 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Successfully read with iso-8859-1
 2025-01-25 13:31:28 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Split text into 6 batches
+2025-01-25 15:22:27 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 15:22:27 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 15:22:27 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 15:22:27 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Used iso-8859-1 encoding
+2025-01-25 15:22:27 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-25 15:22:27 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Successfully read with iso-8859-1
+2025-01-25 15:22:27 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Split text into 6 batches
+2025-01-25 15:22:27 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:22:28 - [AI_OUTLINER] - ERROR - [pokolog.py:69] - Batch processing error: 'DeepSeekOutliner' object has no attribute 'role_draft'
+2025-01-25 15:22:28 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:22:28 - [AI_OUTLINER] - ERROR - [pokolog.py:69] - Batch processing error: 'DeepSeekOutliner' object has no attribute 'role_draft'
+2025-01-25 15:22:28 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:22:28 - [AI_OUTLINER] - ERROR - [pokolog.py:69] - Batch processing error: 'DeepSeekOutliner' object has no attribute 'role_draft'
+2025-01-25 15:22:28 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:22:28 - [AI_OUTLINER] - ERROR - [pokolog.py:69] - Batch processing error: 'DeepSeekOutliner' object has no attribute 'role_draft'
+2025-01-25 15:22:28 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:22:28 - [AI_OUTLINER] - ERROR - [pokolog.py:69] - Batch processing error: 'DeepSeekOutliner' object has no attribute 'role_draft'
+2025-01-25 15:22:28 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:22:28 - [AI_OUTLINER] - ERROR - [pokolog.py:69] - Batch processing error: 'DeepSeekOutliner' object has no attribute 'role_draft'
+2025-01-25 15:22:41 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 15:28:52 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 15:28:52 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 15:28:52 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 15:28:52 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Used iso-8859-1 encoding
+2025-01-25 15:28:52 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-25 15:28:52 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Successfully read with iso-8859-1
+2025-01-25 15:28:52 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Split text into 6 batches
+2025-01-25 15:28:52 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:29:37 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 15:29:37 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:30:16 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 15:30:16 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:33:16 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 15:33:16 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:42:50 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 15:42:50 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:56:56 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-25 15:56:56 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
+2025-01-25 15:57:10 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems

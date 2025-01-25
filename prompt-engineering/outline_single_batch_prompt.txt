@@ -1,11 +1,11 @@
-
+Analyze the following article summaries and propose a comprehensive paper outline:
 
 Based on these summaries, provide:
 1. Potential main chapters
 2. Suggested sub-sections
 3. Rationale for the structure
 
-Return the response as a JSON with keys: 
+Return the response with lines: 
 - 'chapters': list of chapter titles
-- 'sections': dict of chapters and their subsections
+- 'sections': a list of chapters and their subsections
 - 'rationale': explanation of the proposed structure,

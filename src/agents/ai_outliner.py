@@ -13,6 +13,7 @@ from src.config import *
 import google.generativeai as genai
 from src.db_ai.ai_db_manager import *
 logger = PokoLogger()
+load_dotenv('.env')
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -91,79 +92,65 @@ class BatchOutliner():
             logger.error(ScriptIdentifier.OUTLINER, f"Batch splitting error: {e}")
             raise
 
-class ChatGPTOutliner(BatchOutliner):
+class DeepSeekOutliner(BatchOutliner):
     def __init__(self):
         super().__init__()
+        self.aiparameters = DeepSeekPars()
+        self.api_key = os.getenv('DEEPSEEK_API_KEY')
             
-    def single_batch(self):
-        for batch in self.batches:
-            prompt = f"{self.batch_prompt_text} {batch}"
-
-            {batch}
-                """Process single batch with AI model"""
-            prompt = f"""Create a detailed outline for an academic paper section based on these summaries:
-
-            {batch_text}
-
-            Generate a structured outline with main points and sub-points."""
-            
+        for i, batch in enumerate(self.batches, 1):
             try:
-                if self.model_type == 'openai':
-                    response = self._process_with_openai(prompt)
-                elif self.model_type == 'gemini':
-                    response = self._process_with_gemini(prompt)
-                elif self.model_type == 'deepseek':
-                    response = self._process_with_deepseek(prompt)
-                    
-                self.cached_responses.append(response)
-                return response
-                
+                logger.info(ScriptIdentifier.OUTLINER, f"Processing batch {i} of {len(self.batches)}")
+                prompt = f"{self.batch_prompt_text} {batch}"
+
+                logger.info(ScriptIdentifier.OUTLINER, f"Prompt created for DeepSeek to outline single batch")
             except Exception as e:
-                logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")
-                raise
-                    
-        def synthesize_final_outline(self) -> str:
+                logger.error(ScriptIdentifier.OUTLINER, f"Error creating prompt for single batch (DeepSeek): {str(e)}")
+                
+            try:
+                self.client = OpenAI(api_key=self.api_key, base_url="https://api.deepseek.com")
+                response = self.client.chat.completions.create(
+                    messages=[
+                    {"role": f"{self.aiparameters.role_system}", "content": f"{prompt}"},
+                    {"role": f"{self.aiparameters.role_user}", "content": prompt}
+                    ],
+                    model=self.aiparameters.model,
+                    max_tokens=self.aiparameters.max_tokens,
+                    temperature=self.aiparameters.temperature,
+                )
+                logger.info(ScriptIdentifier.OUTLINER, f"DeepSeek response received without problems")
+                self.cached_responses.append(response)
+            except Exception as e:
+                logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")  
+                print(self.cached_responses)         
+
             """Create final outline from cached responses"""
-            synthesis_prompt = f"""Based on these separate outlines, create a unified, coherent outline:
+            synthesis_prompt = f"""Based on these separate outlines that are product of parts of a single summary text, create a unified, coherent outline:
 
         {' '.join(self.cached_responses)}
 
-    Create a comprehensive outline that synthesizes all major themes and findings."""
-            
-            try:
-                if self.model_type == 'openai':
-                    final_outline = self._process_with_openai(synthesis_prompt)
-                elif self.model_type == 'gemini':
-                    final_outline = self._process_with_gemini(synthesis_prompt)
-                elif self.model_type == 'deepseek':
-                    final_outline = self._process_with_deepseek(synthesis_prompt)
-                    
-                return final_outline
-                
-            except Exception as e:
-                logger.error(ScriptIdentifier.OUTLINER, 
-                            f"Final synthesis error: {e}")
-                raise
-                
-        def generate_outline(self) -> str:
-            """Main method to generate complete outline"""
-            try:
-                batches = self.split_into_batches()
-                
-                for i, batch in enumerate(batches, 1):
-                    logger.info(ScriptIdentifier.OUTLINER, 
-                            f"Processing batch {i}/{len(batches)}")
-                    self.process_batch(batch)
-                    
-                final_outline = self.synthesize_final_outline()
-                
-                return final_outline
-                
-            except Exception as e:
-                logger.error(ScriptIdentifier.OUTLINER, 
-                            f"Outline generation error: {e}")
-                raise
+        Create a comprehensive outline that synthesizes all major themes and findings."""
 
 
-ll = BatchOutliner('deepseek')
-ll.split_into_batches()
+        try:
+            self.client = OpenAI(api_key=self.api_key, base_url="https://api.deepseek.com")
+            response = self.client.chat.completions.create(
+                messages=[
+                    {"role": f"{self.aiparameters.role_system}", "content": f"{synthesis_prompt}"},
+                    {"role": f"{self.aiparameters.role_user}", "content": synthesis_prompt}
+                ],
+                model=self.aiparameters.model,
+                max_tokens=self.aiparameters.max_tokens,
+                temperature=self.aiparameters.temperature,
+            )
+            logger.info(ScriptIdentifier.OUTLINER, f"DeepSeek response received without problems")
+            print(response)
+            with open('resources/output_of_ai/outline.txt', 'a', encoding='utf-8') as f:
+                f.write(response.choices[0].message.content)
+        except Exception as e:
+            logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")
+
+
+
+ds = DeepSeekOutliner()
+ds.single_batch()
