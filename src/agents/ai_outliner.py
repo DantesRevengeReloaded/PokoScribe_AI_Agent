@@ -1,41 +1,22 @@
 
-import os, json, openai, sys
+import os, sys
 from openai import OpenAI
+import google.generativeai as genai
 from typing import List, Dict
 from dotenv import load_dotenv
 from pathlib import Path
+
 # Add project root to Python path
 project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
 from logs.pokolog import PokoLogger, ScriptIdentifier
 from src.tools.token_counter import *
 from src.config import *
-import google.generativeai as genai
 from src.db_ai.ai_db_manager import *
+
 logger = PokoLogger()
 load_dotenv('.env')
 
-from concurrent.futures import ThreadPoolExecutor, as_completed
-
-
-model_lists = SystemPars().model_lists
-
-class PaperOutliner:
-    def __init__ (self, model_type: str):
-        self.model_type = model_type
-
-        if model_type == 'openai':
-            self.aiparameters = ChatGPTPars()
-        elif model_type == 'gemini':
-            self.aiparameters = GeminiPars()
-        elif model_type == 'deepseek':
-            self.aiparameters = DeepSeekPars()
-        else:
-            logger.warning(ScriptIdentifier.OUTLINER, f"Invalid model type. Not in supported list: {model_lists}")
-            raise ValueError(f"Invalid model type. Not in supported list: {model_lists}")
-        
-        # Initialize token counter and get summary stats
-        
 
 class BatchOutliner():
     def __init__(self):
@@ -49,7 +30,7 @@ class BatchOutliner():
 
         
         self.cached_responses = []
-        self.tc = self.token_count
+
         # Initialize prompts and roles and get their content
         outliner_role = SystemPars().role_of_bot_outliner
         single_batch_prompt = SystemPars().prompts_single_batch
@@ -156,16 +137,85 @@ class DeepSeekOutliner(BatchOutliner):
                 temperature=self.aiparameters.temperature,
             )
             logger.info(ScriptIdentifier.OUTLINER, f"DeepSeek response received without problems")
-            print(response)
+
             with open('resources/output_of_ai/outline.txt', 'a', encoding='utf-8') as f:
                 f.write('\n\n')
                 f.write('-'*20)
                 f.write('Final Outline')
                 f.write(response.choices[0].message.content)
+            logger.info(ScriptIdentifier.OUTLINER, f"Final outline written to file")
         except Exception as e:
             logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")
 
 
+class ChatGPTOutliner(BatchOutliner):
+    def __init__(self):
+        logger.info(ScriptIdentifier.OUTLINER, "Initializing ChatGPTOutliner")
+        try:
+            super().__init__()
+            self.aiparameters = ChatGPTPars()
+            self.api_key = os.getenv('OPENAI_API_KEY')
+        except Exception as e:
+            logger.error(ScriptIdentifier.OUTLINER, f"Error initializing ChatGPTOutliner: {e}")
+            raise
 
-ds = DeepSeekOutliner()
-ds.single_batch()
+    def single_batch(self):
+        for i, batch in enumerate(self.batches, 1):
+            try:
+                logger.info(ScriptIdentifier.OUTLINER, f"Processing batch {i} of {len(self.batches)}")
+                prompt = f"{self.batch_prompt_text} {batch}"
+
+                logger.info(ScriptIdentifier.OUTLINER, f"Prompt created for ChatGPT to outline single batch")
+            except Exception as e:
+                logger.error(ScriptIdentifier.OUTLINER, f"Error creating prompt for single batch (ChatGPT): {str(e)}")
+                
+            try:
+                self.client = OpenAI(api_key=self.api_key)
+                response = self.client.chat.completions.create(
+                    messages=[
+                    {"role": f"{self.aiparameters.role_system}", "content": f"{prompt}"},
+                    {"role": f"{self.aiparameters.role_user}", "content": prompt}
+                    ],
+                    model=self.aiparameters.model,
+                    max_tokens=self.aiparameters.max_tokens,
+                    temperature=self.aiparameters.temperature,
+                )
+                logger.info(ScriptIdentifier.OUTLINER, f"ChatGPT response for final outliner received without problems")
+                self.cached_responses.append(response)
+                with open('resources/output_of_ai/outline.txt', 'a', encoding='utf-8') as f1:
+                    f1.write('\n\n')
+                    f1.write('-'*10)
+                    f1.write('Batch Outline')
+                    f1.write(response.choices[0].message.content)
+            except Exception as e:
+                logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")  
+                
+        
+        self.cached_responses = [response.choices[0].message.content for response in self.cached_responses]          
+
+
+            #Create final outline from cached responses
+        synthesis_prompt = f"{self.synthesis_prompt_text} {' '.join(self.cached_responses)}"
+
+
+        try:
+            self.client = OpenAI(api_key=self.api_key)
+            response = self.client.chat.completions.create(
+                messages=[
+                    {"role": f"{self.aiparameters.role_system}", "content": f"{synthesis_prompt}"},
+                    {"role": f"{self.aiparameters.role_user}", "content": synthesis_prompt}
+                ],
+                model=self.aiparameters.model,
+                max_tokens=self.aiparameters.max_tokens,
+                temperature=self.aiparameters.temperature,
+            )
+            logger.info(ScriptIdentifier.OUTLINER, f"ChatGPT response received without problems")
+
+            with open('resources/output_of_ai/outline.txt', 'a', encoding='utf-8') as f:
+                f.write('\n\n')
+                f.write('-'*20)
+                f.write('Final Outline')
+                f.write(response.choices[0].message.content)
+            logger.info(ScriptIdentifier.OUTLINER, f"Final outline written to file")
+        except Exception as e:
+            logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")
