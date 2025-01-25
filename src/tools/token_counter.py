@@ -140,3 +140,29 @@ class TokenCounter:
                 'lines': 0,
                 'encoding_used': None
             }
+        
+    def safe_read_text(self, file_path: str) -> str:
+        """Safely read text file with multiple encoding attempts"""
+        encodings = ['utf-8', 'utf-8-sig', 'cp1252', 'iso-8859-1', 'latin1']
+        
+        for encoding in encodings:
+            try:
+                with open(file_path, 'r', encoding=encoding) as f:
+                    text = f.read()
+                logger.info(ScriptIdentifier.TOKENCOUNTER, 
+                          f"Successfully read with {encoding}")
+                return text
+            except UnicodeDecodeError:
+                continue
+        
+        # Fallback to binary read with ignore
+        try:
+            with open(file_path, 'rb') as f:
+                text = f.read().decode('utf-8', errors='ignore')
+            logger.info(ScriptIdentifier.TOKENCOUNTER, 
+                       "Used binary read with ignore")
+            return text
+        except Exception as e:
+            logger.error(ScriptIdentifier.TOKENCOUNTER, 
+                        f"Failed to read file: {e}")
+            raise

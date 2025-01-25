@@ -9203,3 +9203,16 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-25 08:58:24 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Used iso-8859-1 encoding
 2025-01-25 08:58:24 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
 2025-01-25 08:58:24 - [AI_OUTLINER] - ERROR - [pokolog.py:69] - Batch splitting error: 'utf-8' codec can't decode byte 0x96 in position 18002: invalid start byte
+2025-01-25 13:27:00 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 13:27:00 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 13:27:00 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 13:27:00 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Used iso-8859-1 encoding
+2025-01-25 13:27:00 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-25 13:27:00 - [AI_OUTLINER] - ERROR - [pokolog.py:69] - Batch splitting error: 'utf-8' codec can't decode byte 0x96 in position 18002: invalid start byte
+2025-01-25 13:31:28 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 13:31:28 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 13:31:28 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 13:31:28 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Used iso-8859-1 encoding
+2025-01-25 13:31:28 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-25 13:31:28 - [TOKEN_COUNTER] - INFO - [pokolog.py:69] - Successfully read with iso-8859-1
+2025-01-25 13:31:28 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Split text into 6 batches

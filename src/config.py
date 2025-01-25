@@ -37,7 +37,10 @@ class SystemPars:
         # ---------------------------------------------------------
         # CHAPTER OUTLINER CONFIGURATION
 
-
+        self.token_limit = 25000 # limit of tokens per prompt for creating outline
+        self.role_of_bot_outliner = 'prompt-engineering\outline_role.txt'
+        self.prompts_single_batch = 'prompt-engineering\outline_single_batch_prompt.txt'
+        self.prompts_final_synthesis = 'prompt-engineering\outline_synthesis_prompt.txt'
         # ---------------------------------------------------------
         # CHAPTER MAKER CONFIGURATION
         self.prompts_chapter = 'prompts-roles\prompts-roles\chapter_maker_prompt.txt'
