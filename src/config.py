@@ -35,6 +35,10 @@ class SystemPars:
         self.big_text_file = 'resources\output_of_ai\summary_total.txt'
 
         # ---------------------------------------------------------
+        # CHAPTER OUTLINER CONFIGURATION
+
+
+        # ---------------------------------------------------------
         # CHAPTER MAKER CONFIGURATION
         self.prompts_chapter = 'prompts-roles\prompts-roles\chapter_maker_prompt.txt'
         self.role_of_bot_chapter = 'prompts-roles\prompts-roles\chapter_maker_role.txt'

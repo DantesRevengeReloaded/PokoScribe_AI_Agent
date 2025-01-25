@@ -4,6 +4,9 @@ import json
 from pathlib import Path
 from PyPDF2 import PdfReader
 import os
+from logs.pokolog import PokoLogger, ScriptIdentifier
+
+logger = PokoLogger()
 
 class TokenCounter:
     def __init__(self, model="gpt-3.5-turbo"):
@@ -61,10 +64,10 @@ class TokenCounter:
             try:
                 with open(file_path, 'r', encoding=encoding) as f:
                     text = f.read()
-                print(f"Successfully read file using {encoding} encoding")
+                logger.info(ScriptIdentifier.TOKENCOUNTER, f"Used {encoding} encoding")
                 break
             except UnicodeDecodeError:
-                print(f"Failed to read with {encoding} encoding, trying next...")
+                logger.warning(ScriptIdentifier.TOKENCOUNTER, f"Failed to read with {encoding} encoding")
                 continue
         
         # If all encodings fail, try binary read and decode
@@ -73,18 +76,29 @@ class TokenCounter:
                 with open(file_path, 'rb') as f:
                     raw_bytes = f.read()
                     text = raw_bytes.decode('utf-8', errors='ignore')
-                print("Used binary read with UTF-8 ignore")
+                logger.info(ScriptIdentifier.TOKENCOUNTER, "Used binary read and decode")
             except Exception as e:
                 raise ValueError(f"Could not read file with any encoding: {e}")
         
         tokens = self.count_tokens(text)
-        return {
+        result = {
             'file': os.path.basename(file_path),
             'tokens': tokens,
             'characters': len(text),
             'lines': text.count('\n') + 1,
-            'encoding_used': encoding if text else 'binary'
+            'encoding_used': encoding if text else 'binary',
+            'status': 'success'
         }
+
+        # Log detailed metrics
+        logger.info(ScriptIdentifier.TOKENCOUNTER, 
+                    f"File: {result['file']} | "
+                    f"Tokens: {result['tokens']} | "
+                    f"Chars: {result['characters']} | "
+                    f"Lines: {result['lines']} | "
+                    f"Encoding: {result['encoding_used']}")
+
+        return result
     
     def count_json(self, file_path: str) -> dict:
         """Count tokens in a JSON file"""

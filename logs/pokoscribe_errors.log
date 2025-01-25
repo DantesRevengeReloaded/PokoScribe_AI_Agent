@@ -2156,3 +2156,22 @@ LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
 2025-01-24 19:23:26 - [AI_SUMMARIZER] - ERROR - [pokolog.py:68] - Error reading resources\summary_agent\input\Leadership style, organizational politics, and employees' performance.pdf: Invalid Elementary Object starting with b')' @5207: b'icent)]TJ\n/F2 1 Tf\n1)-3889 0 TD\n[(,)-203(Vol.)-209(251,)]TJ\n3033268 -1.1255 TD\n['
 2025-01-24 19:23:26 - [AI_SUMMARIZER] - ERROR - [pokolog.py:68] - Error processing resources\summary_agent\input\Leadership style, organizational politics, and employees' performance.pdf: expected string or buffer
 2025-01-24 19:23:26 - [AI_SUMMARIZER] - WARNING - [pokolog.py:68] - resources\summary_agent\input\Leadership style, organizational politics, and employees' performance.pdf moved to resources\summary_agent\incompleted
+2025-01-25 08:28:35 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 08:28:35 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 08:28:35 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 08:32:15 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 08:32:15 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 08:32:15 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 08:35:06 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 08:35:06 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 08:35:06 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 08:38:37 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 08:38:37 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 08:38:37 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 08:56:46 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 08:56:46 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 08:56:46 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 08:58:24 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
+2025-01-25 08:58:24 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
+2025-01-25 08:58:24 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-25 08:58:24 - [AI_OUTLINER] - ERROR - [pokolog.py:69] - Batch splitting error: 'utf-8' codec can't decode byte 0x96 in position 18002: invalid start byte

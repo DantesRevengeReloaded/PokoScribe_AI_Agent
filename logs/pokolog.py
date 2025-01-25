@@ -12,6 +12,7 @@ class ScriptIdentifier(Enum):
     MAIN = "POKOSCRIBE"
     AHSS = "AHSS_SEARCH_TOOL"
     SCIHUB = "SCIHUB_DOWNLOADER"
+    TOKENCOUNTER ="TOKEN_COUNTER"
 
 class PokoLogger:
     _instance = None

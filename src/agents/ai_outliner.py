@@ -16,31 +16,7 @@ logger = PokoLogger()
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-def initialize_parameters(model_type: str):
-    try:
-        global aiparameters, summparameters
-        
-        if model_type not in model_lists:
-            raise ValueError(f"Invalid model type. Must be one of {model_lists}")
-        
-        if model_type == 'openai':
-            aiparameters = ChatGPTPars()
-            summparameters = ChatGPTPdfSummerizerPars()
-        elif model_type == 'gemini':
-            aiparameters = GeminiPars()
-            summparameters = GeminiSummerizerPars()
-        elif model_type == 'deepseek':
-            aiparameters = DeepSeekPars()
-            summparameters = DeepSeekSummerizerPars()
-        
-        if not aiparameters or not summparameters:
-            logger.error(ScriptIdentifier.OUTLINER, "Failed to initialize AI parameters")
-            raise RuntimeError("Failed to initialize AI parameters")
-        logger.info(ScriptIdentifier.OUTLINER, "AI parameters initialized successfully.")
-    except Exception as e:
-        logger.error(ScriptIdentifier.OUTLINER, f"Error initializing parameters: {e}")
-        raise
-        
+
 model_lists = SystemPars().model_lists
 
 class PaperOutliner:
@@ -58,157 +34,115 @@ class PaperOutliner:
             raise ValueError(f"Invalid model type. Not in supported list: {model_lists}")
         
         # Initialize token counter and get summary stats
-        counter = TokenCounter()
-        self.summary_stats = counter.count_summary()
-        logger.info(ScriptIdentifier.OUTLINER, f"Summary stats: {self.summary_stats}")
-
-class ChatGPTOutliner(PaperOutliner):
-    def __init__(self):
-        super().__init__()
-
-    def generate_paper_outline():
-        pass
-
-
-
-
-
-class PaperStructureGenerator:
-    def __init__(self, openai_api_key: str, summaries: List[str], batch_size: int = 10):
-        """
-        Initialize the Paper Structure Generator
+        self.summary_file = SystemPars().big_text_file
+        tc = TokenCounter()
+        result = tc.count_text(self.summary_file)
+        self.token_count = result['tokens']  # Get token count directly
         
-        :param openai_api_key: OpenAI API key
-        :param summaries: List of article summaries
-        :param batch_size: Number of summaries to process in each batch
-        """
-        openai.api_key = openai_api_key
-        self.summaries = summaries
-        self.batch_size = batch_size
-        self.model = "gpt-4-turbo"  # Use the latest GPT model
-    
-    def generate_initial_outlines(self) -> List[Dict]:
-        """
-        Generate initial paper outlines by processing summaries in batches
+
+class BatchOutliner(PaperOutliner):
+    def __init__(self, model_type: str, token_limit: int = 25000):
+        super().__init__(model_type)
+        self.token_limit = token_limit
+        self.cached_responses = []
+        self.tc = self.token_count
         
-        :return: List of generated outlines
-        """
-        all_outlines = []
-        
-        # Split summaries into batches
-        batches = [self.summaries[i:i + self.batch_size] 
-                   for i in range(0, len(self.summaries), self.batch_size)]
-        
-        # Process batches in parallel
-        with ThreadPoolExecutor(max_workers=5) as executor:
-            future_to_batch = {
-                executor.submit(self._generate_batch_outline, batch): batch 
-                for batch in batches
-            }
+    def split_into_batches(self) -> List[str]:
+        """Split text into batches based on token limit"""
+        try:
+            with open(self.summary_file, 'r', encoding='utf-8') as f:
+                full_text = f.read()
             
-            for future in as_completed(future_to_batch):
-                try:
-                    outline = future.result()
-                    all_outlines.append(outline)
-                except Exception as exc:
-                    print(f'Batch processing generated an exception: {exc}')
-        
-        return all_outlines
-    
-    def _generate_batch_outline(self, batch_summaries: List[str]) -> Dict:
-        """
-        Generate an outline for a batch of summaries
-        
-        :param batch_summaries: List of summaries in a batch
-        :return: Proposed paper outline
-        """
-        prompt = f"""
-        Analyze the following article summaries and propose a comprehensive paper outline:
-        
-        {' '.join(batch_summaries)}
-        
-        Based on these summaries, provide:
-        1. Potential main chapters
-        2. Suggested sub-sections
-        3. Rationale for the structure
-        
-        Return the response as a JSON with keys: 
-        - 'chapters': list of chapter titles
-        - 'sections': dict of chapters and their subsections
-        - 'rationale': explanation of the proposed structure
-        """
-        
-        response = openai.ChatCompletion.create(
-            model=self.model,
-            response_format={"type": "json_object"},
-            messages=[
-                {"role": "system", "content": "You are an expert academic paper structure analyzer."},
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=1000
-        )
-        
-        return json.loads(response.choices[0].message.content)
-    
-    def synthesize_final_outline(self, initial_outlines: List[Dict]) -> Dict:
-        """
-        Synthesize a final paper outline from multiple initial outlines
-        
-        :param initial_outlines: List of preliminary outlines
-        :return: Consolidated final outline
-        """
-        synthesis_prompt = f"""
-        Synthesize the most coherent paper structure from these proposed outlines:
-        
-        {json.dumps(initial_outlines, indent=2)}
-        
-        Merge similar chapters, resolve conflicts, and create a unified, logical structure.
-        
-        Return as JSON with:
-        - 'final_chapters': Consolidated chapter list
-        - 'final_sections': Merged section structure
-        - 'synthesis_rationale': Explanation of how the final outline was derived
-        """
-        
-        response = openai.ChatCompletion.create(
-            model=self.model,
-            response_format={"type": "json_object"},
-            messages=[
-                {"role": "system", "content": "You are an expert at academic paper structure synthesis."},
-                {"role": "user", "content": synthesis_prompt}
-            ],
-            max_tokens=1000
-        )
-        
-        return json.loads(response.choices[0].message.content)
-    
-    def generate_paper_structure(self) -> Dict:
-        """
-        Main method to generate the paper structure
-        
-        :return: Final paper structure
-        """
-        # Generate initial outlines
-        initial_outlines = self.generate_initial_outlines()
-        
-        # Synthesize final outline
-        final_structure = self.synthesize_final_outline(initial_outlines)
-        
-        return final_structure
+            batches = []
+            current_batch = ""
+            current_tokens = 0
+            
+            for paragraph in full_text.split('\n\n'):
+                paragraph_tokens = self.tc.count_tokens(paragraph)
+                
+                if current_tokens + paragraph_tokens > self.token_limit:
+                    batches.append(current_batch)
+                    current_batch = paragraph
+                    current_tokens = paragraph_tokens
+                else:
+                    current_batch += "\n\n" + paragraph if current_batch else paragraph
+                    current_tokens += paragraph_tokens
+            
+            if current_batch:
+                batches.append(current_batch)
+                
+            logger.info(ScriptIdentifier.OUTLINER, 
+                       f"Split text into {len(batches)} batches")
+            return batches
+        except Exception as e:
+            logger.error(ScriptIdentifier.OUTLINER, f"Batch splitting error: {e}")
+            raise
+            
+    def process_batch(self, batch_text: str) -> str:
+        """Process single batch with AI model"""
+        prompt = f"""Create a detailed outline for an academic paper section based on these summaries:
 
-def main():
-    # Example usage
-    openai_api_key = os.getenv('OPENAI_API_KEY')
-    
-    # Placeholder for 100 article summaries
-    summaries = [f"Summary of article {i}" for i in range(100)]
-    
-    generator = PaperStructureGenerator(openai_api_key, summaries)
-    paper_structure = generator.generate_paper_structure()
-    
-    print(json.dumps(paper_structure, indent=2))
+        {batch_text}
+
+Generate a structured outline with main points and sub-points."""
+        
+        try:
+            if self.model_type == 'openai':
+                response = self._process_with_openai(prompt)
+            elif self.model_type == 'gemini':
+                response = self._process_with_gemini(prompt)
+            elif self.model_type == 'deepseek':
+                response = self._process_with_deepseek(prompt)
+                
+            self.cached_responses.append(response)
+            return response
+            
+        except Exception as e:
+            logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")
+            raise
+            
+    def synthesize_final_outline(self) -> str:
+        """Create final outline from cached responses"""
+        synthesis_prompt = f"""Based on these separate outlines, create a unified, coherent outline:
+
+    {' '.join(self.cached_responses)}
+
+Create a comprehensive outline that synthesizes all major themes and findings."""
+        
+        try:
+            if self.model_type == 'openai':
+                final_outline = self._process_with_openai(synthesis_prompt)
+            elif self.model_type == 'gemini':
+                final_outline = self._process_with_gemini(synthesis_prompt)
+            elif self.model_type == 'deepseek':
+                final_outline = self._process_with_deepseek(synthesis_prompt)
+                
+            return final_outline
+            
+        except Exception as e:
+            logger.error(ScriptIdentifier.OUTLINER, 
+                        f"Final synthesis error: {e}")
+            raise
+            
+    def generate_outline(self) -> str:
+        """Main method to generate complete outline"""
+        try:
+            batches = self.split_into_batches()
+            
+            for i, batch in enumerate(batches, 1):
+                logger.info(ScriptIdentifier.OUTLINER, 
+                          f"Processing batch {i}/{len(batches)}")
+                self.process_batch(batch)
+                
+            final_outline = self.synthesize_final_outline()
+            
+            return final_outline
+            
+        except Exception as e:
+            logger.error(ScriptIdentifier.OUTLINER, 
+                        f"Outline generation error: {e}")
+            raise
 
 
-    
-
-tk = PaperOutliner('openai')
+ll = BatchOutliner('deepseek')
+ll.split_into_batches()
