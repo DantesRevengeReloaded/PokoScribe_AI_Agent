@@ -122,10 +122,12 @@ class DeepSeekOutliner(BatchOutliner):
                 self.cached_responses.append(response)
             except Exception as e:
                 logger.error(ScriptIdentifier.OUTLINER, f"Batch processing error: {e}")  
-                print(self.cached_responses)         
+                print(self.cached_responses)
+        
+        self.cached_responses = [response.choices[0].message.content for response in self.cached_responses]          
 
             """Create final outline from cached responses"""
-            synthesis_prompt = f"""Based on these separate outlines that are product of parts of a single summary text, create a unified, coherent outline:
+        synthesis_prompt = f"""Based on these separate outlines that are product of parts of a single summary text, create a unified, coherent outline:
 
         {' '.join(self.cached_responses)}
 
