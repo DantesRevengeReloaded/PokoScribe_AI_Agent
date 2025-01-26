@@ -9284,3 +9284,19 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-26 00:01:26 - [AI_OUTLINER] - INFO - [pokolog.py:69] - Prompt created for DeepSeek to outline single batch
 2025-01-26 00:02:12 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
 2025-01-26 00:03:06 - [AI_OUTLINER] - INFO - [pokolog.py:69] - DeepSeek response received without problems
+2025-01-26 14:38:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchCHAPTER
+2025-01-26 14:38:55 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 14:38:55 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 14:38:55 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 14:38:55 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 14:38:55 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 14:38:55 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Error of Initialization of Batch Chapter, error: 'SystemPars' object has no attribute 'prompts_synthesis_chapter'
+2025-01-26 14:39:18 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchCHAPTER
+2025-01-26 14:39:18 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 14:39:18 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 14:39:18 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 14:39:18 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 14:39:18 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 14:39:18 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 14:39:19 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 14:39:19 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Batch Chapter initialized successfully

@@ -2197,3 +2197,10 @@ LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
 2025-01-25 23:55:51 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8 encoding
 2025-01-25 23:55:51 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with utf-8-sig encoding
 2025-01-25 23:55:51 - [TOKEN_COUNTER] - WARNING - [pokolog.py:69] - Failed to read with cp1252 encoding
+2025-01-26 14:38:55 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 14:38:55 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 14:38:55 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 14:38:55 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Error of Initialization of Batch Chapter, error: 'SystemPars' object has no attribute 'prompts_synthesis_chapter'
+2025-01-26 14:39:18 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 14:39:18 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 14:39:18 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding

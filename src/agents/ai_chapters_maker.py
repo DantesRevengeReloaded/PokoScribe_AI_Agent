@@ -1,10 +1,3 @@
-from openai import OpenAI
-from dotenv import load_dotenv
-import os
-from src.config import *
-
-aiparameters = ChatGPTPars()
-chaptermaker_ai_parameters = ChatGPTChapterMakerPars()
 
 import os, sys
 from openai import OpenAI
@@ -25,9 +18,6 @@ logger = PokoLogger()
 load_dotenv('.env')
 
 
-with open(chaptermaker_ai_parameters.paper_file, 'r') as file:
-    notes_file = file.read()
-
 class BatchChapterMaker():
     def __init__(self):
         logger.info(ScriptIdentifier.CHAPTER, "Initializing BatchCHAPTER")
@@ -38,24 +28,18 @@ class BatchChapterMaker():
             totsum = TokenCounter()
             result = totsum.count_text(self.summary_file)
             self.token_count = result['tokens']  # Get token count directly
-
             
             self.cached_responses = []
 
-            # Initialize prompts and roles and get their content
-            CHAPTER_role = SystemPars().role_of_bot_CHAPTER
-            single_batch_prompt = SystemPars().prompts_single_batch
-            final_synthesis_prompt = SystemPars().prompts_final_synthesis
-
             # Return the actual text content using standard Python file reading
-            with open(CHAPTER_role, 'r', encoding='utf-8') as f:
+            with open(SystemPars().role_of_bot_chapter, 'r', encoding='utf-8') as f:
                 self.role_text = f.read()
-            with open(single_batch_prompt, 'r', encoding='utf-8') as f:
+            with open(SystemPars().prompts_chapter, 'r', encoding='utf-8') as f:
                 self.batch_prompt_text = f.read()
-            with open(final_synthesis_prompt, 'r', encoding='utf-8') as f:
+            with open(SystemPars().prompts_synthesis_chapter, 'r', encoding='utf-8') as f:
                 self.synthesis_prompt_text = f.read()
-        
-        #Split text into batches based on token limit
+
+            #Split text into batches based on token limit
             tcoun = TokenCounter()
             full_text = tcoun.safe_read_text(self.summary_file)
             batches = []
@@ -79,45 +63,87 @@ class BatchChapterMaker():
             logger.info(ScriptIdentifier.CHAPTER, 
                        f"Split text into {len(batches)} batches")
             self.batches = batches
-            logger.info(ScriptIdentifier.CHAPTER, f"BatchCHAPTER initialized successfully")   
+            logger.info(ScriptIdentifier.CHAPTER, f"BatchChapterMaker initialized successfully")   
         except Exception as e:
-            logger.error(ScriptIdentifier.CHAPTER, f"Error of Initialization of BatchCHAPTER, error: {e}")
+            logger.error(ScriptIdentifier.CHAPTER, f"Error of Initialization of BatchChapterMaker, error: {e}")
             raise
-class AIChapterMaker:
-    def __init__(self, api_key):
-        self.client = OpenAI(api_key=api_key)
-        self.role_of_bot = chaptermaker_ai_parameters.role_of_bot_chapter
-        self.prompt_draft = chaptermaker_ai_parameters.prompts_chapter
-        self.bot_model = aiparameters.model
-        self.text = notes_file
-    
 
-    def create_chapter(self):
-        prompt = f"{self.prompt_draft}:\n\n{self.text}"
+class DeepSeekChapterMaker(BatchChapterMaker):
+    def __init__(self):
+        logger.info(ScriptIdentifier.CHAPTER, "Initializing DeepSeekChapterMaker")
         try:
+            super().__init__()
+            self.aiparameters = DeepSeekPars()
+            self.api_key = os.getenv('DEEPSEEK_API_KEY')
+            logger.info(ScriptIdentifier.CHAPTER, f"parameters of DeepSeekChapterMaker : {self.aiparameters}")
+            logger.info(ScriptIdentifier.CHAPTER, "DeepSeekChapterMaker initialized successfully")
+        except Exception as e:
+            logger.error(ScriptIdentifier.CHAPTER, f"Error initializing DeepSeekChapterMaker: {e}")
+            raise
+
+    def make_chapter(self):
+        for i, batch in enumerate(self.batches, 1):
+            try:
+                logger.info(ScriptIdentifier.CHAPTER, f"Processing batch {i} of {len(self.batches)}")
+                prompt = f"{self.batch_prompt_text} {batch}"
+
+                logger.info(ScriptIdentifier.CHAPTER, f"Prompt created for DeepSeek to create chapter in single batch")
+            except Exception as e:
+                logger.error(ScriptIdentifier.CHAPTER, f"Error creating prompt for single batch (DeepSeek): {str(e)}")
+                
+            try:
+                self.client = OpenAI(api_key=self.api_key, base_url="https://api.deepseek.com")
+                response = self.client.chat.completions.create(
+                    messages=[
+                    {"role": f"{self.aiparameters.role_system}", "content": f"{prompt}"},
+                    {"role": f"{self.aiparameters.role_user}", "content": prompt}
+                    ],
+                    model=self.aiparameters.model,
+                    max_tokens=self.aiparameters.max_tokens,
+                    temperature=self.aiparameters.temperature,
+                )
+                logger.info(ScriptIdentifier.CHAPTER, f"DeepSeek response for batch chapter maker received without problems")
+                self.cached_responses.append(response)
+                with open('resources\output_of_ai\chapters.txt', 'a', encoding='utf-8') as f1:
+                    f1.write('\n\n')
+                    f1.write('-'*10)
+                    f1.write('\n\n')
+                    f1.write(f"Answer for Batch {i}")
+                    f1.write('\n\n')
+                    f1.write(response.choices[0].message.content)
+                logger.info(ScriptIdentifier.CHAPTER, f"Chapter for #{i} batch is written to file")
+            except Exception as e:
+                logger.error(ScriptIdentifier.CHAPTER, f"Batch #{i} processing error: {e}")
+
+        #Get the content of the responses from the cached responses list
+        self.cached_responses = [response.choices[0].message.content for response in self.cached_responses]          
+
+            #Create final outline from cached responses
+        synthesis_prompt = f"{self.synthesis_prompt_text} {' '.join(self.cached_responses)}"
+
+
+        try:
+            self.client = OpenAI(api_key=self.api_key, base_url="https://api.deepseek.com")
             response = self.client.chat.completions.create(
                 messages=[
-                    {"role": f"{aiparameters.role_system}", "content": f"{self.role_of_bot}"},
-                    {"role": f"{aiparameters.role_user}", "content": prompt}
+                    {"role": f"{self.aiparameters.role_system}", "content": f"{synthesis_prompt}"},
+                    {"role": f"{self.aiparameters.role_user}", "content": synthesis_prompt}
                 ],
-                model=aiparameters.model,
-                max_tokens=aiparameters.max_tokens,
-                temperature=aiparameters.temperature,
+                model=self.aiparameters.model,
+                max_tokens=self.aiparameters.max_tokens,
+                temperature=self.aiparameters.temperature,
             )
+            logger.info(ScriptIdentifier.CHAPTER, f"DeepSeek response for Final Chapter Response received without problems")
 
-            chapter = response.choices[0].message.content.strip()
-            return chapter
+            with open('resources/output_of_ai/outline.txt', 'a', encoding='utf-8') as f:
+                f.write('\n\n')
+                f.write('-'*20)
+                f.write('\n\n')
+                f.write('Final Chapter Response')
+                f.write('\n\n')
+                f.write(response.choices[0].message.content)
+            logger.info(ScriptIdentifier.CHAPTER, f"Final chapter response written to file")
         except Exception as e:
-            print(e)
-            return None
-    
-if __name__ == "__main__":
-    load_dotenv('.env')
-    api_key = os.getenv('OPENAI_API_KEY')
-    chapter_maker = AIChapterMaker(api_key)
-    chapter = chapter_maker.create_chapter()
-    with open(chaptermaker_ai_parameters.chapters_historicity, 'a') as file:
-        file.write(chapter_maker.prompt_draft)
-        file.write('\nAnswer\n')
-        file.write(chapter)
-        file.write('\n\n--------\n')
+            logger.error(ScriptIdentifier.CHAPTER, f"Batch processing error: {e}")
+
+

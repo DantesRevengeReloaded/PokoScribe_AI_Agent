@@ -10,12 +10,14 @@ class SystemPars:
         #gemini is to be implemented
 
         self.model_lists = ['openai', 'gemini', 'deepseek']
-
+        
         # Name of the project so it can be used in the file names 
         # so there will be no confusion with other projects-papers
         # also based on name project the db records will be created accordingly
         self.project_name = 'Panos_Karydis_Update'
 
+        # limit of tokens per prompt for creating outline or chapter, if the model is more powerful it can be increased
+        self.token_limit = 25000
         # ---------------------------------------------------------
 
         # CONFIGURATION OF GETTING RESOURCES
@@ -46,7 +48,6 @@ class SystemPars:
         # ---------------------------------------------------------
         # CHAPTER OUTLINER CONFIGURATION
 
-        self.token_limit = 25000 # limit of tokens per prompt for creating outline
         self.role_of_bot_outliner = 'prompt-engineering\outline_role.txt'
         self.prompts_single_batch = 'prompt-engineering\outline_single_batch_prompt.txt'
         self.prompts_final_synthesis = 'prompt-engineering\outline_synthesis_prompt.txt'
@@ -54,6 +55,7 @@ class SystemPars:
         # CHAPTER MAKER CONFIGURATION
         self.prompts_chapter = 'prompt-engineering\chapter_maker_prompt.txt'
         self.role_of_bot_chapter = 'prompt-engineering\chapter_maker_role.txt'
+        self.prompts_synthesis_chapter = 'prompt-engineering\chapter_maker_synthesis_prompt.txt'
 
         # file with the text to be used as a source, propably produced by the summarizer
         self.paper_file = 'prompts-roles\prompts-roles\paper.txt' 
@@ -110,8 +112,8 @@ class ChatGPTChapterMakerPars(SystemPars):
 class DeepSeekPars:
     def __init__(self):
         self.model="deepseek-reasoner"
-        self.max_tokens=4500 # max output tokens
-        self.temperature=1.4
+        self.max_tokens=5500 # max output tokens
+        self.temperature=0.4
         self.role_system = "system"
         self.role_user = "user"
         self.tokenslimit = 27000 # limit of tokens per document
