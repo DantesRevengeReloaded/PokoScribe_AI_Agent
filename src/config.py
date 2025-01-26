@@ -6,12 +6,21 @@ class SystemPars:
     def __init__(self):
         # general configuration for the system
 
-        # Name of the project so it can be used in the file names so there will be no confusion with other projects-papers
+        #models that are supported in program, deepseek and chatgpt are supported in all parts.
+        #gemini is to be implemented
+
+        self.model_lists = ['openai', 'gemini', 'deepseek']
+
+        # Name of the project so it can be used in the file names 
+        # so there will be no confusion with other projects-papers
+        # also based on name project the db records will be created accordingly
         self.project_name = 'Panos_Karydis_Update'
 
         # ---------------------------------------------------------
 
         # CONFIGURATION OF GETTING RESOURCES
+
+        # the keywords and search queries to be used in the search of AHSS tool are defined as functions in the end of the file
 
         # prompt that filters the crude sources of the AHSS tool to relevant sources of paper so they can be downloaded
         self.filter_sources_for_dl = 'prompt-engineering\main_for_filtering_resources.txt'
@@ -43,17 +52,14 @@ class SystemPars:
         self.prompts_final_synthesis = 'prompt-engineering\outline_synthesis_prompt.txt'
         # ---------------------------------------------------------
         # CHAPTER MAKER CONFIGURATION
-        self.prompts_chapter = 'prompts-roles\prompts-roles\chapter_maker_prompt.txt'
-        self.role_of_bot_chapter = 'prompts-roles\prompts-roles\chapter_maker_role.txt'
+        self.prompts_chapter = 'prompt-engineering\chapter_maker_prompt.txt'
+        self.role_of_bot_chapter = 'prompt-engineering\chapter_maker_role.txt'
 
         # file with the text to be used as a source, propably produced by the summarizer
         self.paper_file = 'prompts-roles\prompts-roles\paper.txt' 
         
         # file with the chapters produced by the chatbot appended ech time
         self.chapters_historicity = 'prompts-roles\history\chapters.txt'
-
-        
-        self.model_lists = ['openai', 'gemini', 'deepseek']
 
 
 # Define the keywords and search queries to be used in the search of AHSS tool      
