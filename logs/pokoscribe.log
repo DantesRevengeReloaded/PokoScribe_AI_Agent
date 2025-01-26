@@ -9658,3 +9658,19 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-26 18:05:40 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeek response for batch chapter maker received without problems
 2025-01-26 18:05:40 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #6 batch is written to file
 2025-01-26 18:15:41 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch processing error: Expecting value: line 10 column 1 (char 9)
+2025-01-26 18:38:50 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing DeepSeekChapterMaker
+2025-01-26 18:38:50 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-26 18:38:50 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Total tokens in summary text: 128187
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeek Parameters:
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: deepseek-reasoner
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.9
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeekChapterMaker initialized successfully
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 18:38:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
