@@ -9300,3 +9300,361 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-26 14:39:18 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
 2025-01-26 14:39:19 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
 2025-01-26 14:39:19 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Batch Chapter initialized successfully
+2025-01-26 15:49:09 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing DeepSeekChapterMaker
+2025-01-26 15:49:09 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchCHAPTER
+2025-01-26 15:49:09 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 15:49:09 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 15:49:09 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 15:49:09 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 15:49:10 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 15:49:10 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 15:49:10 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 15:49:10 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 15:49:10 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - parameters of DeepSeekChapterMaker : <src.config.DeepSeekPars object at 0x000002CFCC5F2660>
+2025-01-26 15:49:10 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeekChapterMaker initialized successfully
+2025-01-26 15:49:10 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 15:49:10 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
+2025-01-26 16:06:45 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing DeepSeekChapterMaker
+2025-01-26 16:06:45 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchCHAPTER
+2025-01-26 16:06:46 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 16:06:46 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 16:06:46 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 16:06:46 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 16:06:46 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 16:06:46 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 16:06:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 16:06:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 16:06:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - parameters of DeepSeekChapterMaker : <src.config.DeepSeekPars object at 0x0000020CC2FA5040>
+2025-01-26 16:06:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeekChapterMaker initialized successfully
+2025-01-26 16:06:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 16:06:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
+2025-01-26 16:26:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:26:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:26:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: gpt-4o-mini
+2025-01-26 16:26:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 4500
+2025-01-26 16:26:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.7
+2025-01-26 16:26:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:26:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:26:46 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Error initializing ChatGptChapterMaker: 'ChatGPTChapterMaker' object has no attribute 'token_limit'
+2025-01-26 16:27:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:27:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:27:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: gpt-4o-mini
+2025-01-26 16:27:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 4500
+2025-01-26 16:27:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.7
+2025-01-26 16:27:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:27:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:27:56 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Error initializing ChatGptChapterMaker: 'ChatGPTChapterMaker' object has no attribute 'tokenslimit'
+2025-01-26 16:29:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:29:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:29:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: gpt-4o-mini
+2025-01-26 16:29:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 4500
+2025-01-26 16:29:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.7
+2025-01-26 16:29:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:29:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:29:21 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Error initializing ChatGptChapterMaker: 'ChatGPTChapterMaker' object has no attribute 'tokenslimit'
+2025-01-26 16:30:16 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:30:16 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:30:16 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: gpt-4o-mini
+2025-01-26 16:30:16 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 4500
+2025-01-26 16:30:16 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.7
+2025-01-26 16:30:16 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:30:16 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:30:16 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 16:30:16 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGptChapterMaker initialized successfully
+2025-01-26 16:30:58 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:30:58 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-26 16:30:58 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 16:30:58 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 16:30:58 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 16:30:58 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 16:30:58 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 16:30:58 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: gpt-4o-mini
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 4500
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.7
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGptChapterMaker initialized successfully
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 16:30:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:31:34 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:31:34 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #1 batch is written to file
+2025-01-26 16:31:34 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 2 of 6
+2025-01-26 16:31:34 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:32:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:32:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #2 batch is written to file
+2025-01-26 16:32:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 3 of 6
+2025-01-26 16:32:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:32:31 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:32:31 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #3 batch is written to file
+2025-01-26 16:32:31 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 4 of 6
+2025-01-26 16:32:31 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:32:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:32:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #4 batch is written to file
+2025-01-26 16:32:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 5 of 6
+2025-01-26 16:32:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:33:29 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:33:29 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #5 batch is written to file
+2025-01-26 16:33:29 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 6 of 6
+2025-01-26 16:33:29 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:33:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:33:51 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #6 batch is written to file
+2025-01-26 16:34:30 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for Final Chapter Response received without problems
+2025-01-26 16:34:30 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Final chapter response written to file
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing DeepSeekChapterMaker
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-26 16:36:57 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 16:36:57 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 16:36:57 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 16:36:57 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 16:36:57 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 16:36:57 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeek Parameters:
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: deepseek-reasoner
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.4
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeekChapterMaker initialized successfully
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 16:36:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
+2025-01-26 16:44:41 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:44:41 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-26 16:44:41 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 16:44:41 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 16:44:41 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 16:44:41 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 16:44:42 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 16:44:42 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: o1-mini
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.5
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGptChapterMaker initialized successfully
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 16:44:42 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:44:43 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #1 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-26 16:44:43 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 2 of 6
+2025-01-26 16:44:43 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:44:45 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #2 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-26 16:44:45 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 3 of 6
+2025-01-26 16:44:45 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:44:49 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #3 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-26 16:44:49 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 4 of 6
+2025-01-26 16:44:49 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:45:11 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #4 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-26 16:45:11 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 5 of 6
+2025-01-26 16:45:11 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:45:33 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #5 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-26 16:45:33 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 6 of 6
+2025-01-26 16:45:33 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:45:36 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #6 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-26 16:45:37 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-26 16:46:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:46:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-26 16:46:53 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 16:46:53 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 16:46:53 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 16:46:53 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 16:46:53 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 16:46:53 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: o1-mini
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.5
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGptChapterMaker initialized successfully
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 16:46:54 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:46:55 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #1 processing error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-01-26 16:46:55 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 2 of 6
+2025-01-26 16:46:55 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:46:56 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #2 processing error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-01-26 16:46:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 3 of 6
+2025-01-26 16:46:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:46:57 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #3 processing error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-01-26 16:46:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 4 of 6
+2025-01-26 16:46:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:46:59 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #4 processing error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-01-26 16:46:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 5 of 6
+2025-01-26 16:46:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:47:00 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #5 processing error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-01-26 16:47:00 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 6 of 6
+2025-01-26 16:47:00 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:47:00 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #6 processing error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-01-26 16:47:01 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch processing error: Error code: 400 - {'error': {'message': "Unsupported parameter: 'max_tokens' is not supported with this model. Use 'max_completion_tokens' instead.", 'type': 'invalid_request_error', 'param': 'max_tokens', 'code': 'unsupported_parameter'}}
+2025-01-26 16:48:03 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:48:03 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-26 16:48:03 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 16:48:03 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 16:48:03 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 16:48:03 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 16:48:03 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 16:48:03 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: o1-mini
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.5
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGptChapterMaker initialized successfully
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #1 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 2 of 6
+2025-01-26 16:48:04 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:05 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #2 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:05 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 3 of 6
+2025-01-26 16:48:05 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:06 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #3 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 4 of 6
+2025-01-26 16:48:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:06 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #4 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 5 of 6
+2025-01-26 16:48:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:07 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #5 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 6 of 6
+2025-01-26 16:48:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:08 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #6 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:09 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-26 16:48:32 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 16:48:32 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 16:48:32 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 16:48:32 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 16:48:32 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 16:48:32 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: o1-mini
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.5
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGptChapterMaker initialized successfully
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 16:48:32 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:33 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #1 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:33 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 2 of 6
+2025-01-26 16:48:33 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:34 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #2 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:34 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 3 of 6
+2025-01-26 16:48:34 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:35 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #3 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:35 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 4 of 6
+2025-01-26 16:48:35 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:45 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #4 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:45 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 5 of 6
+2025-01-26 16:48:45 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:56 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #5 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 6 of 6
+2025-01-26 16:48:56 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:48:57 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #6 processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:48:57 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch processing error: Error code: 400 - {'error': {'message': "Unsupported value: 'temperature' does not support 0.5 with this model. Only the default (1) value is supported.", 'type': 'invalid_request_error', 'param': 'temperature', 'code': 'unsupported_value'}}
+2025-01-26 16:49:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-26 16:49:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-26 16:49:07 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 16:49:07 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 16:49:07 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 16:49:07 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 16:49:08 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 16:49:08 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: o1-mini
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 1.0
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGptChapterMaker initialized successfully
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 16:49:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:50:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:50:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #1 batch is written to file
+2025-01-26 16:50:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 2 of 6
+2025-01-26 16:50:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:51:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:51:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #2 batch is written to file
+2025-01-26 16:51:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 3 of 6
+2025-01-26 16:51:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:51:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:51:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #3 batch is written to file
+2025-01-26 16:51:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 4 of 6
+2025-01-26 16:51:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:52:44 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:52:44 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #4 batch is written to file
+2025-01-26 16:52:44 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 5 of 6
+2025-01-26 16:52:44 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:53:18 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:53:18 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #5 batch is written to file
+2025-01-26 16:53:18 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 6 of 6
+2025-01-26 16:53:18 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-26 16:53:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-26 16:53:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #6 batch is written to file
+2025-01-26 16:54:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for Final Chapter Response received without problems
+2025-01-26 16:54:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Final chapter response written to file
+2025-01-26 17:13:38 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing DeepSeekChapterMaker
+2025-01-26 17:13:38 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-26 17:13:38 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8 encoding
+2025-01-26 17:13:38 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with utf-8-sig encoding
+2025-01-26 17:13:38 - [TOKEN_COUNTER] - WARNING - [pokolog.py:71] - Failed to read with cp1252 encoding
+2025-01-26 17:13:38 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Used iso-8859-1 encoding
+2025-01-26 17:13:39 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - File: summary_total.txt | Tokens: 128302 | Chars: 738536 | Lines: 4375 | Encoding: iso-8859-1
+2025-01-26 17:13:39 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeek Parameters:
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: deepseek-reasoner
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 0.4
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeekChapterMaker initialized successfully
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-26 17:13:39 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
+2025-01-26 17:14:48 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeek response for batch chapter maker received without problems
+2025-01-26 17:14:48 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #1 batch is written to file
+2025-01-26 17:14:48 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 2 of 6
+2025-01-26 17:14:48 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
+2025-01-26 17:15:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeek response for batch chapter maker received without problems
+2025-01-26 17:15:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #2 batch is written to file
+2025-01-26 17:15:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 3 of 6
+2025-01-26 17:15:57 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
+2025-01-26 17:44:59 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #3 processing error: Expecting value: line 29 column 1 (char 28)
+2025-01-26 17:44:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 4 of 6
+2025-01-26 17:44:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
+2025-01-26 17:55:01 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #4 processing error: Expecting value: line 10 column 1 (char 9)
+2025-01-26 17:55:01 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 5 of 6
+2025-01-26 17:55:01 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
+2025-01-26 18:04:47 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeek response for batch chapter maker received without problems
+2025-01-26 18:04:47 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #5 batch is written to file
+2025-01-26 18:04:47 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 6 of 6
+2025-01-26 18:04:47 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for DeepSeek to create chapter in single batch
+2025-01-26 18:05:40 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - DeepSeek response for batch chapter maker received without problems
+2025-01-26 18:05:40 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #6 batch is written to file
+2025-01-26 18:15:41 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch processing error: Expecting value: line 10 column 1 (char 9)

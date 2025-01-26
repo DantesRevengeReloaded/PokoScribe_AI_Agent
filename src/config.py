@@ -94,9 +94,9 @@ def get_search_queries() -> list:
         
 class ChatGPTPars:
     def __init__(self):
-        self.model="gpt-4o-mini"
-        self.max_tokens=4500 # max output tokens
-        self.temperature=0.7
+        self.model="o1-mini"
+        self.max_tokens=5500 # max output tokens
+        self.temperature=1.0
         self.role_system = "system"
         self.role_user = "user"
         self.tokenslimit = 27000 # limit of tokens per document
@@ -113,7 +113,7 @@ class DeepSeekPars:
     def __init__(self):
         self.model="deepseek-reasoner"
         self.max_tokens=5500 # max output tokens
-        self.temperature=0.4
+        self.temperature=0.9
         self.role_system = "system"
         self.role_user = "user"
         self.tokenslimit = 27000 # limit of tokens per document

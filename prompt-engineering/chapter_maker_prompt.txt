@@ -1,1 +1,25 @@
-summerize the article
+Create the chapter titled "Theoretical Foundations" based on the provided summaries. Follow the structure below:
+
+2.1 Psychological Frameworks
+2.1.1 Job Demands-Resources (JD-R) Model: Balancing stressors and resources.
+2.1.2 Self-Determination Theory (SDT): Autonomy, competence, relatedness.
+2.1.3 Psychological Capital (PsyCap): Hope, resilience, optimism, self-efficacy.
+2.2 Organizational and Leadership Models
+2.2.1 Transformational vs. Transactional Leadership.
+2.2.2 Service-Profit Chain: Linking employee satisfaction to customer outcomes.
+2.2.3 Categorization-Elaboration Model (CEM): Diversity’s dual impact on teams.
+Guidelines:
+
+Use only the information provided in the summaries.
+Cite all content using Harvard citation style, ensuring each citation corresponds to a source in the summaries.
+If a section lacks sufficient information in the summaries:
+Expand on related findings from the summaries.
+If no related findings exist, state the limitation and suggest areas for future research.
+Prioritize depth and clarity in each subsection while maintaining logical flow.
+Write concisely, avoiding unnecessary repetition or filler content.
+Use up to 5,000 tokens, ensuring no redundancy or unsupported information.
+Output Style:
+
+Formal academic tone.
+Clear, coherent structure, maintaining logical connections between sections.
+Fully cited with real sources from the summaries.
