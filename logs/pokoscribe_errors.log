@@ -2268,3 +2268,4 @@ LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
 2025-01-26 17:44:59 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #3 processing error: Expecting value: line 29 column 1 (char 28)
 2025-01-26 17:55:01 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #4 processing error: Expecting value: line 10 column 1 (char 9)
 2025-01-26 18:15:41 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch processing error: Expecting value: line 10 column 1 (char 9)
+2025-01-26 21:12:43 - [AI_CHAPTER_MAKER] - ERROR - [pokolog.py:71] - Batch #1 processing error: 'ChatGPTChapterMaker' object has no attribute 'cached_responses'

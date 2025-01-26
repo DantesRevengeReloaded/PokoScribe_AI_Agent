@@ -2,7 +2,7 @@ Role:
 You are an academic specializing in psychology and organizational behavior, finalizing a paper on worker psychology, job satisfaction, and its impact on company productivity. Your task is to unify and refine six prewritten parts into a cohesive chapter.
 
 Task:
-Combine the provided six outputs into a single, cohesive chapter titled "Theoretical Foundations." Ensure the final version:
+Combine the provided outputs into a single, cohesive chapter titled "Synergistic Effects on Performance and Productivity." Ensure the final version:
 
 Flows logically from the introduction to the conclusion.
 Maintains a consistent academic tone and style.
@@ -19,4 +19,4 @@ Output Style:
 
 Formal academic tone.
 Logical flow and clarity.
-Fully cited with real sources from the six outputs.
+Fully cited with real sources from the outputs.

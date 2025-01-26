@@ -37,6 +37,7 @@ class BatchChapterMaker():
             tcoun = TokenCounter()
             full_text = tcoun.safe_read_text(self.summary_file)
             batches = []
+            self.cached_responses = []
             current_batch = ""
             current_tokens = 0
             total_tokens = 0
@@ -246,14 +247,18 @@ class ChatGPTChapterMaker(BatchChapterMaker):
                 logger.info(ScriptIdentifier.CHAPTER, f"Chapter for #{i} batch is written to file")
             except Exception as e:
                 logger.error(ScriptIdentifier.CHAPTER, f"Batch #{i} processing error: {e}")
-
+        
+        try:
         #Get the content of the responses from the cached responses list
-        self.cached_responses = [response.choices[0].message.content for response in self.cached_responses]          
+            self.cached_responses = [response.choices[0].message.content for response in self.cached_responses]          
 
-            #Create final outline from cached responses
-        synthesis_prompt = f"{self.synthesis_prompt_text} {' '.join(self.cached_responses)}"
+                #Create final outline from cached responses
+            synthesis_prompt = f"{self.synthesis_prompt_text} {' '.join(self.cached_responses)}"
+        except Exception as e:
+            logger.error(ScriptIdentifier.CHAPTER, f"Error creating prompt for final response: {e}")
 
         try:
+            logger.info(ScriptIdentifier.CHAPTER, f"Creating final chapter response")
             self.client = OpenAI(api_key=self.api_key)
             response = self.client.chat.completions.create(
                 messages=[
@@ -265,7 +270,7 @@ class ChatGPTChapterMaker(BatchChapterMaker):
                 temperature=self.aiparameters.temperature,
             )
             logger.info(ScriptIdentifier.CHAPTER, f"ChatGPT response for Final Chapter Response received without problems")
-
+            print(response.choices[0].message.content)
             with open('resources\output_of_ai\chapters.txt', 'a', encoding='utf-8') as f:
                 f.write('\n\n')
                 f.write('-'*20)
@@ -274,9 +279,10 @@ class ChatGPTChapterMaker(BatchChapterMaker):
                 f.write('\n\n')
                 f.write(response.choices[0].message.content)
             logger.info(ScriptIdentifier.CHAPTER, f"Final chapter response written to file")
+            print(response)
         except Exception as e:
             logger.error(ScriptIdentifier.CHAPTER, f"Batch processing error: {e}")                
 
-tl = DeepSeekChapterMaker()
+tl = ChatGPTChapterMaker()
 tl.make_chapter()
 
