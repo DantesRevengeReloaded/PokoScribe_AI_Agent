@@ -9872,3 +9872,85 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-26 22:21:35 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Creating final chapter response
 2025-01-26 22:21:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for Final Chapter Response received without problems
 2025-01-26 22:21:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Final chapter response written to file
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-27 18:31:26 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Total tokens in summary text: 128187
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: o1-mini
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 1.0
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGptChapterMaker initialized successfully
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-27 18:31:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:31:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:31:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #1 batch is written to file
+2025-01-27 18:31:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 2 of 6
+2025-01-27 18:31:52 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:32:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:32:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #2 batch is written to file
+2025-01-27 18:32:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 3 of 6
+2025-01-27 18:32:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:32:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:32:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #3 batch is written to file
+2025-01-27 18:32:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 4 of 6
+2025-01-27 18:32:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:33:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:33:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #4 batch is written to file
+2025-01-27 18:33:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 5 of 6
+2025-01-27 18:33:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:34:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:34:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #5 batch is written to file
+2025-01-27 18:34:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 6 of 6
+2025-01-27 18:34:08 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:34:28 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:34:28 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #6 batch is written to file
+2025-01-27 18:34:28 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Creating final chapter response
+2025-01-27 18:34:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for Final Chapter Response received without problems
+2025-01-27 18:34:59 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Final chapter response written to file
+2025-01-27 18:39:05 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing ChatGPTChapterMaker
+2025-01-27 18:39:05 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Initializing BatchChapterMaker
+2025-01-27 18:39:06 - [TOKEN_COUNTER] - INFO - [pokolog.py:71] - Successfully read with iso-8859-1
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Total tokens in summary text: 128187
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Split text into 6 batches
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - BatchChapterMaker initialized successfully
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT Parameters:
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Model: o1-mini
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Max output tokens: 5500
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Temperature: 1.0
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of bot: system
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Role of user: user
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Token limit: 27000
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGptChapterMaker initialized successfully
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 1 of 6
+2025-01-27 18:39:06 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:39:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:39:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #1 batch is written to file
+2025-01-27 18:39:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 2 of 6
+2025-01-27 18:39:46 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:40:27 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:40:27 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #2 batch is written to file
+2025-01-27 18:40:27 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 3 of 6
+2025-01-27 18:40:27 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:41:27 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:41:27 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #3 batch is written to file
+2025-01-27 18:41:27 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 4 of 6
+2025-01-27 18:41:27 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:42:19 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:42:19 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #4 batch is written to file
+2025-01-27 18:42:19 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 5 of 6
+2025-01-27 18:42:19 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:43:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:43:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #5 batch is written to file
+2025-01-27 18:43:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Processing batch 6 of 6
+2025-01-27 18:43:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Prompt created for ChatGPT to create chapter in single batch
+2025-01-27 18:43:25 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for batch chapter maker received without problems
+2025-01-27 18:43:25 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Chapter for #6 batch is written to file
+2025-01-27 18:43:26 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Creating final chapter response
+2025-01-27 18:44:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - ChatGPT response for Final Chapter Response received without problems
+2025-01-27 18:44:07 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:71] - Final chapter response written to file

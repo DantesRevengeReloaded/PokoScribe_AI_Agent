@@ -1,11 +1,16 @@
-Create the chapter titled "Synergistic Effects on Performance and Productivity" based on the provided summaries. Follow the structure below:
+Create the chapter titled "Challenges and Future Directions" based on the provided summaries. Follow the structure below:
 
-- **6.1 Mediating Mechanisms**  
-  - **6.1.1** Employee Engagement: Bridge between leadership and performance.  
-  - **6.1.2** Organizational Citizenship Behavior (OCB): Job satisfaction as a driver.  
-- **6.2 Empirical Evidence**  
-  - **6.2.1** Meta-Analyses: PsyCap interventions boosting profitability.  
-  - **6.2.2** Case Studies: CSR enhancing morale; diversity driving innovation.
+
+- **8.1 Implementation Barriers**  
+  - **8.1.1** Cultural Resistance: Misalignment of HR practices with employee needs.  
+  - **8.1.2** Gendered Disparities: Inequities in flexible work adoption.  
+- **8.2 Emerging Trends**  
+  - **8.2.1** Remote Work and Digital Transformation: Long-term productivity impacts.  
+  - **8.2.2** Globalization and Sustainability: Balancing economic and social goals.  
+- **8.3 Research Recommendations**  
+  - Longitudinal studies on PsyCap and leadership effectiveness.  
+  - Cross-cultural comparisons of diversity and satisfaction dynamics.  
+
 
 Use only the information provided in the summaries.
 Cite all content using Harvard citation style, ensuring each citation corresponds to a source in the summaries.
