@@ -281,8 +281,10 @@ class ChatGPTChapterMaker(BatchChapterMaker):
             logger.info(ScriptIdentifier.CHAPTER, f"Final chapter response written to file")
             print(response)
         except Exception as e:
-            logger.error(ScriptIdentifier.CHAPTER, f"Batch processing error: {e}")                
+            logger.error(ScriptIdentifier.CHAPTER, f"Batch processing error: {e}")
 
-tl = ChatGPTChapterMaker()
-tl.make_chapter()
+class GeminiChapterMaker(BatchChapterMaker):
+    pass    
+    # to be implemented            
+
 
