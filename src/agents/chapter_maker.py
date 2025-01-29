@@ -1,6 +1,4 @@
-import os
-import sys
-import json
+import os, sys, json
 from pathlib import Path
 from typing import List, Dict
 from openai import OpenAI
@@ -14,11 +12,9 @@ sys.path.append(str(project_root))
 from logs.pokolog import PokoLogger, ScriptIdentifier
 from src.tools.token_counter import TokenCounter
 from src.config import SystemPars, DeepSeekPars, ChatGPTPars
-from src.db_ai.ai_db_manager import AIDBManager
 
 logger = PokoLogger()
 load_dotenv('.env')
-
 
 class BatchChapterMaker:
     def __init__(self):
@@ -69,6 +65,7 @@ class BatchChapterMaker:
     def make_chapter(self) -> None:
         self.cached_responses = []
         for i, batch in enumerate(self.batches, 1):
+            logger.info(ScriptIdentifier.CHAPTER, f"Processing batch {i} out of {len(self.batches)}")
             batch_content = self._process_batch(batch, i)
             if batch_content:
                 self.cached_responses.append(batch_content)
@@ -79,16 +76,19 @@ class BatchChapterMaker:
         retries = self._get_retry_count()
         for attempt in range(retries + 1):
             try:
+                logger.info(ScriptIdentifier.CHAPTER, f"Sending batch and prompt to AI model...")
                 prompt = f"{self.batch_prompt_text}\n\n{batch}"
                 client = self._get_client()
                 messages = self._build_messages(prompt)
                 parameters = self._get_api_parameters()
-                
                 response = client.chat.completions.create(messages=messages, **parameters)
+                logger.info(ScriptIdentifier.CHAPTER, f"Received response for batch {batch_number}")
                 content = response.choices[0].message.content
                 cleaned_content = self._clean_response(content)
+                logger.info(ScriptIdentifier.CHAPTER, f"Cleaned response for batch {batch_number}")
                 
                 self._write_batch_response(cleaned_content, batch_number)
+                logger.info(ScriptIdentifier.CHAPTER, f"Batch {batch_number} processed successfully")
                 return cleaned_content
             except Exception as e:
                 if attempt < retries and isinstance(e, self._get_retry_exceptions()):
@@ -103,6 +103,7 @@ class BatchChapterMaker:
 
     def _process_synthesis(self) -> None:
         try:
+            logger.info(ScriptIdentifier.CHAPTER, "Processing synthesis of all batches...")
             synthesis_prompt = f"{self.synthesis_prompt_text}\n\n{' '.join(self.cached_responses)}"
             client = self._get_client()
             messages = self._build_messages(synthesis_prompt)
@@ -111,6 +112,7 @@ class BatchChapterMaker:
             response = client.chat.completions.create(messages=messages, **parameters)
             final_content = response.choices[0].message.content
             self._write_final_response(final_content)
+            logger.info(ScriptIdentifier.CHAPTER, "Synthesis processing completed and written to file")
         except Exception as e:
             logger.error(ScriptIdentifier.CHAPTER, f"Synthesis processing failed: {str(e)}")
 
@@ -208,7 +210,7 @@ class ChatGPTChapterMaker(BatchChapterMaker):
     def _get_api_parameters(self) -> Dict:
         return {
             "model": self.aiparameters.model,
-            "max_tokens": self.aiparameters.max_tokens,
+            "max_completion_tokens": self.aiparameters.max_tokens,
             "temperature": self.aiparameters.temperature
         }
 

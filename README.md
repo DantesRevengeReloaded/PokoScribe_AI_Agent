@@ -22,12 +22,18 @@ Disclaimer: PokoScribe is not a replacement for human writers and under no cirum
 - [Agents](#agents)
   - [AI Agent Summarizer](#ai-agent-summarizer)
   - [AI Agent Outliner](#ai-agent-outliner)
+  - [AI Agent Chapter Creator](#ai-agent-chapter-creator)
+
+- [Tools](#tools)
+  - [AHSS](#ahss)
+  - [Sci-Hub](#sci-hub)
+  - [TokenCounter](#tokencounter)
 - [Best Practices](#best-practices)
 
 
 ## Agents
 
-PokoScribe has the following agents that work together to automate the academic writing process.
+PokoScribe has agents that work together to automate the academic writing process.The agents make API calls to various services of popular AI chatbots to process data that have been gathered. The agents are designed to work together and the goal is to automate the process so the output of one agent can be used as the input of another agent. For this the configuration file and the correct prompt engineering are crucial for the system to work more efficiently.
 
 ### AI Agent Summarizer
 
@@ -41,13 +47,33 @@ AI agent that creates an outline for the paper, article, or essay based on the t
 
 sources: [AI-Agent-Outliner](docs/AI-Agent-Outliner.md) documentation.
 
-**-- To be implemented. --**
 
 ### AI Agent Chapter Creator
 
-AI agent that generates chapters of the paper based on the outline.
+AI agent that generates chapters of the paper based on the outline. The chapter that generated are passed to the agent and creates them based on the summaries it reads
 
-To be implemented.
+sources: [AI-Agent-ChapterMaker](docs/AI-Agent-ChapterMaker.md) documentation.
+
+## Tools
+
+The system has tools that are used to gather data and process them for the agents to work efficiently.
+
+### AHSS
+AHSS (Academic Hyper Search System) is a tool that is used to gather academic papers from the web. It uses platforms to gather metadata and store them in the database for later use.
+
+sources: [AHSS](docs/Tools-AHSS.md) documentation.
+
+### SciHub-dler
+
+Sci-Hub-dler is a tool that is used to download academic papers from Sci-Hub. It uses the DOI of the paper to download the paper in pdf format.
+
+sources: [SciHub-dler](docs/Tools-SciHub-dler.md) documentation.
+
+### TokenCounter
+
+TokenCounter is a tool that is used to count the tokens of the text. It is used to count the tokens of the summaries and the citations of the papers that are used in the system. It is called by the agents to count the tokens of the text in order to create batches and handle the text more efficiently.
+
+sources: [TokenCounter](docs/Tools-TokenCounter.md) documentation.
 
 ## Best Practices
 

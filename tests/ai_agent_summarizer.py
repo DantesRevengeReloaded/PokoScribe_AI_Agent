@@ -67,5 +67,3 @@ class AIBotSummarizer:
         except Exception as e:
             logger.error(ScriptIdentifier.AGENTSUMMARIZER, f"Error in Summarizer AI model of Deepseek {e}")
 
-to = AIBotSummarizer()
-to.deepseeksummerize()
