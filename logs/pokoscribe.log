@@ -10129,3 +10129,10 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-29 21:45:53 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
 2025-01-29 21:46:48 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 2 written to file
 2025-01-29 21:46:48 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 3/6
+2025-01-30 00:03:53 - [AI_AGENTS] - INFO - [pokolog.py:70] - Using DEEPSEEK model...
+2025-01-30 00:03:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Initializing BatchChapterMaker
+2025-01-30 00:03:53 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 00:03:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 00:03:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Total tokens in summary text: 127663
+2025-01-30 00:03:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - BatchChapterMaker initialized successfully
+2025-01-30 00:03:53 - [AI_AGENTS] - INFO - [pokolog.py:70] - deepseekchaptermaker with DEEPSEEK completed in 0.51 seconds

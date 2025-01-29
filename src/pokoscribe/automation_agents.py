@@ -119,12 +119,12 @@ class AIBotChapterMaker:
     @ai_agent_timer(ScriptIdentifier.AGENTS)
     def deepseekchaptermaker(self):
         chaptermaker = BatchChapterMaker()
-        chaptermaker.run_deepseek()
+        chaptermaker.make_chapter()
         return chaptermaker
 
     @ai_agent_timer(ScriptIdentifier.AGENTS)
     def chatgptchaptermaker(self):
         chaptermaker = BatchChapterMaker()
-        chaptermaker.run_chatgpt()
+        chaptermaker.make_chapter()
         return chaptermaker
 
