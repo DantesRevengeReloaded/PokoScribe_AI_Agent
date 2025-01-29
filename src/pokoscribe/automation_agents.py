@@ -49,7 +49,7 @@ class AIBotSummarizer:
     def __init__(self):
         pass
     
-    @ai_agent_timer(ScriptIdentifier.AGENTSUMMARIZER)
+    @ai_agent_timer(ScriptIdentifier.AGENTS)
     def chatgptsummerize(self):
         summparameters = ChatGPTPdfSummerizerPars()
         api_key = os.getenv('OPENAI_API_KEY')
@@ -64,7 +64,7 @@ class AIBotSummarizer:
         summarizer.process_pdfs('openai')
         return summarizer
 
-    @ai_agent_timer(ScriptIdentifier.AGENTSUMMARIZER)
+    @ai_agent_timer(ScriptIdentifier.AGENTS)
     def geminisummerize(self):
         summparameters = GeminiSummerizerPars()
         api_key = os.getenv('GEMINI_API_KEY')
@@ -79,7 +79,7 @@ class AIBotSummarizer:
         summarizer.process_pdfs('gemini')
         return summarizer
 
-    @ai_agent_timer(ScriptIdentifier.AGENTSUMMARIZER)
+    @ai_agent_timer(ScriptIdentifier.AGENTS)
     def deepseeksummerize(self):
         summparameters = DeepSeekSummerizerPars()
         api_key = os.getenv('DEEPSEEK_API_KEY')
@@ -99,13 +99,13 @@ class AIOutlinerAgent:
     def __init__(self):
         pass
 
-    @ai_agent_timer(ScriptIdentifier.AGENTOUTLINER)
+    @ai_agent_timer(ScriptIdentifier.AGENTS)
     def chatgptoutline(self):
         getoutline = ChatGPTOutliner()
         getoutline.outline_it()
         return getoutline
 
-    @ai_agent_timer(ScriptIdentifier.AGENTOUTLINER)
+    @ai_agent_timer(ScriptIdentifier.AGENTS)
     def deepseekoutline(self):
         getoutline = DeepSeekOutliner()
         getoutline.outline_it()
@@ -116,13 +116,13 @@ class AIBotChapterMaker:
     def __init__(self):
         pass
 
-    @ai_agent_timer(ScriptIdentifier.AGENTCHAPTER)
+    @ai_agent_timer(ScriptIdentifier.AGENTS)
     def deepseekchaptermaker(self):
         chaptermaker = BatchChapterMaker()
         chaptermaker.run_deepseek()
         return chaptermaker
 
-    @ai_agent_timer(ScriptIdentifier.AGENTCHAPTER)
+    @ai_agent_timer(ScriptIdentifier.AGENTS)
     def chatgptchaptermaker(self):
         chaptermaker = BatchChapterMaker()
         chaptermaker.run_chatgpt()

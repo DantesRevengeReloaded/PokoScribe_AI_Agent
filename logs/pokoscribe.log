@@ -10064,3 +10064,68 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-29 18:54:38 - [AI_OUTLINER] - INFO - [pokolog.py:72] - DeepSeekOutliner initialized successfully
 2025-01-29 18:54:38 - [AI_OUTLINER] - INFO - [pokolog.py:72] - Processing batch 1 of 6
 2025-01-29 18:54:38 - [AI_OUTLINER] - INFO - [pokolog.py:72] - Prompt created for DeepSeek to outline single batch
+2025-01-29 21:27:50 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing DeepSeekOutliner
+2025-01-29 21:27:50 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-29 21:27:51 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-29 21:27:51 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-29 21:27:51 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-29 21:27:51 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-29 21:27:51 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-29 21:27:51 - [AI_OUTLINER] - INFO - [pokolog.py:70] - DeepSeekOutliner ready
+2025-01-29 21:27:51 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-29 21:28:56 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 1 written to file
+2025-01-29 21:28:56 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-29 21:29:54 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 2 written to file
+2025-01-29 21:29:54 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 3/6
+2025-01-29 21:30:57 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:30:57 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 3 failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:30:57 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 4/6
+2025-01-29 21:31:58 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:31:58 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 4 failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:31:58 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 5/6
+2025-01-29 21:33:00 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:33:00 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 5 failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:33:00 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 6/6
+2025-01-29 21:34:00 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:34:00 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 6 failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:35:01 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:35:01 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Final synthesis failed: Expecting value: line 1 column 1 (char 0)
+2025-01-29 21:37:15 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing ChatGPTOutliner
+2025-01-29 21:37:15 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-29 21:37:15 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-29 21:37:15 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-29 21:37:15 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-29 21:37:15 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-29 21:37:15 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-29 21:37:15 - [AI_OUTLINER] - INFO - [pokolog.py:70] - ChatGPTOutliner ready
+2025-01-29 21:37:15 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-29 21:37:17 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:37:17 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 1 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:37:17 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-29 21:37:18 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:37:18 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 2 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:37:18 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 3/6
+2025-01-29 21:37:23 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:37:23 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 3 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:37:23 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 4/6
+2025-01-29 21:37:45 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:37:45 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 4 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:37:45 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 5/6
+2025-01-29 21:38:07 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:38:07 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 5 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:38:07 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 6/6
+2025-01-29 21:38:08 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:38:08 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 6 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-29 21:45:15 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing ChatGPTOutliner
+2025-01-29 21:45:15 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-29 21:45:16 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-29 21:45:16 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-29 21:45:16 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-29 21:45:16 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-29 21:45:16 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-29 21:45:16 - [AI_OUTLINER] - INFO - [pokolog.py:70] - ChatGPTOutliner ready
+2025-01-29 21:45:16 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-29 21:45:53 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 1 written to file
+2025-01-29 21:45:53 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-29 21:46:48 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 2 written to file
+2025-01-29 21:46:48 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 3/6
