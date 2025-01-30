@@ -201,7 +201,5 @@ class ChatGPTOutliner(BatchOutliner):
             logger.error(ScriptIdentifier.OUTLINER, f"Initialization failed: {e}")
             raise
 
-tk = ChatGPTOutliner()
-tk.outline_it()
 
 

@@ -128,3 +128,5 @@ class AIBotChapterMaker:
         chaptermaker.make_chapter()
         return chaptermaker
 
+tt = AIBotSummarizer()
+tt.deepseeksummerize()

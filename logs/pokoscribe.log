@@ -10233,3 +10233,120 @@ LINE 172: ...ser'', ''tokenslimit'': 27000}', 'Batch Outline', CURRENT_TI...
 2025-01-30 19:51:32 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Outline for Panos_Karydis_Update inserted successfully to db.
 2025-01-30 19:51:32 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 1 written to file
 2025-01-30 19:51:32 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-30 22:56:20 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Initializing BatchChapterMaker
+2025-01-30 22:56:20 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Total tokens in summary text: 127663
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - BatchChapterMaker initialized successfully
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Initializing DeepSeekChapterMaker
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - DeepSeek Parameters:
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Model: deepseek-chat
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Max tokens: 5500
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Temperature: 0.9
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Processing batch 1 out of 6
+2025-01-30 22:56:21 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Sending batch and prompt to AI model...
+2025-01-30 22:57:02 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Received response for batch 1
+2025-01-30 22:57:02 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Cleaned response for batch 1
+2025-01-30 22:57:02 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 22:57:02 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Chapter for Panos_Karydis_Update inserted successfully to db.
+2025-01-30 22:57:02 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Batch 1 processed successfully
+2025-01-30 22:57:02 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Processing batch 2 out of 6
+2025-01-30 22:57:02 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Sending batch and prompt to AI model...
+2025-01-30 23:25:31 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing ChatGPTOutliner
+2025-01-30 23:25:31 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-30 23:25:31 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-30 23:25:31 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-30 23:25:31 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 23:25:32 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 23:25:32 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-30 23:25:32 - [AI_OUTLINER] - INFO - [pokolog.py:70] - ChatGPTOutliner ready
+2025-01-30 23:25:32 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-30 23:25:36 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:25:36 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:25:36 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-30 23:25:39 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:25:39 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:25:39 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 3/6
+2025-01-30 23:25:42 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:25:42 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 3 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:25:42 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 4/6
+2025-01-30 23:26:51 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing ChatGPTOutliner
+2025-01-30 23:26:51 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-30 23:26:52 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-30 23:26:52 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-30 23:26:52 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 23:26:52 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 23:26:52 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-30 23:26:52 - [AI_OUTLINER] - INFO - [pokolog.py:70] - ChatGPTOutliner ready
+2025-01-30 23:26:52 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-30 23:26:56 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:26:56 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 1 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:26:56 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-30 23:26:59 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:26:59 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 2 failed: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+2025-01-30 23:26:59 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 3/6
+2025-01-30 23:27:42 - [AI_AGENTS] - INFO - [pokolog.py:70] - Using DEEPSEEKSUMMERIZE model...
+2025-01-30 23:27:42 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Initializing PDFSummarizer...
+2025-01-30 23:27:42 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - AI parameters initialized successfully.
+2025-01-30 23:27:42 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Prompt loaded successfully, content preview: create a summary of the following article for the ...
+2025-01-30 23:27:42 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Citation loaded successfully, content preview: in the end of the answer cite the source in HARVAR...
+2025-01-30 23:27:42 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Role loaded successfully, content preview: you are an academic who wants to write a paper abo...
+2025-01-30 23:27:42 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - PDFSummarizer initialized successfully.
+2025-01-30 23:27:42 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Found 1 PDF files in resources\summary_agent\input...
+2025-01-30 23:27:42 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 23:27:42 - [AI_SUMMARIZER] - ERROR - [pokolog.py:70] - Error getting session ID: syntax error at or near ","
+LINE 10:                         timestamp,
+                                          ^
+
+2025-01-30 23:27:42 - [AI_AGENTS] - INFO - [pokolog.py:70] - deepseeksummerize with DEEPSEEKSUMMERIZE completed in 0.09 seconds
+2025-01-30 23:27:42 - [AI_AGENTS] - INFO - [pokolog.py:70] - Total files processed: 0
+2025-01-30 23:27:42 - [AI_AGENTS] - INFO - [pokolog.py:70] - Completed files: 0
+2025-01-30 23:29:50 - [AI_AGENTS] - INFO - [pokolog.py:70] - Using DEEPSEEKSUMMERIZE model...
+2025-01-30 23:29:50 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Initializing PDFSummarizer...
+2025-01-30 23:29:50 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - AI parameters initialized successfully.
+2025-01-30 23:29:50 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Prompt loaded successfully, content preview: create a summary of the following article for the ...
+2025-01-30 23:29:50 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Citation loaded successfully, content preview: in the end of the answer cite the source in HARVAR...
+2025-01-30 23:29:50 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Role loaded successfully, content preview: you are an academic who wants to write a paper abo...
+2025-01-30 23:29:50 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - PDFSummarizer initialized successfully.
+2025-01-30 23:29:50 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Found 1 PDF files in resources\summary_agent\input...
+2025-01-30 23:29:50 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 23:29:50 - [AI_SUMMARIZER] - ERROR - [pokolog.py:70] - Error getting session ID: syntax error at or near ")"
+LINE 15:                         )
+                                 ^
+
+2025-01-30 23:29:50 - [AI_AGENTS] - INFO - [pokolog.py:70] - deepseeksummerize with DEEPSEEKSUMMERIZE completed in 0.06 seconds
+2025-01-30 23:29:50 - [AI_AGENTS] - INFO - [pokolog.py:70] - Total files processed: 0
+2025-01-30 23:29:50 - [AI_AGENTS] - INFO - [pokolog.py:70] - Completed files: 0
+2025-01-30 23:33:03 - [AI_AGENTS] - INFO - [pokolog.py:70] - Using DEEPSEEKSUMMERIZE model...
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Initializing PDFSummarizer...
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - AI parameters initialized successfully.
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Prompt loaded successfully, content preview: create a summary of the following article for the ...
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Citation loaded successfully, content preview: in the end of the answer cite the source in HARVAR...
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Role loaded successfully, content preview: you are an academic who wants to write a paper abo...
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - PDFSummarizer initialized successfully.
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Found 1 PDF files in resources\summary_agent\input...
+2025-01-30 23:33:03 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Session ID recieved: 15
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Processing resources\summary_agent\input\1893_Investigating business outcomes of healthy food retail strategies A systematic scoping review.pdf...
+2025-01-30 23:33:03 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Reading resources\summary_agent\input\1893_Investigating business outcomes of healthy food retail strategies A systematic scoping review.pdf...
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Token count of resources\summary_agent\input\1893_Investigating business outcomes of healthy food retail strategies A systematic scoping review.pdf: 21385
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Summarizing resources\summary_agent\input\1893_Investigating business outcomes of healthy food retail strategies A systematic scoping review.pdf (less than 27000 tokens)...
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - SESSION INFO:
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - using source model: deepseek
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - using model: deepseek-chat
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - max tokens: 5500
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - temperature: {aiparameters.temperature}
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - role system: system
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - role user: user
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - prompt: create a summary of the following article for the paper that is specified in your role, focusing on psychology, job satisfaction, leadership and impact in performance of employess.
+2025-01-30 23:33:04 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Prompt created for DeepSeek
+2025-01-30 23:33:36 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - DeepSeek response received without problems
+2025-01-30 23:33:36 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Token count of summary of resources\summary_agent\input\1893_Investigating business outcomes of healthy food retail strategies A systematic scoping review.pdf: 848
+2025-01-30 23:33:36 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Citation extracted from summary: Blake, M.R., Backholer, K., Lancsar, E., Boelsen-Robinson, T., Mah, C., Brimblecombe, J., Zorbas, C., Billich, N. and Peeters, A., 2019. Investigating business outcomes of healthy food retail strategies: A systematic scoping review. *Obesity Reviews*, 20(1), pp.1-16. https://doi.org/10.1111/obr.12912-?
+2025-01-30 23:33:36 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 23:33:36 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Row for resources\summary_agent\input\1893_Investigating business outcomes of healthy food retail strategies A systematic scoping review.pdf file inserted successfully.
+2025-01-30 23:33:36 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - Summary of resources\summary_agent\input\1893_Investigating business outcomes of healthy food retail strategies A systematic scoping review.pdf saved to resources\output_of_ai\summary_total.txt
+2025-01-30 23:33:36 - [AI_SUMMARIZER] - INFO - [pokolog.py:70] - resources\summary_agent\input\1893_Investigating business outcomes of healthy food retail strategies A systematic scoping review.pdf moved to resources\summary_agent\completed waiting 3 seconds for next file...
+2025-01-30 23:33:41 - [AI_AGENTS] - INFO - [pokolog.py:70] - deepseeksummerize with DEEPSEEKSUMMERIZE completed in 37.83 seconds
+2025-01-30 23:33:41 - [AI_AGENTS] - INFO - [pokolog.py:70] - Total files processed: 1
+2025-01-30 23:33:41 - [AI_AGENTS] - INFO - [pokolog.py:70] - Completed files: 1

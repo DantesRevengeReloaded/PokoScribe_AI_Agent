@@ -27,6 +27,32 @@ class AIDbManager:
         except Exception as e:
             logger.error(ScriptIdentifier.DATABASE, f"Error connecting to the database: {e}")
 
+
+class SaveSummary(AIDbManager):
+    def __init__(self):
+        super().__init__()
+        
+        cursor = self.conn.cursor()
+        cursor.execute("""CREATE SCHEMA IF NOT EXISTS ai_schema""")
+        cursor.execute("""CREATE TABLE IF NOT EXISTS ai_schema.summaries_history (
+                        id SERIAL PRIMARY KEY,
+                        projectname VARCHAR(255),
+                        sessionid INTEGER,
+                        prompt TEXT,
+                        fileeditedname TEXT,
+                        tokencountprompt INTEGER,
+                        answer TEXT,
+                        tokencountanswer INTEGER,
+                        timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+                        model VARCHAR(255),
+                        modeldetails TEXT,
+                        type_of_prompt VARCHAR(255),
+                        citation TEXT
+                        )
+                       """)
+        self.conn.commit()
+        cursor.close()
+
     def insert_row(self, 
                         projectname, sessionid, prompt, 
                         fileeditedname, tokencountprompt, answer, 
@@ -99,6 +125,7 @@ class AIDbManager:
                         f"Error getting paper sources for project {project_name}: {e}")
             cursor.close()
             logger.info(ScriptIdentifier.DATABASE, f"Connection Closed.")
+
 
 class SaveMetaData(AIDbManager):
     def __init__(self):
@@ -334,7 +361,8 @@ class ChapterDb(AIDbManager):
         cursor = self.conn.cursor()
         cursor.execute("""
                        CREATE TABLE IF NOT EXISTS ai_schema.chapters (
-                       id SERIAL PRIMARY KEY, 
+                       id SERIAL PRIMARY KEY,
+                       chapter_prompt TEXT,
                        chapter TEXT, 
                        project_name VARCHAR(255),
                        model VARCHAR(255), 
@@ -345,13 +373,13 @@ class ChapterDb(AIDbManager):
         self.conn.commit()
         cursor.close()
     
-    def insert_chapter(self, chapter, project_name, model, model_params, batch):
+    def insert_chapter(self, chapterprompt, chapter, project_name, model, model_params, batch):
         try:
             with self.conn.cursor() as cursor:
                 cursor.execute("""
-                    INSERT INTO ai_schema.chapters (chapter, project_name, model, model_params, batch)
-                    VALUES (%s, %s, %s, %s, %s)
-                """, (chapter, project_name, model, model_params, batch))
+                    INSERT INTO ai_schema.chapters (chapter_prompt, chapter, project_name, model, model_params, batch)
+                    VALUES (%s, %s, %s, %s, %s, %s)
+                """, (chapterprompt, chapter, project_name, model, model_params, batch))
                 self.conn.commit()
                 logger.info(ScriptIdentifier.DATABASE, f"Chapter for {project_name} inserted successfully to db.")
         except Exception as e:

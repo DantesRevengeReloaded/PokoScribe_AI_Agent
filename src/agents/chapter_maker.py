@@ -12,6 +12,7 @@ sys.path.append(str(project_root))
 from logs.pokolog import PokoLogger, ScriptIdentifier
 from src.tools.token_counter import TokenCounter
 from src.config import SystemPars, DeepSeekPars, ChatGPTPars
+from src.db_ai.ai_db_manager import *
 
 logger = PokoLogger()
 load_dotenv('.env')
@@ -87,6 +88,12 @@ class BatchChapterMaker:
                 cleaned_content = self._clean_response(content)
                 logger.info(ScriptIdentifier.CHAPTER, f"Cleaned response for batch {batch_number}")
                 
+                ChapterDb().insert_chapter(str(self.batch_prompt_text),
+                                           cleaned_content,
+                                           SystemPars().project_name,
+                                           self.model_info()["model"],
+                                           self.model_info()["parameters"],
+                                           f"Batch Chapter num {batch_number}")
                 self._write_batch_response(cleaned_content, batch_number)
                 logger.info(ScriptIdentifier.CHAPTER, f"Batch {batch_number} processed successfully")
                 return cleaned_content
@@ -100,6 +107,17 @@ class BatchChapterMaker:
                     return ""
 
         return ""
+    
+    def model_info(self) -> Dict:
+        if isinstance(self, DeepSeekChapterMaker):
+            return {"model": "DeepSeek",
+                    "parameters": str(self.aiparameters.__dict__)}
+        elif isinstance(self, ChatGPTChapterMaker):
+            return {"model": "ChatGPT",
+                    "parameters": str(self.aiparameters.__dict__)}
+        else:
+            return {"model": "Unknown", 
+                    "parameters": "Unknown"}
 
     def _process_synthesis(self) -> None:
         try:
@@ -108,9 +126,15 @@ class BatchChapterMaker:
             client = self._get_client()
             messages = self._build_messages(synthesis_prompt)
             parameters = self._get_api_parameters()
-            
+            modelparams = self.model_info()
             response = client.chat.completions.create(messages=messages, **parameters)
             final_content = response.choices[0].message.content
+            ChapterDb().insert_chapter(str(self.synthesis_prompt_text),
+                                       final_content, 
+                                       SystemPars().project_name,
+                                       modelparams["model"],
+                                       modelparams["parameters"],
+                                       "Final Edition Chapter")
             self._write_final_response(final_content)
             logger.info(ScriptIdentifier.CHAPTER, "Synthesis processing completed and written to file")
         except Exception as e:
@@ -217,3 +241,4 @@ class ChatGPTChapterMaker(BatchChapterMaker):
 
 class GeminiChapterMaker(BatchChapterMaker):
     pass  # Implementation pending
+

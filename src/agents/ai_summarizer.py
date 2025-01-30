@@ -350,7 +350,7 @@ class PDFSummarizer:
             return
         
         try:
-            sess = AIDbManager()
+            sess = SaveSummary()
             sessionid = sess.get_last_session() + 1
             sess.close()
             todbdic["sessionid"] = sessionid
@@ -427,7 +427,7 @@ class PDFSummarizer:
                 todbdic["tokencountanswer"] = tokenoutputcount
                 todbdic["citation"] = citation_to_db
                 
-                todatabase = AIDbManager()
+                todatabase = SaveSummary()
                 todatabase.insert_row(todbdic["projectname"], 
                                       todbdic["sessionid"], 
                                       todbdic["prompt"], 
@@ -466,6 +466,4 @@ class PDFSummarizer:
                 # Move the file to the to be completed folder
                 shutil.move(pdf_file, os.path.join(self.to_be_completed_folder, os.path.basename(pdf_file)))
                 logger.warning(ScriptIdentifier.SUMMARIZER, f"{pdf_file} moved to {self.to_be_completed_folder}")
-
-
 
