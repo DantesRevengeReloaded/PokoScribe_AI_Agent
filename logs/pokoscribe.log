@@ -10136,3 +10136,100 @@ The reviewed literature underscores the interconnectedness of psychological fact
 2025-01-30 00:03:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - Total tokens in summary text: 127663
 2025-01-30 00:03:53 - [AI_CHAPTER_MAKER] - INFO - [pokolog.py:70] - BatchChapterMaker initialized successfully
 2025-01-30 00:03:53 - [AI_AGENTS] - INFO - [pokolog.py:70] - deepseekchaptermaker with DEEPSEEK completed in 0.51 seconds
+2025-01-30 19:25:10 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing DeepSeekOutliner
+2025-01-30 19:25:10 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-30 19:25:11 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-30 19:25:11 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-30 19:25:11 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 19:25:11 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 19:25:11 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-30 19:25:11 - [AI_OUTLINER] - INFO - [pokolog.py:70] - DeepSeekOutliner ready
+2025-01-30 19:25:11 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-30 19:25:51 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 19:25:51 - [DATABASE_MANAGER] - ERROR - [pokolog.py:70] - Error inserting outline to db: can't adapt type 'dict'
+2025-01-30 19:25:51 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 1 written to file
+2025-01-30 19:25:51 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-30 19:28:11 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing DeepSeekOutliner
+2025-01-30 19:28:11 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-30 19:28:12 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-30 19:28:12 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-30 19:28:12 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 19:28:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 19:28:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-30 19:28:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - DeepSeekOutliner ready
+2025-01-30 19:28:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-30 19:28:58 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 19:28:58 - [DATABASE_MANAGER] - ERROR - [pokolog.py:70] - Error inserting outline to db: can't adapt type 'dict'
+2025-01-30 19:28:58 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 1 written to file
+2025-01-30 19:28:58 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-30 19:31:55 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing DeepSeekOutliner
+2025-01-30 19:31:55 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-30 19:31:55 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-30 19:31:55 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-30 19:31:55 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 19:31:55 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 19:31:55 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-30 19:31:55 - [AI_OUTLINER] - INFO - [pokolog.py:70] - DeepSeekOutliner ready
+2025-01-30 19:31:55 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-30 19:32:58 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 19:32:58 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 19:32:58 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-30 19:34:00 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 19:34:00 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 19:34:00 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 3/6
+2025-01-30 19:34:47 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing ChatGPTOutliner
+2025-01-30 19:34:47 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-30 19:34:47 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-30 19:34:48 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-30 19:34:48 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 19:34:48 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 19:34:48 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-30 19:34:48 - [AI_OUTLINER] - INFO - [pokolog.py:70] - ChatGPTOutliner ready
+2025-01-30 19:34:48 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-30 19:35:16 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 19:35:16 - [DATABASE_MANAGER] - ERROR - [pokolog.py:70] - Error inserting outline to db: value too long for type character varying(50)
+
+2025-01-30 19:35:16 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 1 written to file
+2025-01-30 19:35:16 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-30 19:40:06 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing ChatGPTOutliner
+2025-01-30 19:40:06 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-30 19:40:06 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-30 19:40:06 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-30 19:40:06 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 19:40:07 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 19:40:07 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-30 19:40:07 - [AI_OUTLINER] - INFO - [pokolog.py:70] - ChatGPTOutliner ready
+2025-01-30 19:40:07 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-30 19:40:24 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 19:40:24 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Outline for Panos_Karydis_Update inserted successfully to db.
+2025-01-30 19:40:24 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 1 written to file
+2025-01-30 19:40:24 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-30 19:45:12 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing ChatGPTOutliner
+2025-01-30 19:45:12 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-30 19:45:12 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-30 19:45:12 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-30 19:45:12 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 19:45:12 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 19:45:12 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-30 19:45:12 - [AI_OUTLINER] - INFO - [pokolog.py:70] - ChatGPTOutliner ready
+2025-01-30 19:45:12 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-30 19:45:31 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 19:45:31 - [DATABASE_MANAGER] - ERROR - [pokolog.py:70] - Error inserting outline to db: INSERT has more expressions than target columns
+LINE 172: ...ser'', ''tokenslimit'': 27000}', 'Batch Outline', CURRENT_TI...
+                                                               ^
+
+2025-01-30 19:45:31 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 1 written to file
+2025-01-30 19:45:31 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6
+2025-01-30 19:51:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing ChatGPTOutliner
+2025-01-30 19:51:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Initializing BatchOutliner
+2025-01-30 19:51:13 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Used utf-8 encoding
+2025-01-30 19:51:13 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - File: summary_total.txt | Tokens: 127778 | Chars: 738107 | Lines: 4375 | Encoding: utf-8
+2025-01-30 19:51:13 - [TOKEN_COUNTER] - INFO - [pokolog.py:70] - Successfully read with utf-8
+2025-01-30 19:51:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Split text into 6 batches
+2025-01-30 19:51:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - BatchOutliner initialized successfully
+2025-01-30 19:51:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - ChatGPTOutliner ready
+2025-01-30 19:51:13 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 1/6
+2025-01-30 19:51:32 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-01-30 19:51:32 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Outline for Panos_Karydis_Update inserted successfully to db.
+2025-01-30 19:51:32 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Batch Outline 1 written to file
+2025-01-30 19:51:32 - [AI_OUTLINER] - INFO - [pokolog.py:70] - Processing batch 2/6

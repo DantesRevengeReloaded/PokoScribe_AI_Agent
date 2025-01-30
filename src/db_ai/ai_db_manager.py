@@ -296,3 +296,66 @@ class BiblioCreator(AIDbManager):
         except Exception as e:
             logger.error(ScriptIdentifier.DATABASE, f"Error getting biblio: {e}")
             return pd.DataFrame()
+        
+
+class OutlineDb (AIDbManager):
+    def __init__(self):
+        super().__init__()
+        cursor = self.conn.cursor()
+        cursor.execute("""
+                       CREATE TABLE IF NOT EXISTS ai_schema.outlines (
+                       id SERIAL PRIMARY KEY, 
+                       outline TEXT, 
+                       project_name VARCHAR(255),
+                       model VARCHAR(255), 
+                       model_params TEXT, batch TEXT, 
+                       insert_date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP 
+                       )
+        """)
+        self.conn.commit()
+        cursor.close()
+    
+    def insert_outline(self, outline, project_name, model, model_params, batch):
+        try:
+            with self.conn.cursor() as cursor:
+                cursor.execute("""
+                    INSERT INTO ai_schema.outlines (outline, project_name, model, model_params, batch)
+                    VALUES (%s, %s, %s, %s, %s)
+                """, (outline, project_name, model, model_params, batch))
+                self.conn.commit()
+                logger.info(ScriptIdentifier.DATABASE, f"Outline for {project_name} inserted successfully to db.")
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error inserting outline to db: {e}")
+            self.conn.rollback()
+
+class ChapterDb(AIDbManager):
+    def __init__(self):
+        super().__init__()
+        cursor = self.conn.cursor()
+        cursor.execute("""
+                       CREATE TABLE IF NOT EXISTS ai_schema.chapters (
+                       id SERIAL PRIMARY KEY, 
+                       chapter TEXT, 
+                       project_name VARCHAR(255),
+                       model VARCHAR(255), 
+                       model_params TEXT, batch TEXT, 
+                       insert_date TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP 
+                       )
+        """)
+        self.conn.commit()
+        cursor.close()
+    
+    def insert_chapter(self, chapter, project_name, model, model_params, batch):
+        try:
+            with self.conn.cursor() as cursor:
+                cursor.execute("""
+                    INSERT INTO ai_schema.chapters (chapter, project_name, model, model_params, batch)
+                    VALUES (%s, %s, %s, %s, %s)
+                """, (chapter, project_name, model, model_params, batch))
+                self.conn.commit()
+                logger.info(ScriptIdentifier.DATABASE, f"Chapter for {project_name} inserted successfully to db.")
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error inserting chapter to db: {e}")
+            self.conn.rollback()
+
+    

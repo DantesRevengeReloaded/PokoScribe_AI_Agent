@@ -2301,3 +2301,15 @@ LINE 1: """select * from ai_schema.papers_metadata where id in (1,2,...
 2025-01-29 21:38:07 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 5 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
 2025-01-29 21:38:08 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
 2025-01-29 21:38:08 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 6 failed: Error code: 400 - {'error': {'message': "Unsupported value: 'messages[0].role' does not support 'system' with this model.", 'type': 'invalid_request_error', 'param': 'messages[0].role', 'code': 'unsupported_value'}}
+2025-01-30 19:25:51 - [DATABASE_MANAGER] - ERROR - [pokolog.py:70] - Error inserting outline to db: can't adapt type 'dict'
+2025-01-30 19:28:58 - [DATABASE_MANAGER] - ERROR - [pokolog.py:70] - Error inserting outline to db: can't adapt type 'dict'
+2025-01-30 19:32:58 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 19:32:58 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 1 failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 19:34:00 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - API call failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 19:34:00 - [AI_OUTLINER] - ERROR - [pokolog.py:70] - Batch 2 failed: Expecting value: line 1 column 1 (char 0)
+2025-01-30 19:35:16 - [DATABASE_MANAGER] - ERROR - [pokolog.py:70] - Error inserting outline to db: value too long for type character varying(50)
+
+2025-01-30 19:45:31 - [DATABASE_MANAGER] - ERROR - [pokolog.py:70] - Error inserting outline to db: INSERT has more expressions than target columns
+LINE 172: ...ser'', ''tokenslimit'': 27000}', 'Batch Outline', CURRENT_TI...
+                                                               ^
+

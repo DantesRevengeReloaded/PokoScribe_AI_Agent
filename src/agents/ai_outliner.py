@@ -43,6 +43,18 @@ class BatchOutliner:
             logger.error(ScriptIdentifier.OUTLINER, f"Initialization error: {e}")
             raise
 
+    def model_info(self):
+        if isinstance(self, DeepSeekOutliner):
+            return {"model": "DeepSeek",
+                    "parameters": str(self.aiparameters.__dict__)}
+        elif isinstance(self, ChatGPTOutliner):
+            return {"model": "ChatGPT",
+                    "parameters": str(self.aiparameters.__dict__)}
+        else:
+            return {"model": "Unknown",
+                    "parameters": "Unknown"}
+
+
     def _load_prompt_files(self, sys_params):
         try:
             """Load required prompt files into memory"""
@@ -124,6 +136,7 @@ class BatchOutliner:
     def outline_it(self):
         """Main processing pipeline"""
         self.cached_responses = []
+        modelparams = self.model_info()
         for idx, batch in enumerate(self.batches, 1):
             try:
                 logger.info(ScriptIdentifier.OUTLINER, 
@@ -132,6 +145,12 @@ class BatchOutliner:
                 response = self._process_api_call(prompt)
                 content = response.choices[0].message.content
                 self.cached_responses.append(content)
+                OutlineDb().insert_outline(content, 
+                                           SystemPars().project_name, 
+                                           modelparams["model"], 
+                                           modelparams["parameters"],
+                                           f"Batch Outline {idx}")
+                
                 self._write_output(content, f"Batch Outline {idx}", 10)
             except Exception as e:
                 logger.error(ScriptIdentifier.OUTLINER, f"Batch {idx} failed: {e}")
@@ -141,6 +160,11 @@ class BatchOutliner:
             try:
                 synthesis_prompt = f"{self.synthesis_prompt_text}\n{''.join(self.cached_responses)}"
                 response = self._process_api_call(synthesis_prompt)
+                OutlineDb().insert_outline(response.choices[0].message.content,
+                                           SystemPars().project_name, 
+                                           modelparams["model"], 
+                                           modelparams["parameters"], 
+                                           "Final Outline")
                 self._write_output(response.choices[0].message.content, "Final Outline")
                 logger.info(ScriptIdentifier.OUTLINER, "Final synthesis completed")
             except Exception as e:
@@ -176,5 +200,8 @@ class ChatGPTOutliner(BatchOutliner):
         except Exception as e:
             logger.error(ScriptIdentifier.OUTLINER, f"Initialization failed: {e}")
             raise
+
+tk = ChatGPTOutliner()
+tk.outline_it()
 
 
