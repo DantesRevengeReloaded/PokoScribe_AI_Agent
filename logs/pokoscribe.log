@@ -11189,3 +11189,36 @@ LINE 15:                         )
 2025-02-03 19:24:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/4984/55af01fde71296c3a3fd2bf929c65bf1/dess2001.pdf#navpanes=0&view=FitH
 2025-02-03 19:24:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2786_Voluntary Turnover, Social Capital, and Organizational Performance.pdf
 2025-02-03 19:24:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Voluntary Turnover, Social Capital, and Organizational Performance
+2025-02-03 22:07:31 - [POKOSCRIBE] - INFO - [pokolog.py:70] - Starting get_metadata...
+2025-02-03 22:07:31 - [POKOSCRIBE] - ERROR - [pokolog.py:70] - Failed to get metadata in automated procedure: 'AHSS' object has no attribute 'search_resources'
+2025-02-03 22:07:31 - [POKOSCRIBE] - INFO - [pokolog.py:70] - get_metadata completed in 0.00 seconds
+2025-02-03 22:11:24 - [POKOSCRIBE] - INFO - [pokolog.py:70] - Starting get_metadata...
+2025-02-03 22:11:24 - [POKOSCRIBE] - ERROR - [pokolog.py:70] - Failed to get metadata in automated procedure: AHSSMain.run_search() missing 1 required positional argument: 'self'
+2025-02-03 22:11:24 - [POKOSCRIBE] - INFO - [pokolog.py:70] - get_metadata completed in 0.00 seconds
+2025-02-03 22:14:55 - [POKOSCRIBE] - INFO - [pokolog.py:70] - Starting get_metadata...
+2025-02-03 22:14:55 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Searching for academic resources using CrossRef API
+2025-02-03 22:16:39 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 22:16:39 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Created or Confirmed existance: papers_metadata table
+2025-02-03 22:16:39 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Saved 495 records from crossref and project TestProject999
+2025-02-03 22:16:39 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Saved 495 results to database table metadata for CrossRef
+2025-02-03 22:16:39 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Searching for academic resources using OpenALEX API
+2025-02-03 22:25:10 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 22:25:10 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Created or Confirmed existance: papers_metadata table
+2025-02-03 22:25:10 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Saved 500 records from openalex and project TestProject999
+2025-02-03 22:25:10 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Saved 500 results to database table metadata for OpenALEX
+2025-02-03 22:25:10 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Initializing Core API Handler
+2025-02-03 22:25:10 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Core API Handler initialized
+2025-02-03 22:25:14 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 49 relevant papers for query: worker satisfaction business performance
+2025-02-03 22:25:18 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 48 relevant papers for query: employee psychology productivity
+2025-02-03 22:25:22 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 48 relevant papers for query: job satisfaction organizational performance
+2025-02-03 22:25:25 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 48 relevant papers for query: workplace psychology business metrics
+2025-02-03 22:25:29 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 50 relevant papers for query: employee wellbeing productivity
+2025-02-03 22:25:31 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 47 relevant papers for query: employee satisfaction
+2025-02-03 22:25:34 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 47 relevant papers for query: job satisfaction
+2025-02-03 22:25:35 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Total papers found: 337
+2025-02-03 22:25:35 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 22:25:35 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Created or Confirmed existance: papers_metadata table
+2025-02-03 22:25:35 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Saved 154 records from coreapi and project TestProject999
+2025-02-03 22:25:35 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Saved 154 results to database table metadata for Core API
+2025-02-03 22:25:35 - [POKOSCRIBE] - INFO - [pokolog.py:70] - Metadata retrieved successfully from the platforms.
+2025-02-03 22:25:35 - [POKOSCRIBE] - INFO - [pokolog.py:70] - get_metadata completed in 640.20 seconds

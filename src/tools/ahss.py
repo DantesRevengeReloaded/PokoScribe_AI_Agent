@@ -397,6 +397,20 @@ class CoreAPIHandler(AHSS):
             logger.error(ScriptIdentifier.AHSS, f"Error saving Core API results: {e}")
             return []
 
+# Main class for running the AHSS search and all classes together
+class AHSSMain:
+    def __int__(self):
+        pass
 
+    def run_search(self):
+    # Run CrossRef search
+        handler = CrossRefHandler()
+        handler.search_resources()
 
+        # Run OpenAlex search
+        alex_handler = OpenAlexHandler()
+        alex_handler.search_resources()
 
+        # Run Core API search
+        coreapi = CoreAPIHandler()
+        coreapi.search_specific_papers()

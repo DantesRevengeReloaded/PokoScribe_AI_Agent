@@ -2439,3 +2439,5 @@ LINE 15:                         )
 2025-02-03 19:21:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
 2025-02-03 19:21:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
 2025-02-03 19:23:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 22:07:31 - [POKOSCRIBE] - ERROR - [pokolog.py:70] - Failed to get metadata in automated procedure: 'AHSS' object has no attribute 'search_resources'
+2025-02-03 22:11:24 - [POKOSCRIBE] - ERROR - [pokolog.py:70] - Failed to get metadata in automated procedure: AHSSMain.run_search() missing 1 required positional argument: 'self'

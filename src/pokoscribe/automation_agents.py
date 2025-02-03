@@ -9,7 +9,7 @@ from src.config import *
 from src.agents.chapter_maker import *
 from src.agents.ai_summarizer import *
 from src.agents.ai_outliner import *
-from src.tools.ahss import CrossRefHandler, OpenAlexHandler, CoreAPIHandler
+from src.tools.ahss import *
 from src.tools.sci_hub_dler import *
 from src.db_ai.ai_db_manager import *
 
@@ -89,19 +89,10 @@ class GetSources:
         Get metadata from the database.
         """
         try:
-            # Run CrossRef search
-            handler = CrossRefHandler()
-            handler.search_resources()
-
-            # Run OpenAlex search
-            alex_handler = OpenAlexHandler()
-            alex_handler.search_resources()
-
-            # Run Core API search
-            coreapi = CoreAPIHandler()
-            coreapi.search_specific_papers()
-            
+            run_api_search = AHSSMain() # AHSS is a class that handles all API searches together
+            run_api_search.run_search()
             logger.info(ScriptIdentifier.MAIN, "Metadata retrieved successfully from the platforms.")
+
         except Exception as e:
             logger.error(ScriptIdentifier.MAIN, f"Failed to get metadata in automated procedure: {e}")
 
@@ -269,3 +260,5 @@ class AIBotChapterMaker:
         chaptermaker.make_chapter()
         return chaptermaker
 
+pp = GetSources()
+pp.get_metadata()
