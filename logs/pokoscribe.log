@@ -10350,3 +10350,842 @@ LINE 15:                         )
 2025-01-30 23:33:41 - [AI_AGENTS] - INFO - [pokolog.py:70] - deepseeksummerize with DEEPSEEKSUMMERIZE completed in 37.83 seconds
 2025-01-30 23:33:41 - [AI_AGENTS] - INFO - [pokolog.py:70] - Total files processed: 1
 2025-01-30 23:33:41 - [AI_AGENTS] - INFO - [pokolog.py:70] - Completed files: 1
+2025-02-03 19:01:17 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Searching for academic resources using CrossRef API
+2025-02-03 19:03:09 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 19:03:09 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Created or Confirmed existance: papers_metadata table
+2025-02-03 19:03:09 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Saved 490 records from crossref and project TestProject999
+2025-02-03 19:03:09 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Saved 490 results to database table metadata for CrossRef
+2025-02-03 19:03:09 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Searching for academic resources using OpenALEX API
+2025-02-03 19:11:50 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 19:11:50 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Created or Confirmed existance: papers_metadata table
+2025-02-03 19:11:50 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Saved 500 records from openalex and project TestProject999
+2025-02-03 19:11:50 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Saved 500 results to database table metadata for OpenALEX
+2025-02-03 19:11:50 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Initializing Core API Handler
+2025-02-03 19:11:50 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Core API Handler initialized
+2025-02-03 19:11:55 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 49 relevant papers for query: worker satisfaction business performance
+2025-02-03 19:12:01 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 48 relevant papers for query: employee psychology productivity
+2025-02-03 19:12:05 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 48 relevant papers for query: job satisfaction organizational performance
+2025-02-03 19:12:09 - [AHSS_SEARCH_TOOL] - ERROR - [pokolog.py:70] - Error searching Core API for query 'workplace psychology business metrics': 500 Server Error: Internal Server Error for url: https://api.core.ac.uk/v3/search/works
+2025-02-03 19:12:11 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 50 relevant papers for query: employee wellbeing productivity
+2025-02-03 19:12:14 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 47 relevant papers for query: employee satisfaction
+2025-02-03 19:12:17 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Found 47 relevant papers for query: job satisfaction
+2025-02-03 19:12:18 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Total papers found: 289
+2025-02-03 19:12:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 19:12:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Created or Confirmed existance: papers_metadata table
+2025-02-03 19:12:18 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Saved 127 records from coreapi and project TestProject999
+2025-02-03 19:12:18 - [AHSS_SEARCH_TOOL] - INFO - [pokolog.py:70] - Saved 127 results to database table metadata for Core API
+2025-02-03 19:12:18 - [POKOSCRIBE] - INFO - [pokolog.py:70] - Metadata retrieved successfully from the platforms.
+2025-02-03 19:12:19 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 19:12:19 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Retrieved 1117 records from project TestProject999
+2025-02-03 19:13:57 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 19:13:57 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Inserting filtered data for project: TestProject999
+2025-02-03 19:13:58 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Inserted 728 records into filtered sources table for project TestProject999
+2025-02-03 19:13:58 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 19:13:58 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Retrieved 728 records from project TestProject999
+2025-02-03 19:13:58 - [DATABASE_MANAGER] - INFO - [pokolog.py:70] - Connected to the database.
+2025-02-03 19:13:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1108/978-1-83909-293-020211001
+2025-02-03 19:13:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1504/ijebr.2021.116348
+2025-02-03 19:13:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1108/978-1-83909-293-020211005
+2025-02-03 19:13:58 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1108/978-1-83909-293-020211009
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.15373/22778179/apr2014/227
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.21236/ada058138
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.2139/ssrn.5066264
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1037/e518332013-030
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9780203076965-17
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9780203076965-18
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1037/e518572013-226
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:13:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1007/978-1-349-03952-4_7
+2025-02-03 19:14:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - Network error: 451 Client Error:  for url: http://library.lol/main/158D6C7C675EDDDE75DA77100DA001C6
+2025-02-03 19:14:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.15760/etd.6668
+2025-02-03 19:14:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1037/e683152011-442
+2025-02-03 19:14:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.5897/ajar09.362
+2025-02-03 19:14:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1016/0003-6870(82)90058-8
+2025-02-03 19:14:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/195/b12c6a90a0f10909dcc7e94843bc80ad/job-satisfaction-among-a-select-group-of-coal-miners-1982.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2237_Job satisfaction among a select group of coal miners.pdf
+2025-02-03 19:14:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Job satisfaction among a select group of coal miners
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4018/978-1-5225-0764-2.les1
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1037/e518612013-497
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1037/e518572013-225
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.17760/d20327472
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.2139/ssrn.3323850
+2025-02-03 19:14:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-02-08/90/10.2139@ssrn.3323850.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2242_Study of Relationship between Job Stress and Job Satisfaction in Print Media.pdf
+2025-02-03 19:14:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Study of Relationship between Job Stress and Job Satisfaction in Print Media
+2025-02-03 19:14:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.32996/jbms.2023.5.1.17
+2025-02-03 19:14:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1177/14705958211007874
+2025-02-03 19:14:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2021-05-17/28/tauetsile2021.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2154_Employee engagement in non-Western contexts The link between social resources iUbuntui and employee engagement.pdf
+2025-02-03 19:14:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Employee engagement in non-Western contexts: The link between social resources <i>Ubuntu</i> and employee engagement
+2025-02-03 19:14:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.5861/ijrsm.2024.1078
+2025-02-03 19:14:11 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.21203/rs.3.rs-2158214/v1
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9780203076965-28
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.26643/gis.v14i4.5341
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.21275/sr231008004659
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.3390/su12093514
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2020-04-30/20/10.3390@su12093514.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2146_Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link.pdf
+2025-02-03 19:14:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Analysis of the Importance of Job Insecurity, Psychological Safety and Job Satisfaction in the CSR-Performance Link
+2025-02-03 19:14:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1108/13632541311300151
+2025-02-03 19:14:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/5466/bd63958e340d716d66a5ca5650b533e6/malik2013.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.21203/rs.3.rs-891596/v2
+2025-02-03 19:14:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1111/apps.12458
+2025-02-03 19:14:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1177/0972150917713369
+2025-02-03 19:14:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/f5eb779d5b80cacc1ee88b324755c18b/sivapragasam2017.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2184_HRM and Employee Engagement Link Mediating Role of Employee Well-being.pdf
+2025-02-03 19:14:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for HRM and Employee Engagement Link: Mediating Role of Employee Well-being
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.17549/gbfr.2023.28.3.68
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1108/ijssp-06-2021-0152
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.47191/jefms/v5-i7-20
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.21275/sr23807193727
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.31235/osf.io/q7nu2
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.31235/osf.io/mfj8c
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.54517/esp.v9i5.1793
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.31235/osf.io/xc3wp
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.21275/sr231127094700
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9781003171133-7
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.36713/epra15559
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1108/er-11-2017-0264
+2025-02-03 19:14:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2020-07-21/28/10.1108@er-11-2017-0264.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2162_Bullying effects on performance and engagement among academics.pdf
+2025-02-03 19:14:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Bullying effects on performance and engagement among academics
+2025-02-03 19:14:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.47750/qas/25.199.07
+2025-02-03 19:14:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1016/j.iimb.2024.07.001
+2025-02-03 19:14:29 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1177/0021943607309351
+2025-02-03 19:14:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2278/12b032a16e9a38995c02e9b2e5bc0c75/madlock2008.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2171_The Link Between Leadership Style, Communicator Competence, and Employee Satisfaction.pdf
+2025-02-03 19:14:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Link Between Leadership Style, Communicator Competence, and Employee Satisfaction
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.21275/sr23807193727
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.37200/ijpr/v24i4/pr2020394
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.37200/ijpr/v23i4/pr190406
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9781351035064-5
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9781351035064-4
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.7176/ejbm/11-33-04
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9781351035064-3
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9781351035064-6
+2025-02-03 19:14:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9781351035064-1
+2025-02-03 19:14:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9781351035064-2
+2025-02-03 19:14:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9781315145587-4
+2025-02-03 19:14:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1002/tie.21751
+2025-02-03 19:14:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/845442a1887f7bd64dbbf52d3001b824/pereira2015.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2195_Colliding Employer-Employee Perspectives of Employee Turnover Evidence from a Born-Global Industry.pdf
+2025-02-03 19:14:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Colliding Employer-Employee Perspectives of Employee Turnover: Evidence from a Born-Global Industry
+2025-02-03 19:14:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4337/9781784711153.00007
+2025-02-03 19:14:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4337/9781784711153.00010
+2025-02-03 19:14:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1504/mejm.2016.077108
+2025-02-03 19:14:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/eaade0821f2647158d9a2e5a5ec6d918/badawy2016.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2198_Succession planning, job engagement and job satisfaction the missing link.pdf
+2025-02-03 19:14:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Succession planning, job engagement and job satisfaction: the missing link
+2025-02-03 19:14:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4337/9781784711153.00006
+2025-02-03 19:14:42 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4337/9781784711153.00005
+2025-02-03 19:14:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/6353/7a9fd16b6f4e1e29f03ef36b01f2299c/introduction-the-state-of-employee-turnover.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2200_Introduction the state of employee turnover.pdf
+2025-02-03 19:14:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Introduction: the state of employee turnover
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4337/9781784711153.00019
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4337/9781784711153.00013
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.18374/jims-16-2.8
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4337/9781784711153.00020
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1037/e524332011-046
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4038/suslj.v13i1.7668
+2025-02-03 19:14:47 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.5772/intechopen.89117
+2025-02-03 19:14:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2020-10-02/2e/huang2019.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2206_Job Training Satisfaction, Job Satisfaction, and Job Performance.pdf
+2025-02-03 19:14:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Job Training Satisfaction, Job Satisfaction, and Job Performance
+2025-02-03 19:14:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.2139/ssrn.2054066
+2025-02-03 19:14:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/7063/8fdcee925cf405cd9364b82a113d278f/the-link-between-job-satisfaction-and-firm-value-with-implicatio.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2207_The Link Between Job Satisfaction and Firm Value, with Implications for Corporate Social Responsibility.pdf
+2025-02-03 19:14:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Link Between Job Satisfaction and Firm Value, with Implications for Corporate Social Responsibility
+2025-02-03 19:14:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1080/00224545.1990.9922946
+2025-02-03 19:14:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/3373/7eb47f1a8ae109e91076b924302654f1/beaty1990.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2208_Re-Examining the Link between Job Characteristics and Job Satisfaction.pdf
+2025-02-03 19:14:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Re-Examining the Link between Job Characteristics and Job Satisfaction
+2025-02-03 19:14:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9780203076965-16
+2025-02-03 19:14:57 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9780203076965-12
+2025-02-03 19:14:57 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:14:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1007/978-3-319-16217-1_5
+2025-02-03 19:14:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/5079/c409630d0cd7af613ff36c9d0c6aefe1/georgiades2015.pdf#navpanes=0&view=FitH
+2025-02-03 19:14:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2211_Employee Engagement Implementation Leading Towards Employee Creativity.pdf
+2025-02-03 19:14:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Employee Engagement Implementation Leading Towards Employee Creativity
+2025-02-03 19:15:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9780203076965-15
+2025-02-03 19:15:01 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9780203076965-19
+2025-02-03 19:15:01 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.2139/ssrn.3213659
+2025-02-03 19:15:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-05-04/24/10.2139@ssrn.3213659.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2214_Quantifying the Link between Employee Engagement and Customer Satisfaction in the Car Rental Industry.pdf
+2025-02-03 19:15:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Quantifying the Link between Employee Engagement and Customer Satisfaction in the Car Rental Industry
+2025-02-03 19:15:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.2139/ssrn.4185594
+2025-02-03 19:15:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9780203076965-23
+2025-02-03 19:15:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.2139/ssrn.3213659
+2025-02-03 19:15:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-05-04/24/10.2139@ssrn.3213659.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2217_Quantifying the Link between Employee Engagement and Customer Satisfaction in the Car Rental Industry.pdf
+2025-02-03 19:15:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Quantifying the Link between Employee Engagement and Customer Satisfaction in the Car Rental Industry
+2025-02-03 19:15:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/h0045899
+2025-02-03 19:15:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2371/13831fbfa1a33403659b321b8174c561/brayfield1955.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2836_Employee attitudes and employee performance..pdf
+2025-02-03 19:15:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Employee attitudes and employee performance.
+2025-02-03 19:15:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.5958/2321-5763.2019.00009.x
+2025-02-03 19:15:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1037/e437682004-001
+2025-02-03 19:15:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.2139/ssrn.3844430
+2025-02-03 19:15:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4324/9780203076965-20
+2025-02-03 19:15:12 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.15373/2249555x/dec2013/26
+2025-02-03 19:15:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.20935/al1833
+2025-02-03 19:15:13 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1177/004908570403400209
+2025-02-03 19:15:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/5d899200f948594b551488b8375a531c/jabeen2004.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:14 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2224_Select Bibliography on Job Satisfaction  1990-2000.pdf
+2025-02-03 19:15:14 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Select Bibliography on Job Satisfaction : 1990-2000
+2025-02-03 19:15:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.7835/ccwp-2015-03-0002
+2025-02-03 19:15:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.20935/al1833
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.6007/ijarbss/v14-i5/21660
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1037/e518572013-225
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1257/rct.826
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.15760/etd.6668
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.1257/rct.826-1.0
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.17760/d20327472
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.29036/jots.v11i20.123
+2025-02-03 19:15:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.5465/amproc.2024.17bp
+2025-02-03 19:15:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/10.4135/9781452231242.n6
+2025-02-03 19:15:19 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.87.2.268
+2025-02-03 19:15:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/2212/2a5bba1c3f5208a727c0857745ed7632/harter2002.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2634_Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes A meta-analysis..pdf
+2025-02-03 19:15:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes: A meta-analysis.
+2025-02-03 19:15:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037//0021-9010.87.2.268
+2025-02-03 19:15:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037//0021-9010.87.2.268
+2025-02-03 19:15:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037//0021-9010.87.2.268
+2025-02-03 19:15:22 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:15:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.87.2.268
+2025-02-03 19:15:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2212/2a5bba1c3f5208a727c0857745ed7632/harter2002.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2638_Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes A meta-analysis..pdf
+2025-02-03 19:15:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes: A meta-analysis.
+2025-02-03 19:15:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.87.2.268
+2025-02-03 19:15:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/2212/2a5bba1c3f5208a727c0857745ed7632/harter2002.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2639_Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes A meta-analysis..pdf
+2025-02-03 19:15:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Business-unit-level relationship between employee satisfaction, employee engagement, and business outcomes: A meta-analysis.
+2025-02-03 19:15:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.iedeen.2019.05.001
+2025-02-03 19:15:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-10-21/6d/eliyana2019.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2640_Job satisfaction and organizational commitment effect in the transformational leadership towards employee performance.pdf
+2025-02-03 19:15:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Job satisfaction and organizational commitment effect in the transformational leadership towards employee performance
+2025-02-03 19:15:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1080/23311975.2018.1470891
+2025-02-03 19:15:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/6948/8991649fb3178077ed348691d8b824c1/sendawula2018.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2641_Training, employee engagement and employee performance Evidence from Uganda’s health sector.pdf
+2025-02-03 19:15:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Training, employee engagement and employee performance: Evidence from Uganda’s health sector
+2025-02-03 19:15:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijlma-10-2016-0085
+2025-02-03 19:15:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/6900/c26821d33cd25437b45fb946abe10744/pawirosumarto2017.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2642_The effect of work environment, leadership style, and organizational culture towards job satisfaction and its implication towards employee performance in Parador Hotels and Resorts, Indonesia.pdf
+2025-02-03 19:15:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The effect of work environment, leadership style, and organizational culture towards job satisfaction and its implication towards employee performance in Parador Hotels and Resorts, Indonesia
+2025-02-03 19:15:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/sajbs-04-2016-0036
+2025-02-03 19:15:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/6da89c31fef6f7f4a77361349393fafc/nazir2017.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2643_Enhancing organizational commitment and employee performance through employee engagement.pdf
+2025-02-03 19:15:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Enhancing organizational commitment and employee performance through employee engagement
+2025-02-03 19:15:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.62.2.237
+2025-02-03 19:15:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/5506bce14b3f245e7c98df760d80da8c/mobley1977.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2644_Intermediate linkages in the relationship between job satisfaction and employee turnover..pdf
+2025-02-03 19:15:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Intermediate linkages in the relationship between job satisfaction and employee turnover.
+2025-02-03 19:15:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijppm-01-2013-0008
+2025-02-03 19:15:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-01-18//98/10.1108@IJPPM-01-2013-0008.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2645_Determinants of employee engagement and their impact on employee performance.pdf
+2025-02-03 19:15:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Determinants of employee engagement and their impact on employee performance
+2025-02-03 19:15:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1097/00006199-199301000-00007
+2025-02-03 19:15:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/5405/07c5fae0bb2ca4d8b11df64cb3282dd8/blegen1993.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2837_Nurses Job Satisfaction.pdf
+2025-02-03 19:15:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Nurses?? Job Satisfaction
+2025-02-03 19:15:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/s1053-4822(99)00031-5
+2025-02-03 19:15:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/1409/7b6dffd77a9bc50fc8a71429b95108ef/currivan1999.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2646_The Causal Order of Job Satisfaction and Organizational Commitment in Models of Employee Turnover.pdf
+2025-02-03 19:15:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Causal Order of Job Satisfaction and Organizational Commitment in Models of Employee Turnover
+2025-02-03 19:15:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/hrdq.1078
+2025-02-03 19:15:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/137/93799eaf981e013dc528b25ffd2cef15/ellinger2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:15:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2647_Supervisory coaching behavior, employee satisfaction, and warehouse employee performance A dyadic perspective in the distribution industry.pdf
+2025-02-03 19:15:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Supervisory coaching behavior, employee satisfaction, and warehouse employee performance: A dyadic perspective in the distribution industry
+2025-02-03 19:16:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1177/001872678904200705
+2025-02-03 19:16:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/3154/01e27b8dfe4f93e4ad9b03c36648840a/shore1989.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2648_Job Satisfaction and Organizational Commitment in Relation to Work Performance and Turnover Intentions.pdf
+2025-02-03 19:16:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Job Satisfaction and Organizational Commitment in Relation to Work Performance and Turnover Intentions
+2025-02-03 19:16:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.sbspro.2014.04.174
+2025-02-03 19:16:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/1a80f5808d1ce6bc8b32b70102b2e847/bedarkar2014.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2649_A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf
+2025-02-03 19:16:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for A Study on the Drivers of Employee Engagement Impacting Employee Performance
+2025-02-03 19:16:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.62.2.237
+2025-02-03 19:16:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/1148/5506bce14b3f245e7c98df760d80da8c/mobley1977.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2650_Intermediate linkages in the relationship between job satisfaction and employee turnover..pdf
+2025-02-03 19:16:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Intermediate linkages in the relationship between job satisfaction and employee turnover.
+2025-02-03 19:16:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/hrdq.1078
+2025-02-03 19:16:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/137/93799eaf981e013dc528b25ffd2cef15/ellinger2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2651_Supervisory coaching behavior, employee satisfaction, and warehouse employee performance A dyadic perspective in the distribution industry.pdf
+2025-02-03 19:16:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Supervisory coaching behavior, employee satisfaction, and warehouse employee performance: A dyadic perspective in the distribution industry
+2025-02-03 19:16:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.62.2.237
+2025-02-03 19:16:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/5506bce14b3f245e7c98df760d80da8c/mobley1977.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2652_Intermediate linkages in the relationship between job satisfaction and employee turnover..pdf
+2025-02-03 19:16:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Intermediate linkages in the relationship between job satisfaction and employee turnover.
+2025-02-03 19:16:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.sbspro.2014.04.174
+2025-02-03 19:16:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/1a80f5808d1ce6bc8b32b70102b2e847/bedarkar2014.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2653_A Study on the Drivers of Employee Engagement Impacting Employee Performance.pdf
+2025-02-03 19:16:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for A Study on the Drivers of Employee Engagement Impacting Employee Performance
+2025-02-03 19:16:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1093/jopart/mum028
+2025-02-03 19:16:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/0bb3f6d4f35a7802986db156c8bc3657/meier2007.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2654_Employee Turnover and Organizational Performance Testing a Hypothesis from Classical Public Administration.pdf
+2025-02-03 19:16:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Employee Turnover and Organizational Performance: Testing a Hypothesis from Classical Public Administration
+2025-02-03 19:16:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/02683940310473118
+2025-02-03 19:16:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/2255/19ba6aa95640b7c42c4d5267f5db82a3/crossman2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2655_Job satisfaction and employee performance of Lebanese banking staff.pdf
+2025-02-03 19:16:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Job satisfaction and employee performance of Lebanese banking staff
+2025-02-03 19:16:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/14630010410812306
+2025-02-03 19:16:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/4410/8181bd1a288e40f1955f69eed1c0b4d4/vandervoordt2004.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2656_Productivity and employee satisfaction in flexible workplaces.pdf
+2025-02-03 19:16:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Productivity and employee satisfaction in flexible workplaces
+2025-02-03 19:16:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/14725960310807944
+2025-02-03 19:16:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/5ccbdcd80c389ac5ac67fa4798422247/roelofsen2002.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2657_The impact of office environments on employee performance The design of the workplace as a strategy for productivity enhancement.pdf
+2025-02-03 19:16:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The impact of office environments on employee performance: The design of the workplace as a strategy for productivity enhancement
+2025-02-03 19:16:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.88.6.1057
+2025-02-03 19:16:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/7c4b8ab5e7310d4ef76614ba0855d2ea/bond2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2658_The Role of Acceptance and Job Control in Mental Health, Job Satisfaction, and Work Performance..pdf
+2025-02-03 19:16:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Role of Acceptance and Job Control in Mental Health, Job Satisfaction, and Work Performance.
+2025-02-03 19:16:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijppm-01-2013-0008
+2025-02-03 19:16:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-01-18//98/10.1108@IJPPM-01-2013-0008.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2659_Determinants of employee engagement and their impact on employee performance.pdf
+2025-02-03 19:16:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Determinants of employee engagement and their impact on employee performance
+2025-02-03 19:16:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.tourman.2005.02.009
+2025-02-03 19:16:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/4b0fe160075bff9c1eb7c64d0fd7dc23/karatepe2006.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2660_The effects of selected individual characteristics on frontline employee performance and job satisfaction.pdf
+2025-02-03 19:16:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The effects of selected individual characteristics on frontline employee performance and job satisfaction
+2025-02-03 19:16:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/0021-9010.72.3.374
+2025-02-03 19:16:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/4935/60deb72c5fa244ad09338f4488aec3cc/carsten1987.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2661_Unemployment, job satisfaction, and employee turnover A meta-analytic test of the Muchinsky model..pdf
+2025-02-03 19:16:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Unemployment, job satisfaction, and employee turnover: A meta-analytic test of the Muchinsky model.
+2025-02-03 19:16:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/hrm.20339
+2025-02-03 19:16:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/137/2f7ff2d656123ecefa8ba948128fa364/rogelberg2010.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2662_Employee satisfaction with meetings A contemporary facet of job satisfaction.pdf
+2025-02-03 19:16:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Employee satisfaction with meetings: A contemporary facet of job satisfaction
+2025-02-03 19:16:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1007/978-3-030-94277-9_123
+2025-02-03 19:16:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:16:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:16:56 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:16:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.38124/ijisrt/ijisrt24mar825
+2025-02-03 19:16:57 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:16:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1073/pnas.2006991117
+2025-02-03 19:16:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2020-07-11/af/10.1073@pnas.2006991117.pdf#navpanes=0&view=FitH
+2025-02-03 19:16:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2666_The impact of COVID-19 on small business outcomes and expectations.pdf
+2025-02-03 19:16:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The impact of COVID-19 on small business outcomes and expectations
+2025-02-03 19:17:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.13106/jafeb.2020.vol7.no8.577
+2025-02-03 19:17:00 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:17:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/pa.2508
+2025-02-03 19:17:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2020-10-01/39/10.1002@pa.2508.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.5267/j.msl.2020.6.038
+2025-02-03 19:17:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2020-11-16/73/alkurdi2020.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2669_The impact of employee satisfaction on customer satisfaction Theoretical and empirical underpinning.pdf
+2025-02-03 19:17:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The impact of employee satisfaction on customer satisfaction: Theoretical and empirical underpinning
+2025-02-03 19:17:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.5539/ibr.v12n2p99
+2025-02-03 19:17:08 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:17:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/joepp-06-2018-0034
+2025-02-03 19:17:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-02-17/e9/10.1108@JOEPP-06-2018-0034.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2671_Antecedents and consequences of employee engagement revisited.pdf
+2025-02-03 19:17:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Antecedents and consequences of employee engagement revisited
+2025-02-03 19:17:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.ijhm.2018.06.014
+2025-02-03 19:17:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-11-24/c9/buil2018.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2672_Transformational leadership and employee performance The role of identification, engagement and proactive personality.pdf
+2025-02-03 19:17:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Transformational leadership and employee performance: The role of identification, engagement and proactive personality
+2025-02-03 19:17:14 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijppm-01-2018-0012
+2025-02-03 19:17:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-01-02/90/diamantidis2018.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2673_Factors affecting employee performance an empirical approach.pdf
+2025-02-03 19:17:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Factors affecting employee performance: an empirical approach
+2025-02-03 19:17:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/ejtd-08-2016-0066
+2025-02-03 19:17:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/6fec9c9e4c668d6b13f4a8f89f14f37d/ibrahim2017.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2674_The effect of soft skills and training methodology on employee performance.pdf
+2025-02-03 19:17:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The effect of soft skills and training methodology on employee performance
+2025-02-03 19:17:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/apl0000103
+2025-02-03 19:17:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/1a2c1ba633dcbf08a6c5db9350e15182/hom2017.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2675_One hundred years of employee turnover theory and research..pdf
+2025-02-03 19:17:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for One hundred years of employee turnover theory and research.
+2025-02-03 19:17:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.5590/ijamt.2017.16.1.04
+2025-02-03 19:17:26 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:17:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jik.2017.07.003
+2025-02-03 19:17:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-07-14/6b/abubakar2017.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2677_Knowledge management, decision-making style and organizational performance.pdf
+2025-02-03 19:17:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Knowledge management, decision-making style and organizational performance
+2025-02-03 19:17:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/peps.12226
+2025-02-03 19:17:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/2fa9eca11b7e6c7d99b17e817ebcc20a/rubenstein2017.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jbusres.2016.08.004
+2025-02-03 19:17:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/f74cc40edf46ae4e36968d6f36ac1d85/gunasekaran2016.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2679_Big data and predictive analytics for supply chain and organizational performance.pdf
+2025-02-03 19:17:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Big data and predictive analytics for supply chain and organizational performance
+2025-02-03 19:17:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:17:39 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:17:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1177/0950017016631447
+2025-02-03 19:17:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/f56d07fd77caf40cc60c9e6cbb2e16b3/wheatley2016.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2681_Employee satisfaction and use of flexible working arrangements.pdf
+2025-02-03 19:17:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Employee satisfaction and use of flexible working arrangements
+2025-02-03 19:17:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/ijppm-02-2016-0037
+2025-02-03 19:17:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/5276/74819f31524f4248b26ccecd3b036bf2/almehrzi2016.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2682_Competing through employee engagement a proposed framework.pdf
+2025-02-03 19:17:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Competing through employee engagement: a proposed framework
+2025-02-03 19:17:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/intr-11-2014-0299
+2025-02-03 19:17:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/4974/cb1c29f848438ad9a36e8e4bf3b72267/cao2016.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2683_Exploring the influence of social media on employee work performance.pdf
+2025-02-03 19:17:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Exploring the influence of social media on employee work performance
+2025-02-03 19:17:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1177/2278533716671630
+2025-02-03 19:17:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/6295/47d7806ca367e6f6c5fa869b003fe372/pradhan2017.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2684_Employee Performance at Workplace Conceptual Model and Empirical Validation.pdf
+2025-02-03 19:17:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Employee Performance at Workplace: Conceptual Model and Empirical Validation
+2025-02-03 19:17:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.14569/ijarai.2016.050904
+2025-02-03 19:17:53 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:17:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.3386/w3977
+2025-02-03 19:17:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/6778/d79793b6be18aaee16aa672045129acc/olley1992.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2686_The Dynamics of Productivity in the Telecommunications Equipment Industry.pdf
+2025-02-03 19:17:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Dynamics of Productivity in the Telecommunications Equipment Industry
+2025-02-03 19:17:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:17:57 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:17:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/2171831
+2025-02-03 19:17:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/0444576ac6b5313995706b4e1440b510/olley1996.pdf#navpanes=0&view=FitH
+2025-02-03 19:17:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2688_The Dynamics of Productivity in the Telecommunications Equipment Industry.pdf
+2025-02-03 19:17:59 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Dynamics of Productivity in the Telecommunications Equipment Industry
+2025-02-03 19:18:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1257/000282803769206296
+2025-02-03 19:18:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/8ae63e72811edcdab086509d1ecf4f14/bernard2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2689_Plants and Productivity in International Trade.pdf
+2025-02-03 19:18:03 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Plants and Productivity in International Trade
+2025-02-03 19:18:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/2296675
+2025-02-03 19:18:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/5dfb2cf1cf0abdb0f412483dcf925354/jorgenson1967.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2690_The Explanation of Productivity Change.pdf
+2025-02-03 19:18:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Explanation of Productivity Change
+2025-02-03 19:18:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1461-0248.2007.01139.x
+2025-02-03 19:18:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/934/e69056381737fc5ce09dda3fc7ad49b0/vanderheijden2008.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2691_The unseen majority soil microbes as drivers of plant diversity and productivity in terrestrial ecosystems.pdf
+2025-02-03 19:18:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The unseen majority: soil microbes as drivers of plant diversity and productivity in terrestrial ecosystems
+2025-02-03 19:18:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1257/aer.90.5.1346
+2025-02-03 19:18:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/5039/5f2c43fd2eb3b1f30e0408015148a890/lazear2000.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2692_Performance Pay and Productivity.pdf
+2025-02-03 19:18:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Performance Pay and Productivity
+2025-02-03 19:18:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1467-937x.2007.00463.x
+2025-02-03 19:18:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/d8da093021afd3ed2bff13ef521abfbc/melitz2008.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2693_Market Size, Trade, and Productivity.pdf
+2025-02-03 19:18:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Market Size, Trade, and Productivity
+2025-02-03 19:18:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1257/jel.49.2.326
+2025-02-03 19:18:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/c61b5c80d7d872df6645e60dbf46a118/syverson2011.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2694_What Determines Productivity.pdf
+2025-02-03 19:18:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for What Determines Productivity?
+2025-02-03 19:18:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1073/pnas.96.4.1463
+2025-02-03 19:18:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/3623/20ffecfa67181b9130bf7eb75924498c/yachi1999.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2695_Biodiversity and ecosystem productivity in a fluctuating environment The insurance hypothesis.pdf
+2025-02-03 19:18:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Biodiversity and ecosystem productivity in a fluctuating environment: The insurance hypothesis
+2025-02-03 19:18:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/3003321
+2025-02-03 19:18:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/d4c940617055fbc580303474366faaec/griliches1979.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2696_Issues in Assessing the Contribution of Research and Development to Productivity Growth.pdf
+2025-02-03 19:18:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Issues in Assessing the Contribution of Research and Development to Productivity Growth
+2025-02-03 19:18:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1145/163298.163309
+2025-02-03 19:18:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/2155/6b6898aec3563eb0a9a359dbd069361f/brynjolfsson1993.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2697_The productivity paradox of information technology.pdf
+2025-02-03 19:18:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The productivity paradox of information technology
+2025-02-03 19:18:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/2401901
+2025-02-03 19:18:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/4428/cb0bb8e977d2c5d599fd9710a4df8769/monteith1972.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2698_Solar Radiation and Productivity in Tropical Ecosystems.pdf
+2025-02-03 19:18:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Solar Radiation and Productivity in Tropical Ecosystems
+2025-02-03 19:18:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/1309989
+2025-02-03 19:18:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/666479572e5fdae6442cebe8400b5705/carpenter1985.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2699_Cascading Trophic Interactions and Lake Productivity.pdf
+2025-02-03 19:18:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Cascading Trophic Interactions and Lake Productivity
+2025-02-03 19:18:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.3386/w4313
+2025-02-03 19:18:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/6768/75bed75e574962a680576d588c8d8080/ciccone1993.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2700_Productivity and the Density of Economic Activity.pdf
+2025-02-03 19:18:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Productivity and the Density of Economic Activity
+2025-02-03 19:18:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1038/nature03972
+2025-02-03 19:18:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/1048/6ca749440290fba97a4533d250540672/ciais2005.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2701_Europe-wide reduction in primary productivity caused by the heat and drought in 2003.pdf
+2025-02-03 19:18:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Europe-wide reduction in primary productivity caused by the heat and drought in 2003
+2025-02-03 19:18:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.5465/amr.2003.9416096
+2025-02-03 19:18:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/90b00cbf198074f58be5fda34bd5e11e/benner2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:18:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2702_Exploitation, Exploration, and Process Management The Productivity Dilemma Revisited.pdf
+2025-02-03 19:18:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Exploitation, Exploration, and Process Management: The Productivity Dilemma Revisited
+2025-02-03 19:19:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1126/science.286.5442.1123
+2025-02-03 19:19:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/1848/64ea13654e92e48e6afb54f0c0f86f21/hector1999.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2703_Plant Diversity and Productivity Experiments in European Grasslands.pdf
+2025-02-03 19:19:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Plant Diversity and Productivity Experiments in European Grasslands
+2025-02-03 19:19:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1126/science.1060391
+2025-02-03 19:19:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/3e98239473f105ce0878eee4f8f76918/tilman2001.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2704_Diversity and Productivity in a Long-Term Grassland Experiment.pdf
+2025-02-03 19:19:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Diversity and Productivity in a Long-Term Grassland Experiment
+2025-02-03 19:19:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1007/978-1-4615-5493-6
+2025-02-03 19:19:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/4237/3e56404d34d23cc2ac22a583437f4cfe/coelli1998.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2705_An Introduction to Efficiency and Productivity Analysis.pdf
+2025-02-03 19:19:19 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for An Introduction to Efficiency and Productivity Analysis
+2025-02-03 19:19:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/h0037335
+2025-02-03 19:19:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2160/88d21cae544ecb2c9a6ed58f86a76f09/porter1974.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2706_Organizational commitment, job satisfaction, and turnover among psychiatric technicians..pdf
+2025-02-03 19:19:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Organizational commitment, job satisfaction, and turnover among psychiatric technicians.
+2025-02-03 19:19:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1126/science.218.4571.443
+2025-02-03 19:19:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/1145/30bae376dfb5ad152fe6bead29836f97/boyer1982.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2707_Plant Productivity and Environment.pdf
+2025-02-03 19:19:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Plant Productivity and Environment
+2025-02-03 19:19:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/256741
+2025-02-03 19:19:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2571/d8c853260ddb7a226c0fc0db3d90bff7/huselid1995.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2708_THE IMPACT OF HUMAN RESOURCE MANAGEMENT PRACTICES ON TURNOVER, PRODUCTIVITY, AND CORPORATE FINANCIAL PERFORMANCE..pdf
+2025-02-03 19:19:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for THE IMPACT OF HUMAN RESOURCE MANAGEMENT PRACTICES ON TURNOVER, PRODUCTIVITY, AND CORPORATE FINANCIAL PERFORMANCE.
+2025-02-03 19:19:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:19:34 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:19:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/0148-2963(95)00126-3
+2025-02-03 19:19:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/1965/a54ec838b776447666ad977258166c9a/hartline1996.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2710_Employee performance cues in a hotel service environment Influence on perceived service quality, value, and word-of-mouth intentions.pdf
+2025-02-03 19:19:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Employee performance cues in a hotel service environment: Influence on perceived service quality, value, and word-of-mouth intentions
+2025-02-03 19:19:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.4172/2223-5833.1000146
+2025-02-03 19:19:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-12-07/f8/10.4172@2223-5833.1000146.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2711_Effect of Leadership Style on Employee Performance.pdf
+2025-02-03 19:19:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Effect of Leadership Style on Employee Performance
+2025-02-03 19:19:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1086/298164
+2025-02-03 19:19:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/6578/eec039a80aeb62d0125d7eec33e04835/bishop1987.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2712_The Recognition and Reward of Employee Performance.pdf
+2025-02-03 19:19:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Recognition and Reward of Employee Performance
+2025-02-03 19:19:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1509/jmkg.69.2.130.60758
+2025-02-03 19:19:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/3505/68835386418e737524fe74233ab1a64d/netemeyer2005.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2713_Conflicts in the Work–Family Interface Links to Job Stress, Customer Service Employee Performance, and Customer Purchase Intent.pdf
+2025-02-03 19:19:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Conflicts in the Work–Family Interface: Links to Job Stress, Customer Service Employee Performance, and Customer Purchase Intent
+2025-02-03 19:19:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.ijhm.2012.05.003
+2025-02-03 19:19:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/c3c994803e5e8cec7c5e6bb8a8e39495/karatepe2013.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2714_High-performance work practices and hotel employee performance The mediation of work engagement.pdf
+2025-02-03 19:19:51 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for High-performance work practices and hotel employee performance: The mediation of work engagement
+2025-02-03 19:19:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1086/427319
+2025-02-03 19:19:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/ad2f385f7341dd7f13f9a3bf29f8ebef/castilla2005.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2715_Social Networks and Employee Performance in a Call Center.pdf
+2025-02-03 19:19:55 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Social Networks and Employee Performance in a Call Center
+2025-02-03 19:19:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/s0001-2092(06)60696-0
+2025-02-03 19:19:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/1716/97c55db32629cb94fb7b7e7447f71bcf/brazen2004.pdf#navpanes=0&view=FitH
+2025-02-03 19:19:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2716_The ROI of Human Capital Measuring the Economic Value of Employee Performance.pdf
+2025-02-03 19:19:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The ROI of Human Capital: Measuring the Economic Value of Employee Performance
+2025-02-03 19:20:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/s0001-8791(02)00064-7
+2025-02-03 19:20:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/1368/b01bbdbeda7b5634a8b516609776ddf8/chen2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2717_The relationship between the three components of commitment and employee performance in China.pdf
+2025-02-03 19:20:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The relationship between the three components of commitment and employee performance in China
+2025-02-03 19:20:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:20:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:20:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.obhdp.2010.11.002
+2025-02-03 19:20:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/1352/a067bfd056817d07f15a5d7eee61e761/walumbwa2011.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2719_Linking ethical leadership to employee performance The roles of leader–member exchange, self-efficacy, and organizational identification.pdf
+2025-02-03 19:20:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Linking ethical leadership to employee performance: The roles of leader–member exchange, self-efficacy, and organizational identification
+2025-02-03 19:20:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1744-6570.2011.01215.x
+2025-02-03 19:20:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/994/f2fcc38cfa237d8b5a94b06fe781375f/peterson2011.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2720_PSYCHOLOGICAL CAPITAL AND EMPLOYEE PERFORMANCE A LATENT GROWTH MODELING APPROACH.pdf
+2025-02-03 19:20:10 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for PSYCHOLOGICAL CAPITAL AND EMPLOYEE PERFORMANCE: A LATENT GROWTH MODELING APPROACH
+2025-02-03 19:20:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1348/096317902320369749
+2025-02-03 19:20:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/1130/88eef1c763d06f70bc19b12d6bafd012/chen2002.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2721_Loyalty to supervisor vs. organizational commitment Relationships to employee performance in China.pdf
+2025-02-03 19:20:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Loyalty to supervisor vs. organizational commitment: Relationships to employee performance in China
+2025-02-03 19:20:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:20:16 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:20:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:20:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:20:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1744-6570.1995.tb01772.x
+2025-02-03 19:20:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/994/2e1d40a7ee8f72c187de9f64bca765b3/bommer1995.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1348/096317910x485818
+2025-02-03 19:20:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-01-23//20/walumbwa2011.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2724_Understanding transformational leadership-employee performance links The role of relational identification and self-efficacy.pdf
+2025-02-03 19:20:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Understanding transformational leadership-employee performance links: The role of relational identification and self-efficacy
+2025-02-03 19:20:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/h0036775
+2025-02-03 19:20:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/1151/7497a08139c329f6adc6250d3fcdf7cc/steers1974.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2725_The role of task-goal attributes in employee performance..pdf
+2025-02-03 19:20:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The role of task-goal attributes in employee performance.
+2025-02-03 19:20:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1207/s15327043hup1301_4
+2025-02-03 19:20:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/3238/5a1a867247c654b26f92d99ab7d77faf/stanton2000.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2726_Reactions to Employee Performance Monitoring Framework, Review, and Research Directions.pdf
+2025-02-03 19:20:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Reactions to Employee Performance Monitoring: Framework, Review, and Research Directions
+2025-02-03 19:20:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/10594-009
+2025-02-03 19:20:31 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:20:31 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1007/b136381
+2025-02-03 19:20:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/7003/1e83250eb2cd39ee94d3a78aafac3579/an-introduction-to-efficiency-and-productivity-analysis-2005.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2728_An Introduction to Efficiency and Productivity Analysis.pdf
+2025-02-03 19:20:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for An Introduction to Efficiency and Productivity Analysis
+2025-02-03 19:20:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.28-0381
+2025-02-03 19:20:38 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:20:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/1468-0262.00467
+2025-02-03 19:20:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/884/229ec240445bf67726ba05fd98dcaf18/melitz2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2730_The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity.pdf
+2025-02-03 19:20:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity
+2025-02-03 19:20:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1744-6570.2001.tb00087.x
+2025-02-03 19:20:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-01-03/f5/koys2001.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1080/19416520802211610
+2025-02-03 19:20:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/3207/b58c5135cc2b96db01d585690c57bb11/kelly2008.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2732_7 Getting There from Here Research on the Effects of Work–Family Initiatives on Work–Family Conflict and Business Outcomes.pdf
+2025-02-03 19:20:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for 7 Getting There from Here: Research on the Effects of Work–Family Initiatives on Work–Family Conflict and Business Outcomes
+2025-02-03 19:20:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1177/0894486511430329
+2025-02-03 19:20:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/3836/8e77d9127d25e76a21247461b823b485/yu2011.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2733_The Landscape of Family Business Outcomes.pdf
+2025-02-03 19:20:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Landscape of Family Business Outcomes
+2025-02-03 19:20:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:20:54 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:20:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.ijpe.2010.02.013
+2025-02-03 19:20:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/308/9e65f63139db68c7bf4cec62f2476451/sadikoglu2010.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2735_Investigating the effects of innovation and employee performance on the relationship between total quality management practices and firm performance An empirical study of Turkish firms.pdf
+2025-02-03 19:20:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Investigating the effects of innovation and employee performance on the relationship between total quality management practices and firm performance: An empirical study of Turkish firms
+2025-02-03 19:20:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jbusres.2009.12.007
+2025-02-03 19:20:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/fb9f1a5b338efa97e0bb6776cdca4b87/yi2011.pdf#navpanes=0&view=FitH
+2025-02-03 19:20:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2736_Customer participation and citizenship behavioral influences on employee performance, satisfaction, commitment, and turnover intention.pdf
+2025-02-03 19:20:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Customer participation and citizenship behavioral influences on employee performance, satisfaction, commitment, and turnover intention
+2025-02-03 19:21:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/3069321
+2025-02-03 19:21:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2820/2b767c4c6b809f502ee7de1e1dea7855/lam2002.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2737_PARTICIPATIVE DECISION MAKING AND EMPLOYEE PERFORMANCE IN DIFFERENT CULTURES THE MODERATING EFFECTS OF ALLOCENTRISMIDIOCENTRISM AND EFFICACY..pdf
+2025-02-03 19:21:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for PARTICIPATIVE DECISION MAKING AND EMPLOYEE PERFORMANCE IN DIFFERENT CULTURES: THE MODERATING EFFECTS OF ALLOCENTRISM/IDIOCENTRISM AND EFFICACY.
+2025-02-03 19:21:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.5860/choice.38-1029
+2025-02-03 19:21:05 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:21:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1037/h0033093
+2025-02-03 19:21:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/3812/e277cdd86e3f4d47e2cb73149fbf70a5/heneman1972.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2739_Evaluation of research on expectancy theory predictions of employee performance..pdf
+2025-02-03 19:21:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Evaluation of research on expectancy theory predictions of employee performance.
+2025-02-03 19:21:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/er-04-2012-0030
+2025-02-03 19:21:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2244/37a11d759e366374aa0fa9307e3fab7d/10.1108@er-04-2012-0030.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2740_Establishing linkages between religiosity and spirituality on employee performance.pdf
+2025-02-03 19:21:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Establishing linkages between religiosity and spirituality on employee performance
+2025-02-03 19:21:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.hrmr.2011.11.005
+2025-02-03 19:21:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/93868a128ed8f9ac85ccc32143c4d202/jiang2012.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2741_Clarifying the construct of human resource systems Relating human resource management to employee performance.pdf
+2025-02-03 19:21:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Clarifying the construct of human resource systems: Relating human resource management to employee performance
+2025-02-03 19:21:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:21:17 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:21:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1257/aer.97.5.1611
+2025-02-03 19:21:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/0f6aadcf30d0dec5a1375971280f8a95/amiti2007.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2743_Trade Liberalization, Intermediate Inputs, and Productivity Evidence from Indonesia.pdf
+2025-02-03 19:21:18 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Trade Liberalization, Intermediate Inputs, and Productivity: Evidence from Indonesia
+2025-02-03 19:21:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/1913388
+2025-02-03 19:21:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2258/b19377f09549f22fc5120744a4f91eff/caves1982.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2744_The Economic Theory of Index Numbers and the Measurement of Input, Output, and Productivity.pdf
+2025-02-03 19:21:21 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Economic Theory of Index Numbers and the Measurement of Input, Output, and Productivity
+2025-02-03 19:21:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1207/s15327043hup1002_5
+2025-02-03 19:21:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-01-23//7b/podsakoff1997.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2745_Impact of Organizational Citizenship Behavior on Organizational Performance A Review and Suggestion for Future Research.pdf
+2025-02-03 19:21:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Impact of Organizational Citizenship Behavior on Organizational Performance: A Review and Suggestion for Future Research
+2025-02-03 19:21:28 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/2094020
+2025-02-03 19:21:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/179af4d5d75c5784c83b7c60a0a876b4/lieberson1972.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2746_Leadership and Organizational Performance A Study of Large Corporations.pdf
+2025-02-03 19:21:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Leadership and Organizational Performance: A Study of Large Corporations
+2025-02-03 19:21:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/smj.4250110305
+2025-02-03 19:21:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/86ae3ee908ed209bf22de803ea10a9fb/wooldridge1990.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2747_The strategy process, middle management involvement, and organizational performance.pdf
+2025-02-03 19:21:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The strategy process, middle management involvement, and organizational performance
+2025-02-03 19:21:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.4324/9781315703817
+2025-02-03 19:21:37 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:21:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/smj.4250120206
+2025-02-03 19:21:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/e8539a87ec03c782a8cb0070c575df11/rechner1991.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2749_CEO duality and organizational performance A longitudinal analysis.pdf
+2025-02-03 19:21:38 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for CEO duality and organizational performance: A longitudinal analysis
+2025-02-03 19:21:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1177/002224299806200403
+2025-02-03 19:21:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-01-18//de/han1998.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2750_Market Orientation and Organizational Performance Is Innovation a Missing Link.pdf
+2025-02-03 19:21:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Market Orientation and Organizational Performance: Is Innovation a Missing Link?
+2025-02-03 19:21:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1467-6486.2008.00814.x
+2025-02-03 19:21:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/938/6c5dd32ad198f29be95777f9909f8871/damanpour2009.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2751_Combinative Effects of Innovation Types and Organizational Performance A Longitudinal Study of Service Organizations.pdf
+2025-02-03 19:21:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Combinative Effects of Innovation Types and Organizational Performance: A Longitudinal Study of Service Organizations
+2025-02-03 19:21:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/256522
+2025-02-03 19:21:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2239/4eea958546a92cf97ad818e95106f233/thomas1993.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2752_STRATEGIC SENSEMAKING AND ORGANIZATIONAL PERFORMANCE LINKAGES AMONG SCANNING, INTERPRETATION, ACTION, AND OUTCOMES..pdf
+2025-02-03 19:21:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for STRATEGIC SENSEMAKING AND ORGANIZATIONAL PERFORMANCE: LINKAGES AMONG SCANNING, INTERPRETATION, ACTION, AND OUTCOMES.
+2025-02-03 19:21:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.4324/9780203076965
+2025-02-03 19:21:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/6260/3c0719a2f1c957da7d82f4bd83f23f95/employee-engagement-in-theory-and-practice-2013.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2860_Employee Engagement in Theory and Practice.pdf
+2025-02-03 19:21:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Employee Engagement in Theory and Practice
+2025-02-03 19:21:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/2392253
+2025-02-03 19:21:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/0e701dbc6d71f9339bdb9eedf4ff925c/wilkins1983.pdf#navpanes=0&view=FitH
+2025-02-03 19:21:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2753_Efficient Cultures Exploring the Relationship Between Culture and Organizational Performance.pdf
+2025-02-03 19:21:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Efficient Cultures: Exploring the Relationship Between Culture and Organizational Performance
+2025-02-03 19:22:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2308/accr.2007.82.4.963
+2025-02-03 19:22:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/579d1c610790dcac058d03552f516496/larcker2007.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2754_Corporate Governance, Accounting Outcomes, and Organizational Performance.pdf
+2025-02-03 19:22:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Corporate Governance, Accounting Outcomes, and Organizational Performance
+2025-02-03 19:22:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.5465/amj.2007.25525821
+2025-02-03 19:22:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/4409/f30e86092118521b64990e1f6c20659d/aryee2007.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2755_High-Performance Human Resource Practices, Citizenship Behavior, and Organizational Performance A Relational Perspective.pdf
+2025-02-03 19:22:04 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for High-Performance Human Resource Practices, Citizenship Behavior, and Organizational Performance: A Relational Perspective
+2025-02-03 19:22:07 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1147/sj.404.0831
+2025-02-03 19:22:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/c6ce63ba99a34913e558524027298045/lesser2001.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2756_Communities of practice and organizational performance.pdf
+2025-02-03 19:22:08 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Communities of practice and organizational performance
+2025-02-03 19:22:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1177/014920639201800306
+2025-02-03 19:22:11 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2277/881a7cc45601ed9f0e8fe77fccd87d26/burke1992.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2757_A Causal Model of Organizational Performance and Change.pdf
+2025-02-03 19:22:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for A Causal Model of Organizational Performance and Change
+2025-02-03 19:22:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.omega.2004.08.002
+2025-02-03 19:22:15 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/5040297a107335012218f8e1ea586a8a/li2006.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2758_The impact of supply chain management practices on competitive advantage and organizational performance.pdf
+2025-02-03 19:22:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The impact of supply chain management practices on competitive advantage and organizational performance
+2025-02-03 19:22:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1744-6570.2006.00045.x
+2025-02-03 19:22:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://sci-hub.se/downloads/2019-01-23//92/combs2006.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:23 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1177/0092070399274002
+2025-02-03 19:22:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/6155/dc2a520f0d55726169f2dbcdb1035a10/baker1999.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2760_The Synergistic Effect of Market Orientation and Learning Orientation on Organizational Performance.pdf
+2025-02-03 19:22:24 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Synergistic Effect of Market Orientation and Learning Orientation on Organizational Performance
+2025-02-03 19:22:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1080/07421222.2003.11045756
+2025-02-03 19:22:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/3577/0918ad9de6ab7db18df328a06200bedf/knowledge-management-enablers-processes-and-organizational-perfo-2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2761_Knowledge Management Enablers, Processes, and Organizational Performance An Integrative View and Empirical Examination.pdf
+2025-02-03 19:22:27 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Knowledge Management Enablers, Processes, and Organizational Performance: An Integrative View and Empirical Examination
+2025-02-03 19:22:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/2392457
+2025-02-03 19:22:30 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2239/8f35c9900baa93ecdf44c255ab124d36/snow1980.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2762_Strategy, Distinctive Competence, and Organizational Performance.pdf
+2025-02-03 19:22:32 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Strategy, Distinctive Competence, and Organizational Performance
+2025-02-03 19:22:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1177/0149206308330560
+2025-02-03 19:22:35 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/52016a84a7ca63df3fc9a01c16e5f141/richard2009.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2763_Measuring Organizational Performance Towards Methodological Best Practice.pdf
+2025-02-03 19:22:36 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Measuring Organizational Performance: Towards Methodological Best Practice
+2025-02-03 19:22:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/smj.4250050306
+2025-02-03 19:22:39 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/1174/b983f3b6a24335eb675f106c38c033db/dess1984.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:42 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/bse.564
+2025-02-03 19:22:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/75/f39f93db35f056b5747d8a899fcba231/hubbard2009.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2765_Measuring organizational performance beyond the triple bottom line.pdf
+2025-02-03 19:22:43 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Measuring organizational performance: beyond the triple bottom line
+2025-02-03 19:22:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/13673270910997088
+2025-02-03 19:22:46 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/cd7b5ec2c0625aa64469b068115a4b42/zack2009.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2766_Knowledge management and organizational performance an exploratory analysis.pdf
+2025-02-03 19:22:47 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Knowledge management and organizational performance: an exploratory analysis
+2025-02-03 19:22:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/256718
+2025-02-03 19:22:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2176/6ae552b8664bf2363cba37a5e32e13f5/delaney1996.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2767_THE IMPACT OF HUMAN RESOURCE MANAGEMENT PRACTICES ON PERCEPTIONS OF ORGANIZATIONAL PERFORMANCE..pdf
+2025-02-03 19:22:50 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for THE IMPACT OF HUMAN RESOURCE MANAGEMENT PRACTICES ON PERCEPTIONS OF ORGANIZATIONAL PERFORMANCE.
+2025-02-03 19:22:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1287/orsc.8.6.698
+2025-02-03 19:22:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2413/bf505fcdca8522b05782907068b5c065/march1997.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2768_Crossroads—Organizational Performance as a Dependent Variable.pdf
+2025-02-03 19:22:54 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Crossroads—Organizational Performance as a Dependent Variable
+2025-02-03 19:22:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1177/0149206305279370
+2025-02-03 19:22:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/8298026eb92d3c7438a3ae138b45bc9e/evans2005.pdf#navpanes=0&view=FitH
+2025-02-03 19:22:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2769_High-Performance Work Systems and Organizational Performance The Mediating Role of Internal Social Structure.pdf
+2025-02-03 19:22:58 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for High-Performance Work Systems and Organizational Performance: The Mediating Role of Internal Social Structure
+2025-02-03 19:23:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1287/orsc.1060.0191
+2025-02-03 19:23:01 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/3583/0e41407e2ccda39a79a95474ea3097dd/leana2006.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2770_Social Capital and Organizational Performance Evidence from Urban Public Schools.pdf
+2025-02-03 19:23:02 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Social Capital and Organizational Performance: Evidence from Urban Public Schools
+2025-02-03 19:23:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1093/oxfordjournals.jpart.a024287
+2025-02-03 19:23:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/5011/8a5b8e586ffa91e75f98e0b1a352c023/brewer2000.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2771_Why Elephants Gallop Assessing and Predicting Organizational Performance in Federal Agencies.pdf
+2025-02-03 19:23:06 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Why Elephants Gallop: Assessing and Predicting Organizational Performance in Federal Agencies
+2025-02-03 19:23:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1108/02683940410537927
+2025-02-03 19:23:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/2070/30954861f426317d5d2ec7a4ba6a84c0/kimjeanlee2004.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2772_Corporate culture and organizational performance.pdf
+2025-02-03 19:23:09 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Corporate culture and organizational performance
+2025-02-03 19:23:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1467-6486.2007.00691.x
+2025-02-03 19:23:12 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/289e55452581feaeabc542b5272fd882/carmeli2007.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2773_The Role of Perceived Organizational Performance in Organizational Identification, Adjustment and Job Performance.pdf
+2025-02-03 19:23:13 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Role of Perceived Organizational Performance in Organizational Identification, Adjustment and Job Performance*
+2025-02-03 19:23:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/smj.632
+2025-02-03 19:23:16 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/558/9d41641468088cc41871c217e019cb3a/acquaah2007.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2774_Managerial social capital, strategic orientation, and organizational performance in an emerging economy.pdf
+2025-02-03 19:23:17 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Managerial social capital, strategic orientation, and organizational performance in an emerging economy
+2025-02-03 19:23:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/None
+2025-02-03 19:23:20 - [SCIHUB_DOWNLOADER] - ERROR - [pokolog.py:70] - No PDF element found
+2025-02-03 19:23:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1016/j.jbusres.2011.03.005
+2025-02-03 19:23:20 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/a91d1b0b2c73f38f9b7a193fa99645f4/10.1016@j.jbusres.2011.03.005.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2776_Transformational leadership influence on organizational performance through organizational learning and innovation.pdf
+2025-02-03 19:23:22 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Transformational leadership influence on organizational performance through organizational learning and innovation
+2025-02-03 19:23:25 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/1540-6210.00295
+2025-02-03 19:23:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/e839cf8339ff4b1db7d887b198d68252/garcia-zamor2003.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2777_Workplace Spirituality and Organizational Performance.pdf
+2025-02-03 19:23:26 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Workplace Spirituality and Organizational Performance
+2025-02-03 19:23:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/smj.4250110504
+2025-02-03 19:23:29 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/7cb1c55620f4e7c82fe9d513d2cc8fc2/conant1990.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/256305
+2025-02-03 19:23:33 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/2923/d1a979f5889935702ed3ce9803604d38/kalleberg1991.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2779_GENDER AND ORGANIZATIONAL PERFORMANCE DETERMINANTS OF SMALL BUSINESS SURVIVAL AND SUCCESS..pdf
+2025-02-03 19:23:34 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for GENDER AND ORGANIZATIONAL PERFORMANCE: DETERMINANTS OF SMALL BUSINESS SURVIVAL AND SUCCESS.
+2025-02-03 19:23:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1002/smj.428
+2025-02-03 19:23:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/558/e6b6fbdb2310ec65a7ee1e34d67b659c/carmeli2004.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2780_The relationships between intangible organizational elements and organizational performance.pdf
+2025-02-03 19:23:37 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The relationships between intangible organizational elements and organizational performance
+2025-02-03 19:23:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1093/jopart/mui013
+2025-02-03 19:23:40 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/9da76a50033633e9c6cc56b7d2e96df3/kim2004.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2781_Individual-Level Factors and Organizational Performance in Government Organizations.pdf
+2025-02-03 19:23:41 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Individual-Level Factors and Organizational Performance in Government Organizations
+2025-02-03 19:23:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/j.1467-6486.1989.tb00746.x
+2025-02-03 19:23:44 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/938/c0955c2ccb2b78a5c580442a9bf19bcd/damanpour1989.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2782_THE RELATIONSHIP BETWEEN TYPES OF INNOVATION AND ORGANIZATIONAL PERFORMANCE.pdf
+2025-02-03 19:23:45 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for THE RELATIONSHIP BETWEEN TYPES OF INNOVATION AND ORGANIZATIONAL PERFORMANCE
+2025-02-03 19:23:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/256040
+2025-02-03 19:23:48 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://dacemirror.sci-hub.se/journal-article/7cac062a97f7dd430bfc40465f9fb5d5/dess1984.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2783_Porter's (1980) Generic Strategies as Determinants of Strategic Group Membership and Organizational Performance..pdf
+2025-02-03 19:23:49 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Porter's (1980) Generic Strategies as Determinants of Strategic Group Membership and Organizational Performance.
+2025-02-03 19:23:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.1111/1467-6486.00059
+2025-02-03 19:23:52 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/881/cddf9b60134b753573ffccc59a3a792e/floyd1997.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2784_Middle Management’s Strategic Influence and Organizational Performance.pdf
+2025-02-03 19:23:53 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Middle Management’s Strategic Influence and Organizational Performance
+2025-02-03 19:23:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.2307/2393010
+2025-02-03 19:23:56 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://2024.sci-hub.se/2983/4f17c0e7e05bbafebe6d1049da384c42/staw1983.pdf#navpanes=0&view=FitH
+2025-02-03 19:23:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2785_The Justification of Organizational Performance.pdf
+2025-02-03 19:23:57 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for The Justification of Organizational Performance
+2025-02-03 19:24:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Searching: https://sci-hub.se/https://doi.org/10.5465/amr.2001.4845830
+2025-02-03 19:24:00 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Found PDF URL: https://moscow.sci-hub.se/4984/55af01fde71296c3a3fd2bf929c65bf1/dess2001.pdf#navpanes=0&view=FitH
+2025-02-03 19:24:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Saved: resources\downloads\2786_Voluntary Turnover, Social Capital, and Organizational Performance.pdf
+2025-02-03 19:24:05 - [SCIHUB_DOWNLOADER] - INFO - [pokolog.py:70] - Updated metadata for Voluntary Turnover, Social Capital, and Organizational Performance

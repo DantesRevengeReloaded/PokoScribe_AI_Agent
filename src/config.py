@@ -14,7 +14,7 @@ class SystemPars:
         # Name of the project so it can be used in the file names 
         # so there will be no confusion with other projects-papers
         # also based on name project the db records will be created accordingly
-        self.project_name = 'Panos_Karydis_Update'
+        self.project_name = 'TestProject999'
 
         # limit of tokens per prompt for creating outline or chapter, if the model is more powerful it can be increased
         self.token_limit = 25000

@@ -1,14 +1,17 @@
-import requests, os, re, sys, time
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlparse
-from time import sleep
-from dotenv import load_dotenv
+import re
+import sys
+import time
 from pathlib import Path
-import sqlalchemy as sa
-from sqlalchemy import create_engine, text
-import pandas as pd
+from typing import Optional, Tuple
+from urllib.parse import urljoin, urlparse
 
-# Add project root to Python path
+import requests
+from bs4 import BeautifulSoup, Tag
+from dotenv import load_dotenv
+from requests.adapters import HTTPAdapter
+from urllib3.util import Retry
+
+# Project imports should remain at top
 project_root = Path(__file__).parent.parent.parent
 sys.path.append(str(project_root))
 from logs.pokolog import *
@@ -17,128 +20,122 @@ from src.db_ai.ai_db_manager import *
 load_dotenv('.env')
 logger = PokoLogger()
 
-def sanitize_filename(filename):
-    """
-    Sanitize a string to be used as a filename.
-    Removes invalid characters and truncates to 255 characters.
-    
-    Args:
-        filename (str): The filename to sanitize
-    
-    Returns:
-        str: The sanitized filename
-    """
-    # Remove invalid characters
-    filename = re.sub(r'[<>:"/\\|?*]', '', filename)
-    
-    # Truncate to 255 characters
-    return filename[:255]
-
 class SciHubDler:
-    def __init__(self):
-        pass
+    PDF_SELECTORS = [
+        ('button', {'string': re.compile(r'download', re.I)}),
+        ('a', {'href': re.compile(r'\.pdf$')}),
+        ('embed', {'type': 'application/pdf'}),
+        ('iframe', {'id': 'pdf'})
+    ]
+    DEFAULT_SCIHUB_URL = "https://sci-hub.se"
+    DEFAULT_DOWNLOAD_DIR = Path("resources/downloads")
+    RETRY_STRATEGY = Retry(
+        total=3,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET", "POST"]
+    )
 
-    def download_paper(self, doi, title, metadata_id, scihub_url="https://sci-hub.se", download_dir="resources/downloads"):
-        """
-        Download a scientific paper from Sci-Hub using its DOI.
-        First searches for the paper on Sci-Hub's interface, then downloads the PDF.
-        
-        Args:
-            doi (str): The DOI of the paper to download
-            title (str): The title of the paper to download
-            metadata_id (int): The metadata ID of the filtered table to update download status (table is product of AI filtering the crude metadata)
-            scihub_url (str): The base URL for Sci-Hub
-            download_dir (str): Directory to save downloaded papers
-        
-        Returns:
-            bool: True if download was successful, False otherwise
-        """
-        # Clean inputs
-        doi = doi.strip()
-        if not scihub_url.startswith(('http://', 'https://')):
-            scihub_url = f"https://{scihub_url}"
-        scihub_url = scihub_url.rstrip('/')
-        
-        # Create download directory
-        os.makedirs(download_dir, exist_ok=True)
-        
-        headers = {
+    def __init__(self):
+        self.session = requests.Session()
+        self.session.mount('https://', HTTPAdapter(max_retries=self.RETRY_STRATEGY))
+        self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-        }
-        
+        })
+        self.logger = PokoLogger()
+        self.db_manager = GetMetaData()
+        self.DEFAULT_DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
+
+    @staticmethod
+    def sanitize_filename(filename: str) -> str:
+        """Sanitize filename removing invalid characters and truncating to 255 chars."""
+        return re.sub(r'[<>:"/\\|?*]', '', filename)[:255]
+
+    def _find_pdf_element(self, soup: BeautifulSoup) -> Optional[Tag]:
+        """Search for PDF element in BeautifulSoup object using multiple selectors."""
+        for tag, attrs in self.PDF_SELECTORS:
+            element = soup.find(tag, attrs)
+            if element:
+                return element
+        return None
+
+    def _extract_pdf_url(self, element: Tag, base_url: str) -> Optional[str]:
+        """Extract PDF URL from HTML element."""
+        for attr in ['href', 'src']:
+            if attr in element.attrs:
+                url = element[attr]
+                if url.startswith('//'):
+                    return f'https:{url}'
+                if not url.startswith(('http://', 'https://')):
+                    return urljoin(base_url, url)
+                return url
+        return None
+
+    def _construct_filename(self, metadata_id: int, title: str) -> Path:
+        """Generate safe filename with metadata ID and sanitized title."""
+        clean_title = self.sanitize_filename(title)
+        return self.DEFAULT_DOWNLOAD_DIR / f"{metadata_id}_{clean_title}.pdf"
+
+    def download_paper(
+        self,
+        doi: str,
+        title: str,
+        metadata_id: int,
+        scihub_url: str = DEFAULT_SCIHUB_URL,
+        throttle_delay: int = 3
+    ) -> bool:
+        """Download a paper from Sci-Hub with retry logic and proper resource management."""
+        doi = doi.strip()
+        if not doi:
+            self.logger.error(ScriptIdentifier.SCIHUB, "Empty DOI provided")
+            return False
+
         try:
-            # First, get the search page
+            # Normalize Sci-Hub URL
+            scihub_url = scihub_url.strip('/')
+            if not scihub_url.startswith(('http://', 'https://')):
+                scihub_url = f'https://{scihub_url}'
+
+            # Fetch search page
             search_url = f"{scihub_url}/{doi}"
-            logger.info(ScriptIdentifier.SCIHUB, f"Searching: {search_url}")
-            
-            response = requests.get(search_url, headers=headers, timeout=30)
+            self.logger.info(ScriptIdentifier.SCIHUB, f"Searching: {search_url}")
+
+            response = self.session.get(search_url, timeout=30)
             response.raise_for_status()
-            
+
             soup = BeautifulSoup(response.text, 'html.parser')
+            pdf_element = self._find_pdf_element(soup)
             
-            # Find the download button or link
-            # Try multiple possible selectors as Sci-Hub's HTML structure might vary
-            download_button = (
-                soup.find('button', string=lambda s: s and 'download' in s.lower()) or
-                soup.find('a', string=lambda s: s and 'download' in s.lower()) or
-                soup.find('a', {'href': lambda x: x and x.endswith('.pdf')}) or
-                soup.find('embed', {'type': 'application/pdf'}) or
-                soup.find('iframe', {'id': 'pdf'})
-            )
-            
-            if not download_button:
+            if not pdf_element:
+                self.logger.error(ScriptIdentifier.SCIHUB, "No PDF element found")
                 return False
-                
-            # Get the PDF URL
-            pdf_url = None
-            if 'href' in download_button.attrs:
-                pdf_url = download_button['href']
-            elif 'src' in download_button.attrs:
-                pdf_url = download_button['src']
-            else:
-                # If no direct link, try to find it in the page
-                embed = soup.find('embed', {'type': 'application/pdf'})
-                if embed and 'src' in embed.attrs:
-                    pdf_url = embed['src']
-            
+
+            pdf_url = self._extract_pdf_url(pdf_element, scihub_url)
             if not pdf_url:
-                logger.error(ScriptIdentifier.SCIHUB, "Could not extract PDF URL")
+                self.logger.error(ScriptIdentifier.SCIHUB, "Failed to extract PDF URL")
                 return False
-                
-            # Handle relative URLs
-            if not pdf_url.startswith(('http://', 'https://')):
-                if pdf_url.startswith('//'):
-                    pdf_url = f"https:{pdf_url}"
-                else:
-                    pdf_url = urljoin(scihub_url, pdf_url)
-            
-            logger.info(ScriptIdentifier.SCIHUB, f"Found PDF URL: {pdf_url}")
-            
-            # Download the PDF
-            pdf_response = requests.get(pdf_url, headers=headers, timeout=30)
+
+            self.logger.info(ScriptIdentifier.SCIHUB, f"Found PDF URL: {pdf_url}")
+
+            # Download PDF
+            pdf_response = self.session.get(pdf_url, timeout=60)
             pdf_response.raise_for_status()
 
-            titleforpath = sanitize_filename(title)
-            metadata_id_str = str(metadata_id)
-            # Save the file with metadata_id and title
-            filename = os.path.join(download_dir, f"{metadata_id_str}_{titleforpath}.pdf")
+            # Save file
+            file_path = self._construct_filename(metadata_id, title)
+            file_path.write_bytes(pdf_response.content)
+            self.logger.info(ScriptIdentifier.SCIHUB, f"Saved: {file_path}")
+
+            # Update database
+            self.db_manager.update_filtered_metadata_succeeded_dl(metadata_id)
+            self.logger.info(ScriptIdentifier.SCIHUB, f"Updated metadata for {title}")
             
-            with open(filename, 'wb') as f:
-                f.write(pdf_response.content)
-            
-            # Update metadata with download status
-            # table of filtered data must existS
-            logger.info(ScriptIdentifier.SCIHUB, f"Downloaded: {filename}")
-            insert_update_dl = GetMetaData()
-            insert_update_dl.update_filtered_metadata_succeeded_dl(metadata_id)
-            logger.info(ScriptIdentifier.SCIHUB, f"Updated metadata with download status for {title}")
-            time.sleep(3)
+            time.sleep(throttle_delay)
             return True
 
         except requests.exceptions.RequestException as e:
-            logger.error(ScriptIdentifier.SCIHUB, f"Request error for {title}: {str(e)}")
+            self.logger.error(ScriptIdentifier.SCIHUB, f"Network error: {str(e)}")
             return False
-
         except Exception as e:
-            logger.error(ScriptIdentifier.SCIHUB, f"Unexpected error for {title}: {str(e)}")
+            self.logger.error(ScriptIdentifier.SCIHUB, f"Unexpected error: {str(e)}")
             return False

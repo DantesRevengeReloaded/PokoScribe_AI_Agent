@@ -45,6 +45,7 @@ class GetSources:
             # Run Core API search
             coreapi = CoreAPIHandler()
             coreapi.search_specific_papers()
+            
             logger.info(ScriptIdentifier.MAIN, "Metadata retrieved successfully from the platforms.")
         except Exception as e:
             logger.error(ScriptIdentifier.MAIN, f"Failed to get metadata in automated procedure: {e}")
@@ -64,16 +65,16 @@ class GetSources:
 
             prompt = f"{promptfile}\n\n{df_retr_json}"
             load_dotenv('.env')
-            api_key = os.getenv('OPENAI_API_KEY')
-            client = OpenAI(api_key=api_key)
+            api_key = os.getenv('DEEPSEEK_API_KEY')
+            client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com")
             
             response = client.chat.completions.create(
                 messages=[
                     
                     {"role": "user", "content": prompt}
                 ],
-                model="o1-mini",
-                temperature=1,
+                model="deepseek-chat",
+                temperature=0.5,
             )
             filtered_metadata = response.choices[0].message.content.strip()
             

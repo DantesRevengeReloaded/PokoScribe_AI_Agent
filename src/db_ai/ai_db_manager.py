@@ -130,9 +130,7 @@ class SaveSummary(AIDbManager):
 class SaveMetaData(AIDbManager):
     def __init__(self):
         super().__init__()
-        self.create_table()
-
-    def create_table(self):
+        
         """Create metadata table if it doesn't exist"""
         try:
             with self.conn.cursor() as cursor:
@@ -170,10 +168,19 @@ class SaveMetaData(AIDbManager):
                 for _, row in df.iterrows():
                     cursor.execute("""
                         INSERT INTO ai_schema.papers_metadata (
-                            title, doi, year, authors, abstract, 
-                            keywords, relevance_score, pdf_url,
-                            publisher, journal, type, cited_by_count,
-                            apicalled, project_name
+                            title, 
+                            doi, 
+                            year, 
+                            authors, 
+                            abstract,
+                            keywords, 
+                            relevance_score, 
+                            pdf_url,
+                            publisher, 
+                            journal, type, 
+                            cited_by_count,
+                            apicalled, 
+                            project_name
                         ) VALUES (
                             %s, %s, %s, %s, %s, 
                             %s, %s, %s, %s, %s, 
@@ -235,7 +242,7 @@ class GetMetaData(AIDbManager):
             df['success_dl'] = 'NotDownloaded'
             # Create filtered sources table
             cursor.execute(f"""
-                CREATE TABLE IF NOT EXISTS ai_schema.{project_name}_filtered_sources (
+                CREATE TABLE IF NOT EXISTS ai_schema.filtered_sources (
                     id SERIAL PRIMARY KEY,
                     metadata_id INTEGER REFERENCES ai_schema.papers_metadata(id),
                     title TEXT NOT NULL,
@@ -244,45 +251,50 @@ class GetMetaData(AIDbManager):
                     abstract TEXT,
                     pdf_url TEXT,
                     success_dl TEXT,
+                    project_name VARCHAR(255),
                     insert_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 )
             """)
             self.conn.commit()
-            logger.info(ScriptIdentifier.DATABASE, f"Created filtered sources table for {project_name}")
+            logger.info(ScriptIdentifier.DATABASE, f"Inserting filtered data for project: {project_name}")
             # Insert data into filtered sources table
             for _, row in df.iterrows():
                 cursor.execute("""
-                    INSERT INTO ai_schema.{}_filtered_sources (
-                        metadata_id, title, doi, year, abstract, pdf_url, success_dl
-                    ) VALUES (%s, %s, %s, %s, %s, %s, %s)
-                """.format(project_name), (
+                    INSERT INTO ai_schema.filtered_sources (
+                        metadata_id, title, doi, year, abstract, pdf_url, success_dl, project_name
+                    ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
+                """, (
                     row['id'],
                     row['title'],
                     row['doi'],
                     row['year'],
                     row['abstract'],
                     row['pdf_url'],
-                    row['success_dl']
+                    row['success_dl'],
+                    project_name  
                 ))
-            self.conn.commit()
-            logger.info(ScriptIdentifier.DATABASE, f"Inserted {len(df)} records into filtered sources table")
-        except Exception as e:
-            logger.error(ScriptIdentifier.DATABASE, f"Error inserting filtered metadata: {e}")
 
-    def update_filtered_metadata_succeeded_dl(self, metadata_id:int) -> None:
+            self.conn.commit()
+            logger.info(ScriptIdentifier.DATABASE, f"Inserted {len(df)} records into filtered sources table for project {project_name}")
+        except Exception as e:
+            logger.error(ScriptIdentifier.DATABASE, f"Error inserting filtered metadata: {e} for project {project_name}")
+
+    def update_filtered_metadata_succeeded_dl(self, metadata_id: int) -> None:
         """Update filtered metadata with download success"""
         try:
-            cursor = self.conn.cursor()
-            cursor.execute("""
-                UPDATE ai_schema.{}_filtered_sources
-                SET success_dl = 'Downloaded'
-                WHERE metadata_id = %s
-            """.format(self.project_name), (metadata_id,))
-            self.conn.commit()
+            with self.conn.cursor() as cursor:
+                cursor.execute("""
+                    UPDATE ai_schema.filtered_sources
+                    SET success_dl = 'Downloaded'
+                    WHERE metadata_id = %s
+                """, (metadata_id,))
+                self.conn.commit()
         except Exception as e:
             self.conn.rollback()
-            logger.error(ScriptIdentifier.DATABASE, f"Error updating filtered metadata: {e}")
-     
+            logger.error(ScriptIdentifier.DATABASE, 
+                        f"Error updating filtered metadata: {e}")
+            raise
+        
     
     def get_filtered_metadata(self, project_name: str) -> pd.DataFrame:
         """Get filtered metadata from database"""
@@ -290,9 +302,10 @@ class GetMetaData(AIDbManager):
             with self.conn.cursor() as cursor:
                 cursor.execute(f"""
                     SELECT *
-                    FROM ai_schema.{project_name}_filtered_sources
-                    WHERE success_dl != 'Downloaded'
-                    """)
+                    FROM ai_schema.filtered_sources
+                    WHERE success_dl != 'Downloaded' AND project_name = '{project_name}'
+                    """, (project_name,))
+                self.conn.commit()
                 if cursor.rowcount == 0:
                     logger.info(ScriptIdentifier.DATABASE, 
                             f"No unprocessed records found for project {project_name}")
